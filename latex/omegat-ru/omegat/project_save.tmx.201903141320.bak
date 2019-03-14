@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tmx SYSTEM "tmx11.dtd">
+<tmx version="1.1">
+  <header creationtool="OmegaT" o-tmf="OmegaT TMX" adminlang="EN-US" datatype="plaintext" creationtoolversion="3.6.0_11_r10546" segtype="sentence" srclang="EN-US"/>
+  <body>
+<!-- Default translations -->
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Delivery Network</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190314T102045Z" creationid="vopl" creationdate="20190314T102045Z">
+        <seg>хранения и доставки</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>PPIO: A Programmable P2P Storage and&lt;br0&gt;</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190314T102033Z" creationid="vopl" creationdate="20190314T095450Z">
+        <seg>PPIO: Программируемая одноранговая сеть&lt;br0&gt;</seg>
+      </tuv>
+    </tu>
+<!-- Alternative translations -->
+  </body>
+</tmx>

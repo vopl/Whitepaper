@@ -1,0 +1,636 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tmx SYSTEM "tmx14.dtd">
+<tmx version="1.4">
+  <header creationtool="OmegaT" o-tmf="OmegaT TMX" adminlang="EN-US" datatype="plaintext" creationtoolversion="4.1.5_4_10550" segtype="sentence" srclang="EN-US"/>
+  <body>
+<!-- Default translations -->
+<!-- Alternative translations -->
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">Light Proof of Capacity (LPoC) is developed to provide lightweight validation of storage capacity provided by the miners.</prop>
+      <prop type="next">Proof of Replication (PoRep) is used to guarantee that the miners replicate user's data.</prop>
+      <tuv xml:lang="EN-US">
+        <seg>An optimized Proof of Space-Time (PoSt) ensures that the specified data is indeed stored by the miner over a period.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190314T163940Z" creationid="vopl" creationdate="20190314T163940Z">
+        <seg>Оптимизированное доказательство хранения с течением времени (Оptimized Proof of Space-Time, PoSt) убеждает что заданные данные действительно сохранены майнером в течении периода времени.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">Such deficiency in the design can lead to many real-world problems to the miners and ISPs.</prop>
+      <prop type="next">\vspace{-0.5em}</prop>
+      <tuv xml:lang="EN-US">
+        <seg>As Protocol Labs claims that files stored on IPFS are permanent and cannot be deleted, it runs the risks of legal battles against policies and regulations and makes its worldwide deployment much more difficult.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190314T153320Z" creationid="vopl" creationdate="20190314T153320Z">
+        <seg>Как заявляет Protocol Labs, файлы, размещенные в IPFS являются перманентными, не могут быть удалены, что может приводить к юридическим битвам в аспекте государственных политик и регуляторов, глобальное распространение файлов становится намного более сложным.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">At the same time, it punishes misbehaving participants.</prop>
+      <prop type="next">This allows PPIO to make use of the vast amount of unused bandwidth and storage resources on the Internet, and provide robust storage service at much lower cost.</prop>
+      <tuv xml:lang="EN-US">
+        <seg>As a result, a large, high-quality miner community can be established and kept growing.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190314T155341Z" creationid="vopl" creationdate="20190314T155341Z">
+        <seg>В результате может быть сформировано большое и качественное сообщество майнеров.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">It not only provides more robust and efficient services than existing cloud-based storage platforms such as AWS S3 but also significantly reduces the storage cost.</prop>
+      <prop type="next">PPIO's well-designed decentralized storage network and incentive mechanism allows it to make use of the vast amount of unused bandwidth and storage resources on the Internet, and provide reliable storage service at much lower cost.</prop>
+      <tuv xml:lang="EN-US">
+        <seg>At the same time, PPIO also offers better data security and privacy protection.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190314T122646Z" creationid="vopl" creationdate="20190314T120812Z">
+        <seg>At the same time, PPIO also offers better data security and privacy protection.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">To make the storage system easy to use, PPIO introduces a scheme called "Coin Pool", that helps the users to store and download micropayments.</prop>
+      <prop type="next">\vspace{-0.6em}</prop>
+      <tuv xml:lang="EN-US">
+        <seg>At the same time, PPIO's design also includes a mechanism to protect users from the impact of storage price fluctuations, which provides a better user experience than existing centralized storage platforms and more importantly much lower price.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190314T160636Z" creationid="vopl" creationdate="20190314T160636Z">
+        <seg>Так же, ахитектура PPIO включает механизм противостояния колебаниям цены хранения, предоставляющий пользователям лучший вариант чем существующие централизованные платформы хранения и, что не менее важно, по намного меньшей цене.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">These incidents pose a grave threat to not just the privacy of individual users, but also the security and integrity of the entire Internet.</prop>
+      <prop type="next">\vspace{-0.5em}</prop>
+      <tuv xml:lang="EN-US">
+        <seg>At the same time, high bandwidth and storage cost is another inherent problem of the centralized storage systems, it leads to unaffordable price and makes it extremely difficult for many Internet companies to be profitable.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190314T141902Z" creationid="vopl" creationdate="20190314T141130Z">
+        <seg>Так же, другой проблемой централизованных систем хранения является высокая стоимость каналов связи и хранилищ, она приводит к неприемлемой цене и делает крайне сложным прибыльность для многих Интернет-компаний.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">By using data sharding and encryption algorithms, user's data can only be retrieved by the one who possesses the user's unique private key.</prop>
+      <prop type="next">PPIO is equipped with practical storage proofs to maintain the integrity and reliability of its storage contents.</prop>
+      <tuv xml:lang="EN-US">
+        <seg>At the same time, it allows the user to easily share their data to the public or within a private group.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190314T163352Z" creationid="vopl" creationdate="20190314T163352Z">
+        <seg>В то же время, они позволяют пользователю делиться данными публично или в приватной группе.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">PPIO's well-designed incentives provide attractive financial rewards to miners and encourage them to contribute to the network.</prop>
+      <prop type="next">As a result, a large, high-quality miner community can be established and kept growing.</prop>
+      <tuv xml:lang="EN-US">
+        <seg>At the same time, it punishes misbehaving participants.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190314T155227Z" creationid="vopl" creationdate="20190314T155227Z">
+        <seg>В то же время, они наказывают неадекватных участников.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">•\quad {\bf Scalability and High Efficiency.} Benefit from the founding team's experience from creating and operating the distributed network with hundreds of millions of users, PPIO is designed from the ground up to perform efficiently at a global scale.</prop>
+      <prop type="next">PPIO's design also improves the efficiency in regional networks and makes it more friendly to ISPs.</prop>
+      <tuv xml:lang="EN-US">
+        <seg>Besides a set of industry proven P2P transmission technologies, the team also developed data-driven scheduling, a self-organizing overlay network, and optimized content distribution network.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190314T161722Z" creationid="vopl" creationdate="20190314T161722Z">
+        <seg>Наряду с множеством проверенных в промышленных условиях одноранговых технологиях передачи, команда так же разработала планировщик, управляемый данными (data-driven scheduling), самоорганизующуюся оверлейную сеть и сеть оптимального распространения контента.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">For that purpose, its file index is made public to facilitate features like Web access, but it poses a challenge to preserving user privacy and data security in a storage network.</prop>
+      <prop type="next">It does borrow mature P2P system designs from proven applications such as BitTorrent, but it provides no good solution to handle complex network environments and does not offer performance optimization within regional networks.</prop>
+      <tuv xml:lang="EN-US">
+        <seg>Besides, some of its storage proofs are too complex and likely to hold the system back from running efficiently at a large scale.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190314T152009Z" creationid="vopl" creationdate="20190314T152009Z">
+        <seg>Кроме того, некоторые из криптомеханизмы слишком сложны и предположительно будут негативно сказываться при большом масштабе системы.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">Some of the known issues of Storj are the lack of quick response from miners upon storage request and its transactions are settled once per month which is not friendly to the miners.</prop>
+      <prop type="next">\vspace{-0.5em}</prop>
+      <tuv xml:lang="EN-US">
+        <seg>BurstCoin utilizes Proof of Capacity (PoC) that does take storage capacity of the miners into account, but unfortunately, it is not enough to serve well for the storage requirements.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190314T150203Z" creationid="vopl" creationdate="20190314T150203Z">
+        <seg>BurstCoin использует Proof of Capacity (PoC), учитывающий размер хранилищ майнеров, но, к сожалению, этого не достаточно для нормального функционирования хранилища с выполнением всех требований к нему.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">•\quad {\bf Privacy, Security and Stability.} Data security and privacy protection are the top requirements in PPIO's distributed file system design.</prop>
+      <prop type="next">At the same time, it allows the user to easily share their data to the public or within a private group.</prop>
+      <tuv xml:lang="EN-US">
+        <seg>By using data sharding and encryption algorithms, user's data can only be retrieved by the one who possesses the user's unique private key.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190314T163252Z" creationid="vopl" creationdate="20190314T163252Z">
+        <seg>За счет алгоритмов шардинга и шифрования, пользовательские данные могут быть получены только обладателем приватного ключа пользователя.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">PPIO's design also improves the efficiency in regional networks and makes it more friendly to ISPs.</prop>
+      <prop type="next">\vspace{-0.6em}</prop>
+      <tuv xml:lang="EN-US">
+        <seg>Combined with its innovation in NAT Traversal, Kademlia distributed hash table (DHT), lightweight storage consensus proof and optimized transmission for media streaming, PPIO's distributed storage network can perform with extremely high efficiency and can be easily scaled to hundreds of millions of network nodes.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190314T174822Z" creationid="vopl" creationdate="20190314T171157Z">
+        <seg>Combined with its innovation in NAT Traversal, Kademlia distributed hash table (DHT), lightweight storage consensus proof and optimized transmission for media streaming, PPIO's distributed storage network can perform with extremely high efficiency and can be easily scaled to hundreds of millions of network nodes.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">The data breach has become frequently occurred, with an ever-growing scale and impact.</prop>
+      <prop type="next">These incidents pose a grave threat to not just the privacy of individual users, but also the security and integrity of the entire Internet.</prop>
+      <tuv xml:lang="EN-US">
+        <seg>For example, the Dropbox hacking in 2016 alone leaked 68 million user accounts.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190314T130019Z" creationid="vopl" creationdate="20190314T130019Z">
+        <seg>Например, в 2016 году был взломан Dropbox, что привело к утечке 68 миллионов пользовательстких аккаунтов.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\\ \\The emerging FileCoin project that is under development by Protocol Labs adds an incentive layer on top of Inter-planetary File System (IPFS), with the goal to build a storage infrastructure and protocol to replace HTTP protocol.</prop>
+      <prop type="next">Besides, some of its storage proofs are too complex and likely to hold the system back from running efficiently at a large scale.</prop>
+      <tuv xml:lang="EN-US">
+        <seg>For that purpose, its file index is made public to facilitate features like Web access, but it poses a challenge to preserving user privacy and data security in a storage network.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190314T151822Z" creationid="vopl" creationdate="20190314T151822Z">
+        <seg>Для этой цели индекс файлов делается публичным, что создает возможности наподобие Веб-доступа к файлам, но это, так же, создает проблему сохранения приватности пользователя и безопасности данных в сети.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">The global cloud storage market has grown enormously in recent years and will continue to grow at a faster pace.</prop>
+      <prop type="next">The data breach has become frequently occurred, with an ever-growing scale and impact.</prop>
+      <tuv xml:lang="EN-US">
+        <seg>However, the existing centralized solutions have many problems.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190314T125521Z" creationid="vopl" creationdate="20190314T125521Z">
+        <seg>Тем не менее, существующие централизованные решения имеют множество проблем.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\\ \\There have been many attempts to build distributed storage systems.</prop>
+      <prop type="next">Siacoin is one of the attempts that is built on top of Bitcoin-like Proof of Work (PoW) consensus.</prop>
+      <tuv xml:lang="EN-US">
+        <seg>However, these attempts were not successful.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190314T142512Z" creationid="vopl" creationdate="20190314T142512Z">
+        <seg>Тем не менее, эти попытки не были успешными.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">Besides, some of its storage proofs are too complex and likely to hold the system back from running efficiently at a large scale.</prop>
+      <prop type="next">Such deficiency in the design can lead to many real-world problems to the miners and ISPs.</prop>
+      <tuv xml:lang="EN-US">
+        <seg>It does borrow mature P2P system designs from proven applications such as BitTorrent, but it provides no good solution to handle complex network environments and does not offer performance optimization within regional networks.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190314T152459Z" creationid="vopl" creationdate="20190314T152459Z">
+        <seg>FileCoin использует архитектуру одноранговых сетей из проверенных временем приложений, таких как BitTorrent, но, не предоставляет решений для сложных сетевых сред и не предлагает скоростных оптимизаций для региональных сетей.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">It provides in-depth details on its distributed file system, network architecture, and storage workflow.</prop>
+      <prop type="next">\newpage</prop>
+      <tuv xml:lang="EN-US">
+        <seg>It explains how PPIO can prevent various network attacks, and discusses how it establishes a healthy and sustainable incentive mechanism, economic model and ecosystem.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190314T154604Z" creationid="vopl" creationdate="20190314T124731Z">
+        <seg>Документ разъясняет как PPIO противостоит различным сетевым атакам, поддерживает работоспособность и устойчивость механизма поощрений, предлагает экономическую модельи экосистему.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">PPIO is a programmable decentralized storage and delivery network.</prop>
+      <prop type="next">At the same time, PPIO also offers better data security and privacy protection.</prop>
+      <tuv xml:lang="EN-US">
+        <seg>It not only provides more robust and efficient services than existing cloud-based storage platforms such as AWS S3 but also significantly reduces the storage cost.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190314T120525Z" creationid="vopl" creationdate="20190314T120525Z">
+        <seg>Она не только предоставляет более мощные и эффективные службы, нежели существующие облачные платформы хранения данных, такие как AWS S3, но, так же, значительно снижает стоимость хранения. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\\ \\ In this work, PPIO's design goals are explained, followed by the details on how it achieves these goals.</prop>
+      <prop type="next">It explains how PPIO can prevent various network attacks, and discusses how it establishes a healthy and sustainable incentive mechanism, economic model and ecosystem.</prop>
+      <tuv xml:lang="EN-US">
+        <seg>It provides in-depth details on its distributed file system, network architecture, and storage workflow.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190314T124320Z" creationid="vopl" creationdate="20190314T124320Z">
+        <seg>Документ предоставляет низкоуровневую подробную информацию о распределенной файловой системе, архитектуре сети и процесса хранения.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">PPIO is equipped with practical storage proofs to maintain the integrity and reliability of its storage contents.</prop>
+      <prop type="next">An optimized Proof of Space-Time (PoSt) ensures that the specified data is indeed stored by the miner over a period.</prop>
+      <tuv xml:lang="EN-US">
+        <seg>Light Proof of Capacity (LPoC) is developed to provide lightweight validation of storage capacity provided by the miners.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190314T163742Z" creationid="vopl" creationdate="20190314T163742Z">
+        <seg>Облегченное доказательство вместимости (Light Proof of Capacity, LPoC) разработано для легкого удостоверения в наличии заданного объема свободного места в распоряжении майнера.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">•\quad {\bf Strong Application Support and Ecosystem.} PPIO provides a set of storage APIs similar to those of the cloud services such as AWS S3 and makes the data migration from those services much comfortable.</prop>
+      <prop type="next">PPIO has a comprehensive plan to develop a robust, healthy and sustainable ecosystem, to facilitate the development of applications and services, and allow the developers to enjoy real benefits from PPIO's growth.</prop>
+      <tuv xml:lang="EN-US">
+        <seg>PPIO also has a set of technologies built into better support decentralized applications, including object-based storage, dApp Sandbox mechanisms, and file access management, etc.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190314T165338Z" creationid="vopl" creationdate="20190314T165338Z">
+        <seg>PPIO так же имеет некоторые технологии для улучшения поддержки распределенных приложений, включая хранилища объектов, механизм песочницы, управление доступом к файлам и т.п.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">PPIO also has a set of technologies built into better support decentralized applications, including object-based storage, dApp Sandbox mechanisms, and file access management, etc.</prop>
+      <prop type="next">\vspace{-1em}</prop>
+      <tuv xml:lang="EN-US">
+        <seg>PPIO has a comprehensive plan to develop a robust, healthy and sustainable ecosystem, to facilitate the development of applications and services, and allow the developers to enjoy real benefits from PPIO's growth.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190314T165827Z" creationid="vopl" creationdate="20190314T165827Z">
+        <seg>PPIO имеет обстоятельный план для разработки сильной, живучей и устойчивой экосистемы для разработки приложений и сервисов, и предоставления разработчикам возможности наслаждаться бенефитами роста PPIO.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\noindent\\</prop>
+      <prop type="next">It not only provides more robust and efficient services than existing cloud-based storage platforms such as AWS S3 but also significantly reduces the storage cost.</prop>
+      <tuv xml:lang="EN-US">
+        <seg>PPIO is a programmable decentralized storage and delivery network.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190314T142418Z" creationid="vopl" creationdate="20190314T120051Z">
+        <seg>PPIO является программируемой децентрализованной сетью хранения и доставки данных.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">PPIO's unique decentralized file system prevents unauthorized access and ensures that all the data can be stored securely and privately.</prop>
+      <prop type="next">PPIO meets the storage needs of both today's Internet businesses and services, and the emerging decentralized applications (DApps).</prop>
+      <tuv xml:lang="EN-US">
+        <seg>PPIO is designed from the ground up to perform efficiently on a global scale, by leveraging the founding team's experience from designing and running the decentralized network with hundreds of millions of users.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190314T123229Z" creationid="vopl" creationdate="20190314T123229Z">
+        <seg>PPIO спроектирована с нуля для эффективного функционирования в глобальном масштабе, на основании опыта команды разработчиков в проектировании и запуске децентрализованной сети с сотнями миллионов пользователей.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">At the same time, it allows the user to easily share their data to the public or within a private group.</prop>
+      <prop type="next">Light Proof of Capacity (LPoC) is developed to provide lightweight validation of storage capacity provided by the miners.</prop>
+      <tuv xml:lang="EN-US">
+        <seg>PPIO is equipped with practical storage proofs to maintain the integrity and reliability of its storage contents.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190314T163517Z" creationid="vopl" creationdate="20190314T163517Z">
+        <seg>Для обеспечения целостности и доступности хранимого контента, PPIO снабжена практичными механизмами доказывания.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">PPIO is designed from the ground up to perform efficiently on a global scale, by leveraging the founding team's experience from designing and running the decentralized network with hundreds of millions of users.</prop>
+      <prop type="next">\vspace{-0.5em}</prop>
+      <tuv xml:lang="EN-US">
+        <seg>PPIO meets the storage needs of both today's Internet businesses and services, and the emerging decentralized applications (DApps).</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190314T123515Z" creationid="vopl" creationdate="20190314T123515Z">
+        <seg>PPIO сводит потребности в хранении данных, имеющиеся у сегодняшнего бизнеса с одной стороны и предлагаемых возможностей поставщиков соответствующих услуг с другой, а так же, предоставляет возможность реализации распределенных приложений (DApps).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">So it is what PPIO attempts to accomplish.</prop>
+      <prop type="next">Such experiences allow the team to develop efficient and practical solutions to achieve the following design goals.</prop>
+      <tuv xml:lang="EN-US">
+        <seg>PPIO's founding team successfully designed, developed and maintained PPLive, a peer to peer streaming system that serves hundreds of millions of users on a daily basis.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190314T154036Z" creationid="vopl" creationdate="20190314T154036Z">
+        <seg>Команда, учредившая и разрабатывающая PPIO успешно спроектировала, разработала и поддерживает PPLive, одноранговую систему вещания, обслуживающую сотни миллионов пользователей ежедневно.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">PPIO's well-designed decentralized storage network and incentive mechanism allows it to make use of the vast amount of unused bandwidth and storage resources on the Internet, and provide reliable storage service at much lower cost.</prop>
+      <prop type="next">PPIO is designed from the ground up to perform efficiently on a global scale, by leveraging the founding team's experience from designing and running the decentralized network with hundreds of millions of users.</prop>
+      <tuv xml:lang="EN-US">
+        <seg>PPIO's unique decentralized file system prevents unauthorized access and ensures that all the data can be stored securely and privately.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190314T122818Z" creationid="vopl" creationdate="20190314T122818Z">
+        <seg>Уникальная децентрализованная файловая система PPIO предоствращает неавторизованный доступ и гарантирует безопасность и приватность хранения данных.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">At the same time, PPIO also offers better data security and privacy protection.</prop>
+      <prop type="next">PPIO's unique decentralized file system prevents unauthorized access and ensures that all the data can be stored securely and privately.</prop>
+      <tuv xml:lang="EN-US">
+        <seg>PPIO's well-designed decentralized storage network and incentive mechanism allows it to make use of the vast amount of unused bandwidth and storage resources on the Internet, and provide reliable storage service at much lower cost.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190314T154535Z" creationid="vopl" creationdate="20190314T121201Z">
+        <seg>Грамотно продуманная распределенная сеть хранения и механизм поощрения позволяют PPIO использовать значительный объем неиспользованной полосы пропускания и ресурсы хранилищ в сети Интернет, а так же, предоставлять надежные услуги хранения с намного меньшей ценой.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">•\quad  {\bf Low Storage Cost.} In the future, high storage cost is one of the critical challenges for many companies.</prop>
+      <prop type="next">At the same time, it punishes misbehaving participants.</prop>
+      <tuv xml:lang="EN-US">
+        <seg>PPIO's well-designed incentives provide attractive financial rewards to miners and encourage them to contribute to the network.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190314T155051Z" creationid="vopl" creationdate="20190314T155051Z">
+        <seg>Грамотно спроектированные поощрения в PPIO предоставляют привлекательные винансовые вознаграждения майнерам и провоцируют их на взаимодействие с сетью.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">Siacoin is one of the attempts that is built on top of Bitcoin-like Proof of Work (PoW) consensus.</prop>
+      <prop type="next">Storj is another project that has gone through years of development, but it remains in the testing phase.</prop>
+      <tuv xml:lang="EN-US">
+        <seg>PoW introduces wasteful computation and energy consumption, and it does not take into account the different levels of storage and bandwidth contribution among the miners, which are crucial to a decentralized distributed storage system.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190314T143019Z" creationid="vopl" creationdate="20190314T143019Z">
+        <seg>PoW предполагает производство массивных вычислений, тем самым форсирует потребление большого количества энергии, а так же, он не учитывает объемы хранилищ и мощность каналов связи майнеров, являющихся ключевыми аспектами в децентрализованной распределенной системе хранения данных.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">Proof of Replication (PoRep) is used to guarantee that the miners replicate user's data.</prop>
+      <prop type="next">\vspace{-0.6em}</prop>
+      <tuv xml:lang="EN-US">
+        <seg>Proof of Download (PoD) ensures that user can download the stored data correctly.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190314T164242Z" creationid="vopl" creationdate="20190314T164150Z">
+        <seg>Доказательство получения (Proof of Download, PoD) убеждает пользователя в том что он может корректно получить хранимые майнером данные.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">An optimized Proof of Space-Time (PoSt) ensures that the specified data is indeed stored by the miner over a period.</prop>
+      <prop type="next">Proof of Download (PoD) ensures that user can download the stored data correctly.</prop>
+      <tuv xml:lang="EN-US">
+        <seg>Proof of Replication (PoRep) is used to guarantee that the miners replicate user's data.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190314T164043Z" creationid="vopl" creationdate="20190314T164043Z">
+        <seg>Доказательство пересылки (Proof of Replication, PoRep) гарантирует то что майнет реплицировал пользовательские данные.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">However, these attempts were not successful.</prop>
+      <prop type="next">PoW introduces wasteful computation and energy consumption, and it does not take into account the different levels of storage and bandwidth contribution among the miners, which are crucial to a decentralized distributed storage system.</prop>
+      <tuv xml:lang="EN-US">
+        <seg>Siacoin is one of the attempts that is built on top of Bitcoin-like Proof of Work (PoW) consensus.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190314T150337Z" creationid="vopl" creationdate="20190314T142633Z">
+        <seg>Одна из таких попыток, Seacoin, построенная на основе Бикоин-подобного консенсуса Proof of Work (PoW).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\\ \\From the discussions above, it is clear that a more complete decentralized distributed storage solution is yet to be built to support large-scale and real-world storage system.</prop>
+      <prop type="next">PPIO's founding team successfully designed, developed and maintained PPLive, a peer to peer streaming system that serves hundreds of millions of users on a daily basis.</prop>
+      <tuv xml:lang="EN-US">
+        <seg>So it is what PPIO attempts to accomplish.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190314T153747Z" creationid="vopl" creationdate="20190314T153747Z">
+        <seg>Вот чего пытается достигнуть PPIO.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">Storj is another project that has gone through years of development, but it remains in the testing phase.</prop>
+      <prop type="next">BurstCoin utilizes Proof of Capacity (PoC) that does take storage capacity of the miners into account, but unfortunately, it is not enough to serve well for the storage requirements.</prop>
+      <tuv xml:lang="EN-US">
+        <seg>Some of the known issues of Storj are the lack of quick response from miners upon storage request and its transactions are settled once per month which is not friendly to the miners.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190314T145927Z" creationid="vopl" creationdate="20190314T143205Z">
+        <seg>Некоторые из известных проблем Storj - это невозможность получения быстрого ответа от майнеров относительно запросов на хранение, а так же их транзакций, фиксируемых раз в месяц, что не является удобным для майнеров.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">PoW introduces wasteful computation and energy consumption, and it does not take into account the different levels of storage and bandwidth contribution among the miners, which are crucial to a decentralized distributed storage system.</prop>
+      <prop type="next">Some of the known issues of Storj are the lack of quick response from miners upon storage request and its transactions are settled once per month which is not friendly to the miners.</prop>
+      <tuv xml:lang="EN-US">
+        <seg>Storj is another project that has gone through years of development, but it remains in the testing phase.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190314T143154Z" creationid="vopl" creationdate="20190314T143154Z">
+        <seg>Storj, другой проект, разрабатываемый вот уже в течении нескольких лет, но так и не вышедший из фазы тестирования.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">It does borrow mature P2P system designs from proven applications such as BitTorrent, but it provides no good solution to handle complex network environments and does not offer performance optimization within regional networks.</prop>
+      <prop type="next">As Protocol Labs claims that files stored on IPFS are permanent and cannot be deleted, it runs the risks of legal battles against policies and regulations and makes its worldwide deployment much more difficult.</prop>
+      <tuv xml:lang="EN-US">
+        <seg>Such deficiency in the design can lead to many real-world problems to the miners and ISPs.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190314T152706Z" creationid="vopl" creationdate="20190314T152706Z">
+        <seg>Такие ущербности в заимствованной архитектуре могут приводить ко множеству проблем в реальном использовании, как для майнеров так и для поставщиков интернета (Internet Service Providers, ISPs).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">PPIO's founding team successfully designed, developed and maintained PPLive, a peer to peer streaming system that serves hundreds of millions of users on a daily basis.</prop>
+      <prop type="next">\vspace{-0.6em}</prop>
+      <tuv xml:lang="EN-US">
+        <seg>Such experiences allow the team to develop efficient and practical solutions to achieve the following design goals.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190314T154155Z" creationid="vopl" creationdate="20190314T154155Z">
+        <seg>Такой опыт позволяет команде разрабатывать эффективное и практичное решение, направленное на следующие цели.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">However, the existing centralized solutions have many problems.</prop>
+      <prop type="next">For example, the Dropbox hacking in 2016 alone leaked 68 million user accounts.</prop>
+      <tuv xml:lang="EN-US">
+        <seg>The data breach has become frequently occurred, with an ever-growing scale and impact.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190314T125905Z" creationid="vopl" creationdate="20190314T125905Z">
+        <seg>Порча и утеря данных происходят все чаще, с постоянно растущим масштабом и влиянием.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\vspace{-0.5em}</prop>
+      <prop type="next">However, the existing centralized solutions have many problems.</prop>
+      <tuv xml:lang="EN-US">
+        <seg>The global cloud storage market has grown enormously in recent years and will continue to grow at a faster pace.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190314T125452Z" creationid="vopl" creationdate="20190314T124912Z">
+        <seg>Глобальный рынок облачных хранилищ в значительной мере вырос за последние годы и продолжает расти быстрыми темпами .</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">For example, the Dropbox hacking in 2016 alone leaked 68 million user accounts.</prop>
+      <prop type="next">At the same time, high bandwidth and storage cost is another inherent problem of the centralized storage systems, it leads to unaffordable price and makes it extremely difficult for many Internet companies to be profitable.</prop>
+      <tuv xml:lang="EN-US">
+        <seg>These incidents pose a grave threat to not just the privacy of individual users, but also the security and integrity of the entire Internet.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190314T141102Z" creationid="vopl" creationdate="20190314T141102Z">
+        <seg>Такие инциденты представляют серьезную угрозу не только приватности отдельных пользователей, но, так же, безопасности и целостности всего Интернета.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">As a result, a large, high-quality miner community can be established and kept growing.</prop>
+      <prop type="next">To make the storage system easy to use, PPIO introduces a scheme called "Coin Pool", that helps the users to store and download micropayments.</prop>
+      <tuv xml:lang="EN-US">
+        <seg>This allows PPIO to make use of the vast amount of unused bandwidth and storage resources on the Internet, and provide robust storage service at much lower cost.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190314T155616Z" creationid="vopl" creationdate="20190314T155616Z">
+        <seg>Это позволяет PPIO задействовать большое количество неиспользуемой полосы пропускания каналов связи и ресурсов хранилищ в сети Интернет, предоставить мощную услугу хранения данных по сильно менщей цене.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">This allows PPIO to make use of the vast amount of unused bandwidth and storage resources on the Internet, and provide robust storage service at much lower cost.</prop>
+      <prop type="next">At the same time, PPIO's design also includes a mechanism to protect users from the impact of storage price fluctuations, which provides a better user experience than existing centralized storage platforms and more importantly much lower price.</prop>
+      <tuv xml:lang="EN-US">
+        <seg>To make the storage system easy to use, PPIO introduces a scheme called "Coin Pool", that helps the users to store and download micropayments.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190314T155748Z" creationid="vopl" creationdate="20190314T155748Z">
+        <seg>Для облегчения использования системы хранения, PPIO предлагает схему, называемую "Coin Pool", помогающую пользователям выгружать и загружать микроплатежи.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\vspace{-0.5em}</prop>
+      <prop type="next">It provides in-depth details on its distributed file system, network architecture, and storage workflow.</prop>
+      <tuv xml:lang="EN-US">
+        <seg>\\ \\ In this work, PPIO's design goals are explained, followed by the details on how it achieves these goals.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190314T124127Z" creationid="vopl" creationdate="20190314T124019Z">
+        <seg>\\ \\ В данном документе разъясняются основные цели архитектуры PPIO, а так же, приводятся подробности методов достижения этих целей.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\vspace{-0.5em}</prop>
+      <prop type="next">So it is what PPIO attempts to accomplish.</prop>
+      <tuv xml:lang="EN-US">
+        <seg>\\ \\From the discussions above, it is clear that a more complete decentralized distributed storage solution is yet to be built to support large-scale and real-world storage system.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190314T153647Z" creationid="vopl" creationdate="20190314T153647Z">
+        <seg>\\ \\Из изложенного выше становится понятно, что готовая децентрализованная распределенная система хранения, способная поддерживать высокое масштабирование и задачи реального мира, еще не построена.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\vspace{-0.5em}</prop>
+      <prop type="next">For that purpose, its file index is made public to facilitate features like Web access, but it poses a challenge to preserving user privacy and data security in a storage network.</prop>
+      <tuv xml:lang="EN-US">
+        <seg>\\ \\The emerging FileCoin project that is under development by Protocol Labs adds an incentive layer on top of Inter-planetary File System (IPFS), with the goal to build a storage infrastructure and protocol to replace HTTP protocol.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190314T154640Z" creationid="vopl" creationdate="20190314T150406Z">
+        <seg>\\ \\Новый проект FileCoin, разрабатываемый Protocol Labs, добавляет слой поощрений над Inter-planetary File System (IPFS), с целью построения инфраструктуры хранилищ и протокола для замены HTTP.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\vspace{-0.5em}</prop>
+      <prop type="next">However, these attempts were not successful.</prop>
+      <tuv xml:lang="EN-US">
+        <seg>\\ \\There have been many attempts to build distributed storage systems.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190314T142358Z" creationid="vopl" creationdate="20190314T142237Z">
+        <seg>\\ \\Предпринималось не мало попыток построения распределенных систем хранения данных.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\renewcommand{\baselinestretch}{1.2}</prop>
+      <prop type="next">\noindent\\</prop>
+      <tuv xml:lang="EN-US">
+        <seg>\author {\centerline{\Large Abstract}}</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190314T115446Z" creationid="vopl" creationdate="20190314T115446Z">
+        <seg>\author {\centerline{\Large Аннотация}}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\newpage</prop>
+      <prop type="next">\vspace{-0.5em}</prop>
+      <tuv xml:lang="EN-US">
+        <seg>\section{Introduction} %—1</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190314T124909Z" creationid="vopl" creationdate="20190314T124739Z">
+        <seg>\section{Введение} %—1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\setlength{\parskip}{0em}%设置段落间距</prop>
+      <prop type="next">\begin{document}</prop>
+      <tuv xml:lang="EN-US">
+        <seg>\title{ \LARGE\bf PPIO: A Programmable P2P Storage and\\Delivery Network}  %———标题</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190314T115908Z" creationid="vopl" creationdate="20190314T112832Z">
+        <seg>\title{ \LARGE\bf PPIO: Программируемая одноранговая сеть\\хранения и доставки}  %———标题</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\noindent</prop>
+      <prop type="next">PPIO's well-designed incentives provide attractive financial rewards to miners and encourage them to contribute to the network.</prop>
+      <tuv xml:lang="EN-US">
+        <seg>•\quad  {\bf Low Storage Cost.} In the future, high storage cost is one of the critical challenges for many companies.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190314T154352Z" creationid="vopl" creationdate="20190314T154352Z">
+        <seg>•\quad  {\bf Малая цена хранения.} В будущем, высокая цена хранения данных будет одним из критичных вызовов для многих компаний.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\noindent</prop>
+      <prop type="next">By using data sharding and encryption algorithms, user's data can only be retrieved by the one who possesses the user's unique private key.</prop>
+      <tuv xml:lang="EN-US">
+        <seg>•\quad {\bf Privacy, Security and Stability.} Data security and privacy protection are the top requirements in PPIO's distributed file system design.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190314T162928Z" creationid="vopl" creationdate="20190314T162928Z">
+        <seg>•\quad {\bf Приватность, безопасность и стабильность.} Безопасность и приватность данных являются ключевыми требованиями в дизайне распределенной файловой системе PPIO.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\noindent</prop>
+      <prop type="next">Besides a set of industry proven P2P transmission technologies, the team also developed data-driven scheduling, a self-organizing overlay network, and optimized content distribution network.</prop>
+      <tuv xml:lang="EN-US">
+        <seg>•\quad {\bf Scalability and High Efficiency.} Benefit from the founding team's experience from creating and operating the distributed network with hundreds of millions of users, PPIO is designed from the ground up to perform efficiently at a global scale.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190314T161155Z" creationid="vopl" creationdate="20190314T161155Z">
+        <seg>•\quad {\bf Масштабируемость и высокая эффективность.} За счет опыта команды, извлеченного из создания и работы с распределенной сетью с тысячами миллионов пользователей, PPIO спроектирована с нуля до состояния, в котором она может быть эффективной в глобальном масштабе.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\noindent</prop>
+      <prop type="next">PPIO also has a set of technologies built into better support decentralized applications, including object-based storage, dApp Sandbox mechanisms, and file access management, etc.</prop>
+      <tuv xml:lang="EN-US">
+        <seg>•\quad {\bf Strong Application Support and Ecosystem.} PPIO provides a set of storage APIs similar to those of the cloud services such as AWS S3 and makes the data migration from those services much comfortable.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190314T165936Z" creationid="vopl" creationdate="20190314T164941Z">
+        <seg>•\quad {\bf Надежная поддержка приложений и экосистема.} PPIO предоставляет несколько программных интерфейсов хранилищ (Storage APIs), похожих на таковые в облачных сервисах, например AWS S3, и позволяет комфортно мигрироать данные из этих сервисов.</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

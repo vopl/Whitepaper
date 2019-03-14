@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tmx SYSTEM "tmx11.dtd">
+<tmx version="1.1">
+  <header creationtool="OmegaT" o-tmf="OmegaT TMX" adminlang="EN-US" datatype="plaintext" creationtoolversion="4.1.5_4_10550" segtype="sentence" srclang="EN-US"/>
+  <body>
+<!-- Default translations -->
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Delivery Network</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190314T102045Z" creationid="vopl" creationdate="20190314T102045Z">
+        <seg>хранения и доставки</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>PPIO: A Programmable P2P Storage and&lt;br0&gt;</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190314T102033Z" creationid="vopl" creationdate="20190314T095450Z">
+        <seg>PPIO: Программируемая одноранговая сеть&lt;br0&gt;</seg>
+      </tuv>
+    </tu>
+<!-- Alternative translations -->
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\maketitle%—— 显示标题</prop>
+      <prop type="next">\renewcommand{\baselinestretch}{1.2}</prop>
+      <tuv lang="EN-US">
+        <seg>% \newpage</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190314T115349Z" creationid="vopl" creationdate="20190314T115349Z">
+        <seg>% \newpage</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\usepackage{hyperref}%——————————————————————目录超链接</prop>
+      <prop type="next">\usepackage[linesnumbered,ruled]{algorithm2e}</prop>
+      <tuv lang="EN-US">
+        <seg>%\usepackage{xcolor}%——————————————————————改变文字颜色</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190314T115339Z" creationid="vopl" creationdate="20190314T115339Z">
+        <seg>%\usepackage{xcolor}%——————————————————————改变文字颜色</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">It not only provides more robust and efficient services than existing cloud-based storage platforms such as AWS S3 but also significantly reduces the storage cost.</prop>
+      <prop type="next">PPIO's well-designed decentralized storage network and incentive mechanism allows it to make use of the vast amount of unused bandwidth and storage resources on the Internet, and provide reliable storage service at much lower cost.</prop>
+      <tuv lang="EN-US">
+        <seg>At the same time, PPIO also offers better data security and privacy protection.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190314T120906Z" creationid="vopl" creationdate="20190314T120812Z">
+        <seg>Одновременно, PPIO так же предлагает более лучшую защиту и приватность данных.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">PPIO is a programmable decentralized storage and delivery network.</prop>
+      <prop type="next">At the same time, PPIO also offers better data security and privacy protection.</prop>
+      <tuv lang="EN-US">
+        <seg>It not only provides more robust and efficient services than existing cloud-based storage platforms such as AWS S3 but also significantly reduces the storage cost.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190314T120525Z" creationid="vopl" creationdate="20190314T120525Z">
+        <seg>Она не только предоставляет более мощные и эффективные службы, нежели существующие облачные платформы хранения данных, такие как AWS S3, но, так же, значительно снижает стоимость хранения. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\noindent\\</prop>
+      <prop type="next">It not only provides more robust and efficient services than existing cloud-based storage platforms such as AWS S3 but also significantly reduces the storage cost.</prop>
+      <tuv lang="EN-US">
+        <seg>PPIO is a programmable decentralized storage and delivery network.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190314T120654Z" creationid="vopl" creationdate="20190314T120051Z">
+        <seg>PPIO является программируемой децентрализованной сетью хранения и доставки.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">At the same time, PPIO also offers better data security and privacy protection.</prop>
+      <prop type="next">PPIO's unique decentralized file system prevents unauthorized access and ensures that all the data can be stored securely and privately.</prop>
+      <tuv lang="EN-US">
+        <seg>PPIO's well-designed decentralized storage network and incentive mechanism allows it to make use of the vast amount of unused bandwidth and storage resources on the Internet, and provide reliable storage service at much lower cost.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190314T121201Z" creationid="vopl" creationdate="20190314T121201Z">
+        <seg>Грамотно продуманная распределенная сеть хранения и механизм .</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\renewcommand{\baselinestretch}{1.2}</prop>
+      <prop type="next">\noindent\\</prop>
+      <tuv lang="EN-US">
+        <seg>\author {\centerline{\Large Abstract}}</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190314T115446Z" creationid="vopl" creationdate="20190314T115446Z">
+        <seg>\author {\centerline{\Large Аннотация}}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\title{ \LARGE\bf PPIO: A Programmable P2P Storage and\\Delivery Network}  %———标题</prop>
+      <prop type="next">\maketitle%—— 显示标题</prop>
+      <tuv lang="EN-US">
+        <seg>\begin{document}</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190314T115346Z" creationid="vopl" creationdate="20190314T115346Z">
+        <seg>\begin{document}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev"></prop>
+      <prop type="next">\usepackage[utf8]{inputenc}</prop>
+      <tuv lang="EN-US">
+        <seg>\documentclass[10pt,a4paper]{article}</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190314T115737Z" creationid="vopl" creationdate="20190314T115737Z">
+        <seg>\documentclass[10pt,a4paper]{article}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev"></prop>
+      <prop type="next">\usepackage{geometry}%—— 宏设置页边距</prop>
+      <tuv lang="EN-US">
+        <seg>\documentclass[10pt,a4paper]{article}</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190314T115216Z" creationid="vopl" creationdate="20190314T115216Z">
+        <seg>\documentclass[10pt,a4paper]{article}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\usepackage{geometry}%—— 宏设置页边距</prop>
+      <prop type="next">\usepackage{amsmath}%—— 数学</prop>
+      <tuv lang="EN-US">
+        <seg>\geometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190314T115328Z" creationid="vopl" creationdate="20190314T115328Z">
+        <seg>\geometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\usepackage{pxfonts}</prop>
+      <prop type="next">\setlength{\parskip}{0em}%设置段落间距</prop>
+      <tuv lang="EN-US">
+        <seg>\linespread{1.0} %—— 行间距</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190314T115342Z" creationid="vopl" creationdate="20190314T115342Z">
+        <seg>\linespread{1.0} %—— 行间距</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\begin{document}</prop>
+      <prop type="next">% \newpage</prop>
+      <tuv lang="EN-US">
+        <seg>\maketitle%—— 显示标题</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190314T115347Z" creationid="vopl" creationdate="20190314T115347Z">
+        <seg>\maketitle%—— 显示标题</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\usepackage[normalem]{ulem} % use normalem to protect \emph</prop>
+      <prop type="next">{\textcolor{lightgray}{\rule[-.5ex]{.1pt}{2.5ex}}}\ULon}</prop>
+      <tuv lang="EN-US">
+        <seg>\newcommand\hl{\bgroup\markoverwith</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190314T115334Z" creationid="vopl" creationdate="20190314T115334Z">
+        <seg>\newcommand\hl{\bgroup\markoverwith</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\author {\centerline{\Large Abstract}}</prop>
+      <prop type="next">PPIO is a programmable decentralized storage and delivery network.</prop>
+      <tuv lang="EN-US">
+        <seg>\noindent\\</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190314T115931Z" creationid="vopl" creationdate="20190314T115931Z">
+        <seg>\noindent\\</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">% \newpage</prop>
+      <prop type="next">\author {\centerline{\Large Abstract}}</prop>
+      <tuv lang="EN-US">
+        <seg>\renewcommand{\baselinestretch}{1.2}</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190314T115351Z" creationid="vopl" creationdate="20190314T115351Z">
+        <seg>\renewcommand{\baselinestretch}{1.2}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\linespread{1.0} %—— 行间距</prop>
+      <prop type="next">\title{ \LARGE\bf PPIO: A Programmable P2P Storage and\\Delivery Network}  %———标题</prop>
+      <tuv lang="EN-US">
+        <seg>\setlength{\parskip}{0em}%设置段落间距</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190314T115343Z" creationid="vopl" creationdate="20190314T115343Z">
+        <seg>\setlength{\parskip}{0em}%设置段落间距</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\setlength{\parskip}{0em}%设置段落间距</prop>
+      <prop type="next">\begin{document}</prop>
+      <tuv lang="EN-US">
+        <seg>\title{ \LARGE\bf PPIO: A Programmable P2P Storage and\\Delivery Network}  %———标题</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190314T115908Z" creationid="vopl" creationdate="20190314T112832Z">
+        <seg>\title{ \LARGE\bf PPIO: Программируемая одноранговая сеть\\хранения и доставки}  %———标题</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">%\usepackage{xcolor}%——————————————————————改变文字颜色</prop>
+      <prop type="next">\usepackage{algorithmicx}</prop>
+      <tuv lang="EN-US">
+        <seg>\usepackage[linesnumbered,ruled]{algorithm2e}</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190314T115340Z" creationid="vopl" creationdate="20190314T115340Z">
+        <seg>\usepackage[linesnumbered,ruled]{algorithm2e}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">{\textcolor{lightgray}{\rule[-.5ex]{.1pt}{2.5ex}}}\ULon}
+\usepackage{algpseudocode}
+\usepackage{hyperref}%——————————————————————目录超链接
+%\usepackage{xcolor}%——————————————————————改变文字颜色</prop>
+      <prop type="next">\begin{document}
+\maketitle%—— 显示标题
+% \newpage 
+\renewcommand{\baselinestretch}{1.2}
+\author {\centerline{\Large Abstract}}
+\noindent\\
+PPIO is a programmable decentralized storage and delivery network.</prop>
+      <tuv lang="EN-US">
+        <seg>\usepackage[linesnumbered,ruled]{algorithm2e}
+\usepackage{algorithmicx}
+\usepackage{pxfonts}
+\linespread{1.0} %—— 行间距
+\setlength{\parskip}{0em}%设置段落间距
+\title{ \LARGE\bf PPIO: A Programmable P2P Storage and\\Delivery Network}  %———标题</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190314T112425Z" creationid="vopl" creationdate="20190314T112425Z">
+        <seg>\usepackage[linesnumbered,ruled]{algorithm2e}
+\usepackage{algorithmicx}
+\usepackage{pxfonts}
+\linespread{1.0} %—— 行间距
+\setlength{\parskip}{0em}%设置段落间距
+\title{ \LARGE\bf PPIO: Программируемая одноранговая сеть\\хранения и доставки}  %———标题</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\usepackage{listings}%代码宏</prop>
+      <prop type="next">\newcommand\hl{\bgroup\markoverwith</prop>
+      <tuv lang="EN-US">
+        <seg>\usepackage[normalem]{ulem} % use normalem to protect \emph</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190314T115334Z" creationid="vopl" creationdate="20190314T115334Z">
+        <seg>\usepackage[normalem]{ulem} % use normalem to protect \emph</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\usepackage[utf8]{inputenc}</prop>
+      <prop type="next">\usepackage{geometry}%—— 宏设置页边距</prop>
+      <tuv lang="EN-US">
+        <seg>\usepackage[russian]{babel}</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190314T115740Z" creationid="vopl" creationdate="20190314T115740Z">
+        <seg>\usepackage[russian]{babel}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\documentclass[10pt,a4paper]{article}</prop>
+      <prop type="next">\usepackage[russian]{babel}</prop>
+      <tuv lang="EN-US">
+        <seg>\usepackage[utf8]{inputenc}</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190314T115739Z" creationid="vopl" creationdate="20190314T115739Z">
+        <seg>\usepackage[utf8]{inputenc}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\usepackage[linesnumbered,ruled]{algorithm2e}</prop>
+      <prop type="next">\usepackage{pxfonts}</prop>
+      <tuv lang="EN-US">
+        <seg>\usepackage{algorithmicx}</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190314T115341Z" creationid="vopl" creationdate="20190314T115341Z">
+        <seg>\usepackage{algorithmicx}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">{\textcolor{lightgray}{\rule[-.5ex]{.1pt}{2.5ex}}}\ULon}</prop>
+      <prop type="next">\usepackage{hyperref}%——————————————————————目录超链接</prop>
+      <tuv lang="EN-US">
+        <seg>\usepackage{algpseudocode}</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190314T115336Z" creationid="vopl" creationdate="20190314T115336Z">
+        <seg>\usepackage{algpseudocode}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\geometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}</prop>
+      <prop type="next">\usepackage{amssymb}%—— 数学</prop>
+      <tuv lang="EN-US">
+        <seg>\usepackage{amsmath}%—— 数学</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190314T115329Z" creationid="vopl" creationdate="20190314T115329Z">
+        <seg>\usepackage{amsmath}%—— 数学</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\usepackage{amsmath}%—— 数学</prop>
+      <prop type="next">\usepackage{amsthm}</prop>
+      <tuv lang="EN-US">
+        <seg>\usepackage{amssymb}%—— 数学</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190314T115330Z" creationid="vopl" creationdate="20190314T115330Z">
+        <seg>\usepackage{amssymb}%—— 数学</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\usepackage{amssymb}%—— 数学</prop>
+      <prop type="next">\usepackage{graphicx}%—— 插图</prop>
+      <tuv lang="EN-US">
+        <seg>\usepackage{amsthm}</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190314T115330Z" creationid="vopl" creationdate="20190314T115330Z">
+        <seg>\usepackage{amsthm}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\usepackage{graphicx}%—— 插图</prop>
+      <prop type="next">\usepackage{microtype}%改善了单词、字母的间距</prop>
+      <tuv lang="EN-US">
+        <seg>\usepackage{array}%—— 表格文字居中</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190314T115332Z" creationid="vopl" creationdate="20190314T115332Z">
+        <seg>\usepackage{array}%—— 表格文字居中</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\documentclass[10pt,a4paper]{article}</prop>
+      <prop type="next">\geometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}</prop>
+      <tuv lang="EN-US">
+        <seg>\usepackage{geometry}%—— 宏设置页边距</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190314T115236Z" creationid="vopl" creationdate="20190314T115236Z">
+        <seg>\usepackage{geometry}%—— 宏设置页边距</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\usepackage[russian]{babel}</prop>
+      <prop type="next">\geometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}</prop>
+      <tuv lang="EN-US">
+        <seg>\usepackage{geometry}%—— 宏设置页边距</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190314T115741Z" creationid="vopl" creationdate="20190314T115741Z">
+        <seg>\usepackage{geometry}%—— 宏设置页边距</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\usepackage{amsthm}</prop>
+      <prop type="next">\usepackage{array}%—— 表格文字居中</prop>
+      <tuv lang="EN-US">
+        <seg>\usepackage{graphicx}%—— 插图</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190314T115331Z" creationid="vopl" creationdate="20190314T115331Z">
+        <seg>\usepackage{graphicx}%—— 插图</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\usepackage{algpseudocode}</prop>
+      <prop type="next">%\usepackage{xcolor}%——————————————————————改变文字颜色</prop>
+      <tuv lang="EN-US">
+        <seg>\usepackage{hyperref}%——————————————————————目录超链接</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190314T115338Z" creationid="vopl" creationdate="20190314T115338Z">
+        <seg>\usepackage{hyperref}%——————————————————————目录超链接</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\usepackage{microtype}%改善了单词、字母的间距</prop>
+      <prop type="next">\usepackage[normalem]{ulem} % use normalem to protect \emph</prop>
+      <tuv lang="EN-US">
+        <seg>\usepackage{listings}%代码宏</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190314T115333Z" creationid="vopl" creationdate="20190314T115333Z">
+        <seg>\usepackage{listings}%代码宏</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\usepackage{array}%—— 表格文字居中</prop>
+      <prop type="next">\usepackage{listings}%代码宏</prop>
+      <tuv lang="EN-US">
+        <seg>\usepackage{microtype}%改善了单词、字母的间距</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190314T115332Z" creationid="vopl" creationdate="20190314T115332Z">
+        <seg>\usepackage{microtype}%改善了单词、字母的间距</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\usepackage{algorithmicx}</prop>
+      <prop type="next">\linespread{1.0} %—— 行间距</prop>
+      <tuv lang="EN-US">
+        <seg>\usepackage{pxfonts}</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190314T115341Z" creationid="vopl" creationdate="20190314T115341Z">
+        <seg>\usepackage{pxfonts}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\newcommand\hl{\bgroup\markoverwith</prop>
+      <prop type="next">\usepackage{algpseudocode}</prop>
+      <tuv lang="EN-US">
+        <seg>{\textcolor{lightgray}{\rule[-.5ex]{.1pt}{2.5ex}}}\ULon}</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190314T115335Z" creationid="vopl" creationdate="20190314T115335Z">
+        <seg>{\textcolor{lightgray}{\rule[-.5ex]{.1pt}{2.5ex}}}\ULon}</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

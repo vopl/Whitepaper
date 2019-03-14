@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tmx SYSTEM "tmx11.dtd">
+<tmx version="1.1">
+  <header creationtool="OmegaT" o-tmf="OmegaT TMX" adminlang="EN-US" datatype="plaintext" creationtoolversion="4.1.5_4_10550" segtype="sentence" srclang="EN-US"/>
+  <body>
+<!-- Default translations -->
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Delivery Network</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190314T102045Z" creationid="vopl" creationdate="20190314T102045Z">
+        <seg>хранения и доставки</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>PPIO: A Programmable P2P Storage and&lt;br0&gt;</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190314T102033Z" creationid="vopl" creationdate="20190314T095450Z">
+        <seg>PPIO: Программируемая одноранговая сеть&lt;br0&gt;</seg>
+      </tuv>
+    </tu>
+<!-- Alternative translations -->
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">{\textcolor{lightgray}{\rule[-.5ex]{.1pt}{2.5ex}}}\ULon}
+\usepackage{algpseudocode}
+\usepackage{hyperref}%——————————————————————目录超链接
+%\usepackage{xcolor}%——————————————————————改变文字颜色</prop>
+      <prop type="next">\begin{document}
+\maketitle%—— 显示标题
+% \newpage 
+\renewcommand{\baselinestretch}{1.2}
+\author {\centerline{\Large Abstract}}
+\noindent\\
+PPIO is a programmable decentralized storage and delivery network.</prop>
+      <tuv lang="EN-US">
+        <seg>\usepackage[linesnumbered,ruled]{algorithm2e}
+\usepackage{algorithmicx}
+\usepackage{pxfonts}
+\linespread{1.0} %—— 行间距
+\setlength{\parskip}{0em}%设置段落间距
+\title{ \LARGE\bf PPIO: A Programmable P2P Storage and\\Delivery Network}  %———标题</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190314T112425Z" creationid="vopl" creationdate="20190314T112425Z">
+        <seg>\usepackage[linesnumbered,ruled]{algorithm2e}
+\usepackage{algorithmicx}
+\usepackage{pxfonts}
+\linespread{1.0} %—— 行间距
+\setlength{\parskip}{0em}%设置段落间距
+\title{ \LARGE\bf PPIO: Программируемая одноранговая сеть\\хранения и доставки}  %———标题</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

@@ -1,0 +1,14 @@
+3/14/19 9:16 PM
+Project Statistics
+
+                 	Segments	Words	Characters (without spaces)	Characters (including spaces)	#Files	
+Total:           	    2797	20200	                     113595	                       130407	     1	
+Remaining:       	    2740	18967	                     106828	                       122461	     1	
+Unique:          	    1194	17912	                      96311	                       112545	     1	
+Unique Remaining:	    1137	16679	                      89544	                       104599	     1	
+
+
+Individual File Statistics:
+
+File Name          	Total Segments	Remaining Segments	Unique Segments	Unique Remaining Segments	Total Words	Remaining Words	Unique Words	Unique Remaining Words	Total Characters (without spaces)	Remaining Characters (without spaces)	Unique Characters (without spaces)	Unique Remaining Characters (without spaces)	Total Characters (including spaces)	Remaining Characters (including spaces)	Unique Characters (including spaces)	Unique Remaining Characters (including spaces)	
+WhitePaper_EN-1.tex	          2797	              2740	           1194	                     1137	      20200	          18967	       17912	                 16679	                           113595	                               106828	                             96311	                                       89544	                             130407	                                 122461	                              112545	                                        104599	
