@@ -45,8 +45,8 @@
       <tuv lang="EN-US">
         <seg>At the same time, PPIO also offers better data security and privacy protection.</seg>
       </tuv>
-      <tuv lang="RU" changeid="vopl" changedate="20190314T122646Z" creationid="vopl" creationdate="20190314T120812Z">
-        <seg>At the same time, PPIO also offers better data security and privacy protection.</seg>
+      <tuv lang="RU" changeid="vopl" changedate="20190316T163727Z" creationid="vopl" creationdate="20190314T120812Z">
+        <seg>В то же время, PPIO предлагает лучшую защиту в аспектах безопасности и приватности.</seg>
       </tuv>
     </tu>
     <tu>
@@ -100,8 +100,8 @@
       <tuv lang="EN-US">
         <seg>Besides a set of industry proven P2P transmission technologies, the team also developed data-driven scheduling, a self-organizing overlay network, and optimized content distribution network.</seg>
       </tuv>
-      <tuv lang="RU" changeid="vopl" changedate="20190314T161722Z" creationid="vopl" creationdate="20190314T161722Z">
-        <seg>Наряду с множеством проверенных в промышленных условиях одноранговых технологиях передачи, команда так же разработала планировщик, управляемый данными (data-driven scheduling), самоорганизующуюся оверлейную сеть и сеть оптимального распространения контента.</seg>
+      <tuv lang="RU" changeid="vopl" changedate="20190316T163110Z" creationid="vopl" creationdate="20190314T161722Z">
+        <seg>Наряду с множеством проверенных в промышленных условиях одноранговых технологий передачи, команда так же разработала планировщик, управляемый данными (data-driven scheduling), самоорганизующуюся оверлейную сеть и сеть оптимального распространения контента.</seg>
       </tuv>
     </tu>
     <tu>
@@ -144,8 +144,20 @@
       <tuv lang="EN-US">
         <seg>Combined with its innovation in NAT Traversal, Kademlia distributed hash table (DHT), lightweight storage consensus proof and optimized transmission for media streaming, PPIO's distributed storage network can perform with extremely high efficiency and can be easily scaled to hundreds of millions of network nodes.</seg>
       </tuv>
-      <tuv lang="RU" changeid="vopl" changedate="20190314T174822Z" creationid="vopl" creationdate="20190314T171157Z">
-        <seg>Combined with its innovation in NAT Traversal, Kademlia distributed hash table (DHT), lightweight storage consensus proof and optimized transmission for media streaming, PPIO's distributed storage network can perform with extremely high efficiency and can be easily scaled to hundreds of millions of network nodes.</seg>
+      <tuv lang="RU" changeid="vopl" changedate="20190316T163439Z" creationid="vopl" creationdate="20190316T163439Z">
+        <seg>Комбинируя свои иннвации с такими технологиями как обход NAT (NAT Traversal), распределенные хэш-таблицы (DHT) Kademlia, облегченное доказательство консенсуса хранилища и оптимизированное потоковое
+вещание медиа, распределенная сеть хранения PPIO может быть крайне эффективной и может быть легко масштабирована на сотни миллионов сетевых узлов.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">It significantly improves the robustness of the distributed storage system and allows the client to download data from the closest neighbors on the network.</prop>
+      <prop type="next">In section 2 of this chapter, PPIO's P2P network design will be explained in details, including its intelligent data-driven scheduling algorithms, its implementation of the Distributed Hash Table (DHT), its traffic management based on Proactive Network Provider Participation (P4P), and its P2P based content distribution technology(PCDN).</prop>
+      <tuv lang="EN-US">
+        <seg>Due to the unique nature of the P2P network, more copies of the data lead to faster download speed.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190316T173008Z" creationid="vopl" creationdate="20190316T173008Z">
+        <seg>Из за уникальной особенности одноранговой сети, наличие множества копий данных приводит к более высокой скорости загрузки .</seg>
       </tuv>
     </tu>
     <tu>
@@ -172,6 +184,17 @@
     </tu>
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">In the traditional Client-Server (CS) model, the server can quickly become the network bottleneck when the client population grows.</prop>
+      <prop type="next">In such a network, multiple copies of the data are distributed and stored on many different nodes.</prop>
+      <tuv lang="EN-US">
+        <seg>However, a decentralized peer-to-peer network does not rely on any central server to function correctly, and can easily tolerate the fault and failure of some nodes.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190316T172533Z" creationid="vopl" creationdate="20190316T172533Z">
+        <seg>Однако, децентрализованная одноранговая сеть не зависит от какого либо центрального сервера для того чтобы корректно функционировать и способна легко переносить ошибки и отказы некоторых узлов.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">The global cloud storage market has grown enormously in recent years and will continue to grow at a faster pace.</prop>
       <prop type="next">The data breach has become frequently occurred, with an ever-growing scale and impact.</prop>
       <tuv lang="EN-US">
@@ -190,6 +213,50 @@
       </tuv>
       <tuv lang="RU" changeid="vopl" changedate="20190314T142512Z" creationid="vopl" creationdate="20190314T142512Z">
         <seg>Тем не менее, эти попытки не были успешными.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">Due to the unique nature of the P2P network, more copies of the data lead to faster download speed.</prop>
+      <prop type="next">\vspace{-0.6em}</prop>
+      <tuv lang="EN-US">
+        <seg>In section 2 of this chapter, PPIO's P2P network design will be explained in details, including its intelligent data-driven scheduling algorithms, its implementation of the Distributed Hash Table (DHT), its traffic management based on Proactive Network Provider Participation (P4P), and its P2P based content distribution technology(PCDN).</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190316T173847Z" creationid="vopl" creationdate="20190316T173847Z">
+        <seg>Во секции 2 данной главы будет детально рассмотрена архитектура одноранговой сети PPIO, включая интеллектуальные алгоритмы планирования предачи данных, основанные на самих данных (ntelligent data-driven scheduling algorithms), реализация распределенной хэш-таблицы (DHT), управление трафиком на основе упредительного учета структуры сети (Proactive Network Provider Participation, P4P), а так же, технологии доставки контента для одноранговых сетей (P2P based content distribution technology, PCDN).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">However, a decentralized peer-to-peer network does not rely on any central server to function correctly, and can easily tolerate the fault and failure of some nodes.</prop>
+      <prop type="next">It significantly improves the robustness of the distributed storage system and allows the client to download data from the closest neighbors on the network.</prop>
+      <tuv lang="EN-US">
+        <seg>In such a network, multiple copies of the data are distributed and stored on many different nodes.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190316T172704Z" creationid="vopl" creationdate="20190316T172704Z">
+        <seg>Данные в такой сети распространяются и хранятся в виде множества копий на множестве узлов.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">•\quad {\bf  P2P Network:} PPIO constructs a self-governing, resilient and scalable P2P network that allows the participating nodes to easily share idle or unused bandwidth, storage, and computation resources.</prop>
+      <prop type="next">However, a decentralized peer-to-peer network does not rely on any central server to function correctly, and can easily tolerate the fault and failure of some nodes.</prop>
+      <tuv lang="EN-US">
+        <seg>In the traditional Client-Server (CS) model, the server can quickly become the network bottleneck when the client population grows.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190316T172113Z" creationid="vopl" creationdate="20190316T172113Z">
+        <seg>В традиционной модели клиент-сервер (Client-Server, CS), сервер может быстро стать узким местом в сети при росте популяции клиентов.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\subsection{Technology Highlights} %——2.1</prop>
+      <prop type="next">\vspace{-0.6em}</prop>
+      <tuv lang="EN-US">
+        <seg>In this chapter, three core technologies behind PPIO will be elaborated:</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190316T164605Z" creationid="vopl" creationdate="20190316T164605Z">
+        <seg>В данной главе будут рассмотрены три основные технологии, используемые в PPIO:</seg>
       </tuv>
     </tu>
     <tu>
@@ -234,6 +301,17 @@
       </tuv>
       <tuv lang="RU" changeid="vopl" changedate="20190314T124320Z" creationid="vopl" creationdate="20190314T124320Z">
         <seg>Документ предоставляет низкоуровневую подробную информацию о распределенной файловой системе, архитектуре сети и процесса хранения.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">In such a network, multiple copies of the data are distributed and stored on many different nodes.</prop>
+      <prop type="next">Due to the unique nature of the P2P network, more copies of the data lead to faster download speed.</prop>
+      <tuv lang="EN-US">
+        <seg>It significantly improves the robustness of the distributed storage system and allows the client to download data from the closest neighbors on the network.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190316T172848Z" creationid="vopl" creationdate="20190316T172848Z">
+        <seg>Это значительно повышает устойчивость системы распределенного хранения и позволяет клиентам получать данные с ближайших соседних узлов в сети.</seg>
       </tuv>
     </tu>
     <tu>
@@ -311,6 +389,17 @@
       </tuv>
       <tuv lang="RU" changeid="vopl" changedate="20190314T123515Z" creationid="vopl" creationdate="20190314T123515Z">
         <seg>PPIO сводит потребности в хранении данных, имеющиеся у сегодняшнего бизнеса с одной стороны и предлагаемых возможностей поставщиков соответствующих услуг с другой, а так же, предоставляет возможность реализации распределенных приложений (DApps).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">Besides a set of industry proven P2P transmission technologies, the team also developed data-driven scheduling, a self-organizing overlay network, and optimized content distribution network.</prop>
+      <prop type="next">Combined with its innovation in NAT Traversal, Kademlia distributed hash table (DHT), lightweight storage consensus proof and optimized transmission for media streaming, PPIO's distributed storage network can perform with extremely high efficiency and can be easily scaled to hundreds of millions of network nodes.</prop>
+      <tuv lang="EN-US">
+        <seg>PPIO's design also improves the efficiency in regional networks and makes it more friendly to ISPs.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190316T163237Z" creationid="vopl" creationdate="20190316T163237Z">
+        <seg>Архитектура PPIO, так же, направлена на увеличение эффектирвности  работы в региональных сетях, что делает ее более дружелюбной к поставщикам интернета (ISP).</seg>
       </tuv>
     </tu>
     <tu>
@@ -579,6 +668,28 @@
     </tu>
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\vspace{-1em}</prop>
+      <prop type="next">\vspace{-0.5em}</prop>
+      <tuv lang="EN-US">
+        <seg>\section{Solution} %——2</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190316T164355Z" creationid="vopl" creationdate="20190316T164355Z">
+        <seg>\section{Решение} %——2</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\vspace{-0.5em}</prop>
+      <prop type="next">In this chapter, three core technologies behind PPIO will be elaborated:</prop>
+      <tuv lang="EN-US">
+        <seg>\subsection{Technology Highlights} %——2.1</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190316T164442Z" creationid="vopl" creationdate="20190316T164442Z">
+        <seg>\subsection{Основные технологии} %——2.1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">\setlength{\parskip}{0em}%设置段落间距</prop>
       <prop type="next">\begin{document}</prop>
       <tuv lang="EN-US">
@@ -597,6 +708,17 @@
       </tuv>
       <tuv lang="RU" changeid="vopl" changedate="20190314T154352Z" creationid="vopl" creationdate="20190314T154352Z">
         <seg>•\quad  {\bf Малая цена хранения.} В будущем, высокая цена хранения данных будет одним из критичных вызовов для многих компаний.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\noindent</prop>
+      <prop type="next">In the traditional Client-Server (CS) model, the server can quickly become the network bottleneck when the client population grows.</prop>
+      <tuv lang="EN-US">
+        <seg>•\quad {\bf  P2P Network:} PPIO constructs a self-governing, resilient and scalable P2P network that allows the participating nodes to easily share idle or unused bandwidth, storage, and computation resources.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190316T171900Z" creationid="vopl" creationdate="20190316T171900Z">
+        <seg>•\quad {\bf  Одноранговая сеть (P2P Network):} PPIO формирует самоорганизующуюся устойчивую и масштабируемую одноранговую (P2P) сеть, позволяющую участвующим в ней узлам легко совместно использовать простаивующую или не-используемую пропускную способность каналов связи, ресурсы хранилищ и вычислительные мощности.</seg>
       </tuv>
     </tu>
     <tu>

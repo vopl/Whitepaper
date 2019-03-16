@@ -32,7 +32,7 @@
 \renewcommand{\baselinestretch}{1.2}
 \author {\centerline{\Large Аннотация}}
 \noindent\\
-PPIO является программируемой децентрализованной сетью хранения и доставки данных. Она не только предоставляет более мощные и эффективные службы, нежели существующие облачные платформы хранения данных, такие как AWS S3, но, так же, значительно снижает стоимость хранения.  At the same time, PPIO also offers better data security and privacy protection. Грамотно продуманная распределенная сеть хранения и механизм поощрения позволяют PPIO использовать значительный объем неиспользованной полосы пропускания и ресурсы хранилищ в сети Интернет, а так же, предоставлять надежные услуги хранения с намного меньшей ценой. Уникальная децентрализованная файловая система PPIO предоствращает неавторизованный доступ и гарантирует безопасность и приватность хранения данных. PPIO спроектирована с нуля для эффективного функционирования в глобальном масштабе, на основании опыта команды разработчиков в проектировании и запуске децентрализованной сети с сотнями миллионов пользователей. PPIO сводит потребности в хранении данных, имеющиеся у сегодняшнего бизнеса с одной стороны и предлагаемых возможностей поставщиков соответствующих услуг с другой, а так же, предоставляет возможность реализации распределенных приложений (DApps).
+PPIO является программируемой децентрализованной сетью хранения и доставки данных. Она не только предоставляет более мощные и эффективные службы, нежели существующие облачные платформы хранения данных, такие как AWS S3, но, так же, значительно снижает стоимость хранения.  В то же время, PPIO предлагает лучшую защиту в аспектах безопасности и приватности. Грамотно продуманная распределенная сеть хранения и механизм поощрения позволяют PPIO использовать значительный объем неиспользованной полосы пропускания и ресурсы хранилищ в сети Интернет, а так же, предоставлять надежные услуги хранения с намного меньшей ценой. Уникальная децентрализованная файловая система PPIO предоствращает неавторизованный доступ и гарантирует безопасность и приватность хранения данных. PPIO спроектирована с нуля для эффективного функционирования в глобальном масштабе, на основании опыта команды разработчиков в проектировании и запуске децентрализованной сети с сотнями миллионов пользователей. PPIO сводит потребности в хранении данных, имеющиеся у сегодняшнего бизнеса с одной стороны и предлагаемых возможностей поставщиков соответствующих услуг с другой, а так же, предоставляет возможность реализации распределенных приложений (DApps).
 \vspace{-0.5em}
 \\ \\ В данном документе разъясняются основные цели архитектуры PPIO, а так же, приводятся подробности методов достижения этих целей. Документ предоставляет низкоуровневую подробную информацию о распределенной файловой системе, архитектуре сети и процесса хранения. Документ разъясняет как PPIO противостоит различным сетевым атакам, поддерживает работоспособность и устойчивость механизма поощрений, предлагает экономическую модельи экосистему.
 \newpage
@@ -60,7 +60,8 @@ PPIO является программируемой децентрализов�
 \hangafter 1
 \hangindent 1.5em
 \noindent   
-•\quad {\bf Масштабируемость и высокая эффективность.} За счет опыта команды, извлеченного из создания и работы с распределенной сетью с тысячами миллионов пользователей, PPIO спроектирована с нуля до состояния, в котором она может быть эффективной в глобальном масштабе. Наряду с множеством проверенных в промышленных условиях одноранговых технологиях передачи, команда так же разработала планировщик, управляемый данными (data-driven scheduling), самоорганизующуюся оверлейную сеть и сеть оптимального распространения контента. PPIO's design also improves the efficiency in regional networks and makes it more friendly to ISPs. Combined with its innovation in NAT Traversal, Kademlia distributed hash table (DHT), lightweight storage consensus proof and optimized transmission for media streaming, PPIO's distributed storage network can perform with extremely high efficiency and can be easily scaled to hundreds of millions of network nodes.
+•\quad {\bf Масштабируемость и высокая эффективность.} За счет опыта команды, извлеченного из создания и работы с распределенной сетью с тысячами миллионов пользователей, PPIO спроектирована с нуля до состояния, в котором она может быть эффективной в глобальном масштабе. Наряду с множеством проверенных в промышленных условиях одноранговых технологий передачи, команда так же разработала планировщик, управляемый данными (data-driven scheduling), самоорганизующуюся оверлейную сеть и сеть оптимального распространения контента. Архитектура PPIO, так же, направлена на увеличение эффектирвности  работы в региональных сетях, что делает ее более дружелюбной к поставщикам интернета (ISP). Комбинируя свои иннвации с такими технологиями как обход NAT (NAT Traversal), распределенные хэш-таблицы (DHT) Kademlia, облегченное доказательство консенсуса хранилища и оптимизированное потоковое
+вещание медиа, распределенная сеть хранения PPIO может быть крайне эффективной и может быть легко масштабирована на сотни миллионов сетевых узлов.
 \vspace{-0.6em}
 \\ \
 
@@ -76,17 +77,17 @@ PPIO является программируемой децентрализов�
 \noindent   
 •\quad {\bf Надежная поддержка приложений и экосистема.} PPIO предоставляет несколько программных интерфейсов хранилищ (Storage APIs), похожих на таковые в облачных сервисах, например AWS S3, и позволяет комфортно мигрироать данные из этих сервисов. PPIO так же имеет некоторые технологии для улучшения поддержки распределенных приложений, включая хранилища объектов, механизм песочницы, управление доступом к файлам и т.п. PPIO имеет обстоятельный план для разработки сильной, живучей и устойчивой экосистемы для разработки приложений и сервисов, и предоставления разработчикам возможности наслаждаться бенефитами роста PPIO.
 \vspace{-1em}
-\section{Solution} %——2
+\section{Решение} %——2
 \vspace{-0.5em}
- \subsection{Technology Highlights} %——2.1
-In this chapter, three core technologies behind PPIO will be elaborated:
+\subsection{Основные технологии} %——2.1
+В данной главе будут рассмотрены три основные технологии, используемые в PPIO:
 \vspace{-0.6em}
 \\ 
 
 \hangafter 1
 \hangindent 1.5em
 \noindent   
-•\quad {\bf  P2P Network:} PPIO constructs a self-governing, resilient and scalable P2P network that allows the participating nodes to easily share idle or unused bandwidth, storage, and computation resources. In the traditional Client-Server (CS) model, the server can quickly become the network bottleneck when the client population grows. However, a decentralized peer-to-peer network does not rely on any central server to function correctly, and can easily tolerate the fault and failure of some nodes. In such a network, multiple copies of the data are distributed and stored on many different nodes. It significantly improves the robustness of the distributed storage system and allows the client to download data from the closest neighbors on the network. Due to the unique nature of the P2P network, more copies of the data lead to faster download speed. In section 2 of this chapter, PPIO's P2P network design will be explained in details, including its intelligent data-driven scheduling algorithms, its implementation of the Distributed Hash Table (DHT), its traffic management based on Proactive Network Provider Participation (P4P), and its P2P based content distribution technology(PCDN).
+•\quad {\bf  Одноранговая сеть (P2P Network):} PPIO формирует самоорганизующуюся устойчивую и масштабируемую одноранговую (P2P) сеть, позволяющую участвующим в ней узлам легко совместно использовать простаивующую или не-используемую пропускную способность каналов связи, ресурсы хранилищ и вычислительные мощности. В традиционной модели клиент-сервер (Client-Server, CS), сервер может быстро стать узким местом в сети при росте популяции клиентов. Однако, децентрализованная одноранговая сеть не зависит от какого либо центрального сервера для того чтобы корректно функционировать и способна легко переносить ошибки и отказы некоторых узлов. Данные в такой сети распространяются и хранятся в виде множества копий на множестве узлов. Это значительно повышает устойчивость системы распределенного хранения и позволяет клиентам получать данные с ближайших соседних узлов в сети. Из за уникальной особенности одноранговой сети, наличие множества копий данных приводит к более высокой скорости загрузки . Во секции 2 данной главы будет детально рассмотрена архитектура одноранговой сети PPIO, включая интеллектуальные алгоритмы планирования предачи данных, основанные на самих данных (ntelligent data-driven scheduling algorithms), реализация распределенной хэш-таблицы (DHT), управление трафиком на основе упредительного учета структуры сети (Proactive Network Provider Participation, P4P), а так же, технологии доставки контента для одноранговых сетей (P2P based content distribution technology, PCDN).
 \vspace{-0.6em}
 \\ 
 
@@ -247,7 +248,7 @@ To achieve the design requirements above, a scheduling algorithm is required to 
 \hangafter 1
 \hangindent 1.6em
 \noindent   
-2.\quad Pieces to be downloaded are sorted based on their priorities and pre-allocated to available virtual connections by placing them in the corresponding download queues. The estimated arrival time for each piece can be calculated based on the speed of each virtual connection and the remaining pieces to be downloaded in each queue. In general, pieces with higher priority should end up with an earlier estimated arrival time. An illustration of the pre-allocation algorithm is shown in Figure 3.1.
+2.\quad Pieces to be downloaded are sorted based on their priorities and pre-allocated to available virtual connections by placing them in the corresponding download queues. The estimated arrival time for each piece can be calculated based on the speed of each virtual connection and the remaining pieces to be downloaded in each queue. In general, pieces with higher priority should end up with an earlier estimated arrival time. An illustration of the pre-allocation algorithm is shown in Figure 2.1.
 \vspace{-0.8em}
 \\ 
 
@@ -375,9 +376,9 @@ PPIO also adopts an extension of Kademlia-S/Kademlia\cite{article23}to improve t
 \vspace{-0.5em}
   \\ \\With the DHT implementation above, structured data such as file index, statistics on network nodes, and other metadata can be securely saved and quickly looked up in PPIO’s distributed network. However, data transfer in its storage network is handled differently, which will be discussed in the next section.
   \vspace{-0.5em}
-         \subsubsection{P2P Self-organizing Overlay networks}  %——3.2.3
+         \subsubsection{P2P Self-organizing Overlay networks}  %——2.2.3
          \vspace{-0.5em}
-Today’s well-established storage services, such as Amazon S3, Dropbox, Google Drive, iCloud, etc., store customer data in large-scale data centers. Under cost constraints, each of the services can only deploy a limited number of data centers around the world. The deployment of Amazon AWS data centers is shown in Figure 3.3. Due to the ad hoc nature of the Internet, it is challenging to guarantee fast data transfer everywhere in the world by relying on a handful of data centers. Users in the same region have to compete for the available bandwidth from the data centers. As the number of users grows, their transfer speed and user experience will likely degrade.
+Today’s well-established storage services, such as Amazon S3, Dropbox, Google Drive, iCloud, etc., store customer data in large-scale data centers. Under cost constraints, each of the services can only deploy a limited number of data centers around the world. The deployment of Amazon AWS data centers is shown in Figure 2.3. Due to the ad hoc nature of the Internet, it is challenging to guarantee fast data transfer everywhere in the world by relying on a handful of data centers. Users in the same region have to compete for the available bandwidth from the data centers. As the number of users grows, their transfer speed and user experience will likely degrade.
 \vspace{-0.5em}
  \\ \\ \centerline{\includegraphics[width=340pt]{fig3}}
 \\ \centerline{{Figure 2.3 AWS global infastructure}}
@@ -469,7 +470,7 @@ In a data distribution network, a small number of popular content can consume a 
 \vspace{-0.5em}
 \\ \\{\bf Storage miners active selection}
 \vspace{-0.5em}
-\\ \\As described in section 3.2.3, a self-organizing overlay network is established by the participating nodes. When a user node requests for a piece of data, it looks up the resources from the indexer node, and the indexer node returns information about the miner nodes that store the content. At the same time, user node also broadcasts the request to its neighbors to find the resources. Its peers will forward the request to their neighbors upon receiving it. To avoid unnecessary burden on the network, the length of the forwarding path is limited. But it also adapts based on the number of nodes that the request has reached. When not enough nodes have been reached, a longer forwarding path is allowed. 
+\\ \\As described in section 2.2.3, a self-organizing overlay network is established by the participating nodes. When a user node requests for a piece of data, it looks up the resources from the indexer node, and the indexer node returns information about the miner nodes that store the content. At the same time, user node also broadcasts the request to its neighbors to find the resources. Its peers will forward the request to their neighbors upon receiving it. To avoid unnecessary burden on the network, the length of the forwarding path is limited. But it also adapts based on the number of nodes that the request has reached. When not enough nodes have been reached, a longer forwarding path is allowed.
 \vspace{-0.5em}
 \\ \\When a miner node receives the forwarded request, and if it happens to possess the requested resources, it notifies the user and there is better priority that user will ,in fact, download the data from it, since the miner node is in the forwarding path of the user’s neighbors, and thus close to the user. In PPIO, the miner is incentivized to provide download service as it gets rewarded for doing so.  
 \vspace{-0.5em}
@@ -489,12 +490,12 @@ In a data distribution network, a small number of popular content can consume a 
 \centerline{\includegraphics[width=300pt]{fig4}}
 \\\\\centerline{{Figure 2.4 Dispatch of Popular Content}}
 \vspace{-1.5em}
-\\ \\ As shown in Fig 3.3, multiple miners store copies of the same data, they need to compete to provide download services to the user. The user always prefers the ones that provide higher download speed. If a miner does not have enough bandwidth, users will switch to others. The amount of data it uploads to the users will decrease, which in turn decreases the reward it receives. Therefore, the miners with lower bandwidth will not be incentivized to store popular content. As a result, popular contents are mostly stored on the miners with higher bandwidth, which in turn improves the speed and experience when the user downloads such content.
+\\ \\ As shown in Fig 2.4, multiple miners store copies of the same data, they need to compete to provide download services to the user. The user always prefers the ones that provide higher download speed. If a miner does not have enough bandwidth, users will switch to others. The amount of data it uploads to the users will decrease, which in turn decreases the reward it receives. Therefore, the miners with lower bandwidth will not be incentivized to store popular content. As a result, popular contents are mostly stored on the miners with higher bandwidth, which in turn improves the speed and experience when the user downloads such content.
 \vspace{-0.5em}
-\subsubsection{ISP Friendly Scheduling}  %——3.2.5 \%     \cite{article33}
+\subsubsection{ISP Friendly Scheduling}  %——2.2.5 \%     \cite{article33}
 In most P2P networks, a node can transfer data with any other peers, regardless of their location. As a result, a single data transfer can potentially create traffic anywhere in the world and consumes bandwidth between different Internet Service Providers (ISP), or even between different countries. In 2007, a research institute iPoque carried out an analysis on nearly 3TB of anonymous data sampled from more than a million internet users in Eastern Europe, Southern Europe, Australia, and the Middle East. \cite{article26}Their studies show that P2P file sharing takes up a significant part of the network bandwidth consumption, accounting for about 49\% in the Middle East, and 84\% in Eastern Europe. From a global perspective, 95\% of the bandwidth at prime time is involved in some forms of P2P data transmission. In recent years, the percentage of P2P traffic has dropped due to a shift in the use pattern of Internet applications. However, with the recent development of blockchain technology and decentralized applications, P2P network traffic is expected to start increasing again. P2P traffic consumes an extraordinary amount of network bandwidth, including international bandwidth. It puts a lot of burden on our internet infrastructure, and significantly increase the cost for ISPs to operate.
 \vspace{-0.5em}
- \\ \\As described in section 3.2.3, PPIO’s self-organizing overlay network encourages data transfer among neighboring nodes, a large percentage of its traffic is contained within the local network, and the operation cost incurred upon ISPs is significantly reduced. However, the  topology of PPIO’s overlay network may not match the ISP topology exactly. Further optimization to reduce unnecessary traffic between ISPs is needed to improve further PPIO’s ability to scale globally.
+ \\ \\As described in section 2.2.3, PPIO’s self-organizing overlay network encourages data transfer among neighboring nodes, a large percentage of its traffic is contained within the local network, and the operation cost incurred upon ISPs is significantly reduced. However, the  topology of PPIO’s overlay network may not match the ISP topology exactly. Further optimization to reduce unnecessary traffic between ISPs is needed to improve further PPIO’s ability to scale globally.
  \vspace{-0.5em}
  \\ \\If the nodes participating in a data transmission happen to be in the close vicinity of each other, it is likely that the traffic will be contained within their area network. As a result, the bandwidth cost will be significantly reduced. This is the principle behind P4P, to fully utilize local network bandwidth in a P2P network.  
  \vspace{-0.5em}
@@ -524,7 +525,7 @@ In most P2P networks, a node can transfer data with any other peers, regardless 
 \hangafter 1
 \hangindent 1.5em
 \noindent   
-•\quad{\bf p4p-disance}: allows applications to query P4P cost and distance between network nodes.
+•\quad{\bf p4p-distance}: allows applications to query P4P cost and distance between network nodes.
 \vspace{-0.8em}
 \\
 
@@ -563,7 +564,7 @@ When selecting data connections from a given node, the indexing and scheduling n
 \hangafter 1
 \hangindent 1.5em
 \noindent   
-•\quad If so, a peer lookup in the node’s ISP network will be conducted first, followed by a lookup in the friendly ISPs, and finally among all other peers. The final peer decision will still be decided based on connection speed as described in 3.2.3. In this way, peers with shorter p4p distances to the node are more likely to be selected to upload or download its data. At the same time, nodes in slower ISPs can still connect to faster outside peers. As a result, unnecessary traffic between different network providers is significantly reduced, and user experience across the entire network is maintained at a high-level.
+•\quad If so, a peer lookup in the node’s ISP network will be conducted first, followed by a lookup in the friendly ISPs, and finally among all other peers. The final peer decision will still be decided based on connection speed as described in 2.2.3. In this way, peers with shorter p4p distances to the node are more likely to be selected to upload or download its data. At the same time, nodes in slower ISPs can still connect to faster outside peers. As a result, unnecessary traffic between different network providers is significantly reduced, and user experience across the entire network is maintained at a high-level.
 \vspace{-0.8em}
 \\
 
@@ -589,14 +590,14 @@ PCDN stands for CDN acceleration with P2P, and it utilizes the abundant bandwidt
 \hangafter 1
 \hangindent 1.7em
 \noindent   
-1.\quad Take advantage of content scheduling described in 3.2.4.  As PPIO embeds optimized scheduling of popular contents in its overlay network,  the miners will proactively download and store these data, and provide download services. As a result, data gets copied and distributed across the network where the data is deemed popular. It improves download experience as the number of copies increase. 
+1.\quad Take advantage of content scheduling described in 2.2.4.  As PPIO embeds optimized scheduling of popular contents in its overlay network,  the miners will proactively download and store these data, and provide download services. As a result, data gets copied and distributed across the network where the data is deemed popular. It improves download experience as the number of copies increase. 
 \vspace{-0.7em}
 \\
 
 \hangafter 1
 \hangindent 1.7em
 \noindent   
-2.\quad Enable and configure PCDN directly. PPIO provides a set of APIs to allow DApps to set up PCDN for their content. The applications can specify the number of copies to be maintained in specific parts of the network, or specific geographic location regarding the country, ISP, state and city, as defined in the P4P database. PPIO will find the miner nodes in the specified area to store the copies and provide download services. As the scheduling is specified by the application, it needs to compensate the miners’ cost in storage spacetime, scheduling and conducting storage proofs. Figure 3.5 shows the PCDN-driven data flow in the network in this case.
+2.\quad Enable and configure PCDN directly. PPIO provides a set of APIs to allow DApps to set up PCDN for their content. The applications can specify the number of copies to be maintained in specific parts of the network, or specific geographic location regarding the country, ISP, state and city, as defined in the P4P database. PPIO will find the miner nodes in the specified area to store the copies and provide download services. As the scheduling is specified by the application, it needs to compensate the miners’ cost in storage spacetime, scheduling and conducting storage proofs. Figure 2.5 shows the PCDN-driven data flow in the network in this case.
 \vspace{-1em}
 
 
@@ -634,7 +635,7 @@ PPIO employs 4 different storage proofs, namely Proof of Replication (PoRep), Pr
 •\quad Cipher: A lightweight encryption method with symmetric keys, used in Proof-of-Download. XOR Cipher is a viable option for its implementation.  
 \vspace{-0.5em}
 
-               \subsubsection{Proof-of-Replication (PoRep)}  %——3.3.1
+               \subsubsection{Proof-of-Replication (PoRep)}  %——2.3.1
                
 Proof of Replication (PoRep) provides a way to verify that Miner $L$ correctly replicates Data $D$ from User $U$ and stores it in its storage. The process also provides an indirect proof of the bandwidth available to $L$. The procedure of PoRep is described below.
 \vspace{-0.8em}
@@ -679,12 +680,12 @@ Proof of Replication (PoRep) provides a way to verify that Miner $L$ correctly r
 \noindent   
 5.\quad From received $R_{c}$ and $Path_{RC-RT}$, $V$ generates the Merkle tree root hash $RT'$, if $RT'$ matches the original root hash received from $U$, i.e. $RT' == RT$, the proof has succeeded, otherwise the proof has failed.  
 \vspace{-0.5em}
-\subsubsection{Proof-of-Download (PoD)}  %——3.3.2
+\subsubsection{Proof-of-Download (PoD)}  %——2.3.2
 Proof-of-Download (PoD) provides a way to verify that Data $D$ has been correctly downloaded from the Miner $L$ to User $U$. The procedure of PoD is described below.
 \vspace{-0.5em}
 \\ \\
 \centerline{\includegraphics[width=300pt]{fig7}}
- \\ \centerline{{Figur 2.7 Proof of Download}}
+ \\ \centerline{{Figure 2.7 Proof of Download}}
  \vspace{-1.5em}
 \\
 
@@ -788,12 +789,12 @@ Proof-of-Download (PoD) provides a way to verify that Data $D$ has been correctl
 13.\quad From received $R'_{c}$ and $Path_{R'C-R'T}$, $V$ generates the Merkle tree root hash $R'T"$, if $R'T"$ matches the root hash $R'T$ previously received from $L$, i.e. $R'T" == R'T$, the proof has succeeded, and $V$ sends the Cipher key $PK_{Cipher}$ to $U$, so that $U$ can decipher $R'$ to recover data $D$ successfully.
 \vspace{-0.5em}
 
-        \subsubsection{Proof-of-Spacetime (PoSt)}  %——3.3.3
+        \subsubsection{Proof-of-Spacetime (PoSt)}  %——2.3.3
 Proof of Spacetime (PoSt) provides a way to verify that Miner $L$ has stored Data $D$ for a given period. The process also provides an indirect proof of the storage capacity of $L$. The procedure of PoSt is described below.
 \vspace{-0.5em}
 \\ \\
 \centerline{\includegraphics[width=380pt]{fig8}}
- \\\centerline{{Figur 2.8 Proof of Spacetime}}
+ \\\centerline{{Figure 2.8 Proof of Spacetime}}
  \vspace{-1.5em}
 \\
 
@@ -860,7 +861,7 @@ Light Proof of Capacity (LPoC) provides a way to verify the available storage ca
 \noindent   
  {\bf Initialization Phase }\\\\
 \centerline{\includegraphics[width=340pt]{fig9}}
- \\ \centerline{{Figur 2.9 Initialization Phase of Light-Proof-of-Capacity}}
+ \\ \centerline{{Figure 2.9 Initialization Phase of Light-Proof-of-Capacity}}
  \vspace{-1.5em}
 \\
 
@@ -902,7 +903,7 @@ Light Proof of Capacity (LPoC) provides a way to verify the available storage ca
 \noindent   
  {\bf Verification Phase}\\
 \centerline{\includegraphics[width=315pt]{fig10}}
- \\ \centerline{{Figur 2.10 Verification Phase of Light-Proof-of-Capacity}}
+ \\ \centerline{{Figure 2.10 Verification Phase of Light-Proof-of-Capacity}}
  \vspace{-1.5em}
 \\
 
@@ -954,7 +955,7 @@ Light Proof of Capacity (LPoC) provides a way to verify the available storage ca
 7.\quad The series of repeated successful challenges and proofs between $L$ and $V$ generates the successful proof of capacity for $L$.
  \vspace{-0.5em}
 
-                \subsection{Consensus}%——2..4
+                \subsection{Consensus}%——2.4
 For a decentralized blockchain network to operate, different nodes need to reach consensus to verify and record transactions in the network. It is also a required process when adding new blocks to a blockchain’s ledger. PPIO’s storage market is based on blockchain technology. It also requires a consensus mechanism explicitly designed for its storage network, to maintain a secure and healthy storage market. Commonly used consensus algorithms have their pros and cons. The Proof of Work (PoW) consensus forces each node to solve a complicated math problem, to compete to build new blocks. PoW is reliable, but it introduces meaningless computation and waste of energy. The Proof of Stake (PoS) consensus weights the nodes based on how many cryptocurrencies they hold, in deciding which node has the right to build new blocks. It enables much faster block building and alleviates the wastefulness problem in PoW, but it still runs the risk of becoming centralized, as the most prominent stakeholders are likely to dominate and become monopolies. FileCoin introduces Proof of Spacetime and uses it as a measure to calculate the power of each node in its consensus algorithm. It is a combination of the ideas behind PoW and PoS. However, using proof of spacetime alone does not adequately represent the contribution of each node. For example, certain nodes may not have a large storage capacity, but can still provide valuable download services with their high bandwidth connections, which should also be counted as the contribution to the network.
 \vspace{-0.5em}
  \\ \\PPIO’s consensus algorithm takes both storage and bandwidth contribution of each miner node into account when calculating its power. The process starts by generating a pool of candidate miner nodes based on the power of each node, and from the pool, a random miner is selected via Verifiable Random Function (VRF) to build a new block. Finally, the block is validated via Byzantine Fault Tolerance (BFT) consensus. This method can improve the speed and reduce the cost of block building, prevent nodes from becoming monopolies, and maintain the consistency and security of the ledger.
@@ -990,7 +991,7 @@ By combining the power of storage and the power of bandwidth, the overall power 
                    
         \subsubsection{Verifiable Random Function (VRF)}  %——2.4.2\cite{article20}
  \noindent 
-After the selection in 3.4.1 is complete, all the candidate miners are placed in a pool, ready for the next stage of selection. PPIO injects randomness at this step to avoid the monopoly by a small number of miners. However, in a decentralized network, randomness itself needs to be verified. Therefore PPIO adopts Verifiable Random Function (VRF)\cite{article20}in the calculation to decide which candidate miner has the final right to write a block.
+After the selection in 2.4.1 is complete, all the candidate miners are placed in a pool, ready for the next stage of selection. PPIO injects randomness at this step to avoid the monopoly by a small number of miners. However, in a decentralized network, randomness itself needs to be verified. Therefore PPIO adopts Verifiable Random Function (VRF)\cite{article20}in the calculation to decide which candidate miner has the final right to write a block.
 \vspace{-0.5em}
 \\
 
@@ -1074,7 +1075,7 @@ PPIO combines node selection based on power, randomized block building based on 
 \vspace{-0.5em}
 
     \section{Architecture} %——3
-PPIO follows a layered system design, to facilitate future expansion, and make it more friendly to developers. As shown in Figure 4.1, PPIO consists of seven layers, which are:
+PPIO follows a layered system design, to facilitate future expansion, and make it more friendly to developers. As shown in Figure 3.1, PPIO consists of seven layers, which are:
 \vspace{-0.5em}
  \\
 
@@ -1082,7 +1083,7 @@ PPIO follows a layered system design, to facilitate future expansion, and make i
 \hangafter 1
 \hangindent 1.5em
 \noindent   
-1.\quad  Physical Layer: the hardware layer, that provides underlying storage and bandwidth resources, discussed in 4.1.
+1.\quad  Physical Layer: the hardware layer, that provides underlying storage and bandwidth resources, discussed in 3.1.
 \vspace{-0.8em}
 \\
 
@@ -1090,7 +1091,7 @@ PPIO follows a layered system design, to facilitate future expansion, and make i
 \hangafter 1
 \hangindent 1.5em
 \noindent   
-2.\quad Data Layer: basic data units and structures, discussed in 4.2.
+2.\quad Data Layer: basic data units and structures, discussed in 3.2.
 \vspace{-0.8em}
 \\
 
@@ -1098,35 +1099,35 @@ PPIO follows a layered system design, to facilitate future expansion, and make i
 \hangafter 1
 \hangindent 1.5em
 \noindent   
-3.\quad Network Layer: P2P network protocol and algorithms for connection, data transfer, load balancing and encryption, discussed in 4.3.
+3.\quad Network Layer: P2P network protocol and algorithms for connection, data transfer, load balancing and encryption, discussed in 3.3.
 \vspace{-0.8em}
 \\
 
 \hangafter 1
 \hangindent 1.5em
 \noindent   
-4.\quad Consensus Layer: PPIO’s consensus scheme and its implementation, discussed in 4.4.
+4.\quad Consensus Layer: PPIO’s consensus scheme and its implementation, discussed in 3.4.
 \vspace{-0.8em}
 \\
 
 \hangafter 1
 \hangindent 1.5em
 \noindent   
-5.\quad Incentive Layer: manages incentives and rewards based on the role of each node in the network, discussed in 4.5.
+5.\quad Incentive Layer: manages incentives and rewards based on the role of each node in the network, discussed in 3.5.
 \vspace{-0.8em}
 \\
 
 \hangafter 1
 \hangindent 1.5em
 \noindent   
-6.\quad Interface Layer: SDK and APIs for the developers and to support the application layer, discussed in 4.6.
+6.\quad Interface Layer: SDK and APIs for the developers and to support the application layer, discussed in 3.6.
 \vspace{-0.8em}
 \\
 
 \hangafter 1
 \hangindent 1.5em
 \noindent   
-7.\quad Application Layer: Apps or DApps developed by the 3rd party developers, discussed in 4.7.
+7.\quad Application Layer: Apps or DApps developed by the 3rd party developers, discussed in 3.7.
 \vspace{-0.3em}
  \\ \\
 \centerline{\includegraphics[width=315pt]{fig11}}
@@ -1134,7 +1135,7 @@ PPIO follows a layered system design, to facilitate future expansion, and make i
 \\\\
  \centerline{{Figure 3.1 The 7 layer architecture of PPIO}}
 \vspace{-1.5em}
-     \subsection{Physical Layer} %——4.1
+     \subsection{Physical Layer} %——3.1
 Disk storage and network bandwidth are the core components of PPIO’s physical layer. They are the essential resources in PPIO’s storage network and therefore are also the basis in evaluating each storage miner’s contribution to the network. The miners with large storage capacity but limited bandwidth can contribute more in providing storage service, while with less storage but higher bandwidth can contribute more in providing bandwidth service. The miners with abundant storage and high bandwidth contribute to the network the most and in turn, get rewarded the most.
 \vspace{-0.8em}
 \\
@@ -1154,8 +1155,8 @@ Disk storage and network bandwidth are the core components of PPIO’s physical 
 
 
 
-        \subsection{Data Layer}  %——4.2
-The next above the physical layer is the data layer. As shown in Figure 4.2, there are three types of data structures used in PPIO’s storage network:
+        \subsection{Data Layer}  %——3.2
+The next above the physical layer is the data layer. As shown in Figure 3.2, there are three types of data structures used in PPIO’s storage network:
 \vspace{-1em}
 \\\\
 \centerline{\includegraphics[width=340pt]{fig12}}
@@ -1172,7 +1173,7 @@ The next above the physical layer is the data layer. As shown in Figure 4.2, the
 \hangafter 1
 \hangindent 1.5em
 \noindent   
-•\quad The Plot can be considered as a virtual drive in PPIO’s storage network, and it is initialized when the miner joins the network. Without any data stored, it's the basic unit used in capacity proof - LPoC (as described in section 3.3.4). With data stored, it is the base unit of spacetime proof - PoSt (as described in section 3.3.3).
+•\quad The Plot can be considered as a virtual drive in PPIO’s storage network, and it is initialized when the miner joins the network. Without any data stored, it's the basic unit used in capacity proof - LPoC (as described in section 2.3.4). With data stored, it is the base unit of spacetime proof - PoSt (as described in section 2.3.3).
 \vspace{-0.8em}
 \\
 
@@ -1278,7 +1279,7 @@ Data redundancy is required to maintain reliable data storage. PPIO adopts two m
 \vspace{-0.5em}
 
 
-        \subsection{Network Layer}  %——4.3
+        \subsection{Network Layer}  %——3.3
 Communication among different nodes in PPIO’s network is based on a set of P2P protocols that include the following:
 \vspace{-0.8em}
 \\
@@ -1312,8 +1313,8 @@ Communication among different nodes in PPIO’s network is based on a set of P2P
 \vspace{-0.5em}
 
 
-        \subsection{Consensus Layer}  %——4.4
-As described in section 3.4, PPIO’s consensus algorithm is specifically designed for its distributed storage network. It integrates the storage proofs, VRF random selection, and BFT consensus. To further improve its performance and scalability, PPIO also adopts a layered approach in its implementation of the consensus layer. Nodes in the network are grouped into many side chains and one master chain. The master chain is formed by selected nodes that are responsible for maintaining the consensus of the entire network. In each side chain, transactions are handled locally but aggregated and reported to the master chain periodically. Fig 4.3 shows an example of the layered consensus. Nodes in the P2P are grouped into 3 groups, the master group, the black side chain group and the white side chain group. The details of the design are presented below.
+        \subsection{Consensus Layer}  %——3.4
+As described in section 2.4, PPIO’s consensus algorithm is specifically designed for its distributed storage network. It integrates the storage proofs, VRF random selection, and BFT consensus. To further improve its performance and scalability, PPIO also adopts a layered approach in its implementation of the consensus layer. Nodes in the network are grouped into many side chains and one master chain. The master chain is formed by selected nodes that are responsible for maintaining the consensus of the entire network. In each side chain, transactions are handled locally but aggregated and reported to the master chain periodically. Fig 3.3 shows an example of the layered consensus. Nodes in the P2P are grouped into 3 groups, the master group, the black side chain group and the white side chain group. The details of the design are presented below.
 \vspace{-0.6em}
 \\ \\
 \centerline{\includegraphics[width=320pt]{fig13}}
@@ -1456,8 +1457,8 @@ As described in section 3.4, PPIO’s consensus algorithm is specifically design
 •\quad Storage or download of each object requires a contract. The contracts need to validated, matched, executed, and then recorded in the ledger. Doing all these on a single chain can overload the network. With the layered approach, the side chain can take over part of the workload, and it allows the network to scale better and be able to handle large quantities of concurrent transactions.
 \vspace{-0.5em}
 
-        \subsection{Incentive Layer}  %——4.5
-The foundation of PPIO’s incentive mechanism is formed by the various proofs described in 3.3, including PoRep, PoD, PoSt, and LPoC. These proofs are strictly derived and rigorously tested, to enable reliable verification of different types of work done by the nodes in the network, so that the right amount of reward can be given to different parties, to maintain a healthy economy and keep it growing.
+        \subsection{Incentive Layer}  %——3.5
+The foundation of PPIO’s incentive mechanism is formed by the various proofs described in 2.3, including PoRep, PoD, PoSt, and LPoC. These proofs are strictly derived and rigorously tested, to enable reliable verification of different types of work done by the nodes in the network, so that the right amount of reward can be given to different parties, to maintain a healthy economy and keep it growing.
 \vspace{-0.5em}
 \\ \\  The smart contract is the basis of PPIO’s reward mechanism:
 \vspace{-0.5em}
@@ -1551,7 +1552,7 @@ In PPIO’s network, different nodes are getting rewarded based on their roles:
   \vspace{-0.5em}
 
      
-        \subsection{Interface Layer}  %——4.6
+        \subsection{Interface Layer}  %——3.6
 One of core design goals of PPiO is to provide programmable distributed storage, that can also be called Decentralized Storage as a Service (DSaaS), To be more friendly to developers, it provides: \\
   \vspace{-0.5em}
 
@@ -1872,7 +1873,7 @@ PPIO provides two levels of APIs. The low-level APIs grant developers more flexi
 -\quad{\bf PPIO-media seek}: seek to a point in the stream media and resume playing
   \vspace{-0.5em}
 
-        \subsection{Application Layer}  %——4.7
+        \subsection{Application Layer}  %——3.7
 PPIO’s APIs are designed to enable third-party developers to build all kinds of applications, including but not limited to the following:
   \vspace{-0.5em}
  \\\\{\bf Storage Application}
@@ -1964,7 +1965,7 @@ For other types of storage needs, PPIO will also provide the necessary support. 
 Maintaining security is the most critical task in a distributed storage network. PPIO’s design follows strict security measures to ensure the integrity and reliability of its storage system. This chapter discusses how PPIO defends against common network attacks, including Sybil Attacks, Outsourcing Attacks, Generation attacks that target the decentralized storage system itself, and Distributed Denial of Service (DDoS) Attacks, Eclipse Attacks that target the blockchain.
    \vspace{-0.5em}
       \subsection{Sybil Attacks} %——4.1
-As shown in Figure 5.1, Sybil attack takes place when a greedy miner node creates multiple accounts in the network and claims to have stored a copy of the data in each account, but in fact, it has only stored a single copy. If successful, the attack allows the miner to receive rewards from multiple accounts unfairly. On the other hand, it can significantly reduce the actual data redundancy in the network, and severely compromise the reliability of the storage system.
+As shown in Figure 4.1, Sybil attack takes place when a greedy miner node creates multiple accounts in the network and claims to have stored a copy of the data in each account, but in fact, it has only stored a single copy. If successful, the attack allows the miner to receive rewards from multiple accounts unfairly. On the other hand, it can significantly reduce the actual data redundancy in the network, and severely compromise the reliability of the storage system.
 \\\\ \centerline{\includegraphics[width=360pt]{fig15}}
 \\ \centerline{{Figure 4.1 Sybil Attack}}
    \vspace{-1.5em}
@@ -1974,8 +1975,8 @@ As shown in Figure 5.1, Sybil attack takes place when a greedy miner node create
 \noindent   
 PPIO’s Proof of Replication (PoRep) and Proof of Spacetime (PoSt) prevent Sybil attacks by requiring each copy of the data to be unique.  As a result, each miner account is supposed to have stored a different copy. The Verifier In both proofs validates the copy based on its uniquely constructed Merkle tree. As it takes a significant amount of time to recreate a copy to calculate the correct Merkle tree, both proofs will fail or timeout if the miner has not correctly stored its unique copy. 
 
-      \subsection{Outsourcing Attacks}  %——5.2
-As shown in Figure 5.2, outsourcing attacks take place when miners claim to have stored copies of the data in their physical storage, but they in fact have stored the data on a third-party storage system. These miners fulfill the download request by forwarding data from the third-party storage to the user. When multiple miners follow suit, the third-party storage system may only store a single copy of the data to save cost, and service it to multiple miners. As a result, the attack reduces the actual data redundancy in the system. Besides, when the third-party storage is a centralized storage system, it increases the risk of data not getting recovered when there is a failure with the centralized server.
+      \subsection{Outsourcing Attacks}  %——4.2
+As shown in Figure 4.2, outsourcing attacks take place when miners claim to have stored copies of the data in their physical storage, but they in fact have stored the data on a third-party storage system. These miners fulfill the download request by forwarding data from the third-party storage to the user. When multiple miners follow suit, the third-party storage system may only store a single copy of the data to save cost, and service it to multiple miners. As a result, the attack reduces the actual data redundancy in the system. Besides, when the third-party storage is a centralized storage system, it increases the risk of data not getting recovered when there is a failure with the centralized server.
    \vspace{-0.5em}
 \\
 \\ \centerline{\includegraphics[width=340pt]{fig16}}
@@ -1990,8 +1991,8 @@ PPIO’s PoSt can effectively defend against the generation attacks, as the mine
 \\\\At the same time, the Verifier in PoSt requires the challenges to be answered within a specified period. When the miner stores data on third-party storage, it takes additional time to retrieve the data before they can generate the correct proofs. As a result, the challenge is likely to timeout and the miner will be punished for failing to provide proofs in time.
    \vspace{-0.5em}
 %————————————————————————————————————————————————
-      \subsection{Generation Attacks}  %——5.3
-As shown in Figure 5.3, generation attacks take place when a miner pretends to have stored a copy of the data, but in fact, it has only stored enough information that can be used to generate the proofs and respond to the storage challenges from a Verifier in real-time. If successful, the miner can claim to have stored a large amount of data and get unfair rewards. On the other hand, since the user cannot download the correct data from the miner, the reliability of the storage system is significantly degraded.
+      \subsection{Generation Attacks}  %——4.3
+As shown in Figure 4.3, generation attacks take place when a miner pretends to have stored a copy of the data, but in fact, it has only stored enough information that can be used to generate the proofs and respond to the storage challenges from a Verifier in real-time. If successful, the miner can claim to have stored a large amount of data and get unfair rewards. On the other hand, since the user cannot download the correct data from the miner, the reliability of the storage system is significantly degraded.
    \vspace{-2.5em}
 \\ \centerline{\includegraphics[width=330pt]{fig17}}
 \\ \centerline{{Figure 4.3 Generation Attack}}
@@ -2015,8 +2016,8 @@ PPIO can effectively prevent generation attacks with the following design:
    \vspace{-0.5em}
 
 
-      \subsection{Distributed Denial of Service Attacks}  %——5.4
-As shown in Figure 5.1, DDoS Attacks take place when a large number of network nodes attack a target node at the same time. For example, the attack can cause a tremendous amount of network traffic that overloads the node, and cause it to fail to respond to regular service requests.
+      \subsection{Distributed Denial of Service Attacks}  %——4.4
+As shown in Figure 4.4, DDoS Attacks take place when a large number of network nodes attack a target node at the same time. For example, the attack can cause a tremendous amount of network traffic that overloads the node, and cause it to fail to respond to regular service requests.
    \vspace{-0.5em}
 \\\\
 \centerline{\includegraphics[width=300pt]{fig18}}
@@ -2039,8 +2040,8 @@ PPIO can effectively prevent DDoS Attacks with the following design:
 \noindent   
 •\quad In PPIO’s consensus mechanism, nodes are being randomly selected to build the next block in the ledger. Unless the attacker attacks all the available nodes in the entire network, the operation of PPIO will not be affected. As a result, it is unrealistic for attackers to conduct effective DDoS attacks against PPIO.
    \vspace{-0.5em}
-      \subsection{Eclipse Attacks}  %——5.5
-As shown in Figure 5.5, eclipse attacks take place when attackers isolate a victim node by controlling all the connections to and from the node. As a result, the victim node no longer receives correct information from the rest of the network and therefore can be manipulated by the attackers, and may end up with economic losses.
+      \subsection{Eclipse Attacks}  %——4.5
+As shown in Figure 4.5, eclipse attacks take place when attackers isolate a victim node by controlling all the connections to and from the node. As a result, the victim node no longer receives correct information from the rest of the network and therefore can be manipulated by the attackers, and may end up with economic losses.
 \\
 \centerline{\includegraphics[width=340pt]{fig19}}
  \centerline{{Figure 4.5 Eclipse Attacks }}
@@ -2069,7 +2070,7 @@ Members participating in PPIO’s ecosystem take on different roles, like Users,
 \\\\\ PPIO’s design also employs some mechanisms that help stabilize its economy. The Cryptocurrency used in PPIO’s system to collect rewards or purchase services is called PPIO Coin. PPIO offers a price lock program that allows the user to take advantage of lower prices when the cost of storage and bandwidth drops. At the same time, it protects the user from price hikes when the resource cost rises due to inevitable market fluctuation.  PPIO employs an Oracle system to guide the pricing of storage and download services, that helps reduce the volatility of PPIO Coin so that users and developers can enjoy a more stable economy. PPIO also employs a payment mechanism called Coin-Pool, that allows users to purchase storage services in bulk. It helps make the payment system more flexible and easy-to-use.
    \vspace{-0.5em}
    
-      \subsection{Roles} %——6.1
+      \subsection{Roles} %——5.1
 The following roles exist in PPIO’s storage system:
    \vspace{-0.8em}
 \\
@@ -2130,7 +2131,7 @@ The following roles exist in PPIO’s storage system:
 \noindent   
 Any of the above nodes can also participate in PPIO’s consensus mechanism by choice and becomes eligible to build new blocks on the ledger. With PPIO’s PVFT consensus algorithm, the participating nodes compete to become next block builder in a fair fashion. When a node is selected and successfully builds the next block, it also gets rewarded accordingly.
    \vspace{-0.5em}
-      \subsection{Mining}  %——6.2
+      \subsection{Mining}  %——5.2
 In PPIO’s storage network, miners get rewarded by providing storage or download services. Besides, they also get a chance to receive mining rewards from the platform, when new blocks are generated on the distributed ledger.
    \vspace{-0.5em}
 \\ \\PPIO’s mining reward is distributed based on the contribution of each miner, measured with storage proofs. The purpose of the reward is to encourage miners to participate, contribute more resource and provide better service to the network. PPIO allows miners to collect mining rewards in two ways, non-collateralized collection, and collateralized collection.
@@ -2200,7 +2201,7 @@ Indexers &1\%\\
 \hline % 在表格最下方绘制横线
 \end{tabular}
 \end{center} 
-      \subsection{Smart Contract}  %——6.3
+      \subsection{Smart Contract}  %——5.3
 Self-executing smart contracts are used in PPIO storage network to handle data storage or download.
  \vspace{-0.8em}
 %\\ \\However, Lessors may go offline at any moment in time over the heterogeneous nature of P2P network, and new Lessors are required to fulfill the storage needs for these Segments. The purpose of this event handling is to ensure sufficient copies of Segments at all times.
@@ -2254,8 +2255,8 @@ PPIO allows the user to update the stored object. A new contract for the updated
  \vspace{-0.5em}
 
 
-      \subsection{Gas}  %——6.4
-As shown in Figure 6.1 and 6.2, while executing either type of smart contract, PPIO dispatches the miners and other nodes to provide services and rewards them accordingly. PPIO adopts Gas as a unit to quantify the contribution of each node in fulfilling a specific contract. In the end, each node will receive PPIO Coins at an amount based on the number of Gas units. The amount of PPIO Coins the user pays per Gas unit in this contract is called Gas Price.
+      \subsection{Gas}  %——5.4
+As shown in Figure 5.1 and 5.2, while executing either type of smart contract, PPIO dispatches the miners and other nodes to provide services and rewards them accordingly. PPIO adopts Gas as a unit to quantify the contribution of each node in fulfilling a specific contract. In the end, each node will receive PPIO Coins at an amount based on the number of Gas units. The amount of PPIO Coins the user pays per Gas unit in this contract is called Gas Price.
  \vspace{-0.6em}
 \\ \\Gas transactions among different nodes while executing the storage and download contracts are described below.
  \vspace{-0.5em}
@@ -2360,14 +2361,14 @@ The transactions can be formulated as:\\\
 User pays PPIO Coins in full up front in these transactions, but the miners receive PPIO Coins gradually as they are providing the service. During the storage period, if a miner goes offline or stops providing the service, the Indexer will find other available miners to store a copy of the data, to maintain the level of data redundancy in the network. At this point, the new miner will start receiving PPIO Coins for storing the copy, while the previous miner will stop receiving further payment.
 
 
-      \subsection{Gas Price}  %——6.5
+      \subsection{Gas Price}  %——5.5
 The ratio to convert Gas into PPIO Coin is decided by the Gas Price in each contract. The number of PPIO Coins to be paid for a contract is calculated as follows:
  \vspace{-0.5em}
 \\ \\ \centerline{$PPIO$ $Coin$$ = GasPrice \cdot Gas$}
  \vspace{-1.5em}
 \\ \\$PPIO$ $Coin$ is the number of PPIO Coins that a user is willing to pay when creating the contract. Gas is the total amount of gas units required for executing the contract.
  \vspace{-0.5em}
-\\ \\ As discussed in section 6.3, smart contracts can be updated after execution, and new contracts can be created. Every time a contract is created or updated, its Gas Price needs to be decided. The amount of Gas to be spent is decided by the nature of the contract. For example, the gas amount for a storage contract is decided by the size of the data to be stored, the number of copies to be created and the storage period. With the amount of PPIO Coins the user is willing to pay for the contract, its Gas Price can be calculated using the above formula. After the contract is accepted and executed, the total Gas amount is distributed to the nodes involved in executing the contract based on their contribution. Each node will receive the right amount of PPIO Coins calculated using the Gas Price value decided earlier for the contract.
+\\ \\ As discussed in section 5.3, smart contracts can be updated after execution, and new contracts can be created. Every time a contract is created or updated, its Gas Price needs to be decided. The amount of Gas to be spent is decided by the nature of the contract. For example, the gas amount for a storage contract is decided by the size of the data to be stored, the number of copies to be created and the storage period. With the amount of PPIO Coins the user is willing to pay for the contract, its Gas Price can be calculated using the above formula. After the contract is accepted and executed, the total Gas amount is distributed to the nodes involved in executing the contract based on their contribution. Each node will receive the right amount of PPIO Coins calculated using the Gas Price value decided earlier for the contract.
  \vspace{-0.5em}
 \\ \\Gas Price is the key for a contract to be accepted in the marketplace. For example, the process of matching a storage contract is to find enough miners that are willing to accept the Gas Price in the contract, so that it can be executed. The higher the Gas Price is, the easier and quicker it is to find enough miners to store the data. Otherwise, if the Gas Price is too low, the contract may never be executed.  
  \vspace{-0.5em}
@@ -2379,7 +2380,7 @@ The ratio to convert Gas into PPIO Coin is decided by the Gas Price in each cont
  \vspace{-0.5em}
 \\\\As PPIO is a fully decentralized system, the implementation of Oracle is also decentralized. Multiple nodes in the network can fulfill the functionalities of the Oracle, and the consensus mechanism is also used to ensure its reliability.      
  \vspace{-0.5em}
-\subsection{Coin Pool}  %——6.6
+\subsection{Coin Pool}  %——5.6
 Each transaction needs to consume a certain amount of Gas to encourage different nodes in the network to participate. However, if each transaction requires the user to make individual micropayment, the user experience will be degraded, as they need to handle too many payments. Besides, figuring out the right Gas Price for each transaction is also be a burden to most users. Therefore, applications may wish to provide more friendly payment options to the user. For example, a network drive application may wish to provide storage packages that allow the user to make an upfront payment for a specific storage quota for a period (for example, 6 months 200 GB storage). The users don’t need to make additional micropayments for storing or downloading data under these constraints.
  \vspace{-0.5em}
 \\ \\PPIO solves this problem by introducing a unique node called {\bf Coin-Pool}. Each Coin-Pool is an individual business entity that is responsible for its profits and losses. Users or developers sign up and purchase services provided by the Coin-Pool, such as storage packages.  Once an agreement is reached, the Coin-Pool will handle all the payments on behalf of the user, when they use any of PPIO’s services that are included in the package they purchased.
