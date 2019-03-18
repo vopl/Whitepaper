@@ -1,8 +1,4 @@
 \documentclass[10pt,a4paper]{article}
-
-\usepackage[utf8]{inputenc}
-\usepackage[russian]{babel}
-
 \usepackage{geometry}%—— 宏设置页边距
 \geometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
 \usepackage{amsmath}%—— 数学
@@ -16,12 +12,19 @@
 \newcommand\hl{\bgroup\markoverwith
   {\textcolor{lightgray}{\rule[-.5ex]{.1pt}{2.5ex}}}\ULon}
 \usepackage{algpseudocode}
-\usepackage{hyperref}%——————————————————————目录超链接
+\usepackage[unicode]{hyperref}%——————————————————————目录超链接
 %\usepackage{xcolor}%——————————————————————改变文字颜色
 
 \usepackage[linesnumbered,ruled]{algorithm2e}
 \usepackage{algorithmicx}
-\usepackage{pxfonts}
+
+%\usepackage{pxfonts}
+\usepackage{libertine}
+\usepackage{libertinust1math}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+
 \linespread{1.0} %—— 行间距
 \setlength{\parskip}{0em}%设置段落间距
 \title{ \LARGE\bf PPIO: A Programmable P2P Storage and\\Delivery Network}  %———标题

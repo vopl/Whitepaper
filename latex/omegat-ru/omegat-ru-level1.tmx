@@ -156,8 +156,8 @@
       <tuv lang="EN-US">
         <seg>Due to the unique nature of the P2P network, more copies of the data lead to faster download speed.</seg>
       </tuv>
-      <tuv lang="RU" changeid="vopl" changedate="20190316T173008Z" creationid="vopl" creationdate="20190316T173008Z">
-        <seg>Из за уникальной особенности одноранговой сети, наличие множества копий данных приводит к более высокой скорости загрузки .</seg>
+      <tuv lang="RU" changeid="vopl" changedate="20190318T172155Z" creationid="vopl" creationdate="20190316T173008Z">
+        <seg>Из за уникальной особенности одноранговой сети, наличие множества копий данных приводит к более высокой скорости загрузки.</seg>
       </tuv>
     </tu>
     <tu>
@@ -222,8 +222,8 @@
       <tuv lang="EN-US">
         <seg>In section 2 of this chapter, PPIO's P2P network design will be explained in details, including its intelligent data-driven scheduling algorithms, its implementation of the Distributed Hash Table (DHT), its traffic management based on Proactive Network Provider Participation (P4P), and its P2P based content distribution technology(PCDN).</seg>
       </tuv>
-      <tuv lang="RU" changeid="vopl" changedate="20190316T173847Z" creationid="vopl" creationdate="20190316T173847Z">
-        <seg>Во секции 2 данной главы будет детально рассмотрена архитектура одноранговой сети PPIO, включая интеллектуальные алгоритмы планирования предачи данных, основанные на самих данных (ntelligent data-driven scheduling algorithms), реализация распределенной хэш-таблицы (DHT), управление трафиком на основе упредительного учета структуры сети (Proactive Network Provider Participation, P4P), а так же, технологии доставки контента для одноранговых сетей (P2P based content distribution technology, PCDN).</seg>
+      <tuv lang="RU" changeid="vopl" changedate="20190318T172140Z" creationid="vopl" creationdate="20190318T172008Z">
+        <seg>В секции 2 данной главы будет детально рассмотрена архитектура одноранговой сети PPIO, включая интеллектуальные алгоритмы планирования предачи данных, основанные на самих данных (ntelligent data-driven scheduling algorithms), реализация распределенной хэш-таблицы (DHT), управление трафиком на основе упредительного учета структуры сети (Proactive Network Provider Participation, P4P), а так же, технологии доставки контента для одноранговых сетей (P2P based content distribution technology, PCDN).</seg>
       </tuv>
     </tu>
     <tu>
@@ -673,7 +673,7 @@
       <tuv lang="EN-US">
         <seg>\section{Solution} %——2</seg>
       </tuv>
-      <tuv lang="RU" changeid="vopl" changedate="20190316T164355Z" creationid="vopl" creationdate="20190316T164355Z">
+      <tuv lang="RU" changeid="vopl" changedate="20190318T171615Z" creationid="vopl" creationdate="20190318T171615Z">
         <seg>\section{Решение} %——2</seg>
       </tuv>
     </tu>
@@ -697,6 +697,17 @@
       </tuv>
       <tuv lang="RU" changeid="vopl" changedate="20190314T115908Z" creationid="vopl" creationdate="20190314T112832Z">
         <seg>\title{ \LARGE\bf PPIO: Программируемая одноранговая сеть\\хранения и доставки}  %———标题</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">In section 2 of this chapter, PPIO's P2P network design will be explained in details, including its intelligent data-driven scheduling algorithms, its implementation of the Distributed Hash Table (DHT), its traffic management based on Proactive Network Provider Participation (P4P), and its P2P based content distribution technology(PCDN).</prop>
+      <prop type="next">\\</prop>
+      <tuv lang="EN-US">
+        <seg>\vspace{-0.6em}</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190318T171756Z" creationid="vopl" creationdate="20190318T171756Z">
+        <seg>\vspace{-0.6em}</seg>
       </tuv>
     </tu>
     <tu>

@@ -1,0 +1,13 @@
+
+----------------------
+шрифт изменен с Palatino на Libertine, так как для кирилицы нет соответствующей реализации Palatino жирных/курсивов
+
+%\usepackage{pxfonts} %Palatino
+\usepackage{libertine}
+\usepackage{libertinust1math}
+
+----------------------
+для гиперссылок добавлен атрибут unicode
+
+\usepackage[unicode]{hyperref}
+
