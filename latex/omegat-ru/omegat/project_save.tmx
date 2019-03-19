@@ -769,6 +769,33 @@ PPIO is a programmable decentralized storage and delivery network.</prop>
     </tu>
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\usepackage{algpseudocode}</prop>
+      <prop type="next">%\usepackage{xcolor}%——————————————————————改变文字颜色</prop>
+      <tuv lang="EN-US">
+        <seg>\usepackage{hyperref}%——————————————————————目录超链接</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190319T072221Z" creationid="vopl" creationdate="20190319T072221Z">
+        <seg>\usepackage[unicode]{hyperref}%——————————————————————目录超链接</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\usepackage{algorithmicx}</prop>
+      <prop type="next">\linespread{1.0} %—— 行间距</prop>
+      <tuv lang="EN-US">
+        <seg>\usepackage{pxfonts}</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190319T073729Z" creationid="vopl" creationdate="20190319T072126Z">
+        <seg>%\usepackage{pxfonts}
+\usepackage{libertine}
+\usepackage{libertinust1math}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">In section 2 of this chapter, PPIO's P2P network design will be explained in details, including its intelligent data-driven scheduling algorithms, its implementation of the Distributed Hash Table (DHT), its traffic management based on Proactive Network Provider Participation (P4P), and its P2P based content distribution technology(PCDN).</prop>
       <prop type="next">\\</prop>
       <tuv lang="EN-US">
