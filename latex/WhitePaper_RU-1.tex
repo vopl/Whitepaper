@@ -249,42 +249,49 @@ PPIO является программируемой децентрализов�
 \hangafter 1
 \hangindent 1.6em
 \noindent   
-2.\quad Части к загрузке сортируются на основе их приоритетов и предварительно распределяются по имеющимся виртуальным соединениям, размещаются в соответствующих очередях на скачивание. Оценочное время доставки каждой части может быть вычеслено на основе информации о скорости каждого виртуального соединения и уже имеющихся частей к загрузке в каждой очереди. Главное, более приоритетные части должны оканчиваться с более ранним временем доставки. На Рисунке 2.1 Пример алгоритма предварительного распределения.
+2.\quad Части к загрузке сортируются на основе их приоритетов и предварительно распределяются по имеющимся виртуальным соединениям, размещаются в соответствующих очередях на скачивание. Оценочное время доставки каждой части может быть вычеслено на основе информации о скорости каждого виртуального соединения и уже имеющихся частей к загрузке в каждой очереди. Главное, более приоритетные части должны оканчиваться с более ранним временем доставки. На Рисунке 2.1 показан пример действия алгоритма предварительного распределения.
 \vspace{-0.8em}
 \\ 
 
 \hangafter 1
 \hangindent 1.6em
 \noindent   
-3.\quad Step 2 is repeated periodically, and all remaining pieces will be re-allocated to accommodate changes in the transmission speed and availability of the virtual connections.
+3.\quad Шаг 2 повторяется циклически, все оставшиеся части будут пере-распределены в соответствии с изменениями скорости передачи и доступности виртуальных соединений.
 \vspace{-0.8em}
 \\ 
 
 \hangafter 1
 \hangindent 1.6em
 \noindent   
-4.\quad After a piece is successfully downloaded, the transmission speed of the virtual connection is updated, and a request is sent immediately to download the next piece in the queue.   
+4.\quad После успешной загрузки части обновляется оценка скорости передачи виртуального соединения, сразу же отсылается запрос на скачивание следующей части в очереди.
 \vspace{-0.8em}
 \\ 
 
 \hangafter 1
 \hangindent 1.6em
 \noindent   
-5.\quad  Urgent pieces can be requested from multiple connections to ensure smooth playback.
+5.\quad  Для более мягкого воспроизведения, наиболее востребованные части могут быть запрошены сквозь несколько соединений.
 \vspace{-0.8em}
 \\ 
 
 \hangafter 1
 \hangindent 1.6em
 \noindent   
-6.\quad  Other parts of the algorithm work the same way as in regular file download.
+6.\quad  В остальном алгоритм работает так же как и в случае обычного скачивания файлов.
 \vspace{-0.5em}
 \\ 
 
-\hangafter 1
-\hangindent 1.5em
+\begin{figure}[!htb]   % 重点就是这个 figure*   \onecolumn<---->前加不分栏
+    \centering
+    \includegraphics[height = 0.5\textwidth = 2*]{fig1}
+    \label{circuit}
+\centerline{{Рисунок 2.1 Иллюстрация предварительного распределения}}
+    \vspace{-2.5em}
+\end{figure}
 \noindent   
-•\quad{\bf Environment variables of the pre-allocation algorithm}
+\\
+\vspace{-0.5em}
+\\ \\ {\bf Environment variables of the pre-allocation algorithm}
 \vspace{-0.3em}
 \\\\
 \begin{tabular}{r|l}
@@ -306,14 +313,16 @@ PPIO является программируемой децентрализов�
 \noindent   
 PPIO's P2P transmission network is fully dynamic. Each peer responds to multiple download requests, and potentially to multiple downloading nodes. Each downloading node sends download requests to multiple peers, manages downloaded pieces and deals with potential timeouts and failures from the peers. At the same time, the downloading node itself can be serving download requests, working as a peer to other nodes. By utilizing the two data-driven scheduling algorithms, PPIO's dynamic P2P network can handle an extremely high volume of concurrent data transmission efficiently.
 \vspace{-0.7em}
-\newpage 
-\hangafter 1
-\hangindent 1.5em
-\noindent   
-•\quad{\bf Pseudocode}\\
+%\newpage 
+%\hangafter 1
+%\hangindent 1.5em
+%\noindent   
+\\
+\vspace{-0.5em}
+\\ \\ {\bf Pseudocode}\\
 \vspace{-1em}
 
-\begin{algorithm}[!htb]
+\begin{algorithm}[H]
 \renewcommand\baselinestretch{1.1}\selectfont
   \SetKwInOut{Input}{Input}
   \SetKwInOut{Output}{Output}
@@ -351,18 +360,12 @@ PPIO's P2P transmission network is fully dynamic. Each peer responds to multiple
   \Return{$connRequestQueues$} 
   \caption{Pre-schedule for the upcoming Piece, the result of the scheduling exists in the download queue of each tunnel.}
 \end{algorithm}
-\vspace{-2em}
+%\vspace{-2em}
          \subsubsection{Distributed Database and Routing}  %——2.2.2 \cite{article17}   
+
 PPIO is a fully decentralized storage and distribution system that requires its database to be also managed in a decentralized fashion. PPIO employs Distributed Hash Table (DHT) to store data and provide routing and lookup services.\\
 \vspace{-0.5em}
-\begin{figure}[!htb]   % 重点就是这个 figure*   \onecolumn	前加不分栏
-    \centering
-    \includegraphics[height = 0.5\textwidth = 2*]{fig1}
-    \label{circuit}
-    \centerline{{Figure 2.1 Illustration of pre-allocation}}
-    \vspace{-2.5em}
-\end{figure} \\
-In a DHT, each piece of data is bundled with a unique key into a key-value pair. These key-value pairs are distributed and stored among the participating nodes. It avoids the problem with the centralized database system, where a failure in the central server leads to the breakdown of the entire network. No single participating node in the DHT is tasked to maintain the entire network. Each node only stores a small part of the database and only needs to maintain information of its adjacent nodes, such design significantly reduces each node’s bandwidth and resource usage. Redundancy is also added to the data and stored on multiple nodes to maintain the reliability of the system so that a single node failure does not cause loss of data.
+\\In a DHT, each piece of data is bundled with a unique key into a key-value pair. These key-value pairs are distributed and stored among the participating nodes. It avoids the problem with the centralized database system, where a failure in the central server leads to the breakdown of the entire network. No single participating node in the DHT is tasked to maintain the entire network. Each node only stores a small part of the database and only needs to maintain information of its adjacent nodes, such design significantly reduces each node’s bandwidth and resource usage. Redundancy is also added to the data and stored on multiple nodes to maintain the reliability of the system so that a single node failure does not cause loss of data.
 \vspace{-0.5em}
  \\ \\ There are many different implementations of DHT, some of the commonly used are Chord\cite{article14}, Pastry\cite{article15}, Tapestry\cite{article18}, Dynamo\cite{article19}, and Kademlia\cite{article16}. PPIO uses Kademlia, so do many other well-known P2P projects like PPLive, BitTorrent, eMule, etc.
  \vspace{-0.5em}

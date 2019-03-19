@@ -54,10 +54,32 @@
       <prop type="prev">\noindent</prop>
       <prop type="next">\vspace{-0.8em}</prop>
       <tuv lang="EN-US">
+        <seg>3.\quad Step 2 is repeated periodically, and all remaining pieces will be re-allocated to accommodate changes in the transmission speed and availability of the virtual connections.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190319T132405Z" creationid="vopl" creationdate="20190319T132405Z">
+        <seg>3.\quad Шаг 2 повторяется циклически, все оставшиеся части будут пере-распределены в соответствии с изменениями скорости передачи и доступности виртуальных соединений.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\noindent</prop>
+      <prop type="next">\vspace{-0.8em}</prop>
+      <tuv lang="EN-US">
         <seg>3.\quad The number of virtual connections on each peer varies the peer with a higher $V_{conn}$ can have a significant number of initial virtual connections.</seg>
       </tuv>
       <tuv lang="RU" changeid="vopl" changedate="20190319T095625Z" creationid="vopl" creationdate="20190319T095625Z">
         <seg>3.\quad Количество виртуальных соединений с каждым пиром различно, пир с высоким $V_{conn}$ может иметь значительное число виртуальных соединений изначально.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\noindent</prop>
+      <prop type="next">\vspace{-0.8em}</prop>
+      <tuv lang="EN-US">
+        <seg>4.\quad After a piece is successfully downloaded, the transmission speed of the virtual connection is updated, and a request is sent immediately to download the next piece in the queue.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190319T132538Z" creationid="vopl" creationdate="20190319T132538Z">
+        <seg>4.\quad После успешной загрузки части обновляется оценка скорости передачи виртуального соединения, сразу же отсылается запрос на скачивание следующей части в очереди.</seg>
       </tuv>
     </tu>
     <tu>
@@ -76,10 +98,32 @@
       <prop type="prev">\noindent</prop>
       <prop type="next">\vspace{-0.8em}</prop>
       <tuv lang="EN-US">
+        <seg>5.\quad  Urgent pieces can be requested from multiple connections to ensure smooth playback.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190319T132723Z" creationid="vopl" creationdate="20190319T132723Z">
+        <seg>5.\quad  Для более мягкого воспроизведения, наиболее востребованные части могут быть запрошены сквозь несколько соединений.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\noindent</prop>
+      <prop type="next">\vspace{-0.8em}</prop>
+      <tuv lang="EN-US">
         <seg>5.\quad When a piece is received from a virtual connection, the estimated download speed $V_{conn}$ is updated, and another remaining arbitrary piece will be requested from the connection immediately until all the data is downloaded.</seg>
       </tuv>
       <tuv lang="RU" changeid="vopl" changedate="20190319T100502Z" creationid="vopl" creationdate="20190319T100502Z">
         <seg>5.\quad При получении из виртуального соединения запрошенной части производится обновление оценочной скорости скачивания $V_{conn}$, далее немедленно запрашивается какая то другая часть, до тех пор, пока не будут скачаны все данные.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\noindent</prop>
+      <prop type="next">\vspace{-0.5em}</prop>
+      <tuv lang="EN-US">
+        <seg>6.\quad  Other parts of the algorithm work the same way as in regular file download.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190319T132817Z" creationid="vopl" creationdate="20190319T132817Z">
+        <seg>6.\quad  В остальном алгоритм работает так же как и в случае обычного скачивания файлов.</seg>
       </tuv>
     </tu>
     <tu>
@@ -122,8 +166,8 @@
       <tuv lang="EN-US">
         <seg>An illustration of the pre-allocation algorithm is shown in Figure 2.1.</seg>
       </tuv>
-      <tuv lang="RU" changeid="vopl" changedate="20190319T113657Z" creationid="vopl" creationdate="20190319T113657Z">
-        <seg>На Рисунке 2.1 Пример алгоритма предварительного распределения.</seg>
+      <tuv lang="RU" changeid="vopl" changedate="20190319T113735Z" creationid="vopl" creationdate="20190319T113657Z">
+        <seg>На Рисунке 2.1 показан пример действия алгоритма предварительного распределения.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1214,6 +1258,17 @@
       </tuv>
       <tuv lang="RU" changeid="vopl" changedate="20190314T115446Z" creationid="vopl" creationdate="20190314T115446Z">
         <seg>\author {\centerline{\Large Аннотация}}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\label{circuit}</prop>
+      <prop type="next">\vspace{-2.5em}</prop>
+      <tuv lang="EN-US">
+        <seg>\centerline{{Figure 2.1 Illustration of pre-allocation}}</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190319T132902Z" creationid="vopl" creationdate="20190319T132902Z">
+        <seg>\centerline{{Рисунок 2.1 Иллюстрация предварительного распределения}}</seg>
       </tuv>
     </tu>
     <tu>
