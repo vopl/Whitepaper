@@ -349,6 +349,17 @@
     </tu>
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">•\quad {\bf Proof:} The nodes of the traditional P2P network are free to choose join or leave the network, it is difficult to maintain the stability of the network.</prop>
+      <prop type="next">Section 3 of this chapter explains PPIO's Proof of Replication (PoRep), Proof of Download (PoD), Proof of Spacetime (PoSt), and Light Proof of Capacity (LPoC) that are designed to defend the network against all these attacks and maintain the integrity of the system.</prop>
+      <tuv lang="EN-US">
+        <seg>PPIO incentives the nodes based on their contributions of storage and bandwidth, therefore the nodes incline to stay in the network and make a long and reliable contribution.\cite{article1}However, the malicious nodes would attempt to cheat the network through various types of attacks, which undermines the system fairness.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190319T081652Z" creationid="vopl" creationdate="20190319T080256Z">
+        <seg>PPIO поощряет узлы в зависимости от реализуемых ими ресурсов хранилища и пропускной способности, тем самым узлы стремятся оставаться в сети и производить длительный и стабильный вклад. \cite{article1} Тем не менее, злонамеренные узлы предпринимают попытки причинить вред сети посредством различных типов атак, подрывающих целостность системы.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">\noindent\\</prop>
       <prop type="next">It not only provides more robust and efficient services than existing cloud-based storage platforms such as AWS S3 but also significantly reduces the storage cost.</prop>
       <tuv lang="EN-US">
@@ -728,17 +739,6 @@
     </tu>
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
-      <prop type="prev">In section 2 of this chapter, PPIO's P2P network design will be explained in details, including its intelligent data-driven scheduling algorithms, its implementation of the Distributed Hash Table (DHT), its traffic management based on Proactive Network Provider Participation (P4P), and its P2P based content distribution technology(PCDN).</prop>
-      <prop type="next">\\</prop>
-      <tuv lang="EN-US">
-        <seg>\vspace{-0.6em}</seg>
-      </tuv>
-      <tuv lang="RU" changeid="vopl" changedate="20190318T171756Z" creationid="vopl" creationdate="20190318T171756Z">
-        <seg>\vspace{-0.6em}</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">\noindent</prop>
       <prop type="next">PPIO's well-designed incentives provide attractive financial rewards to miners and encourage them to contribute to the network.</prop>
       <tuv lang="EN-US">
@@ -768,6 +768,17 @@
       </tuv>
       <tuv lang="RU" changeid="vopl" changedate="20190314T162928Z" creationid="vopl" creationdate="20190314T162928Z">
         <seg>•\quad {\bf Приватность, безопасность и стабильность.} Безопасность и приватность данных являются ключевыми требованиями в дизайне распределенной файловой системе PPIO.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\noindent</prop>
+      <prop type="next">PPIO incentives the nodes based on their contributions of storage and bandwidth, therefore the nodes incline to stay in the network and make a long and reliable contribution.\cite{article1}However, the malicious nodes would attempt to cheat the network through various types of attacks, which undermines the system fairness.</prop>
+      <tuv lang="EN-US">
+        <seg>•\quad {\bf Proof:} The nodes of the traditional P2P network are free to choose join or leave the network, it is difficult to maintain the stability of the network.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190319T080012Z" creationid="vopl" creationdate="20190319T075818Z">
+        <seg>•\quad {\bf Доказательства (Proof):} Узлы традиционной P2P сети свободно присоединяются к сети и свободно покидают ее, в таких условиях сложно поддерживать стабильность сети.</seg>
       </tuv>
     </tu>
     <tu>
