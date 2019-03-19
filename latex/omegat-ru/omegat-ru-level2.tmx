@@ -260,6 +260,17 @@
     </tu>
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">Each downloading node sends download requests to multiple peers, manages downloaded pieces and deals with potential timeouts and failures from the peers.</prop>
+      <prop type="next">By utilizing the two data-driven scheduling algorithms, PPIO's dynamic P2P network can handle an extremely high volume of concurrent data transmission efficiently.</prop>
+      <tuv xml:lang="EN-US">
+        <seg>At the same time, the downloading node itself can be serving download requests, working as a peer to other nodes.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190319T143142Z" creationid="vopl" creationdate="20190319T143142Z">
+        <seg>В одно и тоже время скачивающий узел сам может обслуживать запросы на скачивание, работать как пир для других узлов.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">\noindent</prop>
       <prop type="next">It significantly improves the overall transmission efficiency of the network, especially for TCP connections, as it works around the low-efficiency problem caused by TCP's conservative flow control.</prop>
       <tuv xml:lang="EN-US">
@@ -326,6 +337,17 @@
     </tu>
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">At the same time, the downloading node itself can be serving download requests, working as a peer to other nodes.</prop>
+      <prop type="next">\vspace{-0.7em}</prop>
+      <tuv xml:lang="EN-US">
+        <seg>By utilizing the two data-driven scheduling algorithms, PPIO's dynamic P2P network can handle an extremely high volume of concurrent data transmission efficiently.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190319T143334Z" creationid="vopl" creationdate="20190319T143334Z">
+        <seg>Используя эти два алгоритма планирования, управляемые данными, динамическая одноранговая сеть PPIO может эффективно обрабатывать значительные объемыконкуррентно передаваемых данных.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">PPIO's design also improves the efficiency in regional networks and makes it more friendly to ISPs.</prop>
       <prop type="next">\vspace{-0.6em}</prop>
       <tuv xml:lang="EN-US">
@@ -349,6 +371,17 @@
     </tu>
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">Each peer responds to multiple download requests, and potentially to multiple downloading nodes.</prop>
+      <prop type="next">At the same time, the downloading node itself can be serving download requests, working as a peer to other nodes.</prop>
+      <tuv xml:lang="EN-US">
+        <seg>Each downloading node sends download requests to multiple peers, manages downloaded pieces and deals with potential timeouts and failures from the peers.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190319T143041Z" creationid="vopl" creationdate="20190319T143041Z">
+        <seg>Каждый скачивающий узел посылает запросы на скачивание множеству пиров, контролирует скаченные части и наблюдает за возможными истечениями времени ожидания и сбоями пиров.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">For example, one segment can be partitioned into M pieces, and these pieces can be duplicated and stored by N different storage miners.</prop>
       <prop type="next">A scheduler decides how the M pieces can be downloaded from the N peers so that the segment can be retrieved in a fast, efficient manner, and avoid duplicated pieces to be downloaded.</prop>
       <tuv xml:lang="EN-US">
@@ -356,6 +389,17 @@
       </tuv>
       <tuv xml:lang="RU" changeid="vopl" changedate="20190319T093456Z" creationid="vopl" creationdate="20190319T093456Z">
         <seg>Каждый их этих N майнеров так же называется “Пиром (Peer)”.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">PPIO's P2P transmission network is fully dynamic.</prop>
+      <prop type="next">Each downloading node sends download requests to multiple peers, manages downloaded pieces and deals with potential timeouts and failures from the peers.</prop>
+      <tuv xml:lang="EN-US">
+        <seg>Each peer responds to multiple download requests, and potentially to multiple downloading nodes.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190319T142801Z" creationid="vopl" creationdate="20190319T142801Z">
+        <seg>Каждый пир отвечает на множество запросов на скачивание, и, потенциально, множеству скачивающих узлов.</seg>
       </tuv>
     </tu>
     <tu>
@@ -741,6 +785,17 @@
       </tuv>
       <tuv xml:lang="RU" changeid="vopl" changedate="20190314T123515Z" creationid="vopl" creationdate="20190314T123515Z">
         <seg>PPIO сводит потребности в хранении данных, имеющиеся у сегодняшнего бизнеса с одной стороны и предлагаемых возможностей поставщиков соответствующих услуг с другой, а так же, предоставляет возможность реализации распределенных приложений (DApps).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\noindent</prop>
+      <prop type="next">Each peer responds to multiple download requests, and potentially to multiple downloading nodes.</prop>
+      <tuv xml:lang="EN-US">
+        <seg>PPIO's P2P transmission network is fully dynamic.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190319T142703Z" creationid="vopl" creationdate="20190319T142703Z">
+        <seg>Одноранговая сеть передачи PPIO полностью динамична.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1142,6 +1197,28 @@
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">\vspace{-0.5em}</prop>
+      <prop type="next">\vspace{-0.3em}</prop>
+      <tuv xml:lang="EN-US">
+        <seg>\\ \\ {\bf Environment variables of the pre-allocation algorithm}</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190319T142617Z" creationid="vopl" creationdate="20190319T142605Z">
+        <seg>\\ \\ {\bf Данные для алгоритма предварительного распределения}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\vspace{-0.5em}</prop>
+      <prop type="next">\begin{algorithm}[H]</prop>
+      <tuv xml:lang="EN-US">
+        <seg>\\ \\ {\bf Pseudocode}\\</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190319T143354Z" creationid="vopl" creationdate="20190319T143354Z">
+        <seg>\\ \\ {\bf Псевдокод}\\</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\vspace{-0.5em}</prop>
       <prop type="next">\vspace{-0.5em}</prop>
       <tuv xml:lang="EN-US">
         <seg>\\ \\ {\bf Real-time Data Streaming}</seg>
@@ -1258,6 +1335,17 @@
       </tuv>
       <tuv xml:lang="RU" changeid="vopl" changedate="20190314T115446Z" creationid="vopl" creationdate="20190314T115446Z">
         <seg>\author {\centerline{\Large Аннотация}}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\Return{$connRequestQueues$}</prop>
+      <prop type="next">\end{algorithm}</prop>
+      <tuv xml:lang="EN-US">
+        <seg>\caption{Pre-schedule for the upcoming Piece, the result of the scheduling exists in the download queue of each tunnel.}</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190319T143624Z" creationid="vopl" creationdate="20190319T143624Z">
+        <seg>\caption{Предварительное планирование ближайшей Части, результат планирования представлен в виде очереди-к-загрузке для каждого туннеля.}</seg>
       </tuv>
     </tu>
     <tu>

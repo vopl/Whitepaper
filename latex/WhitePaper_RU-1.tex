@@ -291,7 +291,7 @@ PPIO является программируемой децентрализов�
 \noindent   
 \\
 \vspace{-0.5em}
-\\ \\ {\bf Environment variables of the pre-allocation algorithm}
+\\ \\ {\bf Данные для алгоритма предварительного распределения}
 \vspace{-0.3em}
 \\\\
 \begin{tabular}{r|l}
@@ -311,16 +311,15 @@ PPIO является программируемой децентрализов�
 \vspace{-0.5em}
 \\\\\\
 \noindent   
-PPIO's P2P transmission network is fully dynamic. Each peer responds to multiple download requests, and potentially to multiple downloading nodes. Each downloading node sends download requests to multiple peers, manages downloaded pieces and deals with potential timeouts and failures from the peers. At the same time, the downloading node itself can be serving download requests, working as a peer to other nodes. By utilizing the two data-driven scheduling algorithms, PPIO's dynamic P2P network can handle an extremely high volume of concurrent data transmission efficiently.
+Одноранговая сеть передачи PPIO полностью динамична. Каждый пир отвечает на множество запросов на скачивание, и, потенциально, множеству скачивающих узлов. Каждый скачивающий узел посылает запросы на скачивание множеству пиров, контролирует скаченные части и наблюдает за возможными истечениями времени ожидания и сбоями пиров. В одно и тоже время скачивающий узел сам может обслуживать запросы на скачивание, работать как пир для других узлов. Используя эти два алгоритма планирования, управляемые данными, динамическая одноранговая сеть PPIO может эффективно обрабатывать значительные объемыконкуррентно передаваемых данных.
 \vspace{-0.7em}
 %\newpage 
 %\hangafter 1
 %\hangindent 1.5em
-%\noindent   
+\noindent   
 \\
 \vspace{-0.5em}
-\\ \\ {\bf Pseudocode}\\
-\vspace{-1em}
+\\ \\ {\bf Псевдокод}\\
 
 \begin{algorithm}[H]
 \renewcommand\baselinestretch{1.1}\selectfont
@@ -358,9 +357,9 @@ PPIO's P2P transmission network is fully dynamic. Each peer responds to multiple
   }
   $connRequestQueues$ $\leftarrow$ $conns$[].queue\;
   \Return{$connRequestQueues$} 
-  \caption{Pre-schedule for the upcoming Piece, the result of the scheduling exists in the download queue of each tunnel.}
+\caption{Предварительное планирование ближайшей Части, результат планирования представлен в виде очереди-к-загрузке для каждого туннеля.}
 \end{algorithm}
-%\vspace{-2em}
+
          \subsubsection{Distributed Database and Routing}  %——2.2.2 \cite{article17}   
 
 PPIO is a fully decentralized storage and distribution system that requires its database to be also managed in a decentralized fashion. PPIO employs Distributed Hash Table (DHT) to store data and provide routing and lookup services.\\
