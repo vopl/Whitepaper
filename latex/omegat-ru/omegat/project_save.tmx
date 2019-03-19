@@ -23,6 +23,127 @@
 <!-- Alternative translations -->
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\noindent</prop>
+      <prop type="next">\vspace{-0.8em}</prop>
+      <tuv lang="EN-US">
+        <seg>1.\quad  Similar to file download, multiple virtual connections (tunnels) are established with each peer, and the estimated transmission speed $V_{conn}$ is calculated per virtual connection.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190319T112519Z" creationid="vopl" creationdate="20190319T112519Z">
+        <seg>1.\quad  Аналогично скачиванию файлов, с каждым пиром устанавливается несколько виртуальных соединений (туннелей) и оценивается скорость передачи $V_{conn}$ на каждое виртуальное соединение.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\noindent</prop>
+      <prop type="next">UDP based protocols such as KCP or UDT\cite{article13} are attempted first to make the connection.</prop>
+      <tuv lang="EN-US">
+        <seg>1.\quad Multiple virtual connections (Tunnels) are established between the user and each peer with the resources, to improve transmission efficiency.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190319T094717Z" creationid="vopl" creationdate="20190319T094516Z">
+        <seg>1.\quad Для увеличения эффективности передачи, между пользователем и каждым пиром, обладающим нужными данными, устанавливаются несколько виртуальных соединений (Туннелей).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\noindent</prop>
+      <prop type="next">If no history is found, a default empirical value is used.</prop>
+      <tuv lang="EN-US">
+        <seg>2.\quad For each peer, an expected download speed $V_{conn}$ is calculated based on its transmission history.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190319T095229Z" creationid="vopl" creationdate="20190319T095229Z">
+        <seg>2.\quad Для каждого пира, на основе его истории передачи вычисляется скорость скачивания $V_{conn}$.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\noindent</prop>
+      <prop type="next">The estimated arrival time for each piece can be calculated based on the speed of each virtual connection and the remaining pieces to be downloaded in each queue.</prop>
+      <tuv lang="EN-US">
+        <seg>2.\quad Pieces to be downloaded are sorted based on their priorities and pre-allocated to available virtual connections by placing them in the corresponding download queues.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190319T113418Z" creationid="vopl" creationdate="20190319T112828Z">
+        <seg>2.\quad Части к загрузке сортируются на основе их приоритетов и предварительно распределяются по имеющимся виртуальным соединениям, размещаются в соответствующих очередях на скачивание.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\noindent</prop>
+      <prop type="next">\vspace{-0.8em}</prop>
+      <tuv lang="EN-US">
+        <seg>3.\quad The number of virtual connections on each peer varies the peer with a higher $V_{conn}$ can have a significant number of initial virtual connections.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190319T095625Z" creationid="vopl" creationdate="20190319T095625Z">
+        <seg>3.\quad Количество виртуальных соединений с каждым пиром различно, пир с высоким $V_{conn}$ может иметь значительное число виртуальных соединений изначально.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\noindent</prop>
+      <prop type="next">\vspace{-0.8em}</prop>
+      <tuv lang="EN-US">
+        <seg>4.\quad Based on the partition of the segment, the user first sends a download request to a given peer for an arbitrary piece, and the peer responds accordingly by sending the user the piece upon receiving the request.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190319T100057Z" creationid="vopl" creationdate="20190319T100057Z">
+        <seg>4.\quad На основании разбиения сегмента пользователь сначала шлет пиру запрос на скачивание какой то конкретной части, при получении запроса пир отвечает пользователю отсылкой соответствующей части.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\noindent</prop>
+      <prop type="next">\vspace{-0.8em}</prop>
+      <tuv lang="EN-US">
+        <seg>5.\quad When a piece is received from a virtual connection, the estimated download speed $V_{conn}$ is updated, and another remaining arbitrary piece will be requested from the connection immediately until all the data is downloaded.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190319T100502Z" creationid="vopl" creationdate="20190319T100502Z">
+        <seg>5.\quad При получении из виртуального соединения запрошенной части производится обновление оценочной скорости скачивания $V_{conn}$, далее немедленно запрашивается какая то другая часть, до тех пор, пока не будут скачаны все данные.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\noindent</prop>
+      <prop type="next">The download requests of the remaining pieces will be re-routed to other peers.</prop>
+      <tuv lang="EN-US">
+        <seg>6.\quad When a download request times out, the request is canceled, and all connections to the non-responding peer will be closed.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190319T100737Z" creationid="vopl" creationdate="20190319T100737Z">
+        <seg>6.\quad В случае истечения времени ожидания ответа соответствующий запрос на скачивание отменяется, все соединения к не-отвечающему пиру закрываются.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">Each of these N miners is also called a “Peer”.</prop>
+      <prop type="next">This process is called {\bf Multi-point Download Scheduling}.</prop>
+      <tuv lang="EN-US">
+        <seg>A scheduler decides how the M pieces can be downloaded from the N peers so that the segment can be retrieved in a fast, efficient manner, and avoid duplicated pieces to be downloaded.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190319T093720Z" creationid="vopl" creationdate="20190319T093720Z">
+        <seg>Планировщик решает, как M частей могут быть получены от N пиров так чтобы весь сегмент мог быть получен быстро и эффективно, с недопущением пересылки дублируемых частей.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">The scheduler is also designed to maximize download speed and minimize the overhead of duplicated requests and data transmission.</prop>
+      <prop type="next">\vspace{-0.8em}</prop>
+      <tuv lang="EN-US">
+        <seg>A summary of the scheduling algorithm is as follows:</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190319T112318Z" creationid="vopl" creationdate="20190319T112318Z">
+        <seg>Далее приводится краткая сводка представленного алгоритма планирования:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">In general, pieces with higher priority should end up with an earlier estimated arrival time.</prop>
+      <prop type="next">\vspace{-0.8em}</prop>
+      <tuv lang="EN-US">
+        <seg>An illustration of the pre-allocation algorithm is shown in Figure 2.1.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190319T113735Z" creationid="vopl" creationdate="20190319T113657Z">
+        <seg>На Рисунке 2.1 показан пример действия алгоритма предварительного распределения.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">Light Proof of Capacity (LPoC) is developed to provide lightweight validation of storage capacity provided by the miners.</prop>
       <prop type="next">Proof of Replication (PoRep) is used to guarantee that the miners replicate user's data.</prop>
       <tuv lang="EN-US">
@@ -111,6 +232,17 @@
     </tu>
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\noindent</prop>
+      <prop type="next">It significantly improves the overall transmission efficiency of the network, especially for TCP connections, as it works around the low-efficiency problem caused by TCP's conservative flow control.</prop>
+      <tuv lang="EN-US">
+        <seg>Based on the experience of building the high-performing P2P network, PPIO's design allows multiple connections to be established from each peer.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190319T101624Z" creationid="vopl" creationdate="20190319T101624Z">
+        <seg>С учетом опыта разработки высоко производительных одноранговых сетей, PPIO спроектирована таким образом чтобы с каждым пиром устанавливалось множество соединений.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">•\quad {\bf Scalability and High Efficiency.} Benefit from the founding team's experience from creating and operating the distributed network with hundreds of millions of users, PPIO is designed from the ground up to perform efficiently at a global scale.</prop>
       <prop type="next">PPIO's design also improves the efficiency in regional networks and makes it more friendly to ISPs.</prop>
       <tuv lang="EN-US">
@@ -140,6 +272,17 @@
       </tuv>
       <tuv lang="RU" changeid="vopl" changedate="20190314T150203Z" creationid="vopl" creationdate="20190314T150203Z">
         <seg>BurstCoin использует Proof of Capacity (PoC), учитывающий размер хранилищ майнеров, но, к сожалению, этого не достаточно для нормального функционирования хранилища с выполнением всех требований к нему.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">PPIO's founding team successfully developed PPLive, and they were also behind its innovative P2P network design and efficient data transmission technologies\cite{article4}\cite{article5}\cite{article6}\cite{article7}.</prop>
+      <prop type="next">\vspace{-0.5em}</prop>
+      <tuv lang="EN-US">
+        <seg>By leveraging the experience, PPIO's P2P network is designed to be a robust, scalable and high-performing data storage and transmission system.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190319T090012Z" creationid="vopl" creationdate="20190319T090012Z">
+        <seg>С учетом этого опыта, одноранговая сеть PPIO спроектирована робастной, масштабируемой быстродействующей системой хранения и передачи данных.</seg>
       </tuv>
     </tu>
     <tu>
@@ -189,6 +332,28 @@
     </tu>
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">For example, one segment can be partitioned into M pieces, and these pieces can be duplicated and stored by N different storage miners.</prop>
+      <prop type="next">A scheduler decides how the M pieces can be downloaded from the N peers so that the segment can be retrieved in a fast, efficient manner, and avoid duplicated pieces to be downloaded.</prop>
+      <tuv lang="EN-US">
+        <seg>Each of these N miners is also called a “Peer”.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190319T093456Z" creationid="vopl" creationdate="20190319T093456Z">
+        <seg>Каждый их этих N майнеров так же называется “Пиром (Peer)”.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">In PPIO‘s system, a storage "Object" is divided into "Segments", each "Segment" is further divided into some "Pieces".</prop>
+      <prop type="next">Each of these N miners is also called a “Peer”.</prop>
+      <tuv lang="EN-US">
+        <seg>For example, one segment can be partitioned into M pieces, and these pieces can be duplicated and stored by N different storage miners.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190319T093420Z" creationid="vopl" creationdate="20190319T093420Z">
+        <seg>Например, один сегмент может быть разбит на M частей, и эти части могут быть продублированы и сохранены в N различных хранилищах майнеров.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">The data breach has become frequently occurred, with an ever-growing scale and impact.</prop>
       <prop type="next">These incidents pose a grave threat to not just the privacy of individual users, but also the security and integrity of the entire Internet.</prop>
       <tuv lang="EN-US">
@@ -233,6 +398,17 @@
     </tu>
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">PPIO incentives the nodes based on their contributions of storage and bandwidth, therefore the nodes incline to stay in the network and make a long and reliable contribution \cite{article1}.</prop>
+      <prop type="next">Section 3 of this chapter explains PPIO's Proof of Replication (PoRep), Proof of Download (PoD), Proof of Spacetime (PoSt), and Light Proof of Capacity (LPoC) that are designed to defend the network against all these attacks and maintain the integrity of the system.</prop>
+      <tuv lang="EN-US">
+        <seg>However, the malicious nodes would attempt to cheat the network through various types of attacks, which undermines the system fairness.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190319T082631Z" creationid="vopl" creationdate="20190319T082631Z">
+        <seg>Тем не менее, злонамеренные узлы предпринимают попытки причинить вред сети посредством различных типов атак, подрывающих целостность системы.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">\\ \\There have been many attempts to build distributed storage systems.</prop>
       <prop type="next">Siacoin is one of the attempts that is built on top of Bitcoin-like Proof of Work (PoW) consensus.</prop>
       <tuv lang="EN-US">
@@ -240,6 +416,50 @@
       </tuv>
       <tuv lang="RU" changeid="vopl" changedate="20190314T142512Z" creationid="vopl" creationdate="20190314T142512Z">
         <seg>Тем не менее, эти попытки не были успешными.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">UDP based protocols such as KCP or UDT\cite{article13} are attempted first to make the connection.</prop>
+      <prop type="next">\vspace{-0.8em}</prop>
+      <tuv lang="EN-US">
+        <seg>If it fails, TCP based protocols will be used instead to adapt to different types of heterogeneous networks.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190319T095125Z" creationid="vopl" creationdate="20190319T095125Z">
+        <seg>Если она оказывается неудачной, для адаптации в различных типах гетерогенных сетей будет использоваться протокол на основе TCP.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">2.\quad For each peer, an expected download speed $V_{conn}$ is calculated based on its transmission history.</prop>
+      <prop type="next">\vspace{-0.8em}</prop>
+      <tuv lang="EN-US">
+        <seg>If no history is found, a default empirical value is used.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190319T095307Z" creationid="vopl" creationdate="20190319T095307Z">
+        <seg>В случае отсутствия исторических данных используется эмпирическое значение по умолчанию.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">1\% \cite{article4}</prop>
+      <prop type="next">For example, one segment can be partitioned into M pieces, and these pieces can be duplicated and stored by N different storage miners.</prop>
+      <tuv lang="EN-US">
+        <seg>In PPIO‘s system, a storage "Object" is divided into "Segments", each "Segment" is further divided into some "Pieces".</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190319T093237Z" creationid="vopl" creationdate="20190319T091019Z">
+        <seg>В системе PPIO, хранимый "Объект (Object)" разбивается на "Сегменты (Segments)", каждый "Сегмент" далее разбивается на несколько "Честей (Pieces)".</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">The estimated arrival time for each piece can be calculated based on the speed of each virtual connection and the remaining pieces to be downloaded in each queue.</prop>
+      <prop type="next">An illustration of the pre-allocation algorithm is shown in Figure 2.1.</prop>
+      <tuv lang="EN-US">
+        <seg>In general, pieces with higher priority should end up with an earlier estimated arrival time.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190319T113515Z" creationid="vopl" creationdate="20190319T113225Z">
+        <seg>Главное, более приоритетные части должны оканчиваться с более ранним временем доставки.</seg>
       </tuv>
     </tu>
     <tu>
@@ -277,6 +497,28 @@
     </tu>
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">The download requests of the remaining pieces will be re-routed to other peers.</prop>
+      <prop type="next">\vspace{-0.5em}</prop>
+      <tuv lang="EN-US">
+        <seg>In this case, the non-responding peer will also be penalized, and the number of connections that can be established from the peer in future downloads is reduced.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190319T101049Z" creationid="vopl" creationdate="20190319T101015Z">
+        <seg>В этом случае не-отвечающий пир будет оштрафован, будет уменьшено количество соединений, устанавливаемых к пиру при будущих скачиваниях.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">The pieces at the anchor point are prioritized during download, to improve the user experience.</prop>
+      <prop type="next">\vspace{-0.6em}</prop>
+      <tuv lang="EN-US">
+        <seg>In this case, there is a higher chance that necessary pieces are already downloaded to allow the playback to start immediately after seeking.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190319T111610Z" creationid="vopl" creationdate="20190319T111308Z">
+        <seg>В этом случае значительно повышается вероятностьтого,  что необходимые части уже будут загружены, что позволит начать воспроизведение немедленно после пере-позиционирования.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">\subsection{Technology Highlights} %——2.1</prop>
       <prop type="next">\vspace{-0.6em}</prop>
       <tuv lang="EN-US">
@@ -284,6 +526,17 @@
       </tuv>
       <tuv lang="RU" changeid="vopl" changedate="20190316T164605Z" creationid="vopl" creationdate="20190316T164605Z">
         <seg>В данной главе будут рассмотрены три основные технологии, используемые в PPIO:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">PPIO's consensus algorithm is designed by its use scenario.</prop>
+      <prop type="next">It improves the efficiency of the network, protects its integrity and enables it to operate in a secure, decentralized manner.</prop>
+      <tuv lang="EN-US">
+        <seg>It calculates the power of the miners based on their storage and bandwidth contributions, selects a block producer randomly via Verifiable Random Function (VRF)\cite{article24}\cite{article25}, utilizes Byzantine Fault Tolerance (BFT) based consortium consensus for validation.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190319T084858Z" creationid="vopl" creationdate="20190319T084858Z">
+        <seg>Она вычисляет мощность майнеров на основе их вклада в хранение и пропускную способность, затем случайным образом выбирает генератора следующего блока на основании Проверяемой Случайной Функции (Verifiable Random Function,VRF)\cite{article24}\cite{article25}, для проверки которой использоуется консенсус на основе консорциума Византийских Генералов (Byzantine Fault Tolerance, BFT).</seg>
       </tuv>
     </tu>
     <tu>
@@ -310,6 +563,28 @@
     </tu>
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">It calculates the power of the miners based on their storage and bandwidth contributions, selects a block producer randomly via Verifiable Random Function (VRF)\cite{article24}\cite{article25}, utilizes Byzantine Fault Tolerance (BFT) based consortium consensus for validation.</prop>
+      <prop type="next">It is also the foundation of PPIO's high-volume, large-scale storage market.</prop>
+      <tuv lang="EN-US">
+        <seg>It improves the efficiency of the network, protects its integrity and enables it to operate in a secure, decentralized manner.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190319T085032Z" creationid="vopl" creationdate="20190319T085032Z">
+        <seg>Это увеличивает эффективность сети, защищает ее целостность и позволяет действовать безопасно.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">It improves the efficiency of the network, protects its integrity and enables it to operate in a secure, decentralized manner.</prop>
+      <prop type="next">\vspace{-0.5em}</prop>
+      <tuv lang="EN-US">
+        <seg>It is also the foundation of PPIO's high-volume, large-scale storage market.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190319T085146Z" creationid="vopl" creationdate="20190319T085146Z">
+        <seg>Так же, это является основой многообъемного и сильно масштабируемого рынка хранилищ PPIO.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">PPIO is a programmable decentralized storage and delivery network.</prop>
       <prop type="next">At the same time, PPIO also offers better data security and privacy protection.</prop>
       <tuv lang="EN-US">
@@ -328,6 +603,17 @@
       </tuv>
       <tuv lang="RU" changeid="vopl" changedate="20190314T124320Z" creationid="vopl" creationdate="20190314T124320Z">
         <seg>Документ предоставляет низкоуровневую подробную информацию о распределенной файловой системе, архитектуре сети и процесса хранения.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">Based on the experience of building the high-performing P2P network, PPIO's design allows multiple connections to be established from each peer.</prop>
+      <prop type="next">\vspace{-0.5em}</prop>
+      <tuv lang="EN-US">
+        <seg>It significantly improves the overall transmission efficiency of the network, especially for TCP connections, as it works around the low-efficiency problem caused by TCP's conservative flow control.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190319T102140Z" creationid="vopl" creationdate="20190319T102140Z">
+        <seg>Это существенно увеличивает эффективность передачи сети в целом, особенно для TCP соединений, работая как заплатка над проблемой малой эффективности, привносимой консервативным управлением потоком передачи данных в TCP.</seg>
       </tuv>
     </tu>
     <tu>
@@ -354,6 +640,17 @@
     </tu>
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">•\quad The anchor point.</prop>
+      <prop type="next">The pieces at the anchor point are prioritized during download, to improve the user experience.</prop>
+      <tuv lang="EN-US">
+        <seg>Many media streaming applications allow random access playbacks such as fast forwarding or seeking.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190319T110025Z" creationid="vopl" creationdate="20190319T110025Z">
+        <seg>Многие приложения медиа-вещания позволяют проигрывание с произвольного места, например для перемотки или поиска.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">•\quad {\bf Strong Application Support and Ecosystem.} PPIO provides a set of storage APIs similar to those of the cloud services such as AWS S3 and makes the data migration from those services much comfortable.</prop>
       <prop type="next">PPIO has a comprehensive plan to develop a robust, healthy and sustainable ecosystem, to facilitate the development of applications and services, and allow the developers to enjoy real benefits from PPIO's growth.</prop>
       <tuv lang="EN-US">
@@ -372,6 +669,17 @@
       </tuv>
       <tuv lang="RU" changeid="vopl" changedate="20190314T165827Z" creationid="vopl" creationdate="20190314T165827Z">
         <seg>PPIO имеет обстоятельный план для разработки сильной, живучей и устойчивой экосистемы для разработки приложений и сервисов, и предоставления разработчикам возможности наслаждаться бенефитами роста PPIO.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">•\quad {\bf Proof:} The nodes of the traditional P2P network are free to choose join or leave the network, it is difficult to maintain the stability of the network.</prop>
+      <prop type="next">However, the malicious nodes would attempt to cheat the network through various types of attacks, which undermines the system fairness.</prop>
+      <tuv lang="EN-US">
+        <seg>PPIO incentives the nodes based on their contributions of storage and bandwidth, therefore the nodes incline to stay in the network and make a long and reliable contribution \cite{article1}.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190319T082625Z" creationid="vopl" creationdate="20190319T082625Z">
+        <seg>PPIO поощряет узлы в зависимости от реализуемых ими ресурсов хранилища и пропускной способности, тем самым узлы стремятся оставаться в сети и производить длительный и стабильный вклад \cite{article1}.</seg>
       </tuv>
     </tu>
     <tu>
@@ -431,6 +739,28 @@
     </tu>
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">•\quad {\bf Consensus: } Popular blockchain consensus algorithms such as Proof of Work (PoW), Proof of Stake (PoS) and Delegated Proof of Stake (DPoS) all make trade-offs in decentralization, security and performance.</prop>
+      <prop type="next">It calculates the power of the miners based on their storage and bandwidth contributions, selects a block producer randomly via Verifiable Random Function (VRF)\cite{article24}\cite{article25}, utilizes Byzantine Fault Tolerance (BFT) based consortium consensus for validation.</prop>
+      <tuv lang="EN-US">
+        <seg>PPIO's consensus algorithm is designed by its use scenario.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190319T084156Z" creationid="vopl" creationdate="20190319T084156Z">
+        <seg>Алгоритм консенсуса PPIO спроектирован в соответствии со сценарием использования самого PPIO.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\\ \\Besides to supporting efficient file download, PPIO also supports optimized P2P data streaming.</prop>
+      <prop type="next">The technology has gone through many iterations of trial-and-error optimizations and is proven to provide high-quality user experience to streaming applications such as video-on-demand (VOD) service.</prop>
+      <tuv lang="EN-US">
+        <seg>PPIO's data-driven scheduler is designed to provide stable real-time streaming performance in an ad-hoc P2P network\cite{article12}.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190319T102949Z" creationid="vopl" creationdate="20190319T102949Z">
+        <seg>Планировщик PPIO, управляемый данными, спроектирован для стабильной работы потокового вещания реального времени в специализированной одноранговой сети\cite{article12}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">Besides a set of industry proven P2P transmission technologies, the team also developed data-driven scheduling, a self-organizing overlay network, and optimized content distribution network.</prop>
       <prop type="next">Combined with its innovation in NAT Traversal, Kademlia distributed hash table (DHT), lightweight storage consensus proof and optimized transmission for media streaming, PPIO's distributed storage network can perform with extremely high efficiency and can be easily scaled to hundreds of millions of network nodes.</prop>
       <tuv lang="EN-US">
@@ -460,6 +790,17 @@
       </tuv>
       <tuv lang="RU" changeid="vopl" changedate="20190314T154036Z" creationid="vopl" creationdate="20190314T154036Z">
         <seg>Команда, учредившая и разрабатывающая PPIO успешно спроектировала, разработала и поддерживает PPLive, одноранговую систему вещания, обслуживающую сотни миллионов пользователей ежедневно.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\subsection{P2P Network} %——2.2 \cite{article4}\cite{article5}\cite{article6}\cite{article7}</prop>
+      <prop type="next">By leveraging the experience, PPIO's P2P network is designed to be a robust, scalable and high-performing data storage and transmission system.</prop>
+      <tuv lang="EN-US">
+        <seg>PPIO's founding team successfully developed PPLive, and they were also behind its innovative P2P network design and efficient data transmission technologies\cite{article4}\cite{article5}\cite{article6}\cite{article7}.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190319T085847Z" creationid="vopl" creationdate="20190319T085604Z">
+        <seg>Команда PPIO ранее успешно разработала проект PPLive, и он так же был основан на инновационном дизайне одноранговой сети и эффективных технологиях передачи данных\cite{article4}\cite{article5}\cite{article6}\cite{article7}.</seg>
       </tuv>
     </tu>
     <tu>
@@ -530,6 +871,17 @@
     </tu>
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">However, the malicious nodes would attempt to cheat the network through various types of attacks, which undermines the system fairness.</prop>
+      <prop type="next">The optimized and secure implementation of the proofs allows them to function efficiently at large scale, that enables the incentive system to operate in securely and help establish a healthy decentralized distributed storage market and economic system.</prop>
+      <tuv lang="EN-US">
+        <seg>Section 3 of this chapter explains PPIO's Proof of Replication (PoRep), Proof of Download (PoD), Proof of Spacetime (PoSt), and Light Proof of Capacity (LPoC) that are designed to defend the network against all these attacks and maintain the integrity of the system.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190319T083220Z" creationid="vopl" creationdate="20190319T083220Z">
+        <seg>Секция 3 данной главы раскрывает такие механизмы доказывания в PPIO как Доказательство пересылки (Proof of Replication, PoRep), Доказательство получения данных (Proof of Download, PoD), Доказательство хранения данных в течении времени (Proof of Spacetime, PoSt) и Облегченное доказательство вместимости (Light Proof of Capacity, LPoC), спроектированные для защиты сети против всех этих атак и поддержания целостности системы.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">However, these attempts were not successful.</prop>
       <prop type="next">PoW introduces wasteful computation and energy consumption, and it does not take into account the different levels of storage and bandwidth contribution among the miners, which are crucial to a decentralized distributed storage system.</prop>
       <tuv lang="EN-US">
@@ -574,6 +926,17 @@
     </tu>
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">•\quad Sequential download.</prop>
+      <prop type="next">\vspace{-0.8em}</prop>
+      <tuv lang="EN-US">
+        <seg>Subsequent segments and pieces from the current point of playback need to be prioritized in download scheduling, to maintain smooth streaming playback.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190319T104542Z" creationid="vopl" creationdate="20190319T104336Z">
+        <seg>Для гладкого проигрывания потока, планировщик скачивания должен приоритезировать последующие сегменты и части от текущей точки воспроизведения.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">It does borrow mature P2P system designs from proven applications such as BitTorrent, but it provides no good solution to handle complex network environments and does not offer performance optimization within regional networks.</prop>
       <prop type="next">As Protocol Labs claims that files stored on IPFS are permanent and cannot be deleted, it runs the risks of legal battles against policies and regulations and makes its worldwide deployment much more difficult.</prop>
       <tuv lang="EN-US">
@@ -607,6 +970,28 @@
     </tu>
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">6.\quad When a download request times out, the request is canceled, and all connections to the non-responding peer will be closed.</prop>
+      <prop type="next">In this case, the non-responding peer will also be penalized, and the number of connections that can be established from the peer in future downloads is reduced.</prop>
+      <tuv lang="EN-US">
+        <seg>The download requests of the remaining pieces will be re-routed to other peers.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190319T100813Z" creationid="vopl" creationdate="20190319T100813Z">
+        <seg>Запросы на скачивание оставшихся частей будут переадресованы другим пирам.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">2.\quad Pieces to be downloaded are sorted based on their priorities and pre-allocated to available virtual connections by placing them in the corresponding download queues.</prop>
+      <prop type="next">In general, pieces with higher priority should end up with an earlier estimated arrival time.</prop>
+      <tuv lang="EN-US">
+        <seg>The estimated arrival time for each piece can be calculated based on the speed of each virtual connection and the remaining pieces to be downloaded in each queue.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190319T113450Z" creationid="vopl" creationdate="20190319T113024Z">
+        <seg>Оценочное время доставки каждой части может быть вычеслено на основе информации о скорости каждого виртуального соединения и уже имеющихся частей к загрузке в каждой очереди.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">\vspace{-0.5em}</prop>
       <prop type="next">However, the existing centralized solutions have many problems.</prop>
       <tuv lang="EN-US">
@@ -614,6 +999,61 @@
       </tuv>
       <tuv lang="RU" changeid="vopl" changedate="20190314T125452Z" creationid="vopl" creationdate="20190314T124912Z">
         <seg>Глобальный рынок облачных хранилищ в значительной мере вырос за последние годы и продолжает расти быстрыми темпами .</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">Section 3 of this chapter explains PPIO's Proof of Replication (PoRep), Proof of Download (PoD), Proof of Spacetime (PoSt), and Light Proof of Capacity (LPoC) that are designed to defend the network against all these attacks and maintain the integrity of the system.</prop>
+      <prop type="next">\vspace{-0.6em}</prop>
+      <tuv lang="EN-US">
+        <seg>The optimized and secure implementation of the proofs allows them to function efficiently at large scale, that enables the incentive system to operate in securely and help establish a healthy decentralized distributed storage market and economic system.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190319T083748Z" creationid="vopl" creationdate="20190319T083748Z">
+        <seg>Оптимизированная и безопасная реализация доказательств позволяет им эффективно функционировать на больших масштабах, что дает возможность безопасно функционировать системе поощрений, помогая устанавливать здоровую среду для рынка и экономической системы распределенных хранилищ.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">Many media streaming applications allow random access playbacks such as fast forwarding or seeking.</prop>
+      <prop type="next">In this case, there is a higher chance that necessary pieces are already downloaded to allow the playback to start immediately after seeking.</prop>
+      <tuv lang="EN-US">
+        <seg>The pieces at the anchor point are prioritized during download, to improve the user experience.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190319T111407Z" creationid="vopl" creationdate="20190319T111244Z">
+        <seg>Для улучшения восприятия пользователем, во время скачивания приоритезируются части в опорных точках.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">To achieve the design requirements above, a scheduling algorithm is required to make smart decisions on which peer a piece should be downloaded from, how many peers should be used for simultaneous download, how to set up the timer for each peer, how to reschedule remaining pieces and adapt to network changes, etc.</prop>
+      <prop type="next">A summary of the scheduling algorithm is as follows:</prop>
+      <tuv lang="EN-US">
+        <seg>The scheduler is also designed to maximize download speed and minimize the overhead of duplicated requests and data transmission.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190319T112141Z" creationid="vopl" creationdate="20190319T112141Z">
+        <seg>Так же, планировщик спроектирован для максимизации скорости загрузки и минимизации накладных расходов вследствие дублирования запросов и передачи данных.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">PPIO's data-driven scheduler is designed to provide stable real-time streaming performance in an ad-hoc P2P network\cite{article12}.</prop>
+      <prop type="next">\vspace{-0.5em}</prop>
+      <tuv lang="EN-US">
+        <seg>The technology has gone through many iterations of trial-and-error optimizations and is proven to provide high-quality user experience to streaming applications such as video-on-demand (VOD) service.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190319T103443Z" creationid="vopl" creationdate="20190319T103443Z">
+        <seg>Технология прошла сквозь множество итераций проб и ошибок и доказала способность предоставления пользователю высоко-качественной поддержки потоковых приложений, таких как службы видео-по-запросу (video-on-demand, VOD).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">•\quad Unpopular pieces.</prop>
+      <prop type="next">This may seem counterintuitive, but prioritizing these pieces will help make downloading of the entire segment much faster and get a better experience.</prop>
+      <tuv lang="EN-US">
+        <seg>The unpopular pieces (especially in media streaming) need to be prioritized during download.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190319T105311Z" creationid="vopl" creationdate="20190319T105311Z">
+        <seg>Непопулярные части (особенно при вещании медиа) нуждаются в приоритезации во время скачивания.</seg>
       </tuv>
     </tu>
     <tu>
@@ -640,6 +1080,39 @@
     </tu>
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">The unpopular pieces (especially in media streaming) need to be prioritized during download.</prop>
+      <prop type="next">\vspace{-0.8em}</prop>
+      <tuv lang="EN-US">
+        <seg>This may seem counterintuitive, but prioritizing these pieces will help make downloading of the entire segment much faster and get a better experience.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190319T105547Z" creationid="vopl" creationdate="20190319T105547Z">
+        <seg>Это может выглядеть контринтуитивно, но, приоритезация таких частей помогает более быстрому скачиванию всего сегмента оставляет у пользователя лучшие впечатления.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">A scheduler decides how the M pieces can be downloaded from the N peers so that the segment can be retrieved in a fast, efficient manner, and avoid duplicated pieces to be downloaded.</prop>
+      <prop type="next">\vspace{-0.5em}</prop>
+      <tuv lang="EN-US">
+        <seg>This process is called {\bf Multi-point Download Scheduling}.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190319T093816Z" creationid="vopl" creationdate="20190319T093816Z">
+        <seg>Данный процесс называется {\bf Планированием скачивания из многих источников (Multi-point Download Scheduling)}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\noindent</prop>
+      <prop type="next">The scheduler is also designed to maximize download speed and minimize the overhead of duplicated requests and data transmission.</prop>
+      <tuv lang="EN-US">
+        <seg>To achieve the design requirements above, a scheduling algorithm is required to make smart decisions on which peer a piece should be downloaded from, how many peers should be used for simultaneous download, how to set up the timer for each peer, how to reschedule remaining pieces and adapt to network changes, etc.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190319T111931Z" creationid="vopl" creationdate="20190319T111931Z">
+        <seg>Для удовлетворения представленных выше требований дизайна, алгоритм планирования должен принимать взвешенные решения, от какого пира должна быть получена часть, как много пиров использовать для одновременной загрузки, как управлять таймером для каждого пира, как перепланировать оставшиеся части и адаптироваться к изменениям сети и т.п.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">This allows PPIO to make use of the vast amount of unused bandwidth and storage resources on the Internet, and provide robust storage service at much lower cost.</prop>
       <prop type="next">At the same time, PPIO's design also includes a mechanism to protect users from the impact of storage price fluctuations, which provides a better user experience than existing centralized storage platforms and more importantly much lower price.</prop>
       <tuv lang="EN-US">
@@ -651,6 +1124,17 @@
     </tu>
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">1.\quad Multiple virtual connections (Tunnels) are established between the user and each peer with the resources, to improve transmission efficiency.</prop>
+      <prop type="next">If it fails, TCP based protocols will be used instead to adapt to different types of heterogeneous networks.</prop>
+      <tuv lang="EN-US">
+        <seg>UDP based protocols such as KCP or UDT\cite{article13} are attempted first to make the connection.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190319T094840Z" creationid="vopl" creationdate="20190319T094840Z">
+        <seg>Сначала предпринимается попытка соединения по протоколам, основанным на UDP, таким как KCP или UDT\cite{article13}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">\vspace{-0.5em}</prop>
       <prop type="next">It provides in-depth details on its distributed file system, network architecture, and storage workflow.</prop>
       <tuv lang="EN-US">
@@ -658,6 +1142,39 @@
       </tuv>
       <tuv lang="RU" changeid="vopl" changedate="20190314T124127Z" creationid="vopl" creationdate="20190314T124019Z">
         <seg>\\ \\ В данном документе разъясняются основные цели архитектуры PPIO, а так же, приводятся подробности методов достижения этих целей.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\vspace{-0.5em}</prop>
+      <prop type="next">\vspace{-0.5em}</prop>
+      <tuv lang="EN-US">
+        <seg>\\ \\ {\bf Real-time Data Streaming}</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190319T102337Z" creationid="vopl" creationdate="20190319T102337Z">
+        <seg>\\ \\ {\bf Вещание данных в реальном времени (Real-time Data Streaming)}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\vspace{-0.5em}</prop>
+      <prop type="next">\vspace{-0.8em}</prop>
+      <tuv lang="EN-US">
+        <seg>\\ \\A P2P streaming system has the following unique design characteristics:</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190319T104429Z" creationid="vopl" creationdate="20190319T103518Z">
+        <seg>\\ \\Одноранговая система потокового вещания обладает следующими уникальными характеристиками дизайна:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\vspace{-0.5em}</prop>
+      <prop type="next">PPIO's data-driven scheduler is designed to provide stable real-time streaming performance in an ad-hoc P2P network\cite{article12}.</prop>
+      <tuv lang="EN-US">
+        <seg>\\ \\Besides to supporting efficient file download, PPIO also supports optimized P2P data streaming.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190319T102512Z" creationid="vopl" creationdate="20190319T102512Z">
+        <seg>\\ \\Наряду с поддержкой эффективного скачивания файлов, PPIO так же поддерживает оптимизированное одноранговое потоковое вещание данных.</seg>
       </tuv>
     </tu>
     <tu>
@@ -691,6 +1208,50 @@
       </tuv>
       <tuv lang="RU" changeid="vopl" changedate="20190314T142358Z" creationid="vopl" creationdate="20190314T142237Z">
         <seg>\\ \\Предпринималось не мало попыток построения распределенных систем хранения данных.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\vspace{-0.5em}</prop>
+      <prop type="next">\vspace{-0.8em}</prop>
+      <tuv lang="EN-US">
+        <seg>\\ \\Two data-driven scheduling algorithms are developed for Multi-point Download Scheduling:</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190319T093908Z" creationid="vopl" creationdate="20190319T093908Z">
+        <seg>\\ \\В рамках Multi-point Download Scheduling разработано два алгоритма планирования:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\vspace{-0.5em}</prop>
+      <prop type="next">\vspace{-0.8em}</prop>
+      <tuv lang="EN-US">
+        <seg>\\ \\{\bf Facts about PPLive:}</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190319T090021Z" creationid="vopl" creationdate="20190319T090021Z">
+        <seg>\\ \\{\bf Факты о PPLive:}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\vspace{-0.6em}</prop>
+      <prop type="next">\vspace{-0.6em}</prop>
+      <tuv lang="EN-US">
+        <seg>\\\\Summary of the PPIO scheduling algorithm:</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190319T094246Z" creationid="vopl" creationdate="20190319T094206Z">
+        <seg>\\\\Алгоритм планирования PPIO в кратце:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\noindent</prop>
+      <prop type="next">\vspace{-0.6em}</prop>
+      <tuv lang="EN-US">
+        <seg>\\{\bf File Download:}</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190319T094136Z" creationid="vopl" creationdate="20190319T094136Z">
+        <seg>\\{\bf Получение файлов (File Download):}</seg>
       </tuv>
     </tu>
     <tu>
@@ -729,12 +1290,34 @@
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">\vspace{-0.5em}</prop>
+      <prop type="next">PPIO's founding team successfully developed PPLive, and they were also behind its innovative P2P network design and efficient data transmission technologies\cite{article4}\cite{article5}\cite{article6}\cite{article7}.</prop>
+      <tuv lang="EN-US">
+        <seg>\subsection{P2P Network} %——2.2 \cite{article4}\cite{article5}\cite{article6}\cite{article7}</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190319T085213Z" creationid="vopl" creationdate="20190319T085213Z">
+        <seg>\subsection{Одноранговая сеть (P2P Network)} %——2.2 \cite{article4}\cite{article5}\cite{article6}\cite{article7}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\vspace{-0.5em}</prop>
       <prop type="next">In this chapter, three core technologies behind PPIO will be elaborated:</prop>
       <tuv lang="EN-US">
         <seg>\subsection{Technology Highlights} %——2.1</seg>
       </tuv>
       <tuv lang="RU" changeid="vopl" changedate="20190316T164442Z" creationid="vopl" creationdate="20190316T164442Z">
         <seg>\subsection{Основные технологии} %——2.1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\vspace{-0.5em}</prop>
+      <prop type="next">1\% \cite{article4}</prop>
+      <tuv lang="EN-US">
+        <seg>\subsubsection{Data Driven Scheduling}  %——2.2.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190319T090831Z" creationid="vopl" creationdate="20190319T090831Z">
+        <seg>\subsubsection{Планирование на основе данных (Data Driven Scheduling)}  %——2.2.</seg>
       </tuv>
     </tu>
     <tu>
@@ -819,6 +1402,94 @@ PPIO is a programmable decentralized storage and delivery network.</prop>
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">\noindent</prop>
+      <prop type="next">\vspace{-0.8em}</prop>
+      <tuv lang="EN-US">
+        <seg>•\quad 1/10 the operation cost of the traditional data network;</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190319T090652Z" creationid="vopl" creationdate="20190319T090341Z">
+        <seg>•\quad Операционные расходы составляют 1/10 по сравнению с традиционными сетями;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\noindent</prop>
+      <prop type="next">\vspace{-0.5em}</prop>
+      <tuv lang="EN-US">
+        <seg>•\quad 400PB storage combined P2P storage capacity;</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190319T090646Z" creationid="vopl" creationdate="20190319T090532Z">
+        <seg>•\quad Суммарная вместимость хранилищ одноранговых узлов составляет 400PB;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\noindent</prop>
+      <prop type="next">\vspace{-0.8em}</prop>
+      <tuv lang="EN-US">
+        <seg>•\quad File Download</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190319T094000Z" creationid="vopl" creationdate="20190319T094000Z">
+        <seg>•\quad Получение файлов (File Download)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\noindent</prop>
+      <prop type="next">\vspace{-1.5em}</prop>
+      <tuv lang="EN-US">
+        <seg>•\quad Media streaming on demand\cite{article4}</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190319T094024Z" creationid="vopl" creationdate="20190319T094024Z">
+        <seg>•\quad Потоковое вещание по заказу (Media streaming on demand)\cite{article4}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\noindent</prop>
+      <prop type="next">Subsequent segments and pieces from the current point of playback need to be prioritized in download scheduling, to maintain smooth streaming playback.</prop>
+      <tuv lang="EN-US">
+        <seg>•\quad Sequential download.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190319T103936Z" creationid="vopl" creationdate="20190319T103936Z">
+        <seg>•\quad Последовательное скачивание (Sequential download).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\noindent</prop>
+      <prop type="next">Many media streaming applications allow random access playbacks such as fast forwarding or seeking.</prop>
+      <tuv lang="EN-US">
+        <seg>•\quad The anchor point.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190319T111342Z" creationid="vopl" creationdate="20190319T105555Z">
+        <seg>•\quad Опорная точка (The anchor point).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\noindent</prop>
+      <prop type="next">\vspace{-0.8em}</prop>
+      <tuv lang="EN-US">
+        <seg>•\quad The world‘s only P2P data storage and transmission network that operates on more than 500 million nodes;</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190319T090144Z" creationid="vopl" creationdate="20190319T090144Z">
+        <seg>•\quad Единственная в мире одноранговая сеть хранения и передачи, функционирующая на более чем 500 миллионах узлах;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\noindent</prop>
+      <prop type="next">The unpopular pieces (especially in media streaming) need to be prioritized during download.</prop>
+      <tuv lang="EN-US">
+        <seg>•\quad Unpopular pieces.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190319T105225Z" creationid="vopl" creationdate="20190319T105225Z">
+        <seg>•\quad Непопулярные части (Unpopular pieces).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\noindent</prop>
       <prop type="next">In the traditional Client-Server (CS) model, the server can quickly become the network bottleneck when the client population grows.</prop>
       <tuv lang="EN-US">
         <seg>•\quad {\bf  P2P Network:} PPIO constructs a self-governing, resilient and scalable P2P network that allows the participating nodes to easily share idle or unused bandwidth, storage, and computation resources.</seg>
@@ -830,12 +1501,34 @@ PPIO is a programmable decentralized storage and delivery network.</prop>
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">\noindent</prop>
+      <prop type="next">PPIO's consensus algorithm is designed by its use scenario.</prop>
+      <tuv lang="EN-US">
+        <seg>•\quad {\bf Consensus: } Popular blockchain consensus algorithms such as Proof of Work (PoW), Proof of Stake (PoS) and Delegated Proof of Stake (DPoS) all make trade-offs in decentralization, security and performance.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190319T084040Z" creationid="vopl" creationdate="20190319T084040Z">
+        <seg>•\quad {\bf Консенсус (Consensus): } Популярные алгоритмы консенсусов над блокчейнами, такие как Proof of Work (PoW), Proof of Stake (PoS) и Delegated Proof of Stake (DPoS) представляют собой компромисы между децентрализацией, безопасностью и быстродействием.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\noindent</prop>
       <prop type="next">By using data sharding and encryption algorithms, user's data can only be retrieved by the one who possesses the user's unique private key.</prop>
       <tuv lang="EN-US">
         <seg>•\quad {\bf Privacy, Security and Stability.} Data security and privacy protection are the top requirements in PPIO's distributed file system design.</seg>
       </tuv>
       <tuv lang="RU" changeid="vopl" changedate="20190314T162928Z" creationid="vopl" creationdate="20190314T162928Z">
         <seg>•\quad {\bf Приватность, безопасность и стабильность.} Безопасность и приватность данных являются ключевыми требованиями в дизайне распределенной файловой системе PPIO.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\noindent</prop>
+      <prop type="next">PPIO incentives the nodes based on their contributions of storage and bandwidth, therefore the nodes incline to stay in the network and make a long and reliable contribution \cite{article1}.</prop>
+      <tuv lang="EN-US">
+        <seg>•\quad {\bf Proof:} The nodes of the traditional P2P network are free to choose join or leave the network, it is difficult to maintain the stability of the network.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190319T083329Z" creationid="vopl" creationdate="20190319T082742Z">
+        <seg>•\quad {\bf Доказательство (Proof):} Узлы традиционной P2P сети свободно присоединяются к сети и свободно покидают ее, в таких условиях сложно поддерживать стабильность сети.</seg>
       </tuv>
     </tu>
     <tu>

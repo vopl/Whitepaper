@@ -11,3 +11,8 @@
 
 \usepackage[unicode]{hyperref}
 
+
+
+
+----------------------
+The number of virtual connections on each peer varies [ЗАПЯТАЯ?] the peer with a higher Vconn can have a significant number of initial virtual connections.
