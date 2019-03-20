@@ -357,114 +357,114 @@ PPIO является программируемой децентрализов�
   }
   $connRequestQueues$ $\leftarrow$ $conns$[].queue\;
   \Return{$connRequestQueues$} 
-\caption{Предварительное планирование ближайшей Части, результат планирования представлен в виде очереди-к-загрузке для каждого туннеля.}
+\caption{Предварительное планирование очередной Части, результат планирования представлен в виде очереди-к-загрузке для каждого туннеля.}
 \end{algorithm}
 
-         \subsubsection{Distributed Database and Routing}  %——2.2.2 \cite{article17}   
+\subsubsection{Распределенная база данных и маршрутизация (Distributed Database and Routing)}  %——2.2.2 \cite{article17}
 
-PPIO is a fully decentralized storage and distribution system that requires its database to be also managed in a decentralized fashion. PPIO employs Distributed Hash Table (DHT) to store data and provide routing and lookup services.\\
+PPIO является полностью распределенной системой хранения и распространения данных, нуждающаяся в том чтобы ее база данных так же управлялась в децентрализованном виде. Для хранения данных, роутинга и поиска сервисов PPIO применяет Распределенную хэш-таблицу (Distributed Hash Table, DHT).\\
 \vspace{-0.5em}
-\\In a DHT, each piece of data is bundled with a unique key into a key-value pair. These key-value pairs are distributed and stored among the participating nodes. It avoids the problem with the centralized database system, where a failure in the central server leads to the breakdown of the entire network. No single participating node in the DHT is tasked to maintain the entire network. Each node only stores a small part of the database and only needs to maintain information of its adjacent nodes, such design significantly reduces each node’s bandwidth and resource usage. Redundancy is also added to the data and stored on multiple nodes to maintain the reliability of the system so that a single node failure does not cause loss of data.
+\\В DHT каждый кусок данных снабжается уникальным ключем с образованием пары ключ-значения. Такие пары ключ-значение распространяются и хранятся на узлах-участниках сети. Это предотвращает проблемы централизованных систем БД, при которых отказ центрального сервера приводит к отказу всей сети. Обслуживанием всей сети озадачен не один узел-участник. Каждый узел сохраняет лишь малую часть базы данных, нуждается в обслуживании информации только о соседних узлах, такой дизайн существенно снижает необходимую ширину канала связи и использование ресурсов каждого узла. Так же, в данные добавляется избыточность, для обеспечения надежности системы данные сохраняются на нескольких узлах, таким образом отказ отдельного узла не приводит к потере данных.
 \vspace{-0.5em}
- \\ \\ There are many different implementations of DHT, some of the commonly used are Chord\cite{article14}, Pastry\cite{article15}, Tapestry\cite{article18}, Dynamo\cite{article19}, and Kademlia\cite{article16}. PPIO uses Kademlia, so do many other well-known P2P projects like PPLive, BitTorrent, eMule, etc.
+\\ \\ Существует множество различных реализаций DHT, вот некоторые наиболее используемые: Chord\cite{article14}, Pastry\cite{article15}, Tapestry\cite{article18}, Dynamo\cite{article19} и Kademlia\cite{article16}. PPIO использует вариант Kademlia, так же, как многие другие хорошо известные P2P проекты - PPLive, BitTorrent, eMule и т.п..
  \vspace{-0.5em}
- \\ \\Kademlia algorithm assigns a unique ID to each participating node. The node ID is also used to calculate the distance between nodes and locate key-value pairs. The algorithm steps through the network path and finds nodes closer to the key on every step to look up a specific key-value pair in the network until it reaches the node that stores the key-pair. Each node needs to store information of a group of other nodes based their distance to it to support the lookup. Such distance is calculated by taking an XOR operation on two Node IDs. Node IDs have the same bit length as the keys used in key-value pairs. Therefore, the distance between node IDs and keys can be calculated in the same way. Since the XOR distance does not take actual geographic distance into account, it is possible for two nodes to reside next to one another in the network even though one of them may be in the United Kingdom, while the other is in the United States.
+\\ \\Алгоритм Kademlia назначает каждому узлу-участнику уникальный идентификатор (ID). ID узла так же используется для вычисления дистанции между узлами и при размещении/поиске пар ключ-значение. Алгоритм итерационно строит путь в сети, на каждой итерации отыскивая узлы, ближайшие к ключу исмкомой пары ключ-значение в сети до тех пор пока не достигнет узла, хранящего искомую пару ключ-значение. Для поддержки такого поиска, каждый узел должен содержать информацию о группе других узлов на основе их дистанции. Такая дистанция вычисляется применением операции XOR над двумя идентификаторами узлов. Идентификаторы узлов имеют такую же длину как и ключи, используемые в парах ключ-значение. Следовательно, дистанция между ID узла и ключем может быть вычислена таким же образом. Так как XOR-дистанция не учитывает реальную географическую дистанцию, узлы в сети могут считаться близкими даже если один из них расположен в Великобритании а другой в США.
  \vspace{-0.3em}
   \\
 \\ \centerline{\includegraphics[width=320pt]{fig2}}
-\\\\ \centerline{{Figure 2.2 Lookup in Kademlia DHT}}
+\\\\ \centerline{{Рисунок 2.2 Поиск в DHT Kademlia}}
 \vspace{-0.5em}
 \\
-PPIO also adopts an extension of Kademlia-S/Kademlia\cite{article23}to improve the security of the network. These changes are mainly caused by nodes via parallel looking over disjoint paths.  The network can sustain attacks even when a large number of nodes are compromised.
+Так же, для увеличения безопасности сети, PPIO применяет расширение Kademlia-S/Kademlia\cite{article23}. В основном, данные изменения вызваны узлами, использующими параллельный поиск над непересекающимися путями.  Сеть может противостоять атакам даже при большом количестве скомпромитированных узлов.
 \vspace{-0.5em}
-  \\ \\With the DHT implementation above, structured data such as file index, statistics on network nodes, and other metadata can be securely saved and quickly looked up in PPIO’s distributed network. However, data transfer in its storage network is handled differently, which will be discussed in the next section.
+\\ \\С приведенной выше реализацией DHT, такие структурированные данные как индекс файлов, статистики сетевых узлов и другие метаданные могут быть безопасно сохранены и быстро обнаруживаемы в  распределенной сети PPIO. Тем не менее, транспортировка данных в сети хранения происходит по другому, это бкдет освещено далее.
   \vspace{-0.5em}
-         \subsubsection{P2P Self-organizing Overlay networks}  %——2.2.3
+\subsubsection{Одноранговые самоорганизующиеся оверлейные сети (P2P Self-organizing Overlay networks)}  %——2.2.3
          \vspace{-0.5em}
-Today’s well-established storage services, such as Amazon S3, Dropbox, Google Drive, iCloud, etc., store customer data in large-scale data centers. Under cost constraints, each of the services can only deploy a limited number of data centers around the world. The deployment of Amazon AWS data centers is shown in Figure 2.3. Due to the ad hoc nature of the Internet, it is challenging to guarantee fast data transfer everywhere in the world by relying on a handful of data centers. Users in the same region have to compete for the available bandwidth from the data centers. As the number of users grows, their transfer speed and user experience will likely degrade.
+Современные промышленные сервисы хранения, такие как Amazon S3, Dropbox, Google Drive, iCloud и т.п., хранят пользовательские данные в больших дата-центрах. Из за дорогивизны, каждый такой сервис может разместить лишь ограниченное количество дата-центров по миру. На рисунке 2.3 показано распределение дата-центров Amazon AWS. В связи со специфичной природой интернета, довольно трудно гарантировать высокую скорость передачи данных в каждой точке земного шара, полагаясь на несколько дата-центров. Пользователяв одного региона приходится конкурировать за ширину канала связи к дата-центру. При возростании количества пользователей будет деградировать скорость транспортировки и удовлетворенность этих самых пользователей.
 \vspace{-0.5em}
  \\ \\ \centerline{\includegraphics[width=340pt]{fig3}}
-\\ \centerline{{Figure 2.3 AWS global infastructure}}
-\\ \\ PPIO’s distributed storage is a self-organizing, unstructured overlay network, that encourages connection among local peers. Nearby storage miners are more likely to be selected to store the data. Similarly, data distribution and retrieval are mostly handled by nearby peers as well. As a result, data transfer can be maintained at much higher speed by fully utilizing local network bandwidth.
+\\ \centerline{{Рисунок 2.3 Глобальная инфраструктура AWS}}
+\\ \\ Распределенное хранилище PPIO является само организующейся, бесструктурной оверлейной сетью, со стимуляцией взаимодействия между локальными пирами. Для хранения данных с большой вероятностью будут выбраны майнеры, расположенные рядом. Аналогично, распространение и получение данных в основном обрабатывается рядом стоящими пирами. В результате, транспортировка данных может осуществляться с намного более высокой скоростью за счет полной утилизации локальных каналов связи.
 \vspace{-0.5em}
-\\ \\With more nodes joining PPIO’s storage network, it becomes easier for each node to find nearby peers with a faster connection, for both storage and retrieval. Server bandwidth is no longer a bottleneck, and user growth leads to better speed and experience.
+\\ \\Чем больше узлов присоединяется к сети хранения PPIO, тем легче узлам становится отыскивать ближайших пиров с быстрыми соединениями, как для сохранения так и для получения данных. Ширина канала связи сервера более не является узким местом и пользователи получают лучшю скорость и удовлетворенность.
 \vspace{-0.5em}
-\\ \\{\bf Establishing a Self-Organizing P2P Network}
+\\ \\{\bf Формирование само-организующейся одноранговой сети (Establishing a Self-Organizing P2P Network)}
 \vspace{-0.5em}
-\\ \\Every node in PPIO’s network maintains a list of neighboring peers to stay connected with. The list gets continuously updated by dropping disappeared nodes and adding newly joined neighbors. As a result, the list should mostly contain active and fast neighbors. With all the nodes following the same process as described below, the self-organizing P2P overlay network can be established and maintained.
+\\ \\Каждый узел в сети PPIO обслуживает список соседних пиров с которыми он соединен. Список подвергается постоянному обновлению выбрасыванием отсоединившихся узлов и добавлением вновь присоединившихся соседей. В результате, список должен в основном содержать активных и быстрых соседей. В случае если все узлы следуют описанному выше сценарию, формируется и поддерживается само-организующаяся одноранговая оверлейная сеть.
 \vspace{-0.8em}
 \\
 
 \hangafter 1
 \hangindent 1.5em
 \noindent   
-•\quad Start by selecting an initial set of candidate neighbors among the peers with which it had connections in the past. Newly joined nodes start with an empty list.
+•\quad Из пиров, с которыми имелось соединение в прошлом, формируется начальное множество соседей-кандидатов. Вновь присоединенные узлы начинают с пустым списком.
 \vspace{-0.8em}
 \\
 
 \hangafter 1
 \hangindent 1.5em
 \noindent   
-•\quad Obtain new candidate neighbors from the Kademlia DHT. As discussed in the previous section, there is no guarantee that these peers are its geographical neighbors or have a fast connection to the node.
+•\quad Из DHT Kademlia извлекаются новые соседи-кандидаты. Как упоминалось ранее, нет гарантии что эти пиры расположены близко в географическом плане или обладают быстрым каналом связи к узлу.
 \vspace{-0.8em}
 \\
 
 \hangafter 1
 \hangindent 1.5em
 \noindent   
-•\quad Attempt to make connections to the above two sets of candidate nodes, the number of connections cannot exceed a given limit. Each of the connected nodes is now considered a neighbor.
+•\quad Предпринимается попытка установить соединение с кандидатами из упомянутых выше двух множеств, при этом число соединений не должно превзойти установленный лимит. Каждый соединенный узел считается соседом.
 \vspace{-0.8em}
 \\
 
 \hangafter 1
 \hangindent 1.5em
 \noindent   
-•\quad Obtain new candidates repeatedly, by looking up neighbor's neighbors.
+•\quad Периодически, отсмотром соседей соседей, получаются новые кандидаты.
 \vspace{-0.8em}
 \\
 
 \hangafter 1
 \hangindent 1.5em
 \noindent   
-•\quad Probe and evaluate the transmission speed of each new candidate repeatedly, in a round robin fashion, rank the candidates based on the evaluation.
+•\quad Для каждого нового кандидата периодически замеряется и вычисляется скорость передачи, по принципу round-robin, кандидаты ранжируются по вычисленным значениям.
 \vspace{-0.8em}
 \\
 
 \hangafter 1
 \hangindent 1.5em
 \noindent   
-•\quad Eliminate neighbors that have the low-speed connection to the node or are no longer reachable.
+•\quad Более не доступные соседи, а так же соседи с малой скоростью соединения, исключаются.
 \vspace{-0.8em}
 \\
 
 \hangafter 1
 \hangindent 1.5em
 \noindent   
-•\quad Select candidates ranked at the top to replace eliminated neighbors.
+•\quad Для замены исключенных соседей, из головы отранжированного перечня, выбираются новые кандидаты.
 \vspace{-0.8em}
 \\
 
 \hangafter 1
 \hangindent 1.5em
 \noindent   
-•\quad Repeat the entire process.
+•\quad Весь процесс повторяется.
 \vspace{-0.6em}
 \\ 
 
 \noindent  
-Each node needs to maintain two real-time lists to support the above process, a list of current neighbors, and a list of neighbor candidates. Besides, each node also maintains a list of past neighbors. These are essential to node selection in the overlay network.
+Для выполнения изложенного выше процесса, каждый узел должен поддерживать в реальном времени два списка, список текущих соседей и список соседей-кандидатов. Так же, каждый узел поддерживает список бывших соседей. Все это является существенным для процедуры поиска узла в оверлейной сети.
 \vspace{-0.5em}
-\\ \\{\bf Preferred storage miners with a closer network distance}
+\\ \\{\bf Приоритезация майнеров-хранителей с малой сетевой дистанцией (Preferred storage miners with a closer network distance)}
 \vspace{-0.5em}
-\\ \\When user uploads data to PPIO's storage network, its neighbors with a closer network distance are prioritized when selecting storage miners to store the data. A large percentage of the copies of the data are stored on the neighboring miners with a faster connection to the user, to achieve higher transfer speed during storage and retrieval. When enough miner nodes join the network in different regions of the world, high data transfer speed can be maintained around the globe.
+\\ \\Когда пользователь выгружает данные в сеть хранения PPIO, приоритет в выборе майнеров-хранителей для размещения данных отдается соседям с меньшей сетевой дистанцией. Для достижения более высокой скорости сохранения и получения данных, большой процент копий этих данных сохраняется на соседних майнерах с более быстрым соединением с пользователем. Когда достаточное количество узлов майнеров подключится к сети в различных регионах мира, высокая скорость скорость передачи данных может быть достигнута в рамках всей планеты.
 \vspace{-0.5em}
-\\ \\{\bf About users who change regions frequently}
+\\ \\{\bf Пользователи, часто меняющие регион пребывания}
 \vspace{-0.5em}
-\\ \\When a user node repeatedly travels between two different regions, PPIO’s design can provide a great user experience in both places. When the user node is in location $A$, it finds neighbors in location $A$. When the user node is in a second location $B$, it finds neighbors in location $B$. As a result, its neighbor list or history list contains peers from both locations. If the user node stays in location $A$ for an extended period, its neighbor list will contain more peers from location $A$, and vice versa. If the user node repeatedly travels back and forth, the list will contain the similar number of peers from location $A$ and $B$. In this way, when user node uploads data, neighbor miners from both nodes will store copies of the data, so that fast data retrieval can be achieved in both places.
+\\ \\В случае если узел пользователя постоянно путешествует между двумя различными регионами, архитектура PPIO может предложить замечательное решение для удобства пользователя в обоих местах. При нахождении пользователя в локации $A$, он находит соседей в этой самой локации $A$. Аналогично, при находжении пользователя в локации $B$,он находит соседей в локации $B$. В результате, его список соседей и исторический список содержит пиров из обоих локаций. Если пользователь остается в локации $A$ на длительный период, его список соседей будет содержать больше пиров локации $A$, и наоборот. Если пользователь постоянно перемещается туда и обратно, список будет содержать примерно одинаковое число пиров как из $A$ так и из $B$. В этом случае, когда узел пользователя выгружает данные, соседние майнеры из обоих локаций будут сохранять их копии, таким образом, быстро получить данные можно будет в обоих местах.
 \vspace{-0.5em}
-\\ \\{\bf If the user permanently relocates to a different region}
+\\ \\{\bf Если пользователь окончательно перемещается в другой регион}
 \vspace{-0.5em}
-\\ \\When a user node permanently relocates to a different region, PPIO provides a reset feature to help with the reschedule. When the reset is initiated, its neighbor list is rebuilt from scratch. New copies are created for existing user data in the network, and these copies are stored by prioritizing the new neighbors. In this way, fast data retrieval can be achieved for previously stored data, as well as new data to be stored to the network.  
+\\ \\Для случая если узел пользователя перемещается в другой регион на постоянной основе, для облегчения перепланировки PPIO предлагает возможность сброса. При активации сброса, список соседей перестраивается с нуля. Для пользовательских данных в сети создаются новые копии, и эти копии сохраняются с приоритезацией новых соседей. В этом случае, для ранее сохраненных данных может быть обеспечено быстрое получение так же, как и для вновь сохраняемых в сети данных .
 \vspace{-0.5em}
 
 

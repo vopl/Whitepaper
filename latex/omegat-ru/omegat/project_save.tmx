@@ -155,6 +155,17 @@
     </tu>
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\\ \\When user uploads data to PPIO's storage network, its neighbors with a closer network distance are prioritized when selecting storage miners to store the data.</prop>
+      <prop type="next">When enough miner nodes join the network in different regions of the world, high data transfer speed can be maintained around the globe.</prop>
+      <tuv lang="EN-US">
+        <seg>A large percentage of the copies of the data are stored on the neighboring miners with a faster connection to the user, to achieve higher transfer speed during storage and retrieval.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190320T115034Z" creationid="vopl" creationdate="20190320T115034Z">
+        <seg>Для достижения более высокой скорости сохранения и получения данных, большой процент копий этих данных сохраняется на соседних майнерах с более быстрым соединением с пользователем.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">Each of these N miners is also called a “Peer”.</prop>
       <prop type="next">This process is called {\bf Multi-point Download Scheduling}.</prop>
       <tuv lang="EN-US">
@@ -217,6 +228,61 @@
       </tuv>
       <tuv lang="RU" changeid="vopl" changedate="20190314T155341Z" creationid="vopl" creationdate="20190314T155341Z">
         <seg>В результате может быть сформировано большое и качественное сообщество майнеров.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">Similarly, data distribution and retrieval are mostly handled by nearby peers as well.</prop>
+      <prop type="next">\vspace{-0.5em}</prop>
+      <tuv lang="EN-US">
+        <seg>As a result, data transfer can be maintained at much higher speed by fully utilizing local network bandwidth.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190320T105137Z" creationid="vopl" creationdate="20190320T105137Z">
+        <seg>В результате, транспортировка данных может осуществляться с намного более высокой скоростью за счет полной утилизации локальных каналов связи.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">When the user node is in a second location $B$, it finds neighbors in location $B$.</prop>
+      <prop type="next">If the user node stays in location $A$ for an extended period, its neighbor list will contain more peers from location $A$, and vice versa.</prop>
+      <tuv lang="EN-US">
+        <seg>As a result, its neighbor list or history list contains peers from both locations.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190320T121235Z" creationid="vopl" creationdate="20190320T121235Z">
+        <seg>В результате, его список соседей и исторический список содержит пиров из обоих локаций.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">The list gets continuously updated by dropping disappeared nodes and adding newly joined neighbors.</prop>
+      <prop type="next">With all the nodes following the same process as described below, the self-organizing P2P overlay network can be established and maintained.</prop>
+      <tuv lang="EN-US">
+        <seg>As a result, the list should mostly contain active and fast neighbors.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190320T111826Z" creationid="vopl" creationdate="20190320T111826Z">
+        <seg>В результате, список должен в основном содержать активных и быстрых соседей.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">•\quad Obtain new candidate neighbors from the Kademlia DHT.</prop>
+      <prop type="next">\vspace{-0.8em}</prop>
+      <tuv lang="EN-US">
+        <seg>As discussed in the previous section, there is no guarantee that these peers are its geographical neighbors or have a fast connection to the node.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190320T112617Z" creationid="vopl" creationdate="20190320T112617Z">
+        <seg>Как упоминалось ранее, нет гарантии что эти пиры расположены близко в географическом плане или обладают быстрым каналом связи к узлу.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">Users in the same region have to compete for the available bandwidth from the data centers.</prop>
+      <prop type="next">\vspace{-0.5em}</prop>
+      <tuv lang="EN-US">
+        <seg>As the number of users grows, their transfer speed and user experience will likely degrade.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190320T103930Z" creationid="vopl" creationdate="20190320T103930Z">
+        <seg>При возростании количества пользователей будет деградировать скорость транспортировки и удовлетворенность этих самых пользователей.</seg>
       </tuv>
     </tu>
     <tu>
@@ -309,6 +375,17 @@
     </tu>
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">Each node needs to maintain two real-time lists to support the above process, a list of current neighbors, and a list of neighbor candidates.</prop>
+      <prop type="next">These are essential to node selection in the overlay network.</prop>
+      <tuv lang="EN-US">
+        <seg>Besides, each node also maintains a list of past neighbors.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190320T113948Z" creationid="vopl" creationdate="20190320T113948Z">
+        <seg>Так же, каждый узел поддерживает список бывших соседей.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">For that purpose, its file index is made public to facilitate features like Web access, but it poses a challenge to preserving user privacy and data security in a storage network.</prop>
       <prop type="next">It does borrow mature P2P system designs from proven applications such as BitTorrent, but it provides no good solution to handle complex network environments and does not offer performance optimization within regional networks.</prop>
       <tuv lang="EN-US">
@@ -387,6 +464,17 @@
     </tu>
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">The deployment of Amazon AWS data centers is shown in Figure 2.3.</prop>
+      <prop type="next">Users in the same region have to compete for the available bandwidth from the data centers.</prop>
+      <tuv lang="EN-US">
+        <seg>Due to the ad hoc nature of the Internet, it is challenging to guarantee fast data transfer everywhere in the world by relying on a handful of data centers.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190320T103455Z" creationid="vopl" creationdate="20190320T103455Z">
+        <seg>В связи со специфичной природой интернета, довольно трудно гарантировать высокую скорость передачи данных в каждой точке земного шара, полагаясь на несколько дата-центров.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">It significantly improves the robustness of the distributed storage system and allows the client to download data from the closest neighbors on the network.</prop>
       <prop type="next">In section 2 of this chapter, PPIO's P2P network design will be explained in details, including its intelligent data-driven scheduling algorithms, its implementation of the Distributed Hash Table (DHT), its traffic management based on Proactive Network Provider Participation (P4P), and its P2P based content distribution technology(PCDN).</prop>
       <tuv lang="EN-US">
@@ -405,6 +493,50 @@
       </tuv>
       <tuv lang="RU" changeid="vopl" changedate="20190319T143041Z" creationid="vopl" creationdate="20190319T143041Z">
         <seg>Каждый скачивающий узел посылает запросы на скачивание множеству пиров, контролирует скаченные части и наблюдает за возможными истечениями времени ожидания и сбоями пиров.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\noindent</prop>
+      <prop type="next">Besides, each node also maintains a list of past neighbors.</prop>
+      <tuv lang="EN-US">
+        <seg>Each node needs to maintain two real-time lists to support the above process, a list of current neighbors, and a list of neighbor candidates.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190320T113918Z" creationid="vopl" creationdate="20190320T113918Z">
+        <seg>Для выполнения изложенного выше процесса, каждый узел должен поддерживать в реальном времени два списка, список текущих соседей и список соседей-кандидатов.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">The algorithm steps through the network path and finds nodes closer to the key on every step to look up a specific key-value pair in the network until it reaches the node that stores the key-pair.</prop>
+      <prop type="next">Such distance is calculated by taking an XOR operation on two Node IDs.</prop>
+      <tuv lang="EN-US">
+        <seg>Each node needs to store information of a group of other nodes based their distance to it to support the lookup.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190320T095141Z" creationid="vopl" creationdate="20190320T094325Z">
+        <seg>Для поддержки такого поиска, каждый узел должен содержать информацию о группе других узлов на основе их дистанции.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">No single participating node in the DHT is tasked to maintain the entire network.</prop>
+      <prop type="next">Redundancy is also added to the data and stored on multiple nodes to maintain the reliability of the system so that a single node failure does not cause loss of data.</prop>
+      <tuv lang="EN-US">
+        <seg>Each node only stores a small part of the database and only needs to maintain information of its adjacent nodes, such design significantly reduces each node’s bandwidth and resource usage.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190319T161303Z" creationid="vopl" creationdate="20190319T160345Z">
+        <seg>Каждый узел сохраняет лишь малую часть базы данных, нуждается в обслуживании информации только о соседних узлах, такой дизайн существенно снижает необходимую ширину канала связи и использование ресурсов каждого узла.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">•\quad Attempt to make connections to the above two sets of candidate nodes, the number of connections cannot exceed a given limit.</prop>
+      <prop type="next">\vspace{-0.8em}</prop>
+      <tuv lang="EN-US">
+        <seg>Each of the connected nodes is now considered a neighbor.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190320T112926Z" creationid="vopl" creationdate="20190320T112926Z">
+        <seg>Каждый соединенный узел считается соседом.</seg>
       </tuv>
     </tu>
     <tu>
@@ -475,6 +607,17 @@
     </tu>
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\\ \\With the DHT implementation above, structured data such as file index, statistics on network nodes, and other metadata can be securely saved and quickly looked up in PPIO’s distributed network.</prop>
+      <prop type="next">\vspace{-0.5em}</prop>
+      <tuv lang="EN-US">
+        <seg>However, data transfer in its storage network is handled differently, which will be discussed in the next section.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190320T102156Z" creationid="vopl" creationdate="20190320T102113Z">
+        <seg>Тем не менее, транспортировка данных в сети хранения происходит по другому, это бкдет освещено далее.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">The global cloud storage market has grown enormously in recent years and will continue to grow at a faster pace.</prop>
       <prop type="next">The data breach has become frequently occurred, with an ever-growing scale and impact.</prop>
       <tuv lang="EN-US">
@@ -526,6 +669,28 @@
       </tuv>
       <tuv lang="RU" changeid="vopl" changedate="20190319T095307Z" creationid="vopl" creationdate="20190319T095307Z">
         <seg>В случае отсутствия исторических данных используется эмпирическое значение по умолчанию.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">If the user node stays in location $A$ for an extended period, its neighbor list will contain more peers from location $A$, and vice versa.</prop>
+      <prop type="next">In this way, when user node uploads data, neighbor miners from both nodes will store copies of the data, so that fast data retrieval can be achieved in both places.</prop>
+      <tuv lang="EN-US">
+        <seg>If the user node repeatedly travels back and forth, the list will contain the similar number of peers from location $A$ and $B$.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190320T121444Z" creationid="vopl" creationdate="20190320T121444Z">
+        <seg>Если пользователь постоянно перемещается туда и обратно, список будет содержать примерно одинаковое число пиров как из $A$ так и из $B$.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">As a result, its neighbor list or history list contains peers from both locations.</prop>
+      <prop type="next">If the user node repeatedly travels back and forth, the list will contain the similar number of peers from location $A$ and $B$.</prop>
+      <tuv lang="EN-US">
+        <seg>If the user node stays in location $A$ for an extended period, its neighbor list will contain more peers from location $A$, and vice versa.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190320T121340Z" creationid="vopl" creationdate="20190320T121340Z">
+        <seg>Если пользователь остается в локации $A$ на длительный период, его список соседей будет содержать больше пиров локации $A$, и наоборот.</seg>
       </tuv>
     </tu>
     <tu>
@@ -614,6 +779,39 @@
       </tuv>
       <tuv lang="RU" changeid="vopl" changedate="20190316T164605Z" creationid="vopl" creationdate="20190316T164605Z">
         <seg>В данной главе будут рассмотрены три основные технологии, используемые в PPIO:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">New copies are created for existing user data in the network, and these copies are stored by prioritizing the new neighbors.</prop>
+      <prop type="next">\vspace{-0.5em}</prop>
+      <tuv lang="EN-US">
+        <seg>In this way, fast data retrieval can be achieved for previously stored data, as well as new data to be stored to the network.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190320T122453Z" creationid="vopl" creationdate="20190320T122453Z">
+        <seg>В этом случае, для ранее сохраненных данных может быть обеспечено быстрое получение так же, как и для вновь сохраняемых в сети данных .</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">If the user node repeatedly travels back and forth, the list will contain the similar number of peers from location $A$ and $B$.</prop>
+      <prop type="next">\vspace{-0.5em}</prop>
+      <tuv lang="EN-US">
+        <seg>In this way, when user node uploads data, neighbor miners from both nodes will store copies of the data, so that fast data retrieval can be achieved in both places.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190320T121631Z" creationid="vopl" creationdate="20190320T121631Z">
+        <seg>В этом случае, когда узел пользователя выгружает данные, соседние майнеры из обоих локаций будут сохранять их копии, таким образом, быстро получить данные можно будет в обоих местах.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">These key-value pairs are distributed and stored among the participating nodes.</prop>
+      <prop type="next">No single participating node in the DHT is tasked to maintain the entire network.</prop>
+      <tuv lang="EN-US">
+        <seg>It avoids the problem with the centralized database system, where a failure in the central server leads to the breakdown of the entire network.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190319T160048Z" creationid="vopl" creationdate="20190319T160048Z">
+        <seg>Это предотвращает проблемы централизованных систем БД, при которых отказ центрального сервера приводит к отказу всей сети.</seg>
       </tuv>
     </tu>
     <tu>
@@ -739,6 +937,72 @@
     </tu>
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\\ \\ PPIO’s distributed storage is a self-organizing, unstructured overlay network, that encourages connection among local peers.</prop>
+      <prop type="next">Similarly, data distribution and retrieval are mostly handled by nearby peers as well.</prop>
+      <tuv lang="EN-US">
+        <seg>Nearby storage miners are more likely to be selected to store the data.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190320T104940Z" creationid="vopl" creationdate="20190320T104940Z">
+        <seg>Для хранения данных с большой вероятностью будут выбраны майнеры, расположенные рядом.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">When the reset is initiated, its neighbor list is rebuilt from scratch.</prop>
+      <prop type="next">In this way, fast data retrieval can be achieved for previously stored data, as well as new data to be stored to the network.</prop>
+      <tuv lang="EN-US">
+        <seg>New copies are created for existing user data in the network, and these copies are stored by prioritizing the new neighbors.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190320T122228Z" creationid="vopl" creationdate="20190320T122228Z">
+        <seg>Для пользовательских данных в сети создаются новые копии, и эти копии сохраняются с приоритезацией новых соседей.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">•\quad Start by selecting an initial set of candidate neighbors among the peers with which it had connections in the past.</prop>
+      <prop type="next">\vspace{-0.8em}</prop>
+      <tuv lang="EN-US">
+        <seg>Newly joined nodes start with an empty list.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190320T112326Z" creationid="vopl" creationdate="20190320T112326Z">
+        <seg>Вновь присоединенные узлы начинают с пустым списком.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">It avoids the problem with the centralized database system, where a failure in the central server leads to the breakdown of the entire network.</prop>
+      <prop type="next">Each node only stores a small part of the database and only needs to maintain information of its adjacent nodes, such design significantly reduces each node’s bandwidth and resource usage.</prop>
+      <tuv lang="EN-US">
+        <seg>No single participating node in the DHT is tasked to maintain the entire network.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190319T160150Z" creationid="vopl" creationdate="20190319T160150Z">
+        <seg>Обслуживанием всей сети озадачен не один узел-участник.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">Such distance is calculated by taking an XOR operation on two Node IDs.</prop>
+      <prop type="next">Therefore, the distance between node IDs and keys can be calculated in the same way.</prop>
+      <tuv lang="EN-US">
+        <seg>Node IDs have the same bit length as the keys used in key-value pairs.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190320T094500Z" creationid="vopl" creationdate="20190320T094500Z">
+        <seg>Идентификаторы узлов имеют такую же длину как и ключи, используемые в парах ключ-значение.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\\</prop>
+      <prop type="next">These changes are mainly caused by nodes via parallel looking over disjoint paths.</prop>
+      <tuv lang="EN-US">
+        <seg>PPIO also adopts an extension of Kademlia-S/Kademlia\cite{article23}to improve the security of the network.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190320T095958Z" creationid="vopl" creationdate="20190320T095958Z">
+        <seg>Так же, для увеличения безопасности сети, PPIO применяет расширение Kademlia-S/Kademlia\cite{article23}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">•\quad {\bf Strong Application Support and Ecosystem.} PPIO provides a set of storage APIs similar to those of the cloud services such as AWS S3 and makes the data migration from those services much comfortable.</prop>
       <prop type="next">PPIO has a comprehensive plan to develop a robust, healthy and sustainable ecosystem, to facilitate the development of applications and services, and allow the developers to enjoy real benefits from PPIO's growth.</prop>
       <tuv lang="EN-US">
@@ -746,6 +1010,17 @@
       </tuv>
       <tuv lang="RU" changeid="vopl" changedate="20190314T165338Z" creationid="vopl" creationdate="20190314T165338Z">
         <seg>PPIO так же имеет некоторые технологии для улучшения поддержки распределенных приложений, включая хранилища объектов, механизм песочницы, управление доступом к файлам и т.п.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">PPIO is a fully decentralized storage and distribution system that requires its database to be also managed in a decentralized fashion.</prop>
+      <prop type="next">\vspace{-0.5em}</prop>
+      <tuv lang="EN-US">
+        <seg>PPIO employs Distributed Hash Table (DHT) to store data and provide routing and lookup services.\\</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190319T155233Z" creationid="vopl" creationdate="20190319T155233Z">
+        <seg>Для хранения данных, роутинга и поиска сервисов PPIO применяет Распределенную хэш-таблицу (Distributed Hash Table, DHT).\\</seg>
       </tuv>
     </tu>
     <tu>
@@ -779,6 +1054,17 @@
       </tuv>
       <tuv lang="RU" changeid="vopl" changedate="20190319T081652Z" creationid="vopl" creationdate="20190319T080256Z">
         <seg>PPIO поощряет узлы в зависимости от реализуемых ими ресурсов хранилища и пропускной способности, тем самым узлы стремятся оставаться в сети и производить длительный и стабильный вклад. \cite{article1} Тем не менее, злонамеренные узлы предпринимают попытки причинить вред сети посредством различных типов атак, подрывающих целостность системы.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\subsubsection{Distributed Database and Routing}  %——2.2.2 \cite{article17}</prop>
+      <prop type="next">PPIO employs Distributed Hash Table (DHT) to store data and provide routing and lookup services.\\</prop>
+      <tuv lang="EN-US">
+        <seg>PPIO is a fully decentralized storage and distribution system that requires its database to be also managed in a decentralized fashion.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190319T155103Z" creationid="vopl" creationdate="20190319T154518Z">
+        <seg>PPIO является полностью распределенной системой хранения и распространения данных, нуждающаяся в том чтобы ее база данных так же управлялась в децентрализованном виде.</seg>
       </tuv>
     </tu>
     <tu>
@@ -823,6 +1109,17 @@
       </tuv>
       <tuv lang="RU" changeid="vopl" changedate="20190314T123515Z" creationid="vopl" creationdate="20190314T123515Z">
         <seg>PPIO сводит потребности в хранении данных, имеющиеся у сегодняшнего бизнеса с одной стороны и предлагаемых возможностей поставщиков соответствующих услуг с другой, а так же, предоставляет возможность реализации распределенных приложений (DApps).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\\ \\ There are many different implementations of DHT, some of the commonly used are Chord\cite{article14}, Pastry\cite{article15}, Tapestry\cite{article18}, Dynamo\cite{article19}, and Kademlia\cite{article16}.</prop>
+      <prop type="next">\vspace{-0.5em}</prop>
+      <tuv lang="EN-US">
+        <seg>PPIO uses Kademlia, so do many other well-known P2P projects like PPLive, BitTorrent, eMule, etc.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190319T161829Z" creationid="vopl" creationdate="20190319T161829Z">
+        <seg>PPIO использует вариант Kademlia, так же, как многие другие хорошо известные P2P проекты - PPLive, BitTorrent, eMule и т.п..</seg>
       </tuv>
     </tu>
     <tu>
@@ -970,6 +1267,17 @@
     </tu>
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">Each node only stores a small part of the database and only needs to maintain information of its adjacent nodes, such design significantly reduces each node’s bandwidth and resource usage.</prop>
+      <prop type="next">\vspace{-0.5em}</prop>
+      <tuv lang="EN-US">
+        <seg>Redundancy is also added to the data and stored on multiple nodes to maintain the reliability of the system so that a single node failure does not cause loss of data.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190319T161535Z" creationid="vopl" creationdate="20190319T161535Z">
+        <seg>Так же, в данные добавляется избыточность, для обеспечения надежности системы данные сохраняются на нескольких узлах, таким образом отказ отдельного узла не приводит к потере данных.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">However, the malicious nodes would attempt to cheat the network through various types of attacks, which undermines the system fairness.</prop>
       <prop type="next">The optimized and secure implementation of the proofs allows them to function efficiently at large scale, that enables the incentive system to operate in securely and help establish a healthy decentralized distributed storage market and economic system.</prop>
       <tuv lang="EN-US">
@@ -981,6 +1289,17 @@
     </tu>
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\\ \\With more nodes joining PPIO’s storage network, it becomes easier for each node to find nearby peers with a faster connection, for both storage and retrieval.</prop>
+      <prop type="next">\vspace{-0.5em}</prop>
+      <tuv lang="EN-US">
+        <seg>Server bandwidth is no longer a bottleneck, and user growth leads to better speed and experience.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190320T105454Z" creationid="vopl" creationdate="20190320T105454Z">
+        <seg>Ширина канала связи сервера более не является узким местом и пользователи получают лучшю скорость и удовлетворенность.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">However, these attempts were not successful.</prop>
       <prop type="next">PoW introduces wasteful computation and energy consumption, and it does not take into account the different levels of storage and bandwidth contribution among the miners, which are crucial to a decentralized distributed storage system.</prop>
       <tuv lang="EN-US">
@@ -988,6 +1307,28 @@
       </tuv>
       <tuv lang="RU" changeid="vopl" changedate="20190314T150337Z" creationid="vopl" creationdate="20190314T142633Z">
         <seg>Одна из таких попыток, Seacoin, построенная на основе Бикоин-подобного консенсуса Proof of Work (PoW).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">Nearby storage miners are more likely to be selected to store the data.</prop>
+      <prop type="next">As a result, data transfer can be maintained at much higher speed by fully utilizing local network bandwidth.</prop>
+      <tuv lang="EN-US">
+        <seg>Similarly, data distribution and retrieval are mostly handled by nearby peers as well.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190320T105032Z" creationid="vopl" creationdate="20190320T105032Z">
+        <seg>Аналогично, распространение и получение данных в основном обрабатывается рядом стоящими пирами.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">Therefore, the distance between node IDs and keys can be calculated in the same way.</prop>
+      <prop type="next">\vspace{-0.3em}</prop>
+      <tuv lang="EN-US">
+        <seg>Since the XOR distance does not take actual geographic distance into account, it is possible for two nodes to reside next to one another in the network even though one of them may be in the United Kingdom, while the other is in the United States.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190320T095729Z" creationid="vopl" creationdate="20190320T095729Z">
+        <seg>Так как XOR-дистанция не учитывает реальную географическую дистанцию, узлы в сети могут считаться близкими даже если один из них расположен в Великобритании а другой в США.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1047,6 +1388,17 @@
     </tu>
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">Each node needs to store information of a group of other nodes based their distance to it to support the lookup.</prop>
+      <prop type="next">Node IDs have the same bit length as the keys used in key-value pairs.</prop>
+      <tuv lang="EN-US">
+        <seg>Such distance is calculated by taking an XOR operation on two Node IDs.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190320T094417Z" creationid="vopl" creationdate="20190320T094417Z">
+        <seg>Такая дистанция вычисляется применением операции XOR над двумя идентификаторами узлов.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">PPIO's founding team successfully designed, developed and maintained PPLive, a peer to peer streaming system that serves hundreds of millions of users on a daily basis.</prop>
       <prop type="next">\vspace{-0.6em}</prop>
       <tuv lang="EN-US">
@@ -1058,6 +1410,17 @@
     </tu>
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">The node ID is also used to calculate the distance between nodes and locate key-value pairs.</prop>
+      <prop type="next">Each node needs to store information of a group of other nodes based their distance to it to support the lookup.</prop>
+      <tuv lang="EN-US">
+        <seg>The algorithm steps through the network path and finds nodes closer to the key on every step to look up a specific key-value pair in the network until it reaches the node that stores the key-pair.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190320T094207Z" creationid="vopl" creationdate="20190319T162246Z">
+        <seg>Алгоритм итерационно строит путь в сети, на каждой итерации отыскивая узлы, ближайшие к ключу исмкомой пары ключ-значение в сети до тех пор пока не достигнет узла, хранящего искомую пару ключ-значение.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">However, the existing centralized solutions have many problems.</prop>
       <prop type="next">For example, the Dropbox hacking in 2016 alone leaked 68 million user accounts.</prop>
       <tuv lang="EN-US">
@@ -1065,6 +1428,17 @@
       </tuv>
       <tuv lang="RU" changeid="vopl" changedate="20190314T125905Z" creationid="vopl" creationdate="20190314T125905Z">
         <seg>Порча и утеря данных происходят все чаще, с постоянно растущим масштабом и влиянием.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">Under cost constraints, each of the services can only deploy a limited number of data centers around the world.</prop>
+      <prop type="next">Due to the ad hoc nature of the Internet, it is challenging to guarantee fast data transfer everywhere in the world by relying on a handful of data centers.</prop>
+      <tuv lang="EN-US">
+        <seg>The deployment of Amazon AWS data centers is shown in Figure 2.3.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190320T102950Z" creationid="vopl" creationdate="20190320T102950Z">
+        <seg>На рисунке 2.3 показано распределение дата-центров Amazon AWS.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1098,6 +1472,39 @@
       </tuv>
       <tuv lang="RU" changeid="vopl" changedate="20190314T125452Z" creationid="vopl" creationdate="20190314T124912Z">
         <seg>Глобальный рынок облачных хранилищ в значительной мере вырос за последние годы и продолжает расти быстрыми темпами .</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\\ \\Every node in PPIO’s network maintains a list of neighboring peers to stay connected with.</prop>
+      <prop type="next">As a result, the list should mostly contain active and fast neighbors.</prop>
+      <tuv lang="EN-US">
+        <seg>The list gets continuously updated by dropping disappeared nodes and adding newly joined neighbors.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190320T111739Z" creationid="vopl" creationdate="20190320T111739Z">
+        <seg>Список подвергается постоянному обновлению выбрасыванием отсоединившихся узлов и добавлением вновь присоединившихся соседей.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">These changes are mainly caused by nodes via parallel looking over disjoint paths.</prop>
+      <prop type="next">\vspace{-0.5em}</prop>
+      <tuv lang="EN-US">
+        <seg>The network can sustain attacks even when a large number of nodes are compromised.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190320T101747Z" creationid="vopl" creationdate="20190320T101747Z">
+        <seg>Сеть может противостоять атакам даже при большом количестве скомпромитированных узлов.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\\ \\Kademlia algorithm assigns a unique ID to each participating node.</prop>
+      <prop type="next">The algorithm steps through the network path and finds nodes closer to the key on every step to look up a specific key-value pair in the network until it reaches the node that stores the key-pair.</prop>
+      <tuv lang="EN-US">
+        <seg>The node ID is also used to calculate the distance between nodes and locate key-value pairs.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190319T162113Z" creationid="vopl" creationdate="20190319T162113Z">
+        <seg>ID узла так же используется для вычисления дистанции между узлами и при размещении/поиске пар ключ-значение.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1157,6 +1564,39 @@
     </tu>
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">Node IDs have the same bit length as the keys used in key-value pairs.</prop>
+      <prop type="next">Since the XOR distance does not take actual geographic distance into account, it is possible for two nodes to reside next to one another in the network even though one of them may be in the United Kingdom, while the other is in the United States.</prop>
+      <tuv lang="EN-US">
+        <seg>Therefore, the distance between node IDs and keys can be calculated in the same way.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190320T095310Z" creationid="vopl" creationdate="20190320T095310Z">
+        <seg>Следовательно, дистанция между ID узла и ключем может быть вычислена таким же образом.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">Besides, each node also maintains a list of past neighbors.</prop>
+      <prop type="next">\vspace{-0.5em}</prop>
+      <tuv lang="EN-US">
+        <seg>These are essential to node selection in the overlay network.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190320T114200Z" creationid="vopl" creationdate="20190320T114200Z">
+        <seg>Все это является существенным для процедуры поиска узла в оверлейной сети.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">PPIO also adopts an extension of Kademlia-S/Kademlia\cite{article23}to improve the security of the network.</prop>
+      <prop type="next">The network can sustain attacks even when a large number of nodes are compromised.</prop>
+      <tuv lang="EN-US">
+        <seg>These changes are mainly caused by nodes via parallel looking over disjoint paths.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190320T100754Z" creationid="vopl" creationdate="20190320T100754Z">
+        <seg>В основном, данные изменения вызваны узлами, использующими параллельный поиск над непересекающимися путями.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">For example, the Dropbox hacking in 2016 alone leaked 68 million user accounts.</prop>
       <prop type="next">At the same time, high bandwidth and storage cost is another inherent problem of the centralized storage systems, it leads to unaffordable price and makes it extremely difficult for many Internet companies to be profitable.</prop>
       <tuv lang="EN-US">
@@ -1164,6 +1604,17 @@
       </tuv>
       <tuv lang="RU" changeid="vopl" changedate="20190314T141102Z" creationid="vopl" creationdate="20190314T141102Z">
         <seg>Такие инциденты представляют серьезную угрозу не только приватности отдельных пользователей, но, так же, безопасности и целостности всего Интернета.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\\In a DHT, each piece of data is bundled with a unique key into a key-value pair.</prop>
+      <prop type="next">It avoids the problem with the centralized database system, where a failure in the central server leads to the breakdown of the entire network.</prop>
+      <tuv lang="EN-US">
+        <seg>These key-value pairs are distributed and stored among the participating nodes.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190319T160212Z" creationid="vopl" creationdate="20190319T155531Z">
+        <seg>Такие пары ключ-значение распространяются и хранятся на узлах-участниках сети.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1223,6 +1674,17 @@
     </tu>
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\vspace{-0.5em}</prop>
+      <prop type="next">Under cost constraints, each of the services can only deploy a limited number of data centers around the world.</prop>
+      <tuv lang="EN-US">
+        <seg>Today’s well-established storage services, such as Amazon S3, Dropbox, Google Drive, iCloud, etc., store customer data in large-scale data centers.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190320T102806Z" creationid="vopl" creationdate="20190320T102806Z">
+        <seg>Современные промышленные сервисы хранения, такие как Amazon S3, Dropbox, Google Drive, iCloud и т.п., хранят пользовательские данные в больших дата-центрах.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">1.\quad Multiple virtual connections (Tunnels) are established between the user and each peer with the resources, to improve transmission efficiency.</prop>
       <prop type="next">If it fails, TCP based protocols will be used instead to adapt to different types of heterogeneous networks.</prop>
       <tuv lang="EN-US">
@@ -1234,6 +1696,83 @@
     </tu>
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">Today’s well-established storage services, such as Amazon S3, Dropbox, Google Drive, iCloud, etc., store customer data in large-scale data centers.</prop>
+      <prop type="next">The deployment of Amazon AWS data centers is shown in Figure 2.3.</prop>
+      <tuv lang="EN-US">
+        <seg>Under cost constraints, each of the services can only deploy a limited number of data centers around the world.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190320T102920Z" creationid="vopl" creationdate="20190320T102920Z">
+        <seg>Из за дорогивизны, каждый такой сервис может разместить лишь ограниченное количество дата-центров по миру.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">Due to the ad hoc nature of the Internet, it is challenging to guarantee fast data transfer everywhere in the world by relying on a handful of data centers.</prop>
+      <prop type="next">As the number of users grows, their transfer speed and user experience will likely degrade.</prop>
+      <tuv lang="EN-US">
+        <seg>Users in the same region have to compete for the available bandwidth from the data centers.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190320T103604Z" creationid="vopl" creationdate="20190320T103604Z">
+        <seg>Пользователяв одного региона приходится конкурировать за ширину канала связи к дата-центру.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">A large percentage of the copies of the data are stored on the neighboring miners with a faster connection to the user, to achieve higher transfer speed during storage and retrieval.</prop>
+      <prop type="next">\vspace{-0.5em}</prop>
+      <tuv lang="EN-US">
+        <seg>When enough miner nodes join the network in different regions of the world, high data transfer speed can be maintained around the globe.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190320T115244Z" creationid="vopl" creationdate="20190320T115218Z">
+        <seg>Когда достаточное количество узлов майнеров подключится к сети в различных регионах мира, высокая скорость скорость передачи данных может быть достигнута в рамках всей планеты.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\\ \\When a user node permanently relocates to a different region, PPIO provides a reset feature to help with the reschedule.</prop>
+      <prop type="next">New copies are created for existing user data in the network, and these copies are stored by prioritizing the new neighbors.</prop>
+      <tuv lang="EN-US">
+        <seg>When the reset is initiated, its neighbor list is rebuilt from scratch.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190320T122005Z" creationid="vopl" creationdate="20190320T122005Z">
+        <seg>При активации сброса, список соседей перестраивается с нуля.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">When the user node is in location $A$, it finds neighbors in location $A$.</prop>
+      <prop type="next">As a result, its neighbor list or history list contains peers from both locations.</prop>
+      <tuv lang="EN-US">
+        <seg>When the user node is in a second location $B$, it finds neighbors in location $B$.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190320T121130Z" creationid="vopl" creationdate="20190320T121130Z">
+        <seg>Аналогично, при находжении пользователя в локации $B$,он находит соседей в локации $B$.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\\ \\When a user node repeatedly travels between two different regions, PPIO’s design can provide a great user experience in both places.</prop>
+      <prop type="next">When the user node is in a second location $B$, it finds neighbors in location $B$.</prop>
+      <tuv lang="EN-US">
+        <seg>When the user node is in location $A$, it finds neighbors in location $A$.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190320T121134Z" creationid="vopl" creationdate="20190320T121039Z">
+        <seg>При нахождении пользователя в локации $A$, он находит соседей в этой самой локации $A$.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">As a result, the list should mostly contain active and fast neighbors.</prop>
+      <prop type="next">\vspace{-0.8em}</prop>
+      <tuv lang="EN-US">
+        <seg>With all the nodes following the same process as described below, the self-organizing P2P overlay network can be established and maintained.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190320T112042Z" creationid="vopl" creationdate="20190320T112042Z">
+        <seg>В случае если все узлы следуют описанному выше сценарию, формируется и поддерживается само-организующаяся одноранговая оверлейная сеть.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">\vspace{-0.5em}</prop>
       <prop type="next">It provides in-depth details on its distributed file system, network architecture, and storage workflow.</prop>
       <tuv lang="EN-US">
@@ -1241,6 +1780,28 @@
       </tuv>
       <tuv lang="RU" changeid="vopl" changedate="20190314T124127Z" creationid="vopl" creationdate="20190314T124019Z">
         <seg>\\ \\ В данном документе разъясняются основные цели архитектуры PPIO, а так же, приводятся подробности методов достижения этих целей.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\\ \centerline{{Figure 2.3 AWS global infastructure}}</prop>
+      <prop type="next">Nearby storage miners are more likely to be selected to store the data.</prop>
+      <tuv lang="EN-US">
+        <seg>\\ \\ PPIO’s distributed storage is a self-organizing, unstructured overlay network, that encourages connection among local peers.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190320T104403Z" creationid="vopl" creationdate="20190320T104403Z">
+        <seg>\\ \\ Распределенное хранилище PPIO является само организующейся, бесструктурной оверлейной сетью, со стимуляцией взаимодействия между локальными пирами.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\vspace{-0.5em}</prop>
+      <prop type="next">PPIO uses Kademlia, so do many other well-known P2P projects like PPLive, BitTorrent, eMule, etc.</prop>
+      <tuv lang="EN-US">
+        <seg>\\ \\ There are many different implementations of DHT, some of the commonly used are Chord\cite{article14}, Pastry\cite{article15}, Tapestry\cite{article18}, Dynamo\cite{article19}, and Kademlia\cite{article16}.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190319T161705Z" creationid="vopl" creationdate="20190319T161643Z">
+        <seg>\\ \\ Существует множество различных реализаций DHT, вот некоторые наиболее используемые: Chord\cite{article14}, Pastry\cite{article15}, Tapestry\cite{article18}, Dynamo\cite{article19} и Kademlia\cite{article16}.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1301,12 +1862,34 @@
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">\vspace{-0.5em}</prop>
+      <prop type="next">The list gets continuously updated by dropping disappeared nodes and adding newly joined neighbors.</prop>
+      <tuv lang="EN-US">
+        <seg>\\ \\Every node in PPIO’s network maintains a list of neighboring peers to stay connected with.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190320T111508Z" creationid="vopl" creationdate="20190320T111508Z">
+        <seg>\\ \\Каждый узел в сети PPIO обслуживает список соседних пиров с которыми он соединен.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\vspace{-0.5em}</prop>
       <prop type="next">So it is what PPIO attempts to accomplish.</prop>
       <tuv lang="EN-US">
         <seg>\\ \\From the discussions above, it is clear that a more complete decentralized distributed storage solution is yet to be built to support large-scale and real-world storage system.</seg>
       </tuv>
       <tuv lang="RU" changeid="vopl" changedate="20190314T153647Z" creationid="vopl" creationdate="20190314T153647Z">
         <seg>\\ \\Из изложенного выше становится понятно, что готовая децентрализованная распределенная система хранения, способная поддерживать высокое масштабирование и задачи реального мира, еще не построена.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\vspace{-0.5em}</prop>
+      <prop type="next">The node ID is also used to calculate the distance between nodes and locate key-value pairs.</prop>
+      <tuv lang="EN-US">
+        <seg>\\ \\Kademlia algorithm assigns a unique ID to each participating node.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190319T161925Z" creationid="vopl" creationdate="20190319T161925Z">
+        <seg>\\ \\Алгоритм Kademlia назначает каждому узлу-участнику уникальный идентификатор (ID).</seg>
       </tuv>
     </tu>
     <tu>
@@ -1345,12 +1928,144 @@
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">\vspace{-0.5em}</prop>
+      <prop type="next">When the reset is initiated, its neighbor list is rebuilt from scratch.</prop>
+      <tuv lang="EN-US">
+        <seg>\\ \\When a user node permanently relocates to a different region, PPIO provides a reset feature to help with the reschedule.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190320T122727Z" creationid="vopl" creationdate="20190320T121929Z">
+        <seg>\\ \\В случае если узел пользователя перемещается в другой регион на постоянной основе, для облегчения перепланировки PPIO предлагает возможность сброса.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\vspace{-0.5em}</prop>
+      <prop type="next">When the user node is in location $A$, it finds neighbors in location $A$.</prop>
+      <tuv lang="EN-US">
+        <seg>\\ \\When a user node repeatedly travels between two different regions, PPIO’s design can provide a great user experience in both places.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190320T120957Z" creationid="vopl" creationdate="20190320T120132Z">
+        <seg>\\ \\В случае если узел пользователя постоянно путешествует между двумя различными регионами, архитектура PPIO может предложить замечательное решение для удобства пользователя в обоих местах.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\vspace{-0.5em}</prop>
+      <prop type="next">A large percentage of the copies of the data are stored on the neighboring miners with a faster connection to the user, to achieve higher transfer speed during storage and retrieval.</prop>
+      <tuv lang="EN-US">
+        <seg>\\ \\When user uploads data to PPIO's storage network, its neighbors with a closer network distance are prioritized when selecting storage miners to store the data.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190320T114813Z" creationid="vopl" creationdate="20190320T114813Z">
+        <seg>\\ \\Когда пользователь выгружает данные в сеть хранения PPIO, приоритет в выборе майнеров-хранителей для размещения данных отдается соседям с меньшей сетевой дистанцией.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\vspace{-0.5em}</prop>
+      <prop type="next">Server bandwidth is no longer a bottleneck, and user growth leads to better speed and experience.</prop>
+      <tuv lang="EN-US">
+        <seg>\\ \\With more nodes joining PPIO’s storage network, it becomes easier for each node to find nearby peers with a faster connection, for both storage and retrieval.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190320T105347Z" creationid="vopl" creationdate="20190320T105347Z">
+        <seg>\\ \\Чем больше узлов присоединяется к сети хранения PPIO, тем легче узлам становится отыскивать ближайших пиров с быстрыми соединениями, как для сохранения так и для получения данных.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\vspace{-0.5em}</prop>
+      <prop type="next">However, data transfer in its storage network is handled differently, which will be discussed in the next section.</prop>
+      <tuv lang="EN-US">
+        <seg>\\ \\With the DHT implementation above, structured data such as file index, statistics on network nodes, and other metadata can be securely saved and quickly looked up in PPIO’s distributed network.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190320T102004Z" creationid="vopl" creationdate="20190320T102004Z">
+        <seg>\\ \\С приведенной выше реализацией DHT, такие структурированные данные как индекс файлов, статистики сетевых узлов и другие метаданные могут быть безопасно сохранены и быстро обнаруживаемы в  распределенной сети PPIO.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\vspace{-0.5em}</prop>
+      <prop type="next">\vspace{-0.5em}</prop>
+      <tuv lang="EN-US">
+        <seg>\\ \\{\bf About users who change regions frequently}</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190320T115320Z" creationid="vopl" creationdate="20190320T115320Z">
+        <seg>\\ \\{\bf Пользователи, часто меняющие регион пребывания}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\vspace{-0.5em}</prop>
+      <prop type="next">\vspace{-0.5em}</prop>
+      <tuv lang="EN-US">
+        <seg>\\ \\{\bf Establishing a Self-Organizing P2P Network}</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190320T111049Z" creationid="vopl" creationdate="20190320T111049Z">
+        <seg>\\ \\{\bf Формирование само-организующейся одноранговой сети (Establishing a Self-Organizing P2P Network)}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\vspace{-0.5em}</prop>
       <prop type="next">\vspace{-0.8em}</prop>
       <tuv lang="EN-US">
         <seg>\\ \\{\bf Facts about PPLive:}</seg>
       </tuv>
       <tuv lang="RU" changeid="vopl" changedate="20190319T090021Z" creationid="vopl" creationdate="20190319T090021Z">
         <seg>\\ \\{\bf Факты о PPLive:}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\vspace{-0.5em}</prop>
+      <prop type="next">\vspace{-0.5em}</prop>
+      <tuv lang="EN-US">
+        <seg>\\ \\{\bf If the user permanently relocates to a different region}</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190320T121734Z" creationid="vopl" creationdate="20190320T121734Z">
+        <seg>\\ \\{\bf Если пользователь окончательно перемещается в другой регион}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\vspace{-0.5em}</prop>
+      <prop type="next">\vspace{-0.5em}</prop>
+      <tuv lang="EN-US">
+        <seg>\\ \\{\bf Preferred storage miners with a closer network distance}</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190320T114506Z" creationid="vopl" creationdate="20190320T114506Z">
+        <seg>\\ \\{\bf Приоритезация майнеров-хранителей с малой сетевой дистанцией (Preferred storage miners with a closer network distance)}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\\ \\ \centerline{\includegraphics[width=340pt]{fig3}}</prop>
+      <prop type="next">\\ \\ PPIO’s distributed storage is a self-organizing, unstructured overlay network, that encourages connection among local peers.</prop>
+      <tuv lang="EN-US">
+        <seg>\\ \centerline{{Figure 2.3 AWS global infastructure}}</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190320T103956Z" creationid="vopl" creationdate="20190320T103956Z">
+        <seg>\\ \centerline{{Рисунок 2.3 Глобальная инфраструктура AWS}}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\vspace{-0.5em}</prop>
+      <prop type="next">These key-value pairs are distributed and stored among the participating nodes.</prop>
+      <tuv lang="EN-US">
+        <seg>\\In a DHT, each piece of data is bundled with a unique key into a key-value pair.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190319T155401Z" creationid="vopl" creationdate="20190319T155401Z">
+        <seg>\\В DHT каждый кусок данных снабжается уникальным ключем с образованием пары ключ-значения.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\\ \centerline{\includegraphics[width=320pt]{fig2}}</prop>
+      <prop type="next">\vspace{-0.5em}</prop>
+      <tuv lang="EN-US">
+        <seg>\\\\ \centerline{{Figure 2.2 Lookup in Kademlia DHT}}</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190320T095811Z" creationid="vopl" creationdate="20190320T095811Z">
+        <seg>\\\\ \centerline{{Рисунок 2.2 Поиск в DHT Kademlia}}</seg>
       </tuv>
     </tu>
     <tu>
@@ -1465,6 +2180,39 @@
     </tu>
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\end{algorithm}</prop>
+      <prop type="next">PPIO is a fully decentralized storage and distribution system that requires its database to be also managed in a decentralized fashion.</prop>
+      <tuv lang="EN-US">
+        <seg>\subsubsection{Distributed Database and Routing}  %——2.2.2 \cite{article17}</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190319T162407Z" creationid="vopl" creationdate="20190319T162407Z">
+        <seg>\subsubsection{Распределенная база данных и маршрутизация (Distributed Database and Routing)}  %——2.2.2 \cite{article17}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\vspace{-2em}</prop>
+      <prop type="next">PPIO is a fully decentralized storage and distribution system that requires its database to be also managed in a decentralized fashion.</prop>
+      <tuv lang="EN-US">
+        <seg>\subsubsection{Distributed Database and Routing}  %——2.2.2 \cite{article17}</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190319T154250Z" creationid="vopl" creationdate="20190319T154250Z">
+        <seg>\subsubsection{Распределенная база данных и роутинг (Distributed Database and Routing)}  %——2.2.2 \cite{article17}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\vspace{-0.5em}</prop>
+      <prop type="next">\vspace{-0.5em}</prop>
+      <tuv lang="EN-US">
+        <seg>\subsubsection{P2P Self-organizing Overlay networks}  %——2.2.3</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190320T102246Z" creationid="vopl" creationdate="20190320T102246Z">
+        <seg>\subsubsection{Одноранговые самоорганизующиеся оверлейные сети (P2P Self-organizing Overlay networks)}  %——2.2.3</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">\setlength{\parskip}{0em}%设置段落间距</prop>
       <prop type="next">\begin{document}</prop>
       <tuv lang="EN-US">
@@ -1567,6 +2315,28 @@ PPIO is a programmable decentralized storage and delivery network.</prop>
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">\noindent</prop>
+      <prop type="next">Each of the connected nodes is now considered a neighbor.</prop>
+      <tuv lang="EN-US">
+        <seg>•\quad Attempt to make connections to the above two sets of candidate nodes, the number of connections cannot exceed a given limit.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190320T112824Z" creationid="vopl" creationdate="20190320T112824Z">
+        <seg>•\quad Предпринимается попытка установить соединение с кандидатами из упомянутых выше двух множеств, при этом число соединений не должно превзойти установленный лимит.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\noindent</prop>
+      <prop type="next">\vspace{-0.8em}</prop>
+      <tuv lang="EN-US">
+        <seg>•\quad Eliminate neighbors that have the low-speed connection to the node or are no longer reachable.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190320T113500Z" creationid="vopl" creationdate="20190320T113500Z">
+        <seg>•\quad Более не доступные соседи, а так же соседи с малой скоростью соединения, исключаются.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\noindent</prop>
       <prop type="next">\vspace{-0.8em}</prop>
       <tuv lang="EN-US">
         <seg>•\quad File Download</seg>
@@ -1589,12 +2359,78 @@ PPIO is a programmable decentralized storage and delivery network.</prop>
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">\noindent</prop>
+      <prop type="next">As discussed in the previous section, there is no guarantee that these peers are its geographical neighbors or have a fast connection to the node.</prop>
+      <tuv lang="EN-US">
+        <seg>•\quad Obtain new candidate neighbors from the Kademlia DHT.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190320T112504Z" creationid="vopl" creationdate="20190320T112504Z">
+        <seg>•\quad Из DHT Kademlia извлекаются новые соседи-кандидаты.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\noindent</prop>
+      <prop type="next">\vspace{-0.8em}</prop>
+      <tuv lang="EN-US">
+        <seg>•\quad Obtain new candidates repeatedly, by looking up neighbor's neighbors.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190320T113032Z" creationid="vopl" creationdate="20190320T113032Z">
+        <seg>•\quad Периодически, отсмотром соседей соседей, получаются новые кандидаты.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\noindent</prop>
+      <prop type="next">\vspace{-0.8em}</prop>
+      <tuv lang="EN-US">
+        <seg>•\quad Probe and evaluate the transmission speed of each new candidate repeatedly, in a round robin fashion, rank the candidates based on the evaluation.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190320T113256Z" creationid="vopl" creationdate="20190320T113256Z">
+        <seg>•\quad Для каждого нового кандидата периодически замеряется и вычисляется скорость передачи, по принципу round-robin, кандидаты ранжируются по вычисленным значениям.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\noindent</prop>
+      <prop type="next">\vspace{-0.6em}</prop>
+      <tuv lang="EN-US">
+        <seg>•\quad Repeat the entire process.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190320T113729Z" creationid="vopl" creationdate="20190320T113729Z">
+        <seg>•\quad Весь процесс повторяется.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\noindent</prop>
+      <prop type="next">\vspace{-0.8em}</prop>
+      <tuv lang="EN-US">
+        <seg>•\quad Select candidates ranked at the top to replace eliminated neighbors.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190320T113717Z" creationid="vopl" creationdate="20190320T113717Z">
+        <seg>•\quad Для замены исключенных соседей, из головы отранжированного перечня, выбираются новые кандидаты.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\noindent</prop>
       <prop type="next">Subsequent segments and pieces from the current point of playback need to be prioritized in download scheduling, to maintain smooth streaming playback.</prop>
       <tuv lang="EN-US">
         <seg>•\quad Sequential download.</seg>
       </tuv>
       <tuv lang="RU" changeid="vopl" changedate="20190319T103936Z" creationid="vopl" creationdate="20190319T103936Z">
         <seg>•\quad Последовательное скачивание (Sequential download).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\noindent</prop>
+      <prop type="next">Newly joined nodes start with an empty list.</prop>
+      <tuv lang="EN-US">
+        <seg>•\quad Start by selecting an initial set of candidate neighbors among the peers with which it had connections in the past.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190320T112654Z" creationid="vopl" creationdate="20190320T112249Z">
+        <seg>•\quad Из пиров, с которыми имелось соединение в прошлом, формируется начальное множество соседей-кандидатов.</seg>
       </tuv>
     </tu>
     <tu>
