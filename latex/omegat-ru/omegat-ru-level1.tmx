@@ -194,6 +194,17 @@
     </tu>
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">It also adapts to the popularity of data in different regions.</prop>
+      <prop type="next">Miners in other parts of the network are not affected.</prop>
+      <tuv lang="EN-US">
+        <seg>As PPIO’s overlay network is built by clustering nearby peers, if a piece of content is only popular in a certain region, only the miners in the same region populate it extensively.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190325T150051Z" creationid="vopl" creationdate="20190325T150051Z">
+        <seg>Оверлейная сеть PPIO строится в виде кластеров расположенных рядом пиров, и если какая то часть данных популярна в заданном регионе, то их широкое распространение будут производить только майнеры из этого же региона.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">Such deficiency in the design can lead to many real-world problems to the miners and ISPs.</prop>
       <prop type="next">\vspace{-0.5em}</prop>
       <tuv lang="EN-US">
@@ -238,6 +249,17 @@
     </tu>
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">Therefore, the miners with lower bandwidth will not be incentivized to store popular content.</prop>
+      <prop type="next">\vspace{-0.5em}</prop>
+      <tuv lang="EN-US">
+        <seg>As a result, popular contents are mostly stored on the miners with higher bandwidth, which in turn improves the speed and experience when the user downloads such content.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190325T160849Z" creationid="vopl" creationdate="20190325T160849Z">
+        <seg>В результате, популярный контент в основном сосредоточится у майнеров с широким каналом, что приведет к увеличению скорости и удовлетворенности пользователя при скачивании такого контента.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">The list gets continuously updated by dropping disappeared nodes and adding newly joined neighbors.</prop>
       <prop type="next">With all the nodes following the same process as described below, the self-organizing P2P overlay network can be established and maintained.</prop>
       <tuv lang="EN-US">
@@ -256,6 +278,28 @@
       </tuv>
       <tuv lang="RU" changeid="vopl" changedate="20190320T112617Z" creationid="vopl" creationdate="20190320T112617Z">
         <seg>Как упоминалось ранее, нет гарантии что эти пиры расположены близко в географическом плане или обладают быстрым каналом связи к узлу.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">As storing popular content increases its chance to provide download service and get rewarded, the miner will proactively send requests to the scheduler to store the resources of popular content.</prop>
+      <prop type="next">When a miner discovers that its stored content is no longer trendy, it can request to remove the content from its storage.</prop>
+      <tuv lang="EN-US">
+        <seg>As many miners follow the same strategy, popular data gets quickly populated, and it improves the download speed significantly for the users.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190325T145135Z" creationid="vopl" creationdate="20190325T145135Z">
+        <seg>Если множество майнеров будет следовать этой стратегии, популярные данные быстро распространятся, и это значительно увеличит скорость скачивания для пользователей.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\\ \\From the process above, a miner can track the requests of nearby users and identify popular content.</prop>
+      <prop type="next">As many miners follow the same strategy, popular data gets quickly populated, and it improves the download speed significantly for the users.</prop>
+      <tuv lang="EN-US">
+        <seg>As storing popular content increases its chance to provide download service and get rewarded, the miner will proactively send requests to the scheduler to store the resources of popular content.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190325T145005Z" creationid="vopl" creationdate="20190325T145005Z">
+        <seg>Обладание популярным контентом увеличивает шанс того что он будет скачан и оплачен, майнер будет заранее слать запросы планировщику на сохранение ресурса популярного контента.</seg>
       </tuv>
     </tu>
     <tu>
@@ -315,6 +359,17 @@
     </tu>
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">However, too many concurrent downloads will exhaust the bandwidth resource of these miners and reduce the download speed of each user.</prop>
+      <prop type="next">\vspace{-0.5em}</prop>
+      <tuv lang="EN-US">
+        <seg>At the same time, it is not fair to the miners that store less popular content, that gets much lower reward than the others.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190325T155001Z" creationid="vopl" creationdate="20190325T155001Z">
+        <seg>В то же самое время, не вполне честно, что майнеры, хранящие менее популярный контент, получают много меньшее вознаграждение чем остальные.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">PPIO's well-designed incentives provide attractive financial rewards to miners and encourage them to contribute to the network.</prop>
       <prop type="next">As a result, a large, high-quality miner community can be established and kept growing.</prop>
       <tuv lang="EN-US">
@@ -326,6 +381,17 @@
     </tu>
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">In a data distribution network, a small number of popular content can consume a large portion of the bandwidth and storage resources.</prop>
+      <prop type="next">Therefore, optimization of popular content distribution is crucial to the network.</prop>
+      <tuv lang="EN-US">
+        <seg>At the same time, the download speed of popular content can have a considerable impact on the overall user experience.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190325T140352Z" creationid="vopl" creationdate="20190325T140352Z">
+        <seg>В то же время, скорость скачивания популярного контента может иметь существенное значение на пользовательские впечатления в целом.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">Each downloading node sends download requests to multiple peers, manages downloaded pieces and deals with potential timeouts and failures from the peers.</prop>
       <prop type="next">By utilizing the two data-driven scheduling algorithms, PPIO's dynamic P2P network can handle an extremely high volume of concurrent data transmission efficiently.</prop>
       <tuv lang="EN-US">
@@ -333,6 +399,17 @@
       </tuv>
       <tuv lang="RU" changeid="vopl" changedate="20190319T143142Z" creationid="vopl" creationdate="20190319T143142Z">
         <seg>В одно и тоже время скачивающий узел сам может обслуживать запросы на скачивание, работать как пир для других узлов.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">When a user node requests for a piece of data, it looks up the resources from the indexer node, and the indexer node returns information about the miner nodes that store the content.</prop>
+      <prop type="next">Its peers will forward the request to their neighbors upon receiving it.</prop>
+      <tuv lang="EN-US">
+        <seg>At the same time, user node also broadcasts the request to its neighbors to find the resources.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190325T143007Z" creationid="vopl" creationdate="20190325T143007Z">
+        <seg>В то же самое время, для поиска желательного контента, пользовательский узел широковещательно опрашивает своих соседей.</seg>
       </tuv>
     </tu>
     <tu>
@@ -392,6 +469,17 @@
     </tu>
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">To avoid unnecessary burden on the network, the length of the forwarding path is limited.</prop>
+      <prop type="next">When not enough nodes have been reached, a longer forwarding path is allowed.</prop>
+      <tuv lang="EN-US">
+        <seg>But it also adapts based on the number of nodes that the request has reached.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190325T143441Z" creationid="vopl" creationdate="20190325T143441Z">
+        <seg>Но, так же, количество пересылок адаптируется по количеству узлов, которых запрос достиг.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">PPIO's founding team successfully developed PPLive, and they were also behind its innovative P2P network design and efficient data transmission technologies\cite{article4}\cite{article5}\cite{article6}\cite{article7}.</prop>
       <prop type="next">\vspace{-0.5em}</prop>
       <tuv lang="EN-US">
@@ -433,6 +521,17 @@
       <tuv lang="RU" changeid="vopl" changedate="20190316T163439Z" creationid="vopl" creationdate="20190316T163439Z">
         <seg>Комбинируя свои иннвации с такими технологиями как обход NAT (NAT Traversal), распределенные хэш-таблицы (DHT) Kademlia, облегченное доказательство консенсуса хранилища и оптимизированное потоковое
 вещание медиа, распределенная сеть хранения PPIO может быть крайне эффективной и может быть легко масштабирована на сотни миллионов сетевых узлов.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\\ \\The algorithm to identify popular content can be customized by each miner.</prop>
+      <prop type="next">\vspace{-0.5em}</prop>
+      <tuv lang="EN-US">
+        <seg>Different miners in different regions can customize the algorithm differently, to optimize for higher reward.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190325T154027Z" creationid="vopl" creationdate="20190325T154027Z">
+        <seg>Различные майнеры в разных регионах могут модифицировать алгоритм по разному, для максимизации вознаграждения.</seg>
       </tuv>
     </tu>
     <tu>
@@ -624,6 +723,28 @@
     </tu>
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\\ \\The miner nodes that store a large amount of popular content are likely to receive more download requests, and fulfilling those requests gets them higher rewards.</prop>
+      <prop type="next">At the same time, it is not fair to the miners that store less popular content, that gets much lower reward than the others.</prop>
+      <tuv lang="EN-US">
+        <seg>However, too many concurrent downloads will exhaust the bandwidth resource of these miners and reduce the download speed of each user.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190325T154737Z" creationid="vopl" creationdate="20190325T154737Z">
+        <seg>Однако, чрезмерное конкуррентное скачивание будет переполять пропускную способность этих майнеров и приводить к уменьшению скорости скачивания для каждого пользователя.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">The user always prefers the ones that provide higher download speed.</prop>
+      <prop type="next">The amount of data it uploads to the users will decrease, which in turn decreases the reward it receives.</prop>
+      <tuv lang="EN-US">
+        <seg>If a miner does not have enough bandwidth, users will switch to others.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190325T160531Z" creationid="vopl" creationdate="20190325T160436Z">
+        <seg>Если майнер не обладает достаточной шириной канала, пользователи переключаться на других.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">UDP based protocols such as KCP or UDT\cite{article13} are attempted first to make the connection.</prop>
       <prop type="next">\vspace{-0.8em}</prop>
       <tuv lang="EN-US">
@@ -668,6 +789,17 @@
     </tu>
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\\ \\When a miner node receives the forwarded request, and if it happens to possess the requested resources, it notifies the user and there is better priority that user will ,in fact, download the data from it, since the miner node is in the forwarding path of the user’s neighbors, and thus close to the user.</prop>
+      <prop type="next">\vspace{-0.5em}</prop>
+      <tuv lang="EN-US">
+        <seg>In PPIO, the miner is incentivized to provide download service as it gets rewarded for doing so.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190325T144441Z" creationid="vopl" creationdate="20190325T144441Z">
+        <seg>В PPIO майнер мотивирован предоставлять услугу скачивания так как получает за нее вознаграждение.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">1\% \cite{article4}</prop>
       <prop type="next">For example, one segment can be partitioned into M pieces, and these pieces can be duplicated and stored by N different storage miners.</prop>
       <tuv lang="EN-US">
@@ -675,6 +807,17 @@
       </tuv>
       <tuv lang="RU" changeid="vopl" changedate="20190319T093237Z" creationid="vopl" creationdate="20190319T091019Z">
         <seg>В системе PPIO, хранимый "Объект (Object)" разбивается на "Сегменты (Segments)", каждый "Сегмент" далее разбивается на несколько "Честей (Pieces)".</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\subsubsection{Optimized Distribution of Popular Content}  %——2.2.4</prop>
+      <prop type="next">At the same time, the download speed of popular content can have a considerable impact on the overall user experience.</prop>
+      <tuv lang="EN-US">
+        <seg>In a data distribution network, a small number of popular content can consume a large portion of the bandwidth and storage resources.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190325T140245Z" creationid="vopl" creationdate="20190325T140245Z">
+        <seg>В сети распространения данных, малое количество популярного контента может занять большую часть пропускной способности сети и ресурсов хранилищ.</seg>
       </tuv>
     </tu>
     <tu>
@@ -774,6 +917,17 @@
       </tuv>
       <tuv lang="RU" changeid="vopl" changedate="20190320T121631Z" creationid="vopl" creationdate="20190320T121631Z">
         <seg>В этом случае, когда узел пользователя выгружает данные, соседние майнеры из обоих локаций будут сохранять их копии, таким образом, быстро получить данные можно будет в обоих местах.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\\ \\This method is driven by the demand, and it incentivizes miners to store popular content proactively.</prop>
+      <prop type="next">As PPIO’s overlay network is built by clustering nearby peers, if a piece of content is only popular in a certain region, only the miners in the same region populate it extensively.</prop>
+      <tuv lang="EN-US">
+        <seg>It also adapts to the popularity of data in different regions.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190325T145631Z" creationid="vopl" creationdate="20190325T145631Z">
+        <seg>Так же, он адаптирован для популяризации данных в разных регионах.</seg>
       </tuv>
     </tu>
     <tu>
@@ -888,6 +1042,17 @@
     </tu>
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">At the same time, user node also broadcasts the request to its neighbors to find the resources.</prop>
+      <prop type="next">To avoid unnecessary burden on the network, the length of the forwarding path is limited.</prop>
+      <tuv lang="EN-US">
+        <seg>Its peers will forward the request to their neighbors upon receiving it.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190325T143156Z" creationid="vopl" creationdate="20190325T143156Z">
+        <seg>По факту получения они будут пересылать запрос далее своим соседям.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">PPIO is equipped with practical storage proofs to maintain the integrity and reliability of its storage contents.</prop>
       <prop type="next">An optimized Proof of Space-Time (PoSt) ensures that the specified data is indeed stored by the miner over a period.</prop>
       <tuv lang="EN-US">
@@ -906,6 +1071,17 @@
       </tuv>
       <tuv lang="RU" changeid="vopl" changedate="20190319T110025Z" creationid="vopl" creationdate="20190319T110025Z">
         <seg>Многие приложения медиа-вещания позволяют проигрывание с произвольного места, например для перемотки или поиска.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">As PPIO’s overlay network is built by clustering nearby peers, if a piece of content is only popular in a certain region, only the miners in the same region populate it extensively.</prop>
+      <prop type="next">Thus the overall efficiency of the storage network is maintained.</prop>
+      <tuv lang="EN-US">
+        <seg>Miners in other parts of the network are not affected.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190325T150114Z" creationid="vopl" creationdate="20190325T150114Z">
+        <seg>Майнеры из других частей сети не затрагиваются.</seg>
       </tuv>
     </tu>
     <tu>
@@ -961,6 +1137,28 @@
       </tuv>
       <tuv lang="RU" changeid="vopl" changedate="20190320T094500Z" creationid="vopl" creationdate="20190320T094500Z">
         <seg>Идентификаторы узлов имеют такую же длину как и ключи, используемые в парах ключ-значение.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">When a miner discovers that its stored content is no longer trendy, it can request to remove the content from its storage.</prop>
+      <prop type="next">\vspace{-0.5em}</prop>
+      <tuv lang="EN-US">
+        <seg>Once approved, the storage can be released and made available to store other resources.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190325T145358Z" creationid="vopl" creationdate="20190325T145358Z">
+        <seg>После этого хранилище становится доступным для сохранения других ресурсов.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">The miner nodes with higher bandwidth and larger storage still have enough incentives to do so, but they won’t download too much such content.</prop>
+      <prop type="next">\vspace{-0.7em}</prop>
+      <tuv lang="EN-US">
+        <seg>Otherwise, they can no longer achieve a surplus by providing download service that their bandwidth allows them to.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190325T161845Z" creationid="vopl" creationdate="20190325T160050Z">
+        <seg>Иначе, они не смогут обслуживать избыточные данные предоставлением услуги скачивания, умещающуюся в ширину канала.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1071,6 +1269,17 @@
       </tuv>
       <tuv lang="RU" changeid="vopl" changedate="20190314T123515Z" creationid="vopl" creationdate="20190314T123515Z">
         <seg>PPIO сводит потребности в хранении данных, имеющиеся у сегодняшнего бизнеса с одной стороны и предлагаемых возможностей поставщиков соответствующих услуг с другой, а так же, предоставляет возможность реализации распределенных приложений (DApps).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">Therefore, optimization of popular content distribution is crucial to the network.</prop>
+      <prop type="next">The two methods are designed to work together and ensure the efficient distribution of popular content and maintain a healthy ecosystem of the storage network.</prop>
+      <tuv lang="EN-US">
+        <seg>PPIO provides two optimized scheduling methods for popular content, one is storage miners active selection, and the other is enforced by the scheduler(indexer node).</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190325T142138Z" creationid="vopl" creationdate="20190325T140723Z">
+        <seg>PPIO предоставляетдва оптимизированных метода планирования доставки популярного контента, один из них, это "активнй выбор майнера" (Storage miners active selection), второй форсируется планировщиком (индексным узлом) ???.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1372,6 +1581,17 @@
     </tu>
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">If a miner does not have enough bandwidth, users will switch to others.</prop>
+      <prop type="next">Therefore, the miners with lower bandwidth will not be incentivized to store popular content.</prop>
+      <tuv lang="EN-US">
+        <seg>The amount of data it uploads to the users will decrease, which in turn decreases the reward it receives.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190325T160626Z" creationid="vopl" creationdate="20190325T160626Z">
+        <seg>Количество отгруженных пользователям данных уменьшится, что приведет к уменьшению полученного вознаграждения.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">However, the existing centralized solutions have many problems.</prop>
       <prop type="next">For example, the Dropbox hacking in 2016 alone leaked 68 million user accounts.</prop>
       <tuv lang="EN-US">
@@ -1434,6 +1654,28 @@
       </tuv>
       <tuv lang="RU" changeid="vopl" changedate="20190320T111739Z" creationid="vopl" creationdate="20190320T111739Z">
         <seg>Список подвергается постоянному обновлению выбрасыванием отсоединившихся узлов и добавлением вновь присоединившихся соседей.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">The miners that request to store the most popular content need to pay the scheduler(indexer) before receiving the resources.</prop>
+      <prop type="next">Otherwise, they can no longer achieve a surplus by providing download service that their bandwidth allows them to.</prop>
+      <tuv lang="EN-US">
+        <seg>The miner nodes with higher bandwidth and larger storage still have enough incentives to do so, but they won’t download too much such content.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190325T161617Z" creationid="vopl" creationdate="20190325T155817Z">
+        <seg>Узлы майнеров с широким каналом связи и большим объемом хранилища, имеют достаточно мотивации для такой оплаты, но не желают получать слишком много такого контента.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\\ \\To avoid these problems, the scheduler(indexer) in the network employs an adjusted scheduling service based on the popularity of the content.</prop>
+      <prop type="next">The miner nodes with higher bandwidth and larger storage still have enough incentives to do so, but they won’t download too much such content.</prop>
+      <tuv lang="EN-US">
+        <seg>The miners that request to store the most popular content need to pay the scheduler(indexer) before receiving the resources.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190325T155627Z" creationid="vopl" creationdate="20190325T155627Z">
+        <seg>Майнеры, запрашивающие на хранение наиболее популярный контент, должны заплатить планировщику (индексеру) перед тем как получат ресурсы.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1504,6 +1746,17 @@
     </tu>
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">PPIO provides two optimized scheduling methods for popular content, one is storage miners active selection, and the other is enforced by the scheduler(indexer node).</prop>
+      <prop type="next">\vspace{-0.5em}</prop>
+      <tuv lang="EN-US">
+        <seg>The two methods are designed to work together and ensure the efficient distribution of popular content and maintain a healthy ecosystem of the storage network.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190325T142330Z" creationid="vopl" creationdate="20190325T142330Z">
+        <seg>Оба метода спроектированы для совместного функционирования и увеличения эффективности распространения популярного контента и поддержания здоровой экосистемы сети хранения.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">•\quad Unpopular pieces.</prop>
       <prop type="next">This may seem counterintuitive, but prioritizing these pieces will help make downloading of the entire segment much faster and get a better experience.</prop>
       <tuv lang="EN-US">
@@ -1515,6 +1768,28 @@
     </tu>
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\\ \\ As shown in Fig 2.4, multiple miners store copies of the same data, they need to compete to provide download services to the user.</prop>
+      <prop type="next">If a miner does not have enough bandwidth, users will switch to others.</prop>
+      <tuv lang="EN-US">
+        <seg>The user always prefers the ones that provide higher download speed.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190325T160328Z" creationid="vopl" creationdate="20190325T160328Z">
+        <seg>Пользователи всегда выбирают тех, кто предоставляет более высокую скорость скачивания.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">At the same time, the download speed of popular content can have a considerable impact on the overall user experience.</prop>
+      <prop type="next">PPIO provides two optimized scheduling methods for popular content, one is storage miners active selection, and the other is enforced by the scheduler(indexer node).</prop>
+      <tuv lang="EN-US">
+        <seg>Therefore, optimization of popular content distribution is crucial to the network.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190325T140502Z" creationid="vopl" creationdate="20190325T140502Z">
+        <seg>Таким образом, оптимизация доставки популярного контента является ключевым моментом в сети.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">Node IDs have the same bit length as the keys used in key-value pairs.</prop>
       <prop type="next">Since the XOR distance does not take actual geographic distance into account, it is possible for two nodes to reside next to one another in the network even though one of them may be in the United Kingdom, while the other is in the United States.</prop>
       <tuv lang="EN-US">
@@ -1522,6 +1797,17 @@
       </tuv>
       <tuv lang="RU" changeid="vopl" changedate="20190320T095310Z" creationid="vopl" creationdate="20190320T095310Z">
         <seg>Следовательно, дистанция между ID узла и ключем может быть вычислена таким же образом.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">The amount of data it uploads to the users will decrease, which in turn decreases the reward it receives.</prop>
+      <prop type="next">As a result, popular contents are mostly stored on the miners with higher bandwidth, which in turn improves the speed and experience when the user downloads such content.</prop>
+      <tuv lang="EN-US">
+        <seg>Therefore, the miners with lower bandwidth will not be incentivized to store popular content.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190325T160710Z" creationid="vopl" creationdate="20190325T160710Z">
+        <seg>С другой стороны, майнеры с малой шириной канала не будут замотивированы на хранение популярного контента.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1603,6 +1889,17 @@
     </tu>
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">Miners in other parts of the network are not affected.</prop>
+      <prop type="next">\vspace{-0.5em}</prop>
+      <tuv lang="EN-US">
+        <seg>Thus the overall efficiency of the storage network is maintained.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190325T150150Z" creationid="vopl" creationdate="20190325T150150Z">
+        <seg>Это обеспечивает эффективность сети хранения в целом.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">\noindent</prop>
       <prop type="next">The scheduler is also designed to maximize download speed and minimize the overhead of duplicated requests and data transmission.</prop>
       <tuv lang="EN-US">
@@ -1610,6 +1907,17 @@
       </tuv>
       <tuv lang="RU" changeid="vopl" changedate="20190319T111931Z" creationid="vopl" creationdate="20190319T111931Z">
         <seg>Для удовлетворения представленных выше требований дизайна, алгоритм планирования должен принимать взвешенные решения, от какого пира должна быть получена часть, как много пиров использовать для одновременной загрузки, как управлять таймером для каждого пира, как перепланировать оставшиеся части и адаптироваться к изменениям сети и т.п.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">Its peers will forward the request to their neighbors upon receiving it.</prop>
+      <prop type="next">But it also adapts based on the number of nodes that the request has reached.</prop>
+      <tuv lang="EN-US">
+        <seg>To avoid unnecessary burden on the network, the length of the forwarding path is limited.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190325T143329Z" creationid="vopl" creationdate="20190325T143329Z">
+        <seg>Для предоствращения излишней нагрузки на сеть, количество пересылок ограничено.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1669,6 +1977,28 @@
     </tu>
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">As many miners follow the same strategy, popular data gets quickly populated, and it improves the download speed significantly for the users.</prop>
+      <prop type="next">Once approved, the storage can be released and made available to store other resources.</prop>
+      <tuv lang="EN-US">
+        <seg>When a miner discovers that its stored content is no longer trendy, it can request to remove the content from its storage.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190325T145246Z" creationid="vopl" creationdate="20190325T145246Z">
+        <seg>Когда майнер обнаружит что хранимый им контент больше не в тренде, он может запросить его удаление из своего хранилища.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\\ \\As described in section 2.2.3, a self-organizing overlay network is established by the participating nodes.</prop>
+      <prop type="next">At the same time, user node also broadcasts the request to its neighbors to find the resources.</prop>
+      <tuv lang="EN-US">
+        <seg>When a user node requests for a piece of data, it looks up the resources from the indexer node, and the indexer node returns information about the miner nodes that store the content.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190325T142847Z" creationid="vopl" creationdate="20190325T142847Z">
+        <seg>Когда пользовательский узел запрашивает какую то часть данных, он в первую очередь отсматривает имеющиеся ресурсы на индексном узле, индексный узел возвращает информацию о узлах майнерах, хранящих желательный контент.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">A large percentage of the copies of the data are stored on the neighboring miners with a faster connection to the user, to achieve higher transfer speed during storage and retrieval.</prop>
       <prop type="next">\vspace{-0.5em}</prop>
       <tuv lang="EN-US">
@@ -1676,6 +2006,17 @@
       </tuv>
       <tuv lang="RU" changeid="vopl" changedate="20190320T115244Z" creationid="vopl" creationdate="20190320T115218Z">
         <seg>Когда достаточное количество узлов майнеров подключится к сети в различных регионах мира, высокая скорость скорость передачи данных может быть достигнута в рамках всей планеты.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">But it also adapts based on the number of nodes that the request has reached.</prop>
+      <prop type="next">\vspace{-0.5em}</prop>
+      <tuv lang="EN-US">
+        <seg>When not enough nodes have been reached, a longer forwarding path is allowed.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190325T143613Z" creationid="vopl" creationdate="20190325T143613Z">
+        <seg>Дальнейшие пересылки разрешены до тех пор, пока не достигнуто достаточное количество узлов.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1720,6 +2061,17 @@
       </tuv>
       <tuv lang="RU" changeid="vopl" changedate="20190320T112042Z" creationid="vopl" creationdate="20190320T112042Z">
         <seg>В случае если все узлы следуют описанному выше сценарию, формируется и поддерживается само-организующаяся одноранговая оверлейная сеть.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\vspace{-1.5em}</prop>
+      <prop type="next">The user always prefers the ones that provide higher download speed.</prop>
+      <tuv lang="EN-US">
+        <seg>\\ \\ As shown in Fig 2.4, multiple miners store copies of the same data, they need to compete to provide download services to the user.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190325T160250Z" creationid="vopl" creationdate="20190325T160250Z">
+        <seg>\\ \\ Как показано на рис 2.4, множество майнеров хранят копии одних и тех же данных, они должны конкурировать за предоставление пользователям услуги скачивания.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1802,6 +2154,17 @@
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">\vspace{-0.5em}</prop>
+      <prop type="next">When a user node requests for a piece of data, it looks up the resources from the indexer node, and the indexer node returns information about the miner nodes that store the content.</prop>
+      <tuv lang="EN-US">
+        <seg>\\ \\As described in section 2.2.3, a self-organizing overlay network is established by the participating nodes.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190325T142549Z" creationid="vopl" creationdate="20190325T142549Z">
+        <seg>\\ \\Как описывалось в секции 2.2.3, между узлами-участниками формируется само-организующаяся оверлейная сеть.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\vspace{-0.5em}</prop>
       <prop type="next">PPIO's data-driven scheduler is designed to provide stable real-time streaming performance in an ad-hoc P2P network\cite{article12}.</prop>
       <tuv lang="EN-US">
         <seg>\\ \\Besides to supporting efficient file download, PPIO also supports optimized P2P data streaming.</seg>
@@ -1835,12 +2198,34 @@
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">\vspace{-0.5em}</prop>
+      <prop type="next">As storing popular content increases its chance to provide download service and get rewarded, the miner will proactively send requests to the scheduler to store the resources of popular content.</prop>
+      <tuv lang="EN-US">
+        <seg>\\ \\From the process above, a miner can track the requests of nearby users and identify popular content.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190325T144605Z" creationid="vopl" creationdate="20190325T144605Z">
+        <seg>\\ \\В описанном выше процессе майнер может отслеживать запросы расположенных рядом пользователей и идентифицировать популярный контент.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\vspace{-0.5em}</prop>
       <prop type="next">The node ID is also used to calculate the distance between nodes and locate key-value pairs.</prop>
       <tuv lang="EN-US">
         <seg>\\ \\Kademlia algorithm assigns a unique ID to each participating node.</seg>
       </tuv>
       <tuv lang="RU" changeid="vopl" changedate="20190319T161925Z" creationid="vopl" creationdate="20190319T161925Z">
         <seg>\\ \\Алгоритм Kademlia назначает каждому узлу-участнику уникальный идентификатор (ID).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\vspace{-0.5em}</prop>
+      <prop type="next">Different miners in different regions can customize the algorithm differently, to optimize for higher reward.</prop>
+      <tuv lang="EN-US">
+        <seg>\\ \\The algorithm to identify popular content can be customized by each miner.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190325T153915Z" creationid="vopl" creationdate="20190325T150204Z">
+        <seg>\\ \\Алгоритм идентификации популярного контента может быть изменен для каждого майнера.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1857,6 +2242,17 @@
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">\vspace{-0.5em}</prop>
+      <prop type="next">However, too many concurrent downloads will exhaust the bandwidth resource of these miners and reduce the download speed of each user.</prop>
+      <tuv lang="EN-US">
+        <seg>\\ \\The miner nodes that store a large amount of popular content are likely to receive more download requests, and fulfilling those requests gets them higher rewards.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190325T154456Z" creationid="vopl" creationdate="20190325T154456Z">
+        <seg>\\ \\Для узлов майнеров, хранящих большое количество популярного контента, желательно получать больше запросов на скачивание и удовлетворять эти запросычтобы получать большее вознаграждение.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\vspace{-0.5em}</prop>
       <prop type="next">However, these attempts were not successful.</prop>
       <tuv lang="EN-US">
         <seg>\\ \\There have been many attempts to build distributed storage systems.</seg>
@@ -1868,12 +2264,45 @@
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">\vspace{-0.5em}</prop>
+      <prop type="next">It also adapts to the popularity of data in different regions.</prop>
+      <tuv lang="EN-US">
+        <seg>\\ \\This method is driven by the demand, and it incentivizes miners to store popular content proactively.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190325T145532Z" creationid="vopl" creationdate="20190325T145532Z">
+        <seg>\\ \\Данный метод работает при наличии соответствующей необходимости и поощряет майнеров на проактивное обслуживание популярного контента.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\vspace{-0.5em}</prop>
+      <prop type="next">The miners that request to store the most popular content need to pay the scheduler(indexer) before receiving the resources.</prop>
+      <tuv lang="EN-US">
+        <seg>\\ \\To avoid these problems, the scheduler(indexer) in the network employs an adjusted scheduling service based on the popularity of the content.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190325T161552Z" creationid="vopl" creationdate="20190325T155318Z">
+        <seg>\\ \\Для предотвращения этих проблем сетевой планировщик (индексер) предоставляет выделенную услугу планирования, основанную на популярности контента.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\vspace{-0.5em}</prop>
       <prop type="next">\vspace{-0.8em}</prop>
       <tuv lang="EN-US">
         <seg>\\ \\Two data-driven scheduling algorithms are developed for Multi-point Download Scheduling:</seg>
       </tuv>
       <tuv lang="RU" changeid="vopl" changedate="20190319T093908Z" creationid="vopl" creationdate="20190319T093908Z">
         <seg>\\ \\В рамках Multi-point Download Scheduling разработано два алгоритма планирования:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\vspace{-0.5em}</prop>
+      <prop type="next">In PPIO, the miner is incentivized to provide download service as it gets rewarded for doing so.</prop>
+      <tuv lang="EN-US">
+        <seg>\\ \\When a miner node receives the forwarded request, and if it happens to possess the requested resources, it notifies the user and there is better priority that user will ,in fact, download the data from it, since the miner node is in the forwarding path of the user’s neighbors, and thus close to the user.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190325T144325Z" creationid="vopl" creationdate="20190325T144325Z">
+        <seg>\\ \\Когда узел майнера получает такой пересылаемый запрос, и если он обладает запрошенным ресурсом, он оповещает пользователя и, по факту, существует большая вероятность, что пользователь будет загружать данные именно с этого майнера, так как узел майнера расположен на пути пересылки среди соседей пользователя, и, соответственно, близок к нему.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1947,6 +2376,17 @@
       <prop type="prev">\vspace{-0.5em}</prop>
       <prop type="next">\vspace{-0.5em}</prop>
       <tuv lang="EN-US">
+        <seg>\\ \\{\bf Enforced by the indexer}</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190325T154225Z" creationid="vopl" creationdate="20190325T154225Z">
+        <seg>\\ \\{\bf Форсирование индексером}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\vspace{-0.5em}</prop>
+      <prop type="next">\vspace{-0.5em}</prop>
+      <tuv lang="EN-US">
         <seg>\\ \\{\bf Establishing a Self-Organizing P2P Network}</seg>
       </tuv>
       <tuv lang="RU" changeid="vopl" changedate="20190320T111049Z" creationid="vopl" creationdate="20190320T111049Z">
@@ -1984,6 +2424,17 @@
       </tuv>
       <tuv lang="RU" changeid="vopl" changedate="20190320T114506Z" creationid="vopl" creationdate="20190320T114506Z">
         <seg>\\ \\{\bf Приоритезация майнеров-хранителей с малой сетевой дистанцией (Preferred storage miners with a closer network distance)}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\vspace{-0.5em}</prop>
+      <prop type="next">\vspace{-0.5em}</prop>
+      <tuv lang="EN-US">
+        <seg>\\ \\{\bf Storage miners active selection}</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190325T142423Z" creationid="vopl" creationdate="20190325T142423Z">
+        <seg>\\ \\{\bf Активный выбор майнера (Storage Miner active selection)}</seg>
       </tuv>
     </tu>
     <tu>
@@ -2028,6 +2479,17 @@
       </tuv>
       <tuv lang="RU" changeid="vopl" changedate="20190319T094246Z" creationid="vopl" creationdate="20190319T094206Z">
         <seg>\\\\Алгоритм планирования PPIO в кратце:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\centerline{\includegraphics[width=300pt]{fig4}}</prop>
+      <prop type="next">\vspace{-1.5em}</prop>
+      <tuv lang="EN-US">
+        <seg>\\\\\centerline{{Figure 2.4 Dispatch of Popular Content}}</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190325T160113Z" creationid="vopl" creationdate="20190325T160113Z">
+        <seg>\\\\\centerline{{Рисунок 2.4 Доставка популярного контента}}</seg>
       </tuv>
     </tu>
     <tu>
@@ -2138,6 +2600,17 @@
       </tuv>
       <tuv lang="RU" changeid="vopl" changedate="20190319T162407Z" creationid="vopl" creationdate="20190319T162407Z">
         <seg>\subsubsection{Распределенная база данных и маршрутизация (Distributed Database and Routing)}  %——2.2.2 \cite{article17}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\vspace{-0.5em}</prop>
+      <prop type="next">In a data distribution network, a small number of popular content can consume a large portion of the bandwidth and storage resources.</prop>
+      <tuv lang="EN-US">
+        <seg>\subsubsection{Optimized Distribution of Popular Content}  %——2.2.4</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190325T140057Z" creationid="vopl" creationdate="20190325T140057Z">
+        <seg>\subsubsection{Оптимизация доставки популярного контента}  %——2.2.4</seg>
       </tuv>
     </tu>
     <tu>
