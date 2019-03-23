@@ -8,8 +8,10 @@
 
 ----------------------
 для гиперссылок добавлен атрибут unicode
+а так же, naturalnames - иначе pdflatex сыплет варнинги при формировании оглавления для дифа
 
-\usepackage[unicode]{hyperref}
+\usepackage[unicode,naturalnames]{hyperref}
+
 
 
 

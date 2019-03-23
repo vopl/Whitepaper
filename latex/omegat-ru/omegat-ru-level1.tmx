@@ -1883,8 +1883,8 @@
       <tuv lang="EN-US">
         <seg>\\ \\When a user node permanently relocates to a different region, PPIO provides a reset feature to help with the reschedule.</seg>
       </tuv>
-      <tuv lang="RU" changeid="vopl" changedate="20190320T122035Z" creationid="vopl" creationdate="20190320T121929Z">
-        <seg>\\ \\Для случая если узел пользователя перемещается в другой регион на постоянной основе, для облегчения перепланировки PPIO предлагает возможность сброса.</seg>
+      <tuv lang="RU" changeid="vopl" changedate="20190320T122727Z" creationid="vopl" creationdate="20190320T121929Z">
+        <seg>\\ \\В случае если узел пользователя перемещается в другой регион на постоянной основе, для облегчения перепланировки PPIO предлагает возможность сброса.</seg>
       </tuv>
     </tu>
     <tu>
@@ -2169,8 +2169,8 @@
       <tuv lang="EN-US">
         <seg>\usepackage{hyperref}%——————————————————————目录超链接</seg>
       </tuv>
-      <tuv lang="RU" changeid="vopl" changedate="20190319T072221Z" creationid="vopl" creationdate="20190319T072221Z">
-        <seg>\usepackage[unicode]{hyperref}%——————————————————————目录超链接</seg>
+      <tuv lang="RU" changeid="vopl" changedate="20190325T134638Z" creationid="vopl" creationdate="20190319T072221Z">
+        <seg>\usepackage[unicode,naturalnames]{hyperref}%——————————————————————目录超链接</seg>
       </tuv>
     </tu>
     <tu>

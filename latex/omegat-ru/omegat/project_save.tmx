@@ -2259,8 +2259,8 @@ PPIO is a programmable decentralized storage and delivery network.</prop>
       <tuv lang="EN-US">
         <seg>\usepackage{hyperref}%——————————————————————目录超链接</seg>
       </tuv>
-      <tuv lang="RU" changeid="vopl" changedate="20190319T072221Z" creationid="vopl" creationdate="20190319T072221Z">
-        <seg>\usepackage[unicode]{hyperref}%——————————————————————目录超链接</seg>
+      <tuv lang="RU" changeid="vopl" changedate="20190325T134638Z" creationid="vopl" creationdate="20190319T072221Z">
+        <seg>\usepackage[unicode,naturalnames]{hyperref}%——————————————————————目录超链接</seg>
       </tuv>
     </tu>
     <tu>

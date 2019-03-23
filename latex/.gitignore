@@ -7,3 +7,7 @@
 *.fdb_latexmk
 *.fls
 *.synctex.gz
+
+_d.tex
+_en4d.tex
+_ru4d.tex
