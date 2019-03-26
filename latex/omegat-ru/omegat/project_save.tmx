@@ -243,6 +243,17 @@
     </tu>
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">In most P2P networks, a node can transfer data with any other peers, regardless of their location.</prop>
+      <prop type="next">In 2007, a research institute iPoque carried out an analysis on nearly 3TB of anonymous data sampled from more than a million internet users in Eastern Europe, Southern Europe, Australia, and the Middle East.</prop>
+      <tuv lang="EN-US">
+        <seg>As a result, a single data transfer can potentially create traffic anywhere in the world and consumes bandwidth between different Internet Service Providers (ISP), or even between different countries.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190326T074230Z" creationid="vopl" creationdate="20190326T074230Z">
+        <seg>В результате, единая пересылка данных, потенциально, может формировать трафик в любой точке мира и потреблять полосу пропускания между различными интернет-провайдерами (Internet Service Providers, ISPs), или, даже между странами.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">Similarly, data distribution and retrieval are mostly handled by nearby peers as well.</prop>
       <prop type="next">\vspace{-0.5em}</prop>
       <tuv lang="EN-US">
@@ -816,6 +827,17 @@
     </tu>
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">As a result, a single data transfer can potentially create traffic anywhere in the world and consumes bandwidth between different Internet Service Providers (ISP), or even between different countries.</prop>
+      <prop type="next">\cite{article26}Their studies show that P2P file sharing takes up a significant part of the network bandwidth consumption, accounting for about 49\% in the Middle East, and 84\% in Eastern Europe.</prop>
+      <tuv lang="EN-US">
+        <seg>In 2007, a research institute iPoque carried out an analysis on nearly 3TB of anonymous data sampled from more than a million internet users in Eastern Europe, Southern Europe, Australia, and the Middle East.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190326T074900Z" creationid="vopl" creationdate="20190326T074900Z">
+        <seg>В 2007 году, исследовательский институт iPoque озаботился анализом около 3ТБ анонимных данных, отслеживаемых у более чем миллиона интернет-пользователей из Восточной и Южной Европы, Австралии и  Ближнего Востока.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">\\ \\When a miner node receives the forwarded request, and if it happens to possess the requested resources, it notifies the user and there is better priority that user will ,in fact, download the data from it, since the miner node is in the forwarding path of the user’s neighbors, and thus close to the user.</prop>
       <prop type="next">\vspace{-0.5em}</prop>
       <tuv lang="EN-US">
@@ -856,6 +878,17 @@
       </tuv>
       <tuv lang="RU" changeid="vopl" changedate="20190319T113515Z" creationid="vopl" creationdate="20190319T113225Z">
         <seg>Главное, более приоритетные части должны оканчиваться с более ранним временем доставки.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\subsubsection{ISP Friendly Scheduling}  %——2.2.5 \%     \cite{article33}</prop>
+      <prop type="next">As a result, a single data transfer can potentially create traffic anywhere in the world and consumes bandwidth between different Internet Service Providers (ISP), or even between different countries.</prop>
+      <tuv lang="EN-US">
+        <seg>In most P2P networks, a node can transfer data with any other peers, regardless of their location.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190326T074014Z" creationid="vopl" creationdate="20190326T074014Z">
+        <seg>В большинстве одноранговых сетей, узел может обмениваться данными с любым другим пиром, не взирая на его местоположение.</seg>
       </tuv>
     </tu>
     <tu>
@@ -2119,8 +2152,8 @@
       <tuv lang="EN-US">
         <seg>\\ \\ As shown in Fig 2.4, multiple miners store copies of the same data, they need to compete to provide download services to the user.</seg>
       </tuv>
-      <tuv lang="RU" changeid="vopl" changedate="20190325T160250Z" creationid="vopl" creationdate="20190325T160250Z">
-        <seg>\\ \\ Как показано на рис 2.4, множество майнеров хранят копии одних и тех же данных, они должны конкурировать за предоставление пользователям услуги скачивания.</seg>
+      <tuv lang="RU" changeid="vopl" changedate="20190326T073722Z" creationid="vopl" creationdate="20190325T160250Z">
+        <seg>\\ \\ Как показано на Рис 2.4, множество майнеров хранят копии одних и тех же данных, они должны конкурировать за предоставление пользователям услуги скачивания.</seg>
       </tuv>
     </tu>
     <tu>
@@ -2587,6 +2620,17 @@
     </tu>
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">In 2007, a research institute iPoque carried out an analysis on nearly 3TB of anonymous data sampled from more than a million internet users in Eastern Europe, Southern Europe, Australia, and the Middle East.</prop>
+      <prop type="next">From a global perspective, 95\% of the bandwidth at prime time is involved in some forms of P2P data transmission.</prop>
+      <tuv lang="EN-US">
+        <seg>\cite{article26}Their studies show that P2P file sharing takes up a significant part of the network bandwidth consumption, accounting for about 49\% in the Middle East, and 84\% in Eastern Europe.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190326T075046Z" creationid="vopl" creationdate="20190326T075036Z">
+        <seg>\cite{article26}Their studies show that P2P file sharing takes up a significant part of the network bandwidth consumption, accounting for about 49\% in the Middle East, and 84\% in Eastern Europe.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">\newpage</prop>
       <prop type="next">\vspace{-0.5em}</prop>
       <tuv lang="EN-US">
@@ -2660,6 +2704,17 @@
       </tuv>
       <tuv lang="RU" changeid="vopl" changedate="20190319T154250Z" creationid="vopl" creationdate="20190319T154250Z">
         <seg>\subsubsection{Распределенная база данных и роутинг (Distributed Database and Routing)}  %——2.2.2 \cite{article17}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\vspace{-0.5em}</prop>
+      <prop type="next">In most P2P networks, a node can transfer data with any other peers, regardless of their location.</prop>
+      <tuv lang="EN-US">
+        <seg>\subsubsection{ISP Friendly Scheduling}  %——2.2.5 \%     \cite{article33}</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190326T073918Z" creationid="vopl" creationdate="20190326T073918Z">
+        <seg>\subsubsection{Планирование, дружественное к интернет-провайдеру (ISP Friendly Scheduling)}  %——2.2.5 \%     \cite{article33}</seg>
       </tuv>
     </tu>
     <tu>
