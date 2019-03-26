@@ -23,6 +23,17 @@
 <!-- Alternative translations -->
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">5.\quad $L$ retrieves $R_{c}$ which is the $c$th block of $R$, and calculates $Path_{RC-RT}$ which contains the hash values of all the Merkle tree nodes path from the $R_{c}$ to the root node.</prop>
+      <prop type="next">\\•   $R_{c}$\\</prop>
+      <tuv lang="EN-US">
+        <seg>$L$ returns the following to $V$:</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190326T140928Z" creationid="vopl" creationdate="20190326T140928Z">
+        <seg>$L$ возвращает $V$ следующее:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">\noindent</prop>
       <prop type="next">\vspace{-0.8em}</prop>
       <tuv lang="EN-US">
@@ -136,6 +147,17 @@
       <prop type="prev">\noindent</prop>
       <prop type="next">\vspace{-0.8em}</prop>
       <tuv lang="EN-US">
+        <seg>3.\quad $L$ requests PoRep challenge from $V$.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190326T140120Z" creationid="vopl" creationdate="20190326T140120Z">
+        <seg>3.\quad $L$ запрашивает пазл PoRep от $V$.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\noindent</prop>
+      <prop type="next">\vspace{-0.8em}</prop>
+      <tuv lang="EN-US">
         <seg>3.\quad Step 2 is repeated periodically, and all remaining pieces will be re-allocated to accommodate changes in the transmission speed and availability of the virtual connections.</seg>
       </tuv>
       <tuv lang="RU" changeid="vopl" changedate="20190319T132405Z" creationid="vopl" creationdate="20190319T132405Z">
@@ -162,6 +184,17 @@
       </tuv>
       <tuv lang="RU" changeid="vopl" changedate="20190326T134946Z" creationid="vopl" creationdate="20190326T134946Z">
         <seg>4.\quad $L$ получает $R_{c}$ which is the $c$th block of $R$, and calculates $Path_{RC-RT}$ which contains the hash values of all the Merkle tree nodes path from the $R_{c}$ to the root node.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\noindent</prop>
+      <prop type="next">\vspace{-0.8em}</prop>
+      <tuv lang="EN-US">
+        <seg>4.\quad $V$ accepts the request and sends a random challenge $c$ to $L$, i.e. it challenges the storage of the $c$th data block of $R$.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190326T140614Z" creationid="vopl" creationdate="20190326T140148Z">
+        <seg>4.\quad $V$ принимает запрос и отсылает случайное требование $c$ для $L$, т.е. он проверяет сохранность $c$-того блока данных из $R$.</seg>
       </tuv>
     </tu>
     <tu>
@@ -200,6 +233,17 @@
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">\noindent</prop>
+      <prop type="next">$L$ returns the following to $V$:</prop>
+      <tuv lang="EN-US">
+        <seg>5.\quad $L$ retrieves $R_{c}$ which is the $c$th block of $R$, and calculates $Path_{RC-RT}$ which contains the hash values of all the Merkle tree nodes path from the $R_{c}$ to the root node.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190326T140914Z" creationid="vopl" creationdate="20190326T140525Z">
+        <seg>5.\quad $L$ извлекает $R_{c}$, являющийся $c$-тым блоком из $R$, и вычисляет путь $Path_{RC-RT}$, содержащий хэш значения всех узлов дерева Меркла на пути от $R_{c}$ до корневого узла.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\noindent</prop>
       <prop type="next">\vspace{-0.8em}</prop>
       <tuv lang="EN-US">
         <seg>5.\quad When a piece is received from a virtual connection, the estimated download speed $V_{conn}$ is updated, and another remaining arbitrary piece will be requested from the connection immediately until all the data is downloaded.</seg>
@@ -217,6 +261,18 @@
       </tuv>
       <tuv lang="RU" changeid="vopl" changedate="20190319T132817Z" creationid="vopl" creationdate="20190319T132817Z">
         <seg>6.\quad  В остальном алгоритм работает так же как и в случае обычного скачивания файлов.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\noindent</prop>
+      <prop type="next">\vspace{-0.5em}</prop>
+      <tuv lang="EN-US">
+        <seg>6.\quad From received $R_{c}$ and $Path_{RC-RT}$, $V$ generates the Merkle tree root hash $RT'$, if $RT'$ matches the original root hash received from $U$, i.e. $RT' == RT$, the proof has succeeded, otherwise the proof has failed.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190326T165838Z" creationid="vopl" creationdate="20190326T141310Z">
+        <seg>6.\quad Из полученных $R_{c}$ и $Path_{RC-RT}$, $V$ генерирует корневой хэш дерева Меркла $RT'$, если $RT'$ совпадает с оригинальным корневым хешем, полученным от $U$, т.е. $RT' == RT$, доказательство считается успешным, в противном случае доказательство неудачно.
+\\ \\ Далее комментарий от переводчика: изложенный алгоритм не работает как предполагается. Ожидалось увидеть нечто такое https://filecoin.io/filecoin.pdf. Что явно бросается в глаза: Майнер пересылает Верификатору блок образа $R_{c}$, а должен пересылать доказательство. Майнер пересылает Верификатору большой объем данных (размером с блок), а должен слать мало. Майнер Верификатору вместе с блоком шлет его позицию, Верификатор тем самым может со временем легко восстановить весь Образ. Верификатор не может сгенерировать корневой хэш дерева Меркла из имеющихся в его распоряжении данных, просто потому что этих данных не достаточно для такого восстановления. Инициировать проверку должен Верификатор а не Майнер... В общем, скам какойто.</seg>
       </tuv>
     </tu>
     <tu>
@@ -270,8 +326,8 @@
       <tuv lang="EN-US">
         <seg>AES-256 is a viable option for its implementation.</seg>
       </tuv>
-      <tuv lang="RU" changeid="vopl" changedate="20190326T131605Z" creationid="vopl" creationdate="20190326T131543Z">
-        <seg>Приемлемым вариантом для реализации Seal является AES-256.</seg>
+      <tuv lang="RU" changeid="vopl" changedate="20190326T162923Z" creationid="vopl" creationdate="20190326T131543Z">
+        <seg>Приемлемым примитивом для реализации Seal является AES-256.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1547,8 +1603,8 @@
       <tuv lang="EN-US">
         <seg>Merkle tree can be used as an efficient way to validate if the content of a data block matches the original data.</seg>
       </tuv>
-      <tuv lang="RU" changeid="vopl" changedate="20190326T130712Z" creationid="vopl" creationdate="20190326T130636Z">
-        <seg>Дкркво меркла может использоваться в качестве эффективного средства для валидации, соответствует ли содержимое блока данных заданному оригиналу.</seg>
+      <tuv lang="RU" changeid="vopl" changedate="20190326T162836Z" creationid="vopl" creationdate="20190326T130636Z">
+        <seg>Дерево меркла может использоваться в качестве эффективного средства для валидации, соответствует ли содержимое блока данных заданному оригиналу.</seg>
       </tuv>
     </tu>
     <tu>
@@ -2911,8 +2967,8 @@
       <tuv lang="EN-US">
         <seg>XOR Cipher is a viable option for its implementation.</seg>
       </tuv>
-      <tuv lang="RU" changeid="vopl" changedate="20190326T131908Z" creationid="vopl" creationdate="20190326T131908Z">
-        <seg>Приемлемым вариантом для реализации является гаммирование.</seg>
+      <tuv lang="RU" changeid="vopl" changedate="20190326T162945Z" creationid="vopl" creationdate="20190326T131908Z">
+        <seg>Приемлемым примитивом для реализации является гаммирование.</seg>
       </tuv>
     </tu>
     <tu>
