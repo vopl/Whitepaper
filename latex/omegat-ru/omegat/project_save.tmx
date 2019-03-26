@@ -57,6 +57,50 @@
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">\noindent</prop>
+      <prop type="next">As PPIO embeds optimized scheduling of popular contents in its overlay network,  the miners will proactively download and store these data, and provide download services.</prop>
+      <tuv lang="EN-US">
+        <seg>1.\quad Take advantage of content scheduling described in 2.2.4.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190326T113822Z" creationid="vopl" creationdate="20190326T113822Z">
+        <seg>1.\quad Использовать преимущества планировщика контента как описано в 2.2.4.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\noindent</prop>
+      <prop type="next">It also builds a Merkle Tree on top of $R$, calculates the root hash of the tree $RT=MerkleCRH(R)$, and sends $RT$ to Verifier $V$.</prop>
+      <tuv lang="EN-US">
+        <seg>1.\quad User $U$ generates a Seal key $PK_{Seal}$, applies it to encrypt Data $D$, and generates a unique copy $R=Seal(D, PK_{Seal})$.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190326T134042Z" creationid="vopl" creationdate="20190326T133423Z">
+        <seg>1.\quad Пользователь $U$ генерирует ключ Образа $PK_{Seal}$, применяемый им для шифрования Данных $D$, и Образ (уникальную копию) $R=Seal(D, PK_{Seal})$.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\noindent</prop>
+      <prop type="next">\vspace{-0.8em}</prop>
+      <tuv lang="EN-US">
+        <seg>2.\quad $U$ transmits $R$ and $PK_{Seal}$ to miner $L$.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190326T134316Z" creationid="vopl" creationdate="20190326T134316Z">
+        <seg>2.\quad $U$ пересылает $R$ и $PK_{Seal}$ майнеру $L$.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\noindent</prop>
+      <prop type="next">PPIO provides a set of APIs to allow DApps to set up PCDN for their content.</prop>
+      <tuv lang="EN-US">
+        <seg>2.\quad Enable and configure PCDN directly.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190326T114938Z" creationid="vopl" creationdate="20190326T114938Z">
+        <seg>2.\quad Задействование и натройка PCDN явно.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\noindent</prop>
       <prop type="next">If no history is found, a default empirical value is used.</prop>
       <tuv lang="EN-US">
         <seg>2.\quad For each peer, an expected download speed $V_{conn}$ is calculated based on its transmission history.</seg>
@@ -81,6 +125,17 @@
       <prop type="prev">\noindent</prop>
       <prop type="next">\vspace{-0.8em}</prop>
       <tuv lang="EN-US">
+        <seg>3.\quad $L$ requests PoRep challenge from $V$, $V$ accepts the request and sends a random challenge $c$ to $L$, i.e. it challenges the storage of the $c$th data block of $R$.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190326T134818Z" creationid="vopl" creationdate="20190326T134818Z">
+        <seg>3.\quad $L$ запрашивает пазл PoRep от $V$, $V$ принимает запрос и отсылает случайный пазл $c$ для $L$, т.е. он пазлом проверяет сохранность $c$-того блока данных из $R$.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\noindent</prop>
+      <prop type="next">\vspace{-0.8em}</prop>
+      <tuv lang="EN-US">
         <seg>3.\quad Step 2 is repeated periodically, and all remaining pieces will be re-allocated to accommodate changes in the transmission speed and availability of the virtual connections.</seg>
       </tuv>
       <tuv lang="RU" changeid="vopl" changedate="20190319T132405Z" creationid="vopl" creationdate="20190319T132405Z">
@@ -96,6 +151,17 @@
       </tuv>
       <tuv lang="RU" changeid="vopl" changedate="20190319T095625Z" creationid="vopl" creationdate="20190319T095625Z">
         <seg>3.\quad Количество виртуальных соединений с каждым пиром различно, пир с высоким $V_{conn}$ может иметь значительное число виртуальных соединений изначально.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\noindent</prop>
+      <prop type="next">$L$ returns the following to $V$:</prop>
+      <tuv lang="EN-US">
+        <seg>4.\quad $L$ retrieves $R_{c}$ which is the $c$th block of $R$, and calculates $Path_{RC-RT}$ which contains the hash values of all the Merkle tree nodes path from the $R_{c}$ to the root node.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190326T134946Z" creationid="vopl" creationdate="20190326T134946Z">
+        <seg>4.\quad $L$ получает $R_{c}$ which is the $c$th block of $R$, and calculates $Path_{RC-RT}$ which contains the hash values of all the Merkle tree nodes path from the $R_{c}$ to the root node.</seg>
       </tuv>
     </tu>
     <tu>
@@ -199,6 +265,17 @@
     </tu>
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">The encryption process should take substantially longer time than decryption, to prevent Generation Attacks.</prop>
+      <prop type="next">\vspace{-0.8em}</prop>
+      <tuv lang="EN-US">
+        <seg>AES-256 is a viable option for its implementation.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190326T131605Z" creationid="vopl" creationdate="20190326T131543Z">
+        <seg>Приемлемым вариантом для реализации Seal является AES-256.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">In general, pieces with higher priority should end up with an earlier estimated arrival time.</prop>
       <prop type="next">\vspace{-0.8em}</prop>
       <tuv lang="EN-US">
@@ -217,6 +294,17 @@
       </tuv>
       <tuv lang="RU" changeid="vopl" changedate="20190314T163940Z" creationid="vopl" creationdate="20190314T163940Z">
         <seg>Оптимизированное доказательство хранения с течением времени (Оptimized Proof of Space-Time, PoSt) убеждает что заданные данные действительно сохранены майнером в течении периода времени.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">1.\quad Take advantage of content scheduling described in 2.2.4.</prop>
+      <prop type="next">As a result, data gets copied and distributed across the network where the data is deemed popular.</prop>
+      <tuv lang="EN-US">
+        <seg>As PPIO embeds optimized scheduling of popular contents in its overlay network,  the miners will proactively download and store these data, and provide download services.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190326T114150Z" creationid="vopl" creationdate="20190326T114150Z">
+        <seg>PPIO предоставляет в своей оверлейной сети оптимизированное планирование популярного контента,  майнеры проактивно скачивают и хранят эти данные и предоставляют пользователю сервис скачивания.</seg>
       </tuv>
     </tu>
     <tu>
@@ -283,6 +371,17 @@
       </tuv>
       <tuv lang="RU" changeid="vopl" changedate="20190326T074230Z" creationid="vopl" creationdate="20190326T074230Z">
         <seg>В результате, единая пересылка данных, потенциально, может формировать трафик в любой точке мира и потреблять полосу пропускания между различными интернет-провайдерами (Internet Service Providers, ISPs), или, даже между странами.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">As PPIO embeds optimized scheduling of popular contents in its overlay network,  the miners will proactively download and store these data, and provide download services.</prop>
+      <prop type="next">It improves download experience as the number of copies increase.</prop>
+      <tuv lang="EN-US">
+        <seg>As a result, data gets copied and distributed across the network where the data is deemed popular.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190326T114738Z" creationid="vopl" creationdate="20190326T114738Z">
+        <seg>В результате, данные подвергаются копированию и распространению в ту часть сети, в которой эти данные являются популярными.</seg>
       </tuv>
     </tu>
     <tu>
@@ -364,6 +463,17 @@
     </tu>
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\\ \\It is published on the source node first to start distributing a piece of content.</prop>
+      <prop type="next">However, as the number of users downloading from the same source node increases, its available bandwidth gets quickly exhausted, and the downloads will slow down.</prop>
+      <tuv lang="EN-US">
+        <seg>As long as the source node is online, the user can download them from it.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190326T113200Z" creationid="vopl" creationdate="20190326T113200Z">
+        <seg>Пока узел-источник онлайн, пользователи могут скачивать контент с него.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">As storing popular content increases its chance to provide download service and get rewarded, the miner will proactively send requests to the scheduler to store the resources of popular content.</prop>
       <prop type="next">When a miner discovers that its stored content is no longer trendy, it can request to remove the content from its storage.</prop>
       <tuv lang="EN-US">
@@ -393,6 +503,17 @@
       </tuv>
       <tuv lang="RU" changeid="vopl" changedate="20190320T103930Z" creationid="vopl" creationdate="20190320T103930Z">
         <seg>При возростании количества пользователей будет деградировать скорость транспортировки и удовлетворенность этих самых пользователей.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">PPIO will find the miner nodes in the specified area to store the copies and provide download services.</prop>
+      <prop type="next">Figure 2.5 shows the PCDN-driven data flow in the network in this case.</prop>
+      <tuv lang="EN-US">
+        <seg>As the scheduling is specified by the application, it needs to compensate the miners’ cost in storage spacetime, scheduling and conducting storage proofs.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190326T115819Z" creationid="vopl" creationdate="20190326T115819Z">
+        <seg>Так как распространение контента планируется приложением, оно должно компенсировать майнерам стоимость хранения, дальнейшего планирования и производства доказательств.</seg>
       </tuv>
     </tu>
     <tu>
@@ -772,6 +893,17 @@
     </tu>
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">As the scheduling is specified by the application, it needs to compensate the miners’ cost in storage spacetime, scheduling and conducting storage proofs.</prop>
+      <prop type="next">\vspace{-1em}</prop>
+      <tuv lang="EN-US">
+        <seg>Figure 2.5 shows the PCDN-driven data flow in the network in this case.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190326T115922Z" creationid="vopl" creationdate="20190326T115922Z">
+        <seg>Рисунок 2.5 показывает поток данных в сети, управляемый PCDN для этого случая.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">In PPIO‘s system, a storage "Object" is divided into "Segments", each "Segment" is further divided into some "Pieces".</prop>
       <prop type="next">Each of these N miners is also called a “Peer”.</prop>
       <tuv lang="EN-US">
@@ -834,6 +966,17 @@
       </tuv>
       <tuv lang="RU" changeid="vopl" changedate="20190316T172533Z" creationid="vopl" creationdate="20190316T172533Z">
         <seg>Однако, децентрализованная одноранговая сеть не зависит от какого либо центрального сервера для того чтобы корректно функционировать и способна легко переносить ошибки и отказы некоторых узлов.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">As long as the source node is online, the user can download them from it.</prop>
+      <prop type="next">With PCDN, when other miner nodes start to store and provide download services for the same piece of content, users will be able to download from multiple peers in the network and enjoy much better user experience.\\</prop>
+      <tuv lang="EN-US">
+        <seg>However, as the number of users downloading from the same source node increases, its available bandwidth gets quickly exhausted, and the downloads will slow down.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190326T113327Z" creationid="vopl" creationdate="20190326T113327Z">
+        <seg>Однако, при росте числа пользователей, скачивающих контент с одного узла, доступная ему ширина канала быстро расходуется и скорость скачивания падает.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1190,6 +1333,17 @@
     </tu>
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">1.\quad User $U$ generates a Seal key $PK_{Seal}$, applies it to encrypt Data $D$, and generates a unique copy $R=Seal(D, PK_{Seal})$.</prop>
+      <prop type="next">\vspace{-0.8em}</prop>
+      <tuv lang="EN-US">
+        <seg>It also builds a Merkle Tree on top of $R$, calculates the root hash of the tree $RT=MerkleCRH(R)$, and sends $RT$ to Verifier $V$.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190326T134252Z" creationid="vopl" creationdate="20190326T134220Z">
+        <seg>Так же, он строит дерево Меркла над $R$, вычисляет корневой хэш дерева $RT=MerkleCRH(R)$ и отсылает $RT$ на узел Верификатор (Verifier) $V$.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">These key-value pairs are distributed and stored among the participating nodes.</prop>
       <prop type="next">No single participating node in the DHT is tasked to maintain the entire network.</prop>
       <tuv lang="EN-US">
@@ -1252,6 +1406,17 @@
       </tuv>
       <tuv lang="RU" changeid="vopl" changedate="20190314T154604Z" creationid="vopl" creationdate="20190314T124731Z">
         <seg>Документ разъясняет как PPIO противостоит различным сетевым атакам, поддерживает работоспособность и устойчивость механизма поощрений, предлагает экономическую модельи экосистему.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">As a result, data gets copied and distributed across the network where the data is deemed popular.</prop>
+      <prop type="next">\vspace{-0.7em}</prop>
+      <tuv lang="EN-US">
+        <seg>It improves download experience as the number of copies increase.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190326T114856Z" creationid="vopl" creationdate="20190326T114856Z">
+        <seg>Это увеличивает практичность скачивания при увеличении количества копий.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1377,6 +1542,17 @@
     </tu>
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">•\quad MerkleCRH: The root hash of a Merkle tree built from collision resistant hashing.</prop>
+      <prop type="next">\vspace{-0.8em}</prop>
+      <tuv lang="EN-US">
+        <seg>Merkle tree can be used as an efficient way to validate if the content of a data block matches the original data.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190326T130712Z" creationid="vopl" creationdate="20190326T130636Z">
+        <seg>Дкркво меркла может использоваться в качестве эффективного средства для валидации, соответствует ли содержимое блока данных заданному оригиналу.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">As PPIO’s overlay network is built by clustering nearby peers, if a piece of content is only popular in a certain region, only the miners in the same region populate it extensively.</prop>
       <prop type="next">Thus the overall efficiency of the storage network is maintained.</prop>
       <tuv lang="EN-US">
@@ -1476,6 +1652,17 @@
     </tu>
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\subsubsection{PCDN}  %——2.2.6</prop>
+      <prop type="next">PPIO is designed to support PCDN and provide an easy-to-use interface to DApps to accelerate their content delivery.</prop>
+      <tuv lang="EN-US">
+        <seg>PCDN stands for CDN acceleration with P2P, and it utilizes the abundant bandwidth and storage resources of miners in the P2P network to achieve faster data distribution.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190326T112121Z" creationid="vopl" creationdate="20190326T112121Z">
+        <seg>PCDN означает CDN ускоренный за счет P2P, он утилизирует избыточность ширины каналов и ресурсов хранилищ майнеров в одноранговой сети для достижения более быстрой доставки данных.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">\\</prop>
       <prop type="next">These changes are mainly caused by nodes via parallel looking over disjoint paths.</prop>
       <tuv lang="EN-US">
@@ -1505,6 +1692,17 @@
       </tuv>
       <tuv lang="RU" changeid="vopl" changedate="20190314T165338Z" creationid="vopl" creationdate="20190314T165338Z">
         <seg>PPIO так же имеет некоторые технологии для улучшения поддержки распределенных приложений, включая хранилища объектов, механизм песочницы, управление доступом к файлам и т.п.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\subsection{Proofs}%——2.3</prop>
+      <prop type="next">These proofs guarantee that the storage provider (miner) correctly replicates the data and consistently stores the data within the agreed period.</prop>
+      <tuv lang="EN-US">
+        <seg>PPIO employs 4 different storage proofs, namely Proof of Replication (PoRep), Proof of Download (PoD), Proof of Spacetime (PoSt) and Light Proof of Capacity (LPoC).</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190326T120503Z" creationid="vopl" creationdate="20190326T120503Z">
+        <seg>PPIO использует 4 различных доказательства для хранилищ, именуемеые Proof of Replication (PoRep), Proof of Download (PoD), Proof of Spacetime (PoSt) и Light Proof of Capacity (LPoC).</seg>
       </tuv>
     </tu>
     <tu>
@@ -1586,6 +1784,17 @@
     </tu>
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">PCDN stands for CDN acceleration with P2P, and it utilizes the abundant bandwidth and storage resources of miners in the P2P network to achieve faster data distribution.</prop>
+      <prop type="next">\vspace{-0.5em}</prop>
+      <tuv lang="EN-US">
+        <seg>PPIO is designed to support PCDN and provide an easy-to-use interface to DApps to accelerate their content delivery.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190326T112240Z" creationid="vopl" creationdate="20190326T112240Z">
+        <seg>PPIO спроктирован с поддержкой PCDN и предоставляет легкий к использованию интерфейс для распределенных приложений (DApps) для ускорения доставки их контента.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">At the same time, it allows the user to easily share their data to the public or within a private group.</prop>
       <prop type="next">Light Proof of Capacity (LPoC) is developed to provide lightweight validation of storage capacity provided by the miners.</prop>
       <tuv lang="EN-US">
@@ -1604,6 +1813,17 @@
       </tuv>
       <tuv lang="RU" changeid="vopl" changedate="20190314T123515Z" creationid="vopl" creationdate="20190314T123515Z">
         <seg>PPIO сводит потребности в хранении данных, имеющиеся у сегодняшнего бизнеса с одной стороны и предлагаемых возможностей поставщиков соответствующих услуг с другой, а так же, предоставляет возможность реализации распределенных приложений (DApps).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">2.\quad Enable and configure PCDN directly.</prop>
+      <prop type="next">The applications can specify the number of copies to be maintained in specific parts of the network, or specific geographic location regarding the country, ISP, state and city, as defined in the P4P database.</prop>
+      <tuv lang="EN-US">
+        <seg>PPIO provides a set of APIs to allow DApps to set up PCDN for their content.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190326T115031Z" creationid="vopl" creationdate="20190326T115031Z">
+        <seg>PPIO предоставляет некоторые API, позволяющие распределенным приложениям (DApps) настраивать PCDN для своего контента.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1637,6 +1857,17 @@
       </tuv>
       <tuv lang="RU" changeid="vopl" changedate="20190319T161829Z" creationid="vopl" creationdate="20190319T161829Z">
         <seg>PPIO использует вариант Kademlia, так же, как многие другие хорошо известные P2P проекты - PPLive, BitTorrent, eMule и т.п..</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">The applications can specify the number of copies to be maintained in specific parts of the network, or specific geographic location regarding the country, ISP, state and city, as defined in the P4P database.</prop>
+      <prop type="next">As the scheduling is specified by the application, it needs to compensate the miners’ cost in storage spacetime, scheduling and conducting storage proofs.</prop>
+      <tuv lang="EN-US">
+        <seg>PPIO will find the miner nodes in the specified area to store the copies and provide download services.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190326T115441Z" creationid="vopl" creationdate="20190326T115441Z">
+        <seg>PPIO займется подбором узлов майнеров в указанной зоне для сохранения копий данных и предоставления сервиса скачивания.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1817,6 +2048,17 @@
     </tu>
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\subsubsection{Proof-of-Replication (PoRep)}  %——2.3.1</prop>
+      <prop type="next">The process also provides an indirect proof of the bandwidth available to $L$.</prop>
+      <tuv lang="EN-US">
+        <seg>Proof of Replication (PoRep) provides a way to verify that Miner $L$ correctly replicates Data $D$ from User $U$ and stores it in its storage.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190326T133204Z" creationid="vopl" creationdate="20190326T133204Z">
+        <seg>Proof of Replication (PoRep) предоставляет способ верификации того, что Майнер $L$ корректно получил Данные $D$ от Пользователя $U$ и сохранил их в своем хранилище.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">Each node only stores a small part of the database and only needs to maintain information of its adjacent nodes, such design significantly reduces each node’s bandwidth and resource usage.</prop>
       <prop type="next">\vspace{-0.5em}</prop>
       <tuv lang="EN-US">
@@ -1993,6 +2235,17 @@
     </tu>
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">PPIO provides a set of APIs to allow DApps to set up PCDN for their content.</prop>
+      <prop type="next">PPIO will find the miner nodes in the specified area to store the copies and provide download services.</prop>
+      <tuv lang="EN-US">
+        <seg>The applications can specify the number of copies to be maintained in specific parts of the network, or specific geographic location regarding the country, ISP, state and city, as defined in the P4P database.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190326T115340Z" creationid="vopl" creationdate="20190326T115340Z">
+        <seg>Приложения могут указывать количество копий, сохраняемых в заданной части сети или конкретной географической локации страны, интернет-провайдера, штата и города, как определено в БД P4P.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">However, the existing centralized solutions have many problems.</prop>
       <prop type="next">For example, the Dropbox hacking in 2016 alone leaked 68 million user accounts.</prop>
       <tuv lang="EN-US">
@@ -2033,6 +2286,17 @@
       </tuv>
       <tuv lang="RU" changeid="vopl" changedate="20190319T100813Z" creationid="vopl" creationdate="20190319T100813Z">
         <seg>Запросы на скачивание оставшихся частей будут переадресованы другим пирам.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">•\quad Seal: An encryption method to ensure that each copy of the data has a unique and independent representation.</prop>
+      <prop type="next">AES-256 is a viable option for its implementation.</prop>
+      <tuv lang="EN-US">
+        <seg>The encryption process should take substantially longer time than decryption, to prevent Generation Attacks.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190326T131413Z" creationid="vopl" creationdate="20190326T131413Z">
+        <seg>Для предотвращения атак на основе генерации (Generation Attacks), процесс шифрования должен занимать существенно больше времени нежели дешифрования.</seg>
       </tuv>
     </tu>
     <tu>
@@ -2154,6 +2418,28 @@
       </tuv>
       <tuv lang="RU" changeid="vopl" changedate="20190319T111407Z" creationid="vopl" creationdate="20190319T111244Z">
         <seg>Для улучшения восприятия пользователем, во время скачивания приоритезируются части в опорных точках.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">The process also provides an indirect proof of the bandwidth available to $L$.</prop>
+      <prop type="next">\vspace{-0.8em}</prop>
+      <tuv lang="EN-US">
+        <seg>The procedure of PoRep is described below.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190326T133338Z" creationid="vopl" creationdate="20190326T133338Z">
+        <seg>Далее описывается процедура PoRep.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">Proof of Replication (PoRep) provides a way to verify that Miner $L$ correctly replicates Data $D$ from User $U$ and stores it in its storage.</prop>
+      <prop type="next">The procedure of PoRep is described below.</prop>
+      <tuv lang="EN-US">
+        <seg>The process also provides an indirect proof of the bandwidth available to $L$.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190326T133301Z" creationid="vopl" creationdate="20190326T133301Z">
+        <seg>Так же, он неявно предоставляет предоставляет доказательство доступной $L$ ширины канала.</seg>
       </tuv>
     </tu>
     <tu>
@@ -2319,6 +2605,50 @@
       </tuv>
       <tuv lang="RU" changeid="vopl" changedate="20190319T160212Z" creationid="vopl" creationdate="20190319T155531Z">
         <seg>Такие пары ключ-значение распространяются и хранятся на узлах-участниках сети.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">PPIO employs 4 different storage proofs, namely Proof of Replication (PoRep), Proof of Download (PoD), Proof of Spacetime (PoSt) and Light Proof of Capacity (LPoC).</prop>
+      <prop type="next">They also ensure that user can successfully download the data any time during the agreed term.</prop>
+      <tuv lang="EN-US">
+        <seg>These proofs guarantee that the storage provider (miner) correctly replicates the data and consistently stores the data within the agreed period.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190326T120739Z" creationid="vopl" creationdate="20190326T120739Z">
+        <seg>Эти доказательства гарантируют,  что поставщик хранилища (майнер) корректно реплицировал данные и сохранил их в неизменном виде в течении заданного периода времени.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">They also ensure that user can successfully download the data any time during the agreed term.</prop>
+      <prop type="next">They will be discussed in details in this section.</prop>
+      <tuv lang="EN-US">
+        <seg>These proofs maintain the integrity and reliability of PPIO's storage system.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190326T121516Z" creationid="vopl" creationdate="20190326T120956Z">
+        <seg>Эти доказательства обеспечивают целостность и надежность системы хранения PPIO.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">These proofs guarantee that the storage provider (miner) correctly replicates the data and consistently stores the data within the agreed period.</prop>
+      <prop type="next">These proofs maintain the integrity and reliability of PPIO's storage system.</prop>
+      <tuv lang="EN-US">
+        <seg>They also ensure that user can successfully download the data any time during the agreed term.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190326T120945Z" creationid="vopl" creationdate="20190326T120945Z">
+        <seg>Так же, они гарантируют что пользователь сможет успешно скачать данные в любой момент в рамках согласованного срока.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">These proofs maintain the integrity and reliability of PPIO's storage system.</prop>
+      <prop type="next">\vspace{-0.5em}</prop>
+      <tuv lang="EN-US">
+        <seg>They will be discussed in details in this section.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190326T121600Z" creationid="vopl" creationdate="20190326T121600Z">
+        <seg>Они будут детально рассмотрены далее в этой секции.</seg>
       </tuv>
     </tu>
     <tu>
@@ -2554,6 +2884,17 @@
     </tu>
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">However, as the number of users downloading from the same source node increases, its available bandwidth gets quickly exhausted, and the downloads will slow down.</prop>
+      <prop type="next">\centerline{\includegraphics[width=300pt]{fig5}}</prop>
+      <tuv lang="EN-US">
+        <seg>With PCDN, when other miner nodes start to store and provide download services for the same piece of content, users will be able to download from multiple peers in the network and enjoy much better user experience.\\</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190326T113641Z" creationid="vopl" creationdate="20190326T113641Z">
+        <seg>В случае PCDN, когда другие майнеры начинают сохранять и предоставлять на скачивание одну и ту же часть контента, пользователи могут производить скачивание со множества пиров, тем самым получать контент быстрее.\\</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">As a result, the list should mostly contain active and fast neighbors.</prop>
       <prop type="next">\vspace{-0.8em}</prop>
       <tuv lang="EN-US">
@@ -2561,6 +2902,28 @@
       </tuv>
       <tuv lang="RU" changeid="vopl" changedate="20190320T112042Z" creationid="vopl" creationdate="20190320T112042Z">
         <seg>В случае если все узлы следуют описанному выше сценарию, формируется и поддерживается само-организующаяся одноранговая оверлейная сеть.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">•\quad Cipher: A lightweight encryption method with symmetric keys, used in Proof-of-Download.</prop>
+      <prop type="next">\vspace{-0.5em}</prop>
+      <tuv lang="EN-US">
+        <seg>XOR Cipher is a viable option for its implementation.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190326T131908Z" creationid="vopl" creationdate="20190326T131908Z">
+        <seg>Приемлемым вариантом для реализации является гаммирование.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\vspace{-0.5em}</prop>
+      <prop type="next">\vspace{-0.7em}</prop>
+      <tuv lang="EN-US">
+        <seg>\\ There are two ways for applications to implement PCDN in PPIO.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190326T113721Z" creationid="vopl" creationdate="20190326T113721Z">
+        <seg>\\ Есть два способа реализации PCDN для приложений в PPIO.</seg>
       </tuv>
     </tu>
     <tu>
@@ -2720,6 +3083,17 @@
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">\vspace{-0.5em}</prop>
+      <prop type="next">\vspace{-0.8em}</prop>
+      <tuv lang="EN-US">
+        <seg>\\ \\Definition of terms in the section:</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190326T121745Z" creationid="vopl" creationdate="20190326T121745Z">
+        <seg>\\ \\Используемые в данной секции термины:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\vspace{-0.5em}</prop>
       <prop type="next">The list gets continuously updated by dropping disappeared nodes and adding newly joined neighbors.</prop>
       <tuv lang="EN-US">
         <seg>\\ \\Every node in PPIO’s network maintains a list of neighboring peers to stay connected with.</seg>
@@ -2759,6 +3133,17 @@
       </tuv>
       <tuv lang="RU" changeid="vopl" changedate="20190326T090350Z" creationid="vopl" creationdate="20190326T090350Z">
         <seg>\\ \\Если участвующие в обмене данными узлы размещены в близкой окрестности друг к другу, желательно чтобы их трафик был сосредоточен в рамках их сетевой зоны.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\vspace{-0.5em}</prop>
+      <prop type="next">As long as the source node is online, the user can download them from it.</prop>
+      <tuv lang="EN-US">
+        <seg>\\ \\It is published on the source node first to start distributing a piece of content.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190326T113123Z" creationid="vopl" creationdate="20190326T113123Z">
+        <seg>\\ \\Для запуска распространения части контента, изначально он публикуется на узле-источнике.</seg>
       </tuv>
     </tu>
     <tu>
@@ -3028,6 +3413,17 @@
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">\vspace{-0.5em}</prop>
+      <prop type="next">\vspace{-0.5em}</prop>
+      <tuv lang="EN-US">
+        <seg>\\ \centerline{{Figure 2.5 PCDN Data Flow}}</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190326T115958Z" creationid="vopl" creationdate="20190326T115958Z">
+        <seg>\\ \centerline{{Рисунок 2.5 Поток данных PCDN}}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\vspace{-0.5em}</prop>
       <prop type="next">These key-value pairs are distributed and stored among the participating nodes.</prop>
       <tuv lang="EN-US">
         <seg>\\In a DHT, each piece of data is bundled with a unique key into a key-value pair.</seg>
@@ -3166,6 +3562,17 @@
       </tuv>
       <tuv lang="RU" changeid="vopl" changedate="20190319T085213Z" creationid="vopl" creationdate="20190319T085213Z">
         <seg>\subsection{Одноранговая сеть (P2P Network)} %——2.2 \cite{article4}\cite{article5}\cite{article6}\cite{article7}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\vspace{-1em}</prop>
+      <prop type="next">PPIO employs 4 different storage proofs, namely Proof of Replication (PoRep), Proof of Download (PoD), Proof of Spacetime (PoSt) and Light Proof of Capacity (LPoC).</prop>
+      <tuv lang="EN-US">
+        <seg>\subsection{Proofs}%——2.3</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190326T120417Z" creationid="vopl" creationdate="20190326T120417Z">
+        <seg>\subsection{Доказательства (Proofs)}%——2.3</seg>
       </tuv>
     </tu>
     <tu>
@@ -3384,6 +3791,28 @@ PPIO is a programmable decentralized storage and delivery network.</prop>
       <prop type="prev">\noindent</prop>
       <prop type="next">\vspace{-0.8em}</prop>
       <tuv lang="EN-US">
+        <seg>•\quad CRH: Collision-Resistant Hashing, a hash function h with which it is very tough to find two different inputs x, x', and generate the same output h(x) == h(x').</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190326T122922Z" creationid="vopl" creationdate="20190326T122922Z">
+        <seg>•\quad CRH: Collision-Resistant Hashing, Устойчивое к коллизиям хэширование, хэш-функция h, для которой очень сложно подобрать два различных входа x, x', приводящих к получению одинакового выхода h(x) == h(x').</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\noindent</prop>
+      <prop type="next">XOR Cipher is a viable option for its implementation.</prop>
+      <tuv lang="EN-US">
+        <seg>•\quad Cipher: A lightweight encryption method with symmetric keys, used in Proof-of-Download.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190326T131704Z" creationid="vopl" creationdate="20190326T131704Z">
+        <seg>•\quad Cipher: Легковесный метод шифрования с симметричным ключем, используемый в Proof-of-Download.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\noindent</prop>
+      <prop type="next">\vspace{-0.8em}</prop>
+      <tuv lang="EN-US">
         <seg>•\quad Eliminate neighbors that have the low-speed connection to the node or are no longer reachable.</seg>
       </tuv>
       <tuv lang="RU" changeid="vopl" changedate="20190320T113500Z" creationid="vopl" creationdate="20190320T113500Z">
@@ -3437,6 +3866,17 @@ PPIO is a programmable decentralized storage and delivery network.</prop>
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">\noindent</prop>
+      <prop type="next">Merkle tree can be used as an efficient way to validate if the content of a data block matches the original data.</prop>
+      <tuv lang="EN-US">
+        <seg>•\quad MerkleCRH: The root hash of a Merkle tree built from collision resistant hashing.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190326T130452Z" creationid="vopl" creationdate="20190326T130452Z">
+        <seg>•\quad MerkleCRH: Хэш корня дерева Меркла, полученный с помощью устойчивого к коллизиям хэширования.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\noindent</prop>
       <prop type="next">As discussed in the previous section, there is no guarantee that these peers are its geographical neighbors or have a fast connection to the node.</prop>
       <tuv lang="EN-US">
         <seg>•\quad Obtain new candidate neighbors from the Kademlia DHT.</seg>
@@ -3476,6 +3916,17 @@ PPIO is a programmable decentralized storage and delivery network.</prop>
       </tuv>
       <tuv lang="RU" changeid="vopl" changedate="20190320T113729Z" creationid="vopl" creationdate="20190320T113729Z">
         <seg>•\quad Весь процесс повторяется.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\noindent</prop>
+      <prop type="next">The encryption process should take substantially longer time than decryption, to prevent Generation Attacks.</prop>
+      <tuv lang="EN-US">
+        <seg>•\quad Seal: An encryption method to ensure that each copy of the data has a unique and independent representation.</seg>
+      </tuv>
+      <tuv lang="RU" changeid="vopl" changedate="20190326T133706Z" creationid="vopl" creationdate="20190326T131154Z">
+        <seg>•\quad Seal: Образ данных. Метод шифрования для обеспечения того, что каждая копия данных имеет уникальное и независимое представление.</seg>
       </tuv>
     </tu>
     <tu>

@@ -579,68 +579,68 @@ PPIO является полностью распределенной систе
 
  
          \subsubsection{PCDN}  %——2.2.6
-PCDN stands for CDN acceleration with P2P, and it utilizes the abundant bandwidth and storage resources of miners in the P2P network to achieve faster data distribution. PPIO is designed to support PCDN and provide an easy-to-use interface to DApps to accelerate their content delivery. 
+PCDN означает CDN ускоренный за счет P2P, он утилизирует избыточность ширины каналов и ресурсов хранилищ майнеров в одноранговой сети для достижения более быстрой доставки данных. PPIO спроктирован с поддержкой PCDN и предоставляет легкий к использованию интерфейс для распределенных приложений (DApps) для ускорения доставки их контента.
 \vspace{-0.5em}
-\\ \\It is published on the source node first to start distributing a piece of content. As long as the source node is online, the user can download them from it. However, as the number of users downloading from the same source node increases, its available bandwidth gets quickly exhausted, and the downloads will slow down. With PCDN, when other miner nodes start to store and provide download services for the same piece of content, users will be able to download from multiple peers in the network and enjoy much better user experience.\\
+\\ \\Для запуска распространения части контента, изначально он публикуется на узле-источнике. Пока узел-источник онлайн, пользователи могут скачивать контент с него. Однако, при росте числа пользователей, скачивающих контент с одного узла, доступная ему ширина канала быстро расходуется и скорость скачивания падает. В случае PCDN, когда другие майнеры начинают сохранять и предоставлять на скачивание одну и ту же часть контента, пользователи могут производить скачивание со множества пиров, тем самым получать контент быстрее.\\
 \centerline{\includegraphics[width=300pt]{fig5}}
 \vspace{-0.5em}
- \\ \centerline{{Figure 2.5 PCDN Data Flow}}
+\\ \centerline{{Рисунок 2.5 Поток данных PCDN}}
 \vspace{-0.5em}
- \\ There are two ways for applications to implement PCDN in PPIO.
+\\ Есть два способа реализации PCDN для приложений в PPIO.
 \vspace{-0.7em}
 \\
 
 \hangafter 1
 \hangindent 1.7em
 \noindent   
-1.\quad Take advantage of content scheduling described in 2.2.4.  As PPIO embeds optimized scheduling of popular contents in its overlay network,  the miners will proactively download and store these data, and provide download services. As a result, data gets copied and distributed across the network where the data is deemed popular. It improves download experience as the number of copies increase. 
+1.\quad Использовать преимущества планировщика контента как описано в 2.2.4.  PPIO предоставляет в своей оверлейной сети оптимизированное планирование популярного контента,  майнеры проактивно скачивают и хранят эти данные и предоставляют пользователю сервис скачивания. В результате, данные подвергаются копированию и распространению в ту часть сети, в которой эти данные являются популярными. Это увеличивает практичность скачивания при увеличении количества копий.
 \vspace{-0.7em}
 \\
 
 \hangafter 1
 \hangindent 1.7em
 \noindent   
-2.\quad Enable and configure PCDN directly. PPIO provides a set of APIs to allow DApps to set up PCDN for their content. The applications can specify the number of copies to be maintained in specific parts of the network, or specific geographic location regarding the country, ISP, state and city, as defined in the P4P database. PPIO will find the miner nodes in the specified area to store the copies and provide download services. As the scheduling is specified by the application, it needs to compensate the miners’ cost in storage spacetime, scheduling and conducting storage proofs. Figure 2.5 shows the PCDN-driven data flow in the network in this case.
+2.\quad Задействование и натройка PCDN явно. PPIO предоставляет некоторые API, позволяющие распределенным приложениям (DApps) настраивать PCDN для своего контента. Приложения могут указывать количество копий, сохраняемых в заданной части сети или конкретной географической локации страны, интернет-провайдера, штата и города, как определено в БД P4P. PPIO займется подбором узлов майнеров в указанной зоне для сохранения копий данных и предоставления сервиса скачивания. Так как распространение контента планируется приложением, оно должно компенсировать майнерам стоимость хранения, дальнейшего планирования и производства доказательств. Рисунок 2.5 показывает поток данных в сети, управляемый PCDN для этого случая.
 \vspace{-1em}
 
 
-         \subsection{Proofs}%——2.3
-PPIO employs 4 different storage proofs, namely Proof of Replication (PoRep), Proof of Download (PoD), Proof of Spacetime (PoSt) and Light Proof of Capacity (LPoC). These proofs guarantee that the storage provider (miner) correctly replicates the data and consistently stores the data within the agreed period. They also ensure that user can successfully download the data any time during the agreed term. These proofs maintain the integrity and reliability of PPIO's storage system. They will be discussed in details in this section.
+\subsection{Доказательства (Proofs)}%——2.3
+PPIO использует 4 различных доказательства для хранилищ, именуемеые Proof of Replication (PoRep), Proof of Download (PoD), Proof of Spacetime (PoSt) и Light Proof of Capacity (LPoC). Эти доказательства гарантируют,  что поставщик хранилища (майнер) корректно реплицировал данные и сохранил их в неизменном виде в течении заданного периода времени. Так же, они гарантируют что пользователь сможет успешно скачать данные в любой момент в рамках согласованного срока. Эти доказательства обеспечивают целостность и надежность системы хранения PPIO. Они будут детально рассмотрены далее в этой секции.
 \vspace{-0.5em}
-\\ \\Definition of terms in the section:
+\\ \\Используемые в данной секции термины:
 \vspace{-0.8em}
 \\
 
 \hangafter 1
 \hangindent 1.5em
 \noindent   
-•\quad CRH: Collision-Resistant Hashing, a hash function h with which it is very tough to find two different inputs x, x', and generate the same output h(x) == h(x').
+•\quad CRH: Collision-Resistant Hashing, Устойчивое к коллизиям хэширование, хэш-функция h, для которой очень сложно подобрать два различных входа x, x', приводящих к получению одинакового выхода h(x) == h(x').
 \vspace{-0.8em}
 \\
 
 \hangafter 1
 \hangindent 1.5em
 \noindent   
-•\quad MerkleCRH: The root hash of a Merkle tree built from collision resistant hashing. Merkle tree can be used as an efficient way to validate if the content of a data block matches the original data.
+•\quad MerkleCRH: Хэш корня дерева Меркла, полученный с помощью устойчивого к коллизиям хэширования. Дкркво меркла может использоваться в качестве эффективного средства для валидации, соответствует ли содержимое блока данных заданному оригиналу.
 \vspace{-0.8em}
 \\
 
 \hangafter 1
 \hangindent 1.5em
 \noindent   
-•\quad Seal: An encryption method to ensure that each copy of the data has a unique and independent representation. The encryption process should take substantially longer time than decryption, to prevent Generation Attacks. AES-256 is a viable option for its implementation.
+•\quad Seal: Образ данных. Метод шифрования для обеспечения того, что каждая копия данных имеет уникальное и независимое представление. Для предотвращения атак на основе генерации (Generation Attacks), процесс шифрования должен занимать существенно больше времени нежели дешифрования. Приемлемым вариантом для реализации Seal является AES-256.
 \vspace{-0.8em}
 \\
 
 \hangafter 1
 \hangindent 1.5em
 \noindent   
-•\quad Cipher: A lightweight encryption method with symmetric keys, used in Proof-of-Download. XOR Cipher is a viable option for its implementation.  
+•\quad Cipher: Легковесный метод шифрования с симметричным ключем, используемый в Proof-of-Download. Приемлемым вариантом для реализации является гаммирование.
 \vspace{-0.5em}
 
                \subsubsection{Proof-of-Replication (PoRep)}  %——2.3.1
                
-Proof of Replication (PoRep) provides a way to verify that Miner $L$ correctly replicates Data $D$ from User $U$ and stores it in its storage. The process also provides an indirect proof of the bandwidth available to $L$. The procedure of PoRep is described below.
+Proof of Replication (PoRep) предоставляет способ верификации того, что Майнер $L$ корректно получил Данные $D$ от Пользователя $U$ и сохранил их в своем хранилище. Так же, он неявно предоставляет предоставляет доказательство доступной $L$ ширины канала. Далее описывается процедура PoRep.
 \vspace{-0.8em}
 \\ \\ 
 \centerline{\includegraphics[width=320pt]{fig6}}
@@ -651,28 +651,28 @@ Proof of Replication (PoRep) provides a way to verify that Miner $L$ correctly r
 \hangafter 1
 \hangindent 1.7em
 \noindent   
-1.\quad User $U$ generates a Seal key $PK_{Seal}$, applies it to encrypt Data $D$, and generates a unique copy $R=Seal(D, PK_{Seal})$. It also builds a Merkle Tree on top of $R$, calculates the root hash of the tree $RT=MerkleCRH(R)$, and sends $RT$ to Verifier $V$.
+1.\quad Пользователь $U$ генерирует ключ Образа $PK_{Seal}$, применяемый им для шифрования Данных $D$, и Образ (уникальную копию) $R=Seal(D, PK_{Seal})$. Так же, он строит дерево Меркла над $R$, вычисляет корневой хэш дерева $RT=MerkleCRH(R)$ и отсылает $RT$ на узел Верификатор (Verifier) $V$.
 \vspace{-0.8em}
 \\
 
 \hangafter 1
 \hangindent 1.5em
 \noindent   
-2.\quad $U$ transmits $R$ and $PK_{Seal}$ to miner $L$.
+2.\quad $U$ пересылает $R$ и $PK_{Seal}$ майнеру $L$.
 \vspace{-0.8em}
 \\
 
 \hangafter 1
 \hangindent 1.7em
 \noindent   
-3.\quad $L$ requests PoRep challenge from $V$, $V$ accepts the request and sends a random challenge $c$ to $L$, i.e. it challenges the storage of the $c$th data block of $R$.
+3.\quad $L$ запрашивает пазл PoRep от $V$, $V$ принимает запрос и отсылает случайный пазл $c$ для $L$, т.е. он пазлом проверяет сохранность $c$-того блока данных из $R$.
 \vspace{-0.8em}
 \\
 
 \hangafter 1
 \hangindent 1.7em
 \noindent   
-4.\quad $L$ retrieves $R_{c}$ which is the $c$th block of $R$, and calculates $Path_{RC-RT}$ which contains the hash values of all the Merkle tree nodes path from the $R_{c}$ to the root node. $L$ returns the following to $V$:
+4.\quad $L$ получает $R_{c}$ which is the $c$th block of $R$, and calculates $Path_{RC-RT}$ which contains the hash values of all the Merkle tree nodes path from the $R_{c}$ to the root node. $L$ returns the following to $V$:
 \\•   $R_{c}$\\ 
      •  $Path_{RC-RT}$
      \vspace{-0.5em}
