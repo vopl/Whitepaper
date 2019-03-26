@@ -659,14 +659,21 @@ Proof of Replication (PoRep) provides a way to verify that Miner $L$ correctly r
 \hangafter 1
 \hangindent 1.7em
 \noindent   
-3.\quad $L$ requests PoRep challenge from $V$, $V$ accepts the request and sends a random challenge $c$ to $L$, i.e. it challenges the storage of the $c$th data block of $R$.
+3.\quad $L$ requests PoRep challenge from $V$.
 \vspace{-0.8em}
 \\
 
 \hangafter 1
 \hangindent 1.7em
 \noindent   
-4.\quad $L$ retrieves $R_{c}$ which is the $c$th block of $R$, and calculates $Path_{RC-RT}$ which contains the hash values of all the Merkle tree nodes path from the $R_{c}$ to the root node. $L$ returns the following to $V$:
+4.\quad $V$ accepts the request and sends a random challenge $c$ to $L$, i.e. it challenges the storage of the $c$th data block of $R$.
+\vspace{-0.8em}
+\\
+
+\hangafter 1
+\hangindent 1.7em
+\noindent   
+5.\quad $L$ retrieves $R_{c}$ which is the $c$th block of $R$, and calculates $Path_{RC-RT}$ which contains the hash values of all the Merkle tree nodes path from the $R_{c}$ to the root node. $L$ returns the following to $V$:
 \\•   $R_{c}$\\ 
      •  $Path_{RC-RT}$
      \vspace{-0.5em}
@@ -675,7 +682,7 @@ Proof of Replication (PoRep) provides a way to verify that Miner $L$ correctly r
 \hangafter 1
 \hangindent 1.7em
 \noindent   
-5.\quad From received $R_{c}$ and $Path_{RC-RT}$, $V$ generates the Merkle tree root hash $RT'$, if $RT'$ matches the original root hash received from $U$, i.e. $RT' == RT$, the proof has succeeded, otherwise the proof has failed.  
+6.\quad From received $R_{c}$ and $Path_{RC-RT}$, $V$ generates the Merkle tree root hash $RT'$, if $RT'$ matches the original root hash received from $U$, i.e. $RT' == RT$, the proof has succeeded, otherwise the proof has failed.  
 \vspace{-0.5em}
 \subsubsection{Proof-of-Download (PoD)}  %——2.3.2
 Proof-of-Download (PoD) provides a way to verify that Data $D$ has been correctly downloaded from the Miner $L$ to User $U$. The procedure of PoD is described below.
