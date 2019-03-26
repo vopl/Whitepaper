@@ -194,6 +194,17 @@
     </tu>
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\\ \\The implementation of P4P in traditional P2P networks relies on central servers.</prop>
+      <prop type="next">\vspace{-0.5em}</prop>
+      <tuv xml:lang="EN-US">
+        <seg>As PPIO is a completely decentralized network, a decentralized P4P solution is required.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190326T091617Z" creationid="vopl" creationdate="20190326T091617Z">
+        <seg>Так как PPIO является полностью децентрализованной сетью, необходимо децентрализованное решение P4P.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">It also adapts to the popularity of data in different regions.</prop>
       <prop type="next">Miners in other parts of the network are not affected.</prop>
       <tuv xml:lang="EN-US">
@@ -223,6 +234,17 @@
       </tuv>
       <tuv xml:lang="RU" changeid="vopl" changedate="20190314T155341Z" creationid="vopl" creationdate="20190314T155341Z">
         <seg>В результате может быть сформировано большое и качественное сообщество майнеров.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">In most P2P networks, a node can transfer data with any other peers, regardless of their location.</prop>
+      <prop type="next">In 2007, a research institute iPoque carried out an analysis on nearly 3TB of anonymous data sampled from more than a million internet users in Eastern Europe, Southern Europe, Australia, and the Middle East \cite{article26}.</prop>
+      <tuv xml:lang="EN-US">
+        <seg>As a result, a single data transfer can potentially create traffic anywhere in the world and consumes bandwidth between different Internet Service Providers (ISP), or even between different countries.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190326T083302Z" creationid="vopl" creationdate="20190326T083302Z">
+        <seg>В результате, единая пересылка данных, потенциально, может формировать трафик в любой точке мира и потреблять полосу пропускания между различными интернет-провайдерами (Internet Service Providers, ISPs), или, даже между странами.</seg>
       </tuv>
     </tu>
     <tu>
@@ -260,6 +282,17 @@
     </tu>
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\\ \\If the nodes participating in a data transmission happen to be in the close vicinity of each other, it is likely that the traffic will be contained within their area network.</prop>
+      <prop type="next">This is the principle behind P4P, to fully utilize local network bandwidth in a P2P network.</prop>
+      <tuv xml:lang="EN-US">
+        <seg>As a result, the bandwidth cost will be significantly reduced.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190326T090421Z" creationid="vopl" creationdate="20190326T090421Z">
+        <seg>В результате стоимость пересылаемых данных значительно снижается.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">The list gets continuously updated by dropping disappeared nodes and adding newly joined neighbors.</prop>
       <prop type="next">With all the nodes following the same process as described below, the self-organizing P2P overlay network can be established and maintained.</prop>
       <tuv xml:lang="EN-US">
@@ -267,6 +300,17 @@
       </tuv>
       <tuv xml:lang="RU" changeid="vopl" changedate="20190320T111826Z" creationid="vopl" creationdate="20190320T111826Z">
         <seg>В результате, список должен в основном содержать активных и быстрых соседей.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">At the same time, nodes in slower ISPs can still connect to faster outside peers.</prop>
+      <prop type="next">\vspace{-0.8em}</prop>
+      <tuv xml:lang="EN-US">
+        <seg>As a result, unnecessary traffic between different network providers is significantly reduced, and user experience across the entire network is maintained at a high-level.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190326T104157Z" creationid="vopl" creationdate="20190326T104013Z">
+        <seg>В результате, бесполезный трафик между различными поставщиками сети существенно сокращается, удовлетворенность пользователя во всей сети поддерживается на высоком уровне.</seg>
       </tuv>
     </tu>
     <tu>
@@ -326,6 +370,17 @@
     </tu>
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\noindent</prop>
+      <prop type="next">Information in the database can be used to calculate the p4p distance between two nodes in the network when at least one of them is not within a known ISP network from the iP4P Interface.</prop>
+      <tuv xml:lang="EN-US">
+        <seg>At the same time, PPIO introduces a global IP database that is maintained by the community.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190326T092904Z" creationid="vopl" creationdate="20190326T092904Z">
+        <seg>Так же, PPIO предоставляет глобальную базу данных IP адресов, поддерживаемую сообществом.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">To make the storage system easy to use, PPIO introduces a scheme called "Coin Pool", that helps the users to store and download micropayments.</prop>
       <prop type="next">\vspace{-0.6em}</prop>
       <tuv xml:lang="EN-US">
@@ -377,6 +432,17 @@
       </tuv>
       <tuv xml:lang="RU" changeid="vopl" changedate="20190314T155227Z" creationid="vopl" creationdate="20190314T155227Z">
         <seg>В то же время, они наказывают неадекватных участников.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">In this way, peers with shorter p4p distances to the node are more likely to be selected to upload or download its data.</prop>
+      <prop type="next">As a result, unnecessary traffic between different network providers is significantly reduced, and user experience across the entire network is maintained at a high-level.</prop>
+      <tuv xml:lang="EN-US">
+        <seg>At the same time, nodes in slower ISPs can still connect to faster outside peers.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190326T103957Z" creationid="vopl" creationdate="20190326T103957Z">
+        <seg>Так же, узлы в медленном интернет-провайдере могут поддерживать соединения с быстрыми внешними пирами.</seg>
       </tuv>
     </tu>
     <tu>
@@ -635,6 +701,17 @@
     </tu>
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">The database is synced to scheduler(Indexer) nodes and Verifier nodes in the P2P network.</prop>
+      <prop type="next">The following shows part of the information stored for each node.\\\\</prop>
+      <tuv xml:lang="EN-US">
+        <seg>Every node in the network can query its information from the database.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190326T093600Z" creationid="vopl" creationdate="20190326T093600Z">
+        <seg>Любой узел в сети может получить информацию из БД.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">In PPIO‘s system, a storage "Object" is divided into "Segments", each "Segment" is further divided into some "Pieces".</prop>
       <prop type="next">Each of these N miners is also called a “Peer”.</prop>
       <tuv xml:lang="EN-US">
@@ -668,6 +745,28 @@
     </tu>
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">Their studies show that P2P file sharing takes up a significant part of the network bandwidth consumption, accounting for about 49\% in the Middle East, and 84\% in Eastern Europe.</prop>
+      <prop type="next">In recent years, the percentage of P2P traffic has dropped due to a shift in the use pattern of Internet applications.</prop>
+      <tuv xml:lang="EN-US">
+        <seg>From a global perspective, 95\% of the bandwidth at prime time is involved in some forms of P2P data transmission.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190326T084314Z" creationid="vopl" creationdate="20190326T084314Z">
+        <seg>В глобальной перспективе, 95\% пропуской способности в час-пик утилизируется теми или иными формами одноранговой передачи данных.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">However, the  topology of PPIO’s overlay network may not match the ISP topology exactly.</prop>
+      <prop type="next">\vspace{-0.5em}</prop>
+      <tuv xml:lang="EN-US">
+        <seg>Further optimization to reduce unnecessary traffic between ISPs is needed to improve further PPIO’s ability to scale globally.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190326T090059Z" creationid="vopl" creationdate="20190326T085932Z">
+        <seg>Далее приводится некоторая оптимизация, предназначенная для снижения избыточного трафика между интернет-провайдерами, что необходимо для дальнейшей возможности PPIO функционировать в глобальном масштабе.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">In the traditional Client-Server (CS) model, the server can quickly become the network bottleneck when the client population grows.</prop>
       <prop type="next">In such a network, multiple copies of the data are distributed and stored on many different nodes.</prop>
       <tuv xml:lang="EN-US">
@@ -686,6 +785,17 @@
       </tuv>
       <tuv xml:lang="RU" changeid="vopl" changedate="20190320T102156Z" creationid="vopl" creationdate="20190320T102113Z">
         <seg>Тем не менее, транспортировка данных в сети хранения происходит по другому, это бкдет освещено далее.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\\ \\As described in section 2.2.3, PPIO’s self-organizing overlay network encourages data transfer among neighboring nodes, a large percentage of its traffic is contained within the local network, and the operation cost incurred upon ISPs is significantly reduced.</prop>
+      <prop type="next">Further optimization to reduce unnecessary traffic between ISPs is needed to improve further PPIO’s ability to scale globally.</prop>
+      <tuv xml:lang="EN-US">
+        <seg>However, the  topology of PPIO’s overlay network may not match the ISP topology exactly.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190326T085624Z" creationid="vopl" creationdate="20190326T085624Z">
+        <seg>Однако, топология оверлейной сети PPIO не может в точности соответствовать топологии сети интернет-провайдера.</seg>
       </tuv>
     </tu>
     <tu>
@@ -730,6 +840,17 @@
       </tuv>
       <tuv xml:lang="RU" changeid="vopl" changedate="20190325T154737Z" creationid="vopl" creationdate="20190325T154737Z">
         <seg>Однако, чрезмерное конкуррентное скачивание будет переполять пропускную способность этих майнеров и приводить к уменьшению скорости скачивания для каждого пользователя.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">In recent years, the percentage of P2P traffic has dropped due to a shift in the use pattern of Internet applications.</prop>
+      <prop type="next">P2P traffic consumes an extraordinary amount of network bandwidth, including international bandwidth.</prop>
+      <tuv xml:lang="EN-US">
+        <seg>However, with the recent development of blockchain technology and decentralized applications, P2P network traffic is expected to start increasing again.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190326T084748Z" creationid="vopl" creationdate="20190326T084748Z">
+        <seg>Тем не менее, с учетом последних разработок технологий блокчейна и распределенных приложений, ожидается новый рост однорангового сетевого трафика.</seg>
       </tuv>
     </tu>
     <tu>
@@ -789,6 +910,17 @@
     </tu>
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">As a result, a single data transfer can potentially create traffic anywhere in the world and consumes bandwidth between different Internet Service Providers (ISP), or even between different countries.</prop>
+      <prop type="next">Their studies show that P2P file sharing takes up a significant part of the network bandwidth consumption, accounting for about 49\% in the Middle East, and 84\% in Eastern Europe.</prop>
+      <tuv xml:lang="EN-US">
+        <seg>In 2007, a research institute iPoque carried out an analysis on nearly 3TB of anonymous data sampled from more than a million internet users in Eastern Europe, Southern Europe, Australia, and the Middle East \cite{article26}.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190326T083356Z" creationid="vopl" creationdate="20190326T083356Z">
+        <seg>В 2007 году, исследовательский институт iPoque озаботился анализом около 3ТБ анонимных данных, отслеживаемых у более чем миллиона интернет-пользователей из Восточной и Южной Европы, Австралии и  Ближнего Востока \cite{article26}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">\\ \\When a miner node receives the forwarded request, and if it happens to possess the requested resources, it notifies the user and there is better priority that user will ,in fact, download the data from it, since the miner node is in the forwarding path of the user’s neighbors, and thus close to the user.</prop>
       <prop type="next">\vspace{-0.5em}</prop>
       <tuv xml:lang="EN-US">
@@ -840,6 +972,17 @@
       </tuv>
       <tuv xml:lang="RU" changeid="vopl" changedate="20190326T074014Z" creationid="vopl" creationdate="20190326T074014Z">
         <seg>В большинстве одноранговых сетей, узел может обмениваться данными с любым другим пиром, не взирая на его местоположение.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">From a global perspective, 95\% of the bandwidth at prime time is involved in some forms of P2P data transmission.</prop>
+      <prop type="next">However, with the recent development of blockchain technology and decentralized applications, P2P network traffic is expected to start increasing again.</prop>
+      <tuv xml:lang="EN-US">
+        <seg>In recent years, the percentage of P2P traffic has dropped due to a shift in the use pattern of Internet applications.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190326T084606Z" creationid="vopl" creationdate="20190326T084355Z">
+        <seg>В последние годы процент однорангового трафика снизился из за изменений в модели использования Интернет-приложений.</seg>
       </tuv>
     </tu>
     <tu>
@@ -921,6 +1064,17 @@
     </tu>
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">The final peer decision will still be decided based on connection speed as described in 2.2.3.</prop>
+      <prop type="next">At the same time, nodes in slower ISPs can still connect to faster outside peers.</prop>
+      <tuv xml:lang="EN-US">
+        <seg>In this way, peers with shorter p4p distances to the node are more likely to be selected to upload or download its data.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190326T103910Z" creationid="vopl" creationdate="20190326T103910Z">
+        <seg>В этом случае, пиры с более короткой дистанцией p4p к узлу будут с большей вероятностью выбраны к загрузке или скачиванию данных.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">If the user node repeatedly travels back and forth, the list will contain the similar number of peers from location $A$ and $B$.</prop>
       <prop type="next">\vspace{-0.5em}</prop>
       <tuv xml:lang="EN-US">
@@ -928,6 +1082,17 @@
       </tuv>
       <tuv xml:lang="RU" changeid="vopl" changedate="20190320T121631Z" creationid="vopl" creationdate="20190320T121631Z">
         <seg>В этом случае, когда узел пользователя выгружает данные, соседние майнеры из обоих локаций будут сохранять их копии, таким образом, быстро получить данные можно будет в обоих местах.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">At the same time, PPIO introduces a global IP database that is maintained by the community.</prop>
+      <prop type="next">The database is synced to scheduler(Indexer) nodes and Verifier nodes in the P2P network.</prop>
+      <tuv xml:lang="EN-US">
+        <seg>Information in the database can be used to calculate the p4p distance between two nodes in the network when at least one of them is not within a known ISP network from the iP4P Interface.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190326T093401Z" creationid="vopl" creationdate="20190326T093045Z">
+        <seg>Информация в БД может быть использована для вычисления p4p дистанции между двумя узлами сети в случае, если один из них или оба не входят в какой либо известный интернет-провайдер, доступный посредством интерфейса iP4P.</seg>
       </tuv>
     </tu>
     <tu>
@@ -972,6 +1137,17 @@
       </tuv>
       <tuv xml:lang="RU" changeid="vopl" changedate="20190314T152459Z" creationid="vopl" creationdate="20190314T152459Z">
         <seg>FileCoin использует архитектуру одноранговых сетей из проверенных временем приложений, таких как BitTorrent, но, не предоставляет решений для сложных сетевых сред и не предлагает скоростных оптимизаций для региональных сетей.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\\ \\ P4P, or Proactive network Provider Participation for P2P \cite{article17}, is a method for ISPs and P2P software to optimize connections [].</prop>
+      <prop type="next">\vspace{-0.5em}</prop>
+      <tuv xml:lang="EN-US">
+        <seg>It enables peer selection based on the topology of the physical network, to reduce traffic on the backbone network, lower the operation cost of network providers, and improve data transfer efficiency. </seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190326T091401Z" creationid="vopl" creationdate="20190326T091401Z">
+        <seg>Он позволяет выбирать пиров на основе топологии физической сети, что уменьшает трафик в магистральной сети, уменьшает опеционные расходы поставщика сети и увеличивает эффективность передачи данных. </seg>
       </tuv>
     </tu>
     <tu>
@@ -1027,6 +1203,17 @@
       </tuv>
       <tuv xml:lang="RU" changeid="vopl" changedate="20190314T124320Z" creationid="vopl" creationdate="20190314T124320Z">
         <seg>Документ предоставляет низкоуровневую подробную информацию о распределенной файловой системе, архитектуре сети и процесса хранения.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">P2P traffic consumes an extraordinary amount of network bandwidth, including international bandwidth.</prop>
+      <prop type="next">\vspace{-0.5em}</prop>
+      <tuv xml:lang="EN-US">
+        <seg>It puts a lot of burden on our internet infrastructure, and significantly increase the cost for ISPs to operate.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190326T085111Z" creationid="vopl" creationdate="20190326T085111Z">
+        <seg>Это привносит большие сложности в нашу интернет-инфраструктуру и значительно увеличивает стоимость обслуживания сети интернет-провайдерами.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1170,6 +1357,17 @@
       </tuv>
       <tuv xml:lang="RU" changeid="vopl" changedate="20190325T161845Z" creationid="vopl" creationdate="20190325T160050Z">
         <seg>Иначе, они не смогут обслуживать избыточные данные предоставлением услуги скачивания, умещающуюся в ширину канала.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">However, with the recent development of blockchain technology and decentralized applications, P2P network traffic is expected to start increasing again.</prop>
+      <prop type="next">It puts a lot of burden on our internet infrastructure, and significantly increase the cost for ISPs to operate.</prop>
+      <tuv xml:lang="EN-US">
+        <seg>P2P traffic consumes an extraordinary amount of network bandwidth, including international bandwidth.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190326T084923Z" creationid="vopl" creationdate="20190326T084923Z">
+        <seg>Одноранговый трафик занимает невероятное количество сетевой полосы пропускания, включая международную.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1493,6 +1691,17 @@
     </tu>
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">•\quad  If not,the p4p distance calculated from the global IP database is used in the pre-selection of peers.</prop>
+      <prop type="next">\vspace{-0.8em}</prop>
+      <tuv xml:lang="EN-US">
+        <seg>Similarly, the final selection will still be based connection speed.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190326T104359Z" creationid="vopl" creationdate="20190326T104359Z">
+        <seg>Аналогично, итоговый выбор будет основываться на скорости подключения.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">Therefore, the distance between node IDs and keys can be calculated in the same way.</prop>
       <prop type="next">\vspace{-0.3em}</prop>
       <tuv xml:lang="EN-US">
@@ -1614,6 +1823,17 @@
     </tu>
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">Information in the database can be used to calculate the p4p distance between two nodes in the network when at least one of them is not within a known ISP network from the iP4P Interface.</prop>
+      <prop type="next">Every node in the network can query its information from the database.</prop>
+      <tuv xml:lang="EN-US">
+        <seg>The database is synced to scheduler(Indexer) nodes and Verifier nodes in the P2P network.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190326T093519Z" creationid="vopl" creationdate="20190326T093511Z">
+        <seg>БД доставляется на узлы scheduler(Indexer) и Verifier одноранговой сети.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">Under cost constraints, each of the services can only deploy a limited number of data centers around the world.</prop>
       <prop type="next">Due to the ad hoc nature of the Internet, it is challenging to guarantee fast data transfer everywhere in the world by relying on a handful of data centers.</prop>
       <tuv xml:lang="EN-US">
@@ -1643,6 +1863,28 @@
       </tuv>
       <tuv xml:lang="RU" changeid="vopl" changedate="20190319T113450Z" creationid="vopl" creationdate="20190319T113024Z">
         <seg>Оценочное время доставки каждой части может быть вычеслено на основе информации о скорости каждого виртуального соединения и уже имеющихся частей к загрузке в каждой очереди.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">•\quad If so, a peer lookup in the node’s ISP network will be conducted first, followed by a lookup in the friendly ISPs, and finally among all other peers.</prop>
+      <prop type="next">In this way, peers with shorter p4p distances to the node are more likely to be selected to upload or download its data.</prop>
+      <tuv xml:lang="EN-US">
+        <seg>The final peer decision will still be decided based on connection speed as described in 2.2.3.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190326T103734Z" creationid="vopl" creationdate="20190326T103734Z">
+        <seg>Итоговый выбор пира будет определяться на основе скорости соединения, как описано в 2.2.3.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">Every node in the network can query its information from the database.</prop>
+      <prop type="next">\begin{tabular}{r|l}</prop>
+      <tuv xml:lang="EN-US">
+        <seg>The following shows part of the information stored for each node.\\\\</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190326T093702Z" creationid="vopl" creationdate="20190326T093702Z">
+        <seg>Далее показана часть информации, хранимаю для каждого узла.\\\\</seg>
       </tuv>
     </tu>
     <tu>
@@ -1790,6 +2032,17 @@
     </tu>
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">In 2007, a research institute iPoque carried out an analysis on nearly 3TB of anonymous data sampled from more than a million internet users in Eastern Europe, Southern Europe, Australia, and the Middle East \cite{article26}.</prop>
+      <prop type="next">From a global perspective, 95\% of the bandwidth at prime time is involved in some forms of P2P data transmission.</prop>
+      <tuv xml:lang="EN-US">
+        <seg>Their studies show that P2P file sharing takes up a significant part of the network bandwidth consumption, accounting for about 49\% in the Middle East, and 84\% in Eastern Europe.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190326T084201Z" creationid="vopl" creationdate="20190326T084201Z">
+        <seg>Их исследования показали, что значительную часть пропускной способности сети потребляет одноранговый файлообмен, около 49\% на ближнем Востоке и 84\% в Восточной Европе.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">At the same time, the download speed of popular content can have a considerable impact on the overall user experience.</prop>
       <prop type="next">PPIO provides two optimized scheduling methods for popular content, one is storage miners active selection, and the other is enforced by the scheduler(indexer node).</prop>
       <tuv xml:lang="EN-US">
@@ -1874,6 +2127,17 @@
       </tuv>
       <tuv xml:lang="RU" changeid="vopl" changedate="20190314T155616Z" creationid="vopl" creationdate="20190314T155616Z">
         <seg>Это позволяет PPIO задействовать большое количество неиспользуемой полосы пропускания каналов связи и ресурсов хранилищ в сети Интернет, предоставить мощную услугу хранения данных по сильно менщей цене.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">As a result, the bandwidth cost will be significantly reduced.</prop>
+      <prop type="next">\vspace{-0.5em}</prop>
+      <tuv xml:lang="EN-US">
+        <seg>This is the principle behind P4P, to fully utilize local network bandwidth in a P2P network.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190326T090925Z" creationid="vopl" creationdate="20190326T090849Z">
+        <seg>Это принцип P4P, он позволяет значительно утилизировать локальную пропускную способность в одноранговой сети.</seg>
       </tuv>
     </tu>
     <tu>
@@ -2032,6 +2296,17 @@
     </tu>
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\noindent</prop>
+      <prop type="next">\vspace{-0.8em}</prop>
+      <tuv xml:lang="EN-US">
+        <seg>When selecting data connections from a given node, the indexing and scheduling node (Indexer) in PPIO’s network checks whether the node can be queried from the iP4P interface:</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190326T103504Z" creationid="vopl" creationdate="20190326T103504Z">
+        <seg>При подборе способа соединения с заданным узлом, планирующий и индексирующий узел в сети PPIO проверяет, может ли быть получена информация о узле из интерфейса iP4P:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">\\ \\When a user node permanently relocates to a different region, PPIO provides a reset feature to help with the reschedule.</prop>
       <prop type="next">New copies are created for existing user data in the network, and these copies are stored by prioritizing the new neighbors.</prop>
       <tuv xml:lang="EN-US">
@@ -2094,6 +2369,17 @@
       </tuv>
       <tuv xml:lang="RU" changeid="vopl" changedate="20190314T124127Z" creationid="vopl" creationdate="20190314T124019Z">
         <seg>\\ \\ В данном документе разъясняются основные цели архитектуры PPIO, а так же, приводятся подробности методов достижения этих целей.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\vspace{-0.5em}</prop>
+      <prop type="next">It enables peer selection based on the topology of the physical network, to reduce traffic on the backbone network, lower the operation cost of network providers, and improve data transfer efficiency. </prop>
+      <tuv xml:lang="EN-US">
+        <seg>\\ \\ P4P, or Proactive network Provider Participation for P2P \cite{article17}, is a method for ISPs and P2P software to optimize connections [].</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190326T091142Z" creationid="vopl" creationdate="20190326T090913Z">
+        <seg>\\ \\ P4P, или Активное взаимодействие с интернет-провайдером для P2P (Proactive network Provider Participation for P2P) \cite{article17}, являестя методом оптимизации соединений для интернет-провайдеров и однорангового программного обеспечения.</seg>
       </tuv>
     </tu>
     <tu>
@@ -2165,6 +2451,17 @@
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">\vspace{-0.5em}</prop>
+      <prop type="next">However, the  topology of PPIO’s overlay network may not match the ISP topology exactly.</prop>
+      <tuv xml:lang="EN-US">
+        <seg>\\ \\As described in section 2.2.3, PPIO’s self-organizing overlay network encourages data transfer among neighboring nodes, a large percentage of its traffic is contained within the local network, and the operation cost incurred upon ISPs is significantly reduced.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190326T090016Z" creationid="vopl" creationdate="20190326T085538Z">
+        <seg>\\ \\Как пояснялось в секции 2.2.3, само-организующаяся оверлейная сеть PPIO поощряет транспортировку данных между соседними узлами, большой процент их трафика сосредоточен в локальной сети, таким образом, операционные расходы интернет-провайдеров значительно снижаются.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\vspace{-0.5em}</prop>
       <prop type="next">When a user node requests for a piece of data, it looks up the resources from the indexer node, and the indexer node returns information about the miner nodes that store the content.</prop>
       <tuv xml:lang="EN-US">
         <seg>\\ \\As described in section 2.2.3, a self-organizing overlay network is established by the participating nodes.</seg>
@@ -2220,12 +2517,34 @@
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">\vspace{-0.5em}</prop>
+      <prop type="next">As a result, the bandwidth cost will be significantly reduced.</prop>
+      <tuv xml:lang="EN-US">
+        <seg>\\ \\If the nodes participating in a data transmission happen to be in the close vicinity of each other, it is likely that the traffic will be contained within their area network.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190326T090350Z" creationid="vopl" creationdate="20190326T090350Z">
+        <seg>\\ \\Если участвующие в обмене данными узлы размещены в близкой окрестности друг к другу, желательно чтобы их трафик был сосредоточен в рамках их сетевой зоны.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\vspace{-0.5em}</prop>
       <prop type="next">The node ID is also used to calculate the distance between nodes and locate key-value pairs.</prop>
       <tuv xml:lang="EN-US">
         <seg>\\ \\Kademlia algorithm assigns a unique ID to each participating node.</seg>
       </tuv>
       <tuv xml:lang="RU" changeid="vopl" changedate="20190319T161925Z" creationid="vopl" creationdate="20190319T161925Z">
         <seg>\\ \\Алгоритм Kademlia назначает каждому узлу-участнику уникальный идентификатор (ID).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\vspace{-0.5em}</prop>
+      <prop type="next">iP4P is designed to be similar to the iTracker interface \cite{article17} in centralized P2P networks, to make it easier to adapt.</prop>
+      <tuv xml:lang="EN-US">
+        <seg>\\ \\PPIO provides an iP4P interface that allows ISPs to set up and configure P4P in their network and allows applications to query the information.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190326T091804Z" creationid="vopl" creationdate="20190326T091804Z">
+        <seg>\\ \\PPIO предоставляет интерфейс iP4P, позволяющий интернет-провайдеру формировать и конфигурировать P4P в его сети и, так же, позволяет приложениям получать P4P информацию.</seg>
       </tuv>
     </tu>
     <tu>
@@ -2248,6 +2567,17 @@
       </tuv>
       <tuv xml:lang="RU" changeid="vopl" changedate="20190314T154640Z" creationid="vopl" creationdate="20190314T150406Z">
         <seg>\\ \\Новый проект FileCoin, разрабатываемый Protocol Labs, добавляет слой поощрений над Inter-planetary File System (IPFS), с целью построения инфраструктуры хранилищ и протокола для замены HTTP.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\vspace{-0.5em}</prop>
+      <prop type="next">As PPIO is a completely decentralized network, a decentralized P4P solution is required.</prop>
+      <tuv xml:lang="EN-US">
+        <seg>\\ \\The implementation of P4P in traditional P2P networks relies on central servers.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190326T091520Z" creationid="vopl" creationdate="20190326T091520Z">
+        <seg>\\ \\Реализации P4P в традиционных одноранговых сетях основываются на центральных серверах.</seg>
       </tuv>
     </tu>
     <tu>
@@ -2686,6 +3016,28 @@
     </tu>
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\\ \\PPIO provides an iP4P interface that allows ISPs to set up and configure P4P in their network and allows applications to query the information.</prop>
+      <prop type="next">\vspace{-0.8em}</prop>
+      <tuv xml:lang="EN-US">
+        <seg>iP4P is designed to be similar to the iTracker interface \cite{article17} in centralized P2P networks, to make it easier to adapt.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190326T092140Z" creationid="vopl" creationdate="20190326T091959Z">
+        <seg>Интерфейс iP4P спроектирован подобно интерфейсу iTracker \cite{article17} в централизованных одноранговых сетях, чтобы позволить им легче адаптироваться.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\noindent</prop>
+      <prop type="next">Similarly, the final selection will still be based connection speed.</prop>
+      <tuv xml:lang="EN-US">
+        <seg>•\quad  If not,the p4p distance calculated from the global IP database is used in the pre-selection of peers.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190326T104329Z" creationid="vopl" creationdate="20190326T104329Z">
+        <seg>•\quad  Если нет, для предварительного выбора пиров используется вычисленная из общей БД IP адресов дистанция p4p.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">\noindent</prop>
       <prop type="next">PPIO's well-designed incentives provide attractive financial rewards to miners and encourage them to contribute to the network.</prop>
       <tuv xml:lang="EN-US">
@@ -2748,6 +3100,17 @@
       </tuv>
       <tuv xml:lang="RU" changeid="vopl" changedate="20190319T094000Z" creationid="vopl" creationdate="20190319T094000Z">
         <seg>•\quad Получение файлов (File Download)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\noindent</prop>
+      <prop type="next">The final peer decision will still be decided based on connection speed as described in 2.2.3.</prop>
+      <tuv xml:lang="EN-US">
+        <seg>•\quad If so, a peer lookup in the node’s ISP network will be conducted first, followed by a lookup in the friendly ISPs, and finally among all other peers.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190326T103641Z" creationid="vopl" creationdate="20190326T103641Z">
+        <seg>•\quad Если да, первой будет предпринята попытка обнаружения узла в сети интернет-провайдера, затем в дружественных интернет-провайдерах, затем среди всех пиров.</seg>
       </tuv>
     </tu>
     <tu>
@@ -2935,6 +3298,61 @@
       </tuv>
       <tuv xml:lang="RU" changeid="vopl" changedate="20190314T165936Z" creationid="vopl" creationdate="20190314T164941Z">
         <seg>•\quad {\bf Надежная поддержка приложений и экосистема.} PPIO предоставляет несколько программных интерфейсов хранилищ (Storage APIs), похожих на таковые в облачных сервисах, например AWS S3, и позволяет комфортно мигрироать данные из этих сервисов.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\noindent</prop>
+      <prop type="next">\vspace{-0.8em}</prop>
+      <tuv xml:lang="EN-US">
+        <seg>•\quad{\bf capability}: allows applications to query of network resources and capacity of the ISP network.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190326T092718Z" creationid="vopl" creationdate="20190326T092718Z">
+        <seg>•\quad{\bf capability}: позволяет приложениям получать информацию о сетевых ресурсах и возможностях сети интернет-провайдера.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\noindent</prop>
+      <prop type="next">\vspace{-0.6em}</prop>
+      <tuv xml:lang="EN-US">
+        <seg>•\quad{\bf firendly-isp-list}: allows applications to query information of friendly ISP, including p4p-distance across different ISPs.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190326T092820Z" creationid="vopl" creationdate="20190326T092820Z">
+        <seg>•\quad{\bf firendly-isp-list}: позволяет приложениям получать информацию о дружественных интернет-провайдерах, включая p4p-distance между различными интернет-провайдерами.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\noindent</prop>
+      <prop type="next">\vspace{-0.8em}                                                      %           {\color{red} $ip-list$}---------给文字加颜色                                                                 %   \hl{-}--------给文字加背景颜色，结合宏</prop>
+      <tuv xml:lang="EN-US">
+        <seg>•\quad{\bf ip-list}: allows ISPs to provide the list of IPs in their network, it allows nodes in PPIO’s network to be associated with their ISP.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190326T092341Z" creationid="vopl" creationdate="20190326T092341Z">
+        <seg>•\quad{\bf ip-list}: позволяет интернет-провайдеру предоставлять список IP адресов своей сети, что позволяет узлам сети PPIO сопоставлять себя с конкретным интернет-провайдером.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\noindent</prop>
+      <prop type="next">\vspace{-0.8em}</prop>
+      <tuv xml:lang="EN-US">
+        <seg>•\quad{\bf p4p-distance}: allows applications to query P4P cost and distance between network nodes.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190326T092604Z" creationid="vopl" creationdate="20190326T092604Z">
+        <seg>•\quad{\bf p4p-distance}: позволяет приложениям получать информацию о P4P-стоимости и дистанции между сетевыми узлами.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <prop type="file">WhitePaper_EN-1.tex</prop>
+      <prop type="prev">\noindent</prop>
+      <prop type="next">\vspace{-0.8em}</prop>
+      <tuv xml:lang="EN-US">
+        <seg>•\quad{\bf policy}: allows ISPs to configure the policy for applications to access P4P information.</seg>
+      </tuv>
+      <tuv xml:lang="RU" changeid="vopl" changedate="20190326T092455Z" creationid="vopl" creationdate="20190326T092445Z">
+        <seg>•\quad{\bf policy}: позволяет интернет-провайдеру настраивать правила для приложений относительно доступа к P4P информации.</seg>
       </tuv>
     </tu>
   </body>

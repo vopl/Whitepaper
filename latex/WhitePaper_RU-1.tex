@@ -496,17 +496,17 @@ PPIO является полностью распределенной систе
 \\ \\ Как показано на Рис 2.4, множество майнеров хранят копии одних и тех же данных, они должны конкурировать за предоставление пользователям услуги скачивания. Пользователи всегда выбирают тех, кто предоставляет более высокую скорость скачивания. Если майнер не обладает достаточной шириной канала, пользователи переключаться на других. Количество отгруженных пользователям данных уменьшится, что приведет к уменьшению полученного вознаграждения. С другой стороны, майнеры с малой шириной канала не будут замотивированы на хранение популярного контента. В результате, популярный контент в основном сосредоточится у майнеров с широким каналом, что приведет к увеличению скорости и удовлетворенности пользователя при скачивании такого контента.
 \vspace{-0.5em}
 \subsubsection{Планирование, дружественное к интернет-провайдеру (ISP Friendly Scheduling)}  %——2.2.5 \%     \cite{article33}
-В большинстве одноранговых сетей, узел может обмениваться данными с любым другим пиром, не взирая на его местоположение. As a result, a single data transfer can potentially create traffic anywhere in the world and consumes bandwidth between different Internet Service Providers (ISP), or even between different countries. In 2007, a research institute iPoque carried out an analysis on nearly 3TB of anonymous data sampled from more than a million internet users in Eastern Europe, Southern Europe, Australia, and the Middle East \cite{article26}. Their studies show that P2P file sharing takes up a significant part of the network bandwidth consumption, accounting for about 49\% in the Middle East, and 84\% in Eastern Europe. From a global perspective, 95\% of the bandwidth at prime time is involved in some forms of P2P data transmission. In recent years, the percentage of P2P traffic has dropped due to a shift in the use pattern of Internet applications. However, with the recent development of blockchain technology and decentralized applications, P2P network traffic is expected to start increasing again. P2P traffic consumes an extraordinary amount of network bandwidth, including international bandwidth. It puts a lot of burden on our internet infrastructure, and significantly increase the cost for ISPs to operate.
+В большинстве одноранговых сетей, узел может обмениваться данными с любым другим пиром, не взирая на его местоположение. В результате, единая пересылка данных, потенциально, может формировать трафик в любой точке мира и потреблять полосу пропускания между различными интернет-провайдерами (Internet Service Providers, ISPs), или, даже между странами. В 2007 году, исследовательский институт iPoque озаботился анализом около 3ТБ анонимных данных, отслеживаемых у более чем миллиона интернет-пользователей из Восточной и Южной Европы, Австралии и  Ближнего Востока \cite{article26}. Их исследования показали, что значительную часть пропускной способности сети потребляет одноранговый файлообмен, около 49\% на ближнем Востоке и 84\% в Восточной Европе. В глобальной перспективе, 95\% пропуской способности в час-пик утилизируется теми или иными формами одноранговой передачи данных. В последние годы процент однорангового трафика снизился из за изменений в модели использования Интернет-приложений. Тем не менее, с учетом последних разработок технологий блокчейна и распределенных приложений, ожидается новый рост однорангового сетевого трафика. Одноранговый трафик занимает невероятное количество сетевой полосы пропускания, включая международную. Это привносит большие сложности в нашу интернет-инфраструктуру и значительно увеличивает стоимость обслуживания сети интернет-провайдерами.
 \vspace{-0.5em}
- \\ \\As described in section 2.2.3, PPIO’s self-organizing overlay network encourages data transfer among neighboring nodes, a large percentage of its traffic is contained within the local network, and the operation cost incurred upon ISPs is significantly reduced. However, the  topology of PPIO’s overlay network may not match the ISP topology exactly. Further optimization to reduce unnecessary traffic between ISPs is needed to improve further PPIO’s ability to scale globally.
+\\ \\Как пояснялось в секции 2.2.3, само-организующаяся оверлейная сеть PPIO поощряет транспортировку данных между соседними узлами, большой процент их трафика сосредоточен в локальной сети, таким образом, операционные расходы интернет-провайдеров значительно снижаются. Однако, топология оверлейной сети PPIO не может в точности соответствовать топологии сети интернет-провайдера. Далее приводится некоторая оптимизация, предназначенная для снижения избыточного трафика между интернет-провайдерами, что необходимо для дальнейшей возможности PPIO функционировать в глобальном масштабе.
  \vspace{-0.5em}
- \\ \\If the nodes participating in a data transmission happen to be in the close vicinity of each other, it is likely that the traffic will be contained within their area network. As a result, the bandwidth cost will be significantly reduced. This is the principle behind P4P, to fully utilize local network bandwidth in a P2P network.  
+\\ \\Если участвующие в обмене данными узлы размещены в близкой окрестности друг к другу, желательно чтобы их трафик был сосредоточен в рамках их сетевой зоны. В результате стоимость пересылаемых данных значительно снижается. Это принцип P4P, он позволяет значительно утилизировать локальную пропускную способность в одноранговой сети.
  \vspace{-0.5em}
-  \\ \\ P4P, or Proactive network Provider Participation for P2P \cite{article17}, is a method for ISPs and P2P software to optimize connections []. It enables peer selection based on the topology of the physical network, to reduce traffic on the backbone network, lower the operation cost of network providers, and improve data transfer efficiency. 
+\\ \\ P4P, или Активное взаимодействие с интернет-провайдером для P2P (Proactive network Provider Participation for P2P) \cite{article17}, являестя методом оптимизации соединений для интернет-провайдеров и однорангового программного обеспечения. Он позволяет выбирать пиров на основе топологии физической сети, что уменьшает трафик в магистральной сети, уменьшает опеционные расходы поставщика сети и увеличивает эффективность передачи данных. 
   \vspace{-0.5em}
-  \\ \\The implementation of P4P in traditional P2P networks relies on central servers. As PPIO is a completely decentralized network, a decentralized P4P solution is required.
+\\ \\Реализации P4P в традиционных одноранговых сетях основываются на центральных серверах. Так как PPIO является полностью децентрализованной сетью, необходимо децентрализованное решение P4P.
   \vspace{-0.5em}
-    \\ \\PPIO provides an iP4P interface that allows ISPs to set up and configure P4P in their network and allows applications to query the information. iP4P is designed to be similar to the iTracker interface \cite{article17} in centralized P2P networks, to make it easier to adapt.
+\\ \\PPIO предоставляет интерфейс iP4P, позволяющий интернет-провайдеру формировать и конфигурировать P4P в его сети и, так же, позволяет приложениям получать P4P информацию. Интерфейс iP4P спроектирован подобно интерфейсу iTracker \cite{article17} в централизованных одноранговых сетях, чтобы позволить им легче адаптироваться.
     \vspace{-0.8em}
 %•\quad \hl 
 \\
@@ -514,40 +514,40 @@ PPIO является полностью распределенной систе
 \hangafter 1
 \hangindent 1.5em
 \noindent   
-•\quad{\bf ip-list}: allows ISPs to provide the list of IPs in their network, it allows nodes in PPIO’s network to be associated with their ISP.
+•\quad{\bf ip-list}: позволяет интернет-провайдеру предоставлять список IP адресов своей сети, что позволяет узлам сети PPIO сопоставлять себя с конкретным интернет-провайдером.
 \vspace{-0.8em}                                                      %           {\color{red} $ip-list$}---------给文字加颜色                                                                 %   \hl{-}--------给文字加背景颜色，结合宏
 \\
 
 \hangafter 1
 \hangindent 1.5em
 \noindent   
-•\quad{\bf policy}: allows ISPs to configure the policy for applications to access P4P information.
+•\quad{\bf policy}: позволяет интернет-провайдеру настраивать правила для приложений относительно доступа к P4P информации.
 \vspace{-0.8em}
 \\
 
 \hangafter 1
 \hangindent 1.5em
 \noindent   
-•\quad{\bf p4p-distance}: allows applications to query P4P cost and distance between network nodes.
+•\quad{\bf p4p-distance}: позволяет приложениям получать информацию о P4P-стоимости и дистанции между сетевыми узлами.
 \vspace{-0.8em}
 \\
 
 \hangafter 1
 \hangindent 1.5em
 \noindent   
-•\quad{\bf capability}: allows applications to query of network resources and capacity of the ISP network.
+•\quad{\bf capability}: позволяет приложениям получать информацию о сетевых ресурсах и возможностях сети интернет-провайдера.
 \vspace{-0.8em}
 \\
 
 \hangafter 1
 \hangindent 1.5em
 \noindent   
-•\quad{\bf firendly-isp-list}: allows applications to query information of friendly ISP, including p4p-distance across different ISPs.
+•\quad{\bf firendly-isp-list}: позволяет приложениям получать информацию о дружественных интернет-провайдерах, включая p4p-distance между различными интернет-провайдерами.
 \vspace{-0.6em}
 \\
 
 \noindent 
-At the same time, PPIO introduces a global IP database that is maintained by the community. Information in the database can be used to calculate the p4p distance between two nodes in the network when at least one of them is not within a known ISP network from the iP4P Interface. The database is synced to scheduler(Indexer) nodes and Verifier nodes in the P2P network. Every node in the network can query its information from the database. The following shows part of the information stored for each node.\\\\
+Так же, PPIO предоставляет глобальную базу данных IP адресов, поддерживаемую сообществом. Информация в БД может быть использована для вычисления p4p дистанции между двумя узлами сети в случае, если один из них или оба не входят в какой либо известный интернет-провайдер, доступный посредством интерфейса iP4P. БД доставляется на узлы scheduler(Indexer) и Verifier одноранговой сети. Любой узел в сети может получить информацию из БД. Далее показана часть информации, хранимаю для каждого узла.\\\\
 \begin{tabular}{r|l}
 &message P4PPeerInfo   \{ \\
 	&\qquad uint32 countryId = 1;   //  Country ID \\
@@ -560,21 +560,21 @@ At the same time, PPIO introduces a global IP database that is maintained by the
   \vspace{-0.5em}
 \\\\
 \noindent 
-When selecting data connections from a given node, the indexing and scheduling node (Indexer) in PPIO’s network checks whether the node can be queried from the iP4P interface:  
+При подборе способа соединения с заданным узлом, планирующий и индексирующий узел в сети PPIO проверяет, может ли быть получена информация о узле из интерфейса iP4P:
 \vspace{-0.8em}
 \\  
 
 \hangafter 1
 \hangindent 1.5em
 \noindent   
-•\quad If so, a peer lookup in the node’s ISP network will be conducted first, followed by a lookup in the friendly ISPs, and finally among all other peers. The final peer decision will still be decided based on connection speed as described in 2.2.3. In this way, peers with shorter p4p distances to the node are more likely to be selected to upload or download its data. At the same time, nodes in slower ISPs can still connect to faster outside peers. As a result, unnecessary traffic between different network providers is significantly reduced, and user experience across the entire network is maintained at a high-level.
+•\quad Если да, первой будет предпринята попытка обнаружения узла в сети интернет-провайдера, затем в дружественных интернет-провайдерах, затем среди всех пиров. Итоговый выбор пира будет определяться на основе скорости соединения, как описано в 2.2.3. В этом случае, пиры с более короткой дистанцией p4p к узлу будут с большей вероятностью выбраны к загрузке или скачиванию данных. Так же, узлы в медленном интернет-провайдере могут поддерживать соединения с быстрыми внешними пирами. В результате, бесполезный трафик между различными поставщиками сети существенно сокращается, удовлетворенность пользователя во всей сети поддерживается на высоком уровне.
 \vspace{-0.8em}
 \\
 
 \hangafter 1
 \hangindent 1.5em
 \noindent   
-•\quad  If not,the p4p distance calculated from the global IP database is used in the pre-selection of peers. Similarly, the final selection will still be based connection speed.
+•\quad  Если нет, для предварительного выбора пиров используется вычисленная из общей БД IP адресов дистанция p4p. Аналогично, итоговый выбор будет основываться на скорости подключения.
 \vspace{-0.8em}
 
  
