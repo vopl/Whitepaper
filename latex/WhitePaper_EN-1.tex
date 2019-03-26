@@ -96,11 +96,11 @@ In this chapter, three core technologies behind PPIO will be elaborated:
 \hangafter 1
 \hangindent 1.5em
 \noindent   
-•\quad {\bf Consensus: } Popular blockchain consensus algorithms such as Proof of Work (PoW), Proof of Stake (PoS) and Delegated Proof of Stake (DPoS) all make trade-offs in decentralization, security and performance. PPIO's consensus algorithm is designed by its use scenario. It calculates the power of the miners based on their storage and bandwidth contributions, selects a block producer randomly via Verifiable Random Function (VRF)\cite{article24}\cite{article25}, utilizes Byzantine Fault Tolerance (BFT) based consortium consensus for validation. It improves the efficiency of the network, protects its integrity and enables it to operate in a secure, decentralized manner. It is also the foundation of PPIO's high-volume, large-scale storage market.
+•\quad {\bf Consensus: } Popular blockchain consensus algorithms such as Proof of Work (PoW), Proof of Stake (PoS) and Delegated Proof of Stake (DPoS) all make trade-offs in decentralization, security and performance. PPIO's consensus algorithm is designed by its use scenario. It calculates the power of the miners based on their storage and bandwidth contributions, selects a block producer randomly via Verifiable Random Function (VRF) \cite{article24} \cite{article25}, utilizes Byzantine Fault Tolerance (BFT) based consortium consensus for validation. It improves the efficiency of the network, protects its integrity and enables it to operate in a secure, decentralized manner. It is also the foundation of PPIO's high-volume, large-scale storage market.
 \vspace{-0.5em}
 
       \subsection{P2P Network} %——2.2 \cite{article4}\cite{article5}\cite{article6}\cite{article7}
-PPIO's founding team successfully developed PPLive, and they were also behind its innovative P2P network design and efficient data transmission technologies\cite{article4}\cite{article5}\cite{article6}\cite{article7}. By leveraging the experience, PPIO's P2P network is designed to be a robust, scalable and high-performing data storage and transmission system. 
+PPIO's founding team successfully developed PPLive, and they were also behind its innovative P2P network design and efficient data transmission technologies \cite{article4} \cite{article5} \cite{article6} \cite{article7}. By leveraging the experience, PPIO's P2P network is designed to be a robust, scalable and high-performing data storage and transmission system. 
 \vspace{-0.5em}
 \\ \\{\bf Facts about PPLive:}
 \vspace{-0.8em}
@@ -143,7 +143,7 @@ In PPIO‘s system, a storage "Object" is divided into "Segments", each "Segment
 \hangafter 1
 \hangindent 1.5em
 \noindent   
-•\quad Media streaming on demand\cite{article4} 
+•\quad Media streaming on demand \cite{article4} 
 \vspace{-1.5em}
 \\ 
 
@@ -157,7 +157,7 @@ In PPIO‘s system, a storage "Object" is divided into "Segments", each "Segment
 \hangafter 1
 \hangindent 1.7em
 \noindent   
-1.\quad Multiple virtual connections (Tunnels) are established between the user and each peer with the resources, to improve transmission efficiency. UDP based protocols such as KCP or UDT\cite{article13} are attempted first to make the connection. If it fails, TCP based protocols will be used instead to adapt to different types of heterogeneous networks.
+1.\quad Multiple virtual connections (Tunnels) are established between the user and each peer with the resources, to improve transmission efficiency. UDP based protocols such as KCP or UDT \cite{article13} are attempted first to make the connection. If it fails, TCP based protocols will be used instead to adapt to different types of heterogeneous networks.
 \vspace{-0.8em}
 \\ 
 
@@ -201,7 +201,7 @@ Based on the experience of building the high-performing P2P network, PPIO's desi
 \vspace{-0.5em}
 \\ \\ {\bf Real-time Data Streaming}
 \vspace{-0.5em}
-\\ \\Besides to supporting efficient file download, PPIO also supports optimized P2P data streaming. PPIO's data-driven scheduler is designed to provide stable real-time streaming performance in an ad-hoc P2P network\cite{article12}. The technology has gone through many iterations of trial-and-error optimizations and is proven to provide high-quality user experience to streaming applications such as video-on-demand (VOD) service.
+\\ \\Besides to supporting efficient file download, PPIO also supports optimized P2P data streaming. PPIO's data-driven scheduler is designed to provide stable real-time streaming performance in an ad-hoc P2P network \cite{article12}. The technology has gone through many iterations of trial-and-error optimizations and is proven to provide high-quality user experience to streaming applications such as video-on-demand (VOD) service.
 \vspace{-0.5em}
 \\ \\A P2P streaming system has the following unique design characteristics:
 \vspace{-0.8em}
@@ -360,7 +360,7 @@ PPIO is a fully decentralized storage and distribution system that requires its 
 \vspace{-0.5em}
 \\In a DHT, each piece of data is bundled with a unique key into a key-value pair. These key-value pairs are distributed and stored among the participating nodes. It avoids the problem with the centralized database system, where a failure in the central server leads to the breakdown of the entire network. No single participating node in the DHT is tasked to maintain the entire network. Each node only stores a small part of the database and only needs to maintain information of its adjacent nodes, such design significantly reduces each node’s bandwidth and resource usage. Redundancy is also added to the data and stored on multiple nodes to maintain the reliability of the system so that a single node failure does not cause loss of data.
 \vspace{-0.5em}
- \\ \\ There are many different implementations of DHT, some of the commonly used are Chord\cite{article14}, Pastry\cite{article15}, Tapestry\cite{article18}, Dynamo\cite{article19}, and Kademlia\cite{article16}. PPIO uses Kademlia, so do many other well-known P2P projects like PPLive, BitTorrent, eMule, etc.
+ \\ \\ There are many different implementations of DHT, some of the commonly used are Chord \cite{article14}, Pastry \cite{article15}, Tapestry \cite{article18}, Dynamo \cite{article19}, and Kademlia \cite{article16}. PPIO uses Kademlia, so do many other well-known P2P projects like PPLive, BitTorrent, eMule, etc.
  \vspace{-0.5em}
  \\ \\Kademlia algorithm assigns a unique ID to each participating node. The node ID is also used to calculate the distance between nodes and locate key-value pairs. The algorithm steps through the network path and finds nodes closer to the key on every step to look up a specific key-value pair in the network until it reaches the node that stores the key-pair. Each node needs to store information of a group of other nodes based their distance to it to support the lookup. Such distance is calculated by taking an XOR operation on two Node IDs. Node IDs have the same bit length as the keys used in key-value pairs. Therefore, the distance between node IDs and keys can be calculated in the same way. Since the XOR distance does not take actual geographic distance into account, it is possible for two nodes to reside next to one another in the network even though one of them may be in the United Kingdom, while the other is in the United States.
  \vspace{-0.3em}
@@ -369,7 +369,7 @@ PPIO is a fully decentralized storage and distribution system that requires its 
 \\\\ \centerline{{Figure 2.2 Lookup in Kademlia DHT}}
 \vspace{-0.5em}
 \\
-PPIO also adopts an extension of Kademlia-S/Kademlia\cite{article23}to improve the security of the network. These changes are mainly caused by nodes via parallel looking over disjoint paths.  The network can sustain attacks even when a large number of nodes are compromised.
+PPIO also adopts an extension of Kademlia-S/Kademlia \cite{article23} to improve the security of the network. These changes are mainly caused by nodes via parallel looking over disjoint paths.  The network can sustain attacks even when a large number of nodes are compromised.
 \vspace{-0.5em}
   \\ \\With the DHT implementation above, structured data such as file index, statistics on network nodes, and other metadata can be securely saved and quickly looked up in PPIO’s distributed network. However, data transfer in its storage network is handled differently, which will be discussed in the next section.
   \vspace{-0.5em}
@@ -490,17 +490,17 @@ In a data distribution network, a small number of popular content can consume a 
 \\ \\ As shown in Fig 2.4, multiple miners store copies of the same data, they need to compete to provide download services to the user. The user always prefers the ones that provide higher download speed. If a miner does not have enough bandwidth, users will switch to others. The amount of data it uploads to the users will decrease, which in turn decreases the reward it receives. Therefore, the miners with lower bandwidth will not be incentivized to store popular content. As a result, popular contents are mostly stored on the miners with higher bandwidth, which in turn improves the speed and experience when the user downloads such content.
 \vspace{-0.5em}
 \subsubsection{ISP Friendly Scheduling}  %——2.2.5 \%     \cite{article33}
-In most P2P networks, a node can transfer data with any other peers, regardless of their location. As a result, a single data transfer can potentially create traffic anywhere in the world and consumes bandwidth between different Internet Service Providers (ISP), or even between different countries. In 2007, a research institute iPoque carried out an analysis on nearly 3TB of anonymous data sampled from more than a million internet users in Eastern Europe, Southern Europe, Australia, and the Middle East. \cite{article26}Their studies show that P2P file sharing takes up a significant part of the network bandwidth consumption, accounting for about 49\% in the Middle East, and 84\% in Eastern Europe. From a global perspective, 95\% of the bandwidth at prime time is involved in some forms of P2P data transmission. In recent years, the percentage of P2P traffic has dropped due to a shift in the use pattern of Internet applications. However, with the recent development of blockchain technology and decentralized applications, P2P network traffic is expected to start increasing again. P2P traffic consumes an extraordinary amount of network bandwidth, including international bandwidth. It puts a lot of burden on our internet infrastructure, and significantly increase the cost for ISPs to operate.
+In most P2P networks, a node can transfer data with any other peers, regardless of their location. As a result, a single data transfer can potentially create traffic anywhere in the world and consumes bandwidth between different Internet Service Providers (ISP), or even between different countries. In 2007, a research institute iPoque carried out an analysis on nearly 3TB of anonymous data sampled from more than a million internet users in Eastern Europe, Southern Europe, Australia, and the Middle East \cite{article26}. Their studies show that P2P file sharing takes up a significant part of the network bandwidth consumption, accounting for about 49\% in the Middle East, and 84\% in Eastern Europe. From a global perspective, 95\% of the bandwidth at prime time is involved in some forms of P2P data transmission. In recent years, the percentage of P2P traffic has dropped due to a shift in the use pattern of Internet applications. However, with the recent development of blockchain technology and decentralized applications, P2P network traffic is expected to start increasing again. P2P traffic consumes an extraordinary amount of network bandwidth, including international bandwidth. It puts a lot of burden on our internet infrastructure, and significantly increase the cost for ISPs to operate.
 \vspace{-0.5em}
  \\ \\As described in section 2.2.3, PPIO’s self-organizing overlay network encourages data transfer among neighboring nodes, a large percentage of its traffic is contained within the local network, and the operation cost incurred upon ISPs is significantly reduced. However, the  topology of PPIO’s overlay network may not match the ISP topology exactly. Further optimization to reduce unnecessary traffic between ISPs is needed to improve further PPIO’s ability to scale globally.
  \vspace{-0.5em}
  \\ \\If the nodes participating in a data transmission happen to be in the close vicinity of each other, it is likely that the traffic will be contained within their area network. As a result, the bandwidth cost will be significantly reduced. This is the principle behind P4P, to fully utilize local network bandwidth in a P2P network.  
  \vspace{-0.5em}
-  \\ \\ P4P, or Proactive network Provider Participation for P2P\cite{article17}, is a method for ISPs and P2P software to optimize connections []. It enables peer selection based on the topology of the physical network, to reduce traffic on the backbone network, lower the operation cost of network providers, and improve data transfer efficiency. 
+  \\ \\ P4P, or Proactive network Provider Participation for P2P \cite{article17}, is a method for ISPs and P2P software to optimize connections []. It enables peer selection based on the topology of the physical network, to reduce traffic on the backbone network, lower the operation cost of network providers, and improve data transfer efficiency. 
   \vspace{-0.5em}
   \\ \\The implementation of P4P in traditional P2P networks relies on central servers. As PPIO is a completely decentralized network, a decentralized P4P solution is required.
   \vspace{-0.5em}
-    \\ \\PPIO provides an iP4P interface that allows ISPs to set up and configure P4P in their network and allows applications to query the information. iP4P is designed to be similar to the iTracker interface\cite{article17}in centralized P2P networks, to make it easier to adapt.
+    \\ \\PPIO provides an iP4P interface that allows ISPs to set up and configure P4P in their network and allows applications to query the information. iP4P is designed to be similar to the iTracker interface \cite{article17} in centralized P2P networks, to make it easier to adapt.
     \vspace{-0.8em}
 %•\quad \hl 
 \\
@@ -988,13 +988,13 @@ By combining the power of storage and the power of bandwidth, the overall power 
                    
         \subsubsection{Verifiable Random Function (VRF)}  %——2.4.2\cite{article20}
  \noindent 
-After the selection in 2.4.1 is complete, all the candidate miners are placed in a pool, ready for the next stage of selection. PPIO injects randomness at this step to avoid the monopoly by a small number of miners. However, in a decentralized network, randomness itself needs to be verified. Therefore PPIO adopts Verifiable Random Function (VRF)\cite{article20}in the calculation to decide which candidate miner has the final right to write a block.
+After the selection in 2.4.1 is complete, all the candidate miners are placed in a pool, ready for the next stage of selection. PPIO injects randomness at this step to avoid the monopoly by a small number of miners. However, in a decentralized network, randomness itself needs to be verified. Therefore PPIO adopts Verifiable Random Function (VRF) \cite{article20} in the calculation to decide which candidate miner has the final right to write a block.
 \vspace{-0.5em}
 \\
 
 \noindent  
-VRF is a pseudo-random function that provides publicly verifiable proofs of its outputs' correctness\cite{article24}, 
- its mathematical definition\cite{article25}is:
+VRF is a pseudo-random function that provides publicly verifiable proofs of its outputs' correctness \cite{article24}, 
+ its mathematical definition \cite{article25} is:
  \vspace{-0.8em}
 \\
 
@@ -1220,7 +1220,7 @@ Data redundancy is required to maintain reliable data storage. PPIO adopts two m
 
 \hangafter 1
 \noindent   
-{\bf Redundant Coding:} Divide the original data into blocks and encode them with Erasure Code to generate a group of new data blocks that have redundancy embedded. The original data can be recovered if no more than a certain number of the data blocks are lost or corrupted. This method has much lower storage overhead, but it is more computationally intensive. It can often be used in storing immutable or less popular content. Reed Solomon\cite{article22}is one of the commonly used Erase Code, and can be explained as follows:
+{\bf Redundant Coding:} Divide the original data into blocks and encode them with Erasure Code to generate a group of new data blocks that have redundancy embedded. The original data can be recovered if no more than a certain number of the data blocks are lost or corrupted. This method has much lower storage overhead, but it is more computationally intensive. It can often be used in storing immutable or less popular content. Reed Solomon \cite{article22} is one of the commonly used Erase Code, and can be explained as follows:
 %\begin{itemize}\cite{article22}
 %\item 
 %\end{itemize}
@@ -1284,7 +1284,7 @@ Communication among different nodes in PPIO’s network is based on a set of P2P
 \hangafter 1
 \hangindent 1.5em
 \noindent   
-•\quad {\bf Transmission}: Supports TCP and UDP based transmission. KCP\cite{article8}, QUIC\cite{article9}and SCTP\cite{article10}protocols can also be used, to improve efficiency and reliability.
+•\quad {\bf Transmission}: Supports TCP and UDP based transmission. KCP \cite{article8}, QUIC \cite{article9} and SCTP \cite{article10} protocols can also be used, to improve efficiency and reliability.
 \vspace{-0.8em}
 %\cite{article10}, QUIC\cite{article11}and SCTP\cite{article12}protocols.
 \\
@@ -1299,7 +1299,7 @@ Communication among different nodes in PPIO’s network is based on a set of P2P
 \hangafter 1
 \hangindent 1.5em
 \noindent   
-•\quad {\bf Load Balance}: By using consistent hash\cite{article11}, traffic can be evenly distributed to different nodes. It helps reduce the impact of nodes leaving or new nodes joining the network.
+•\quad {\bf Load Balance}: By using consistent hash \cite{article11}, traffic can be evenly distributed to different nodes. It helps reduce the impact of nodes leaving or new nodes joining the network.
 \vspace{-0.8em}
 \\
 
