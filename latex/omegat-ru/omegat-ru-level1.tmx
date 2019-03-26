@@ -19,11 +19,11 @@
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">\noindent</prop>
-      <prop type="next">UDP based protocols such as KCP or UDT\cite{article13} are attempted first to make the connection.</prop>
+      <prop type="next">UDP based protocols such as KCP or UDT \cite{article13} are attempted first to make the connection.</prop>
       <tuv lang="EN-US">
         <seg>1.\quad Multiple virtual connections (Tunnels) are established between the user and each peer with the resources, to improve transmission efficiency.</seg>
       </tuv>
-      <tuv lang="RU" changeid="vopl" changedate="20190319T094717Z" creationid="vopl" creationdate="20190319T094516Z">
+      <tuv lang="RU" changeid="vopl" changedate="20190326T081702Z" creationid="vopl" creationdate="20190326T081702Z">
         <seg>1.\quad Для увеличения эффективности передачи, между пользователем и каждым пиром, обладающим нужными данными, устанавливаются несколько виртуальных соединений (Туннелей).</seg>
       </tuv>
     </tu>
@@ -223,17 +223,6 @@
       </tuv>
       <tuv lang="RU" changeid="vopl" changedate="20190314T155341Z" creationid="vopl" creationdate="20190314T155341Z">
         <seg>В результате может быть сформировано большое и качественное сообщество майнеров.</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <prop type="file">WhitePaper_EN-1.tex</prop>
-      <prop type="prev">In most P2P networks, a node can transfer data with any other peers, regardless of their location.</prop>
-      <prop type="next">In 2007, a research institute iPoque carried out an analysis on nearly 3TB of anonymous data sampled from more than a million internet users in Eastern Europe, Southern Europe, Australia, and the Middle East.</prop>
-      <tuv lang="EN-US">
-        <seg>As a result, a single data transfer can potentially create traffic anywhere in the world and consumes bandwidth between different Internet Service Providers (ISP), or even between different countries.</seg>
-      </tuv>
-      <tuv lang="RU" changeid="vopl" changedate="20190326T074230Z" creationid="vopl" creationdate="20190326T074230Z">
-        <seg>В результате, единая пересылка данных, потенциально, может формировать трафик в любой точке мира и потреблять полосу пропускания между различными интернет-провайдерами (Internet Service Providers, ISPs), или, даже между странами.</seg>
       </tuv>
     </tu>
     <tu>
@@ -491,12 +480,12 @@
     </tu>
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
-      <prop type="prev">PPIO's founding team successfully developed PPLive, and they were also behind its innovative P2P network design and efficient data transmission technologies\cite{article4}\cite{article5}\cite{article6}\cite{article7}.</prop>
+      <prop type="prev">PPIO's founding team successfully developed PPLive, and they were also behind its innovative P2P network design and efficient data transmission technologies \cite{article4} \cite{article5} \cite{article6} \cite{article7}.</prop>
       <prop type="next">\vspace{-0.5em}</prop>
       <tuv lang="EN-US">
         <seg>By leveraging the experience, PPIO's P2P network is designed to be a robust, scalable and high-performing data storage and transmission system.</seg>
       </tuv>
-      <tuv lang="RU" changeid="vopl" changedate="20190319T090012Z" creationid="vopl" creationdate="20190319T090012Z">
+      <tuv lang="RU" changeid="vopl" changedate="20190326T081538Z" creationid="vopl" creationdate="20190326T081538Z">
         <seg>С учетом этого опыта, одноранговая сеть PPIO спроектирована робастной, масштабируемой быстродействующей системой хранения и передачи данных.</seg>
       </tuv>
     </tu>
@@ -756,12 +745,12 @@
     </tu>
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
-      <prop type="prev">UDP based protocols such as KCP or UDT\cite{article13} are attempted first to make the connection.</prop>
+      <prop type="prev">UDP based protocols such as KCP or UDT \cite{article13} are attempted first to make the connection.</prop>
       <prop type="next">\vspace{-0.8em}</prop>
       <tuv lang="EN-US">
         <seg>If it fails, TCP based protocols will be used instead to adapt to different types of heterogeneous networks.</seg>
       </tuv>
-      <tuv lang="RU" changeid="vopl" changedate="20190319T095125Z" creationid="vopl" creationdate="20190319T095125Z">
+      <tuv lang="RU" changeid="vopl" changedate="20190326T081749Z" creationid="vopl" creationdate="20190326T081749Z">
         <seg>Если она оказывается неудачной, для адаптации в различных типах гетерогенных сетей будет использоваться протокол на основе TCP.</seg>
       </tuv>
     </tu>
@@ -796,17 +785,6 @@
       </tuv>
       <tuv lang="RU" changeid="vopl" changedate="20190320T121340Z" creationid="vopl" creationdate="20190320T121340Z">
         <seg>Если пользователь остается в локации $A$ на длительный период, его список соседей будет содержать больше пиров локации $A$, и наоборот.</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <prop type="file">WhitePaper_EN-1.tex</prop>
-      <prop type="prev">As a result, a single data transfer can potentially create traffic anywhere in the world and consumes bandwidth between different Internet Service Providers (ISP), or even between different countries.</prop>
-      <prop type="next">\cite{article26}Their studies show that P2P file sharing takes up a significant part of the network bandwidth consumption, accounting for about 49\% in the Middle East, and 84\% in Eastern Europe.</prop>
-      <tuv lang="EN-US">
-        <seg>In 2007, a research institute iPoque carried out an analysis on nearly 3TB of anonymous data sampled from more than a million internet users in Eastern Europe, Southern Europe, Australia, and the Middle East.</seg>
-      </tuv>
-      <tuv lang="RU" changeid="vopl" changedate="20190326T074900Z" creationid="vopl" creationdate="20190326T074900Z">
-        <seg>В 2007 году, исследовательский институт iPoque озаботился анализом около 3ТБ анонимных данных, отслеживаемых у более чем миллиона интернет-пользователей из Восточной и Южной Европы, Австралии и  Ближнего Востока.</seg>
       </tuv>
     </tu>
     <tu>
@@ -979,10 +957,10 @@
       <prop type="prev">PPIO's consensus algorithm is designed by its use scenario.</prop>
       <prop type="next">It improves the efficiency of the network, protects its integrity and enables it to operate in a secure, decentralized manner.</prop>
       <tuv lang="EN-US">
-        <seg>It calculates the power of the miners based on their storage and bandwidth contributions, selects a block producer randomly via Verifiable Random Function (VRF)\cite{article24}\cite{article25}, utilizes Byzantine Fault Tolerance (BFT) based consortium consensus for validation.</seg>
+        <seg>It calculates the power of the miners based on their storage and bandwidth contributions, selects a block producer randomly via Verifiable Random Function (VRF) \cite{article24} \cite{article25}, utilizes Byzantine Fault Tolerance (BFT) based consortium consensus for validation.</seg>
       </tuv>
-      <tuv lang="RU" changeid="vopl" changedate="20190319T084858Z" creationid="vopl" creationdate="20190319T084858Z">
-        <seg>Она вычисляет мощность майнеров на основе их вклада в хранение и пропускную способность, затем случайным образом выбирает генератора следующего блока на основании Проверяемой Случайной Функции (Verifiable Random Function,VRF)\cite{article24}\cite{article25}, для проверки которой использоуется консенсус на основе консорциума Византийских Генералов (Byzantine Fault Tolerance, BFT).</seg>
+      <tuv lang="RU" changeid="vopl" changedate="20190326T081305Z" creationid="vopl" creationdate="20190326T081305Z">
+        <seg>Он вычисляет мощность майнеров на основе их вклада в хранение и пропускную способность, затем случайным образом выбирает генератора следующего блока на основании Проверяемой Случайной Функции (Verifiable Random Function,VRF) \cite{article24} \cite{article25}, для проверки которой использоуется консенсус на основе консорциума Византийских Генералов (Byzantine Fault Tolerance, BFT).</seg>
       </tuv>
     </tu>
     <tu>
@@ -1009,12 +987,12 @@
     </tu>
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
-      <prop type="prev">It calculates the power of the miners based on their storage and bandwidth contributions, selects a block producer randomly via Verifiable Random Function (VRF)\cite{article24}\cite{article25}, utilizes Byzantine Fault Tolerance (BFT) based consortium consensus for validation.</prop>
+      <prop type="prev">It calculates the power of the miners based on their storage and bandwidth contributions, selects a block producer randomly via Verifiable Random Function (VRF) \cite{article24} \cite{article25}, utilizes Byzantine Fault Tolerance (BFT) based consortium consensus for validation.</prop>
       <prop type="next">It is also the foundation of PPIO's high-volume, large-scale storage market.</prop>
       <tuv lang="EN-US">
         <seg>It improves the efficiency of the network, protects its integrity and enables it to operate in a secure, decentralized manner.</seg>
       </tuv>
-      <tuv lang="RU" changeid="vopl" changedate="20190319T085032Z" creationid="vopl" creationdate="20190319T085032Z">
+      <tuv lang="RU" changeid="vopl" changedate="20190326T081407Z" creationid="vopl" creationdate="20190326T081407Z">
         <seg>Это увеличивает эффективность сети, защищает ее целостность и позволяет действовать безопасно.</seg>
       </tuv>
     </tu>
@@ -1199,10 +1177,10 @@
       <prop type="prev">\\</prop>
       <prop type="next">These changes are mainly caused by nodes via parallel looking over disjoint paths.</prop>
       <tuv lang="EN-US">
-        <seg>PPIO also adopts an extension of Kademlia-S/Kademlia\cite{article23}to improve the security of the network.</seg>
+        <seg>PPIO also adopts an extension of Kademlia-S/Kademlia \cite{article23} to improve the security of the network.</seg>
       </tuv>
-      <tuv lang="RU" changeid="vopl" changedate="20190320T095958Z" creationid="vopl" creationdate="20190320T095958Z">
-        <seg>Так же, для увеличения безопасности сети, PPIO применяет расширение Kademlia-S/Kademlia\cite{article23}.</seg>
+      <tuv lang="RU" changeid="vopl" changedate="20190326T082120Z" creationid="vopl" creationdate="20190326T082120Z">
+        <seg>Так же, для увеличения безопасности сети, PPIO применяет расширение Kademlia-S/Kademlia \cite{article23}.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1317,13 +1295,13 @@
     </tu>
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
-      <prop type="prev">\\ \\ There are many different implementations of DHT, some of the commonly used are Chord\cite{article14}, Pastry\cite{article15}, Tapestry\cite{article18}, Dynamo\cite{article19}, and Kademlia\cite{article16}.</prop>
+      <prop type="prev">\\ \\ There are many different implementations of DHT, some of the commonly used are Chord \cite{article14}, Pastry \cite{article15}, Tapestry \cite{article18}, Dynamo \cite{article19}, and Kademlia \cite{article16}.</prop>
       <prop type="next">\vspace{-0.5em}</prop>
       <tuv lang="EN-US">
         <seg>PPIO uses Kademlia, so do many other well-known P2P projects like PPLive, BitTorrent, eMule, etc.</seg>
       </tuv>
-      <tuv lang="RU" changeid="vopl" changedate="20190319T161829Z" creationid="vopl" creationdate="20190319T161829Z">
-        <seg>PPIO использует вариант Kademlia, так же, как многие другие хорошо известные P2P проекты - PPLive, BitTorrent, eMule и т.п..</seg>
+      <tuv lang="RU" changeid="vopl" changedate="20190326T082051Z" creationid="vopl" creationdate="20190326T082051Z">
+        <seg>PPIO использует вариант Kademlia, так же, как многие другие хорошо известные P2P проекты - PPLive, BitTorrent, eMule и т.п.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1340,11 +1318,11 @@
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">•\quad {\bf Consensus: } Popular blockchain consensus algorithms such as Proof of Work (PoW), Proof of Stake (PoS) and Delegated Proof of Stake (DPoS) all make trade-offs in decentralization, security and performance.</prop>
-      <prop type="next">It calculates the power of the miners based on their storage and bandwidth contributions, selects a block producer randomly via Verifiable Random Function (VRF)\cite{article24}\cite{article25}, utilizes Byzantine Fault Tolerance (BFT) based consortium consensus for validation.</prop>
+      <prop type="next">It calculates the power of the miners based on their storage and bandwidth contributions, selects a block producer randomly via Verifiable Random Function (VRF) \cite{article24} \cite{article25}, utilizes Byzantine Fault Tolerance (BFT) based consortium consensus for validation.</prop>
       <tuv lang="EN-US">
         <seg>PPIO's consensus algorithm is designed by its use scenario.</seg>
       </tuv>
-      <tuv lang="RU" changeid="vopl" changedate="20190319T084156Z" creationid="vopl" creationdate="20190319T084156Z">
+      <tuv lang="RU" changeid="vopl" changedate="20190326T081203Z" creationid="vopl" creationdate="20190326T081203Z">
         <seg>Алгоритм консенсуса PPIO спроектирован в соответствии со сценарием использования самого PPIO.</seg>
       </tuv>
     </tu>
@@ -1353,10 +1331,10 @@
       <prop type="prev">\\ \\Besides to supporting efficient file download, PPIO also supports optimized P2P data streaming.</prop>
       <prop type="next">The technology has gone through many iterations of trial-and-error optimizations and is proven to provide high-quality user experience to streaming applications such as video-on-demand (VOD) service.</prop>
       <tuv lang="EN-US">
-        <seg>PPIO's data-driven scheduler is designed to provide stable real-time streaming performance in an ad-hoc P2P network\cite{article12}.</seg>
+        <seg>PPIO's data-driven scheduler is designed to provide stable real-time streaming performance in an ad-hoc P2P network \cite{article12}.</seg>
       </tuv>
-      <tuv lang="RU" changeid="vopl" changedate="20190319T102949Z" creationid="vopl" creationdate="20190319T102949Z">
-        <seg>Планировщик PPIO, управляемый данными, спроектирован для стабильной работы потокового вещания реального времени в специализированной одноранговой сети\cite{article12}.</seg>
+      <tuv lang="RU" changeid="vopl" changedate="20190326T081836Z" creationid="vopl" creationdate="20190326T081836Z">
+        <seg>Планировщик PPIO, управляемый данными, спроектирован для стабильной работы потокового вещания реального времени в специализированной одноранговой сети \cite{article12}.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1386,10 +1364,10 @@
       <prop type="prev">\subsection{P2P Network} %——2.2 \cite{article4}\cite{article5}\cite{article6}\cite{article7}</prop>
       <prop type="next">By leveraging the experience, PPIO's P2P network is designed to be a robust, scalable and high-performing data storage and transmission system.</prop>
       <tuv lang="EN-US">
-        <seg>PPIO's founding team successfully developed PPLive, and they were also behind its innovative P2P network design and efficient data transmission technologies\cite{article4}\cite{article5}\cite{article6}\cite{article7}.</seg>
+        <seg>PPIO's founding team successfully developed PPLive, and they were also behind its innovative P2P network design and efficient data transmission technologies \cite{article4} \cite{article5} \cite{article6} \cite{article7}.</seg>
       </tuv>
-      <tuv lang="RU" changeid="vopl" changedate="20190319T085847Z" creationid="vopl" creationdate="20190319T085604Z">
-        <seg>Команда PPIO ранее успешно разработала проект PPLive, и он так же был основан на инновационном дизайне одноранговой сети и эффективных технологиях передачи данных\cite{article4}\cite{article5}\cite{article6}\cite{article7}.</seg>
+      <tuv lang="RU" changeid="vopl" changedate="20190326T081504Z" creationid="vopl" creationdate="20190326T081504Z">
+        <seg>Команда PPIO ранее успешно разработала проект PPLive, и он так же был основан на инновационном дизайне одноранговой сети и эффективных технологиях передачи данных \cite{article4} \cite{article5} \cite{article6} \cite{article7}.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1768,12 +1746,12 @@
     </tu>
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
-      <prop type="prev">PPIO's data-driven scheduler is designed to provide stable real-time streaming performance in an ad-hoc P2P network\cite{article12}.</prop>
+      <prop type="prev">PPIO's data-driven scheduler is designed to provide stable real-time streaming performance in an ad-hoc P2P network \cite{article12}.</prop>
       <prop type="next">\vspace{-0.5em}</prop>
       <tuv lang="EN-US">
         <seg>The technology has gone through many iterations of trial-and-error optimizations and is proven to provide high-quality user experience to streaming applications such as video-on-demand (VOD) service.</seg>
       </tuv>
-      <tuv lang="RU" changeid="vopl" changedate="20190319T103443Z" creationid="vopl" creationdate="20190319T103443Z">
+      <tuv lang="RU" changeid="vopl" changedate="20190326T081927Z" creationid="vopl" creationdate="20190326T081927Z">
         <seg>Технология прошла сквозь множество итераций проб и ошибок и доказала способность предоставления пользователю высоко-качественной поддержки потоковых приложений, таких как службы видео-по-запросу (video-on-demand, VOD).</seg>
       </tuv>
     </tu>
@@ -1856,12 +1834,12 @@
     </tu>
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
-      <prop type="prev">PPIO also adopts an extension of Kademlia-S/Kademlia\cite{article23}to improve the security of the network.</prop>
+      <prop type="prev">PPIO also adopts an extension of Kademlia-S/Kademlia \cite{article23} to improve the security of the network.</prop>
       <prop type="next">The network can sustain attacks even when a large number of nodes are compromised.</prop>
       <tuv lang="EN-US">
         <seg>These changes are mainly caused by nodes via parallel looking over disjoint paths.</seg>
       </tuv>
-      <tuv lang="RU" changeid="vopl" changedate="20190320T100754Z" creationid="vopl" creationdate="20190320T100754Z">
+      <tuv lang="RU" changeid="vopl" changedate="20190326T082418Z" creationid="vopl" creationdate="20190326T082418Z">
         <seg>В основном, данные изменения вызваны узлами, использующими параллельный поиск над непересекающимися путями.</seg>
       </tuv>
     </tu>
@@ -1980,10 +1958,10 @@
       <prop type="prev">1.\quad Multiple virtual connections (Tunnels) are established between the user and each peer with the resources, to improve transmission efficiency.</prop>
       <prop type="next">If it fails, TCP based protocols will be used instead to adapt to different types of heterogeneous networks.</prop>
       <tuv lang="EN-US">
-        <seg>UDP based protocols such as KCP or UDT\cite{article13} are attempted first to make the connection.</seg>
+        <seg>UDP based protocols such as KCP or UDT \cite{article13} are attempted first to make the connection.</seg>
       </tuv>
-      <tuv lang="RU" changeid="vopl" changedate="20190319T094840Z" creationid="vopl" creationdate="20190319T094840Z">
-        <seg>Сначала предпринимается попытка соединения по протоколам, основанным на UDP, таким как KCP или UDT\cite{article13}.</seg>
+      <tuv lang="RU" changeid="vopl" changedate="20190326T081721Z" creationid="vopl" creationdate="20190326T081721Z">
+        <seg>Сначала предпринимается попытка соединения по протоколам, основанным на UDP, таким как KCP или UDT \cite{article13}.</seg>
       </tuv>
     </tu>
     <tu>
@@ -2134,10 +2112,10 @@
       <prop type="prev">\vspace{-0.5em}</prop>
       <prop type="next">PPIO uses Kademlia, so do many other well-known P2P projects like PPLive, BitTorrent, eMule, etc.</prop>
       <tuv lang="EN-US">
-        <seg>\\ \\ There are many different implementations of DHT, some of the commonly used are Chord\cite{article14}, Pastry\cite{article15}, Tapestry\cite{article18}, Dynamo\cite{article19}, and Kademlia\cite{article16}.</seg>
+        <seg>\\ \\ There are many different implementations of DHT, some of the commonly used are Chord \cite{article14}, Pastry \cite{article15}, Tapestry \cite{article18}, Dynamo \cite{article19}, and Kademlia \cite{article16}.</seg>
       </tuv>
-      <tuv lang="RU" changeid="vopl" changedate="20190319T161705Z" creationid="vopl" creationdate="20190319T161643Z">
-        <seg>\\ \\ Существует множество различных реализаций DHT, вот некоторые наиболее используемые: Chord\cite{article14}, Pastry\cite{article15}, Tapestry\cite{article18}, Dynamo\cite{article19} и Kademlia\cite{article16}.</seg>
+      <tuv lang="RU" changeid="vopl" changedate="20190326T082024Z" creationid="vopl" creationdate="20190326T082024Z">
+        <seg>\\ \\ Существует множество различных реализаций DHT, вот некоторые наиболее используемые: Chord \cite{article14}, Pastry \cite{article15}, Tapestry \cite{article18}, Dynamo \cite{article19} и Kademlia \cite{article16}.</seg>
       </tuv>
     </tu>
     <tu>
@@ -2198,11 +2176,11 @@
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">\vspace{-0.5em}</prop>
-      <prop type="next">PPIO's data-driven scheduler is designed to provide stable real-time streaming performance in an ad-hoc P2P network\cite{article12}.</prop>
+      <prop type="next">PPIO's data-driven scheduler is designed to provide stable real-time streaming performance in an ad-hoc P2P network \cite{article12}.</prop>
       <tuv lang="EN-US">
         <seg>\\ \\Besides to supporting efficient file download, PPIO also supports optimized P2P data streaming.</seg>
       </tuv>
-      <tuv lang="RU" changeid="vopl" changedate="20190319T102512Z" creationid="vopl" creationdate="20190319T102512Z">
+      <tuv lang="RU" changeid="vopl" changedate="20190326T081822Z" creationid="vopl" creationdate="20190326T081822Z">
         <seg>\\ \\Наряду с поддержкой эффективного скачивания файлов, PPIO так же поддерживает оптимизированное одноранговое потоковое вещание данных.</seg>
       </tuv>
     </tu>
@@ -2571,17 +2549,6 @@
     </tu>
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
-      <prop type="prev">In 2007, a research institute iPoque carried out an analysis on nearly 3TB of anonymous data sampled from more than a million internet users in Eastern Europe, Southern Europe, Australia, and the Middle East.</prop>
-      <prop type="next">From a global perspective, 95\% of the bandwidth at prime time is involved in some forms of P2P data transmission.</prop>
-      <tuv lang="EN-US">
-        <seg>\cite{article26}Their studies show that P2P file sharing takes up a significant part of the network bandwidth consumption, accounting for about 49\% in the Middle East, and 84\% in Eastern Europe.</seg>
-      </tuv>
-      <tuv lang="RU" changeid="vopl" changedate="20190326T075046Z" creationid="vopl" creationdate="20190326T075036Z">
-        <seg>\cite{article26}Their studies show that P2P file sharing takes up a significant part of the network bandwidth consumption, accounting for about 49\% in the Middle East, and 84\% in Eastern Europe.</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">\newpage</prop>
       <prop type="next">\vspace{-0.5em}</prop>
       <tuv lang="EN-US">
@@ -2605,11 +2572,11 @@
     <tu>
       <prop type="file">WhitePaper_EN-1.tex</prop>
       <prop type="prev">\vspace{-0.5em}</prop>
-      <prop type="next">PPIO's founding team successfully developed PPLive, and they were also behind its innovative P2P network design and efficient data transmission technologies\cite{article4}\cite{article5}\cite{article6}\cite{article7}.</prop>
+      <prop type="next">PPIO's founding team successfully developed PPLive, and they were also behind its innovative P2P network design and efficient data transmission technologies \cite{article4} \cite{article5} \cite{article6} \cite{article7}.</prop>
       <tuv lang="EN-US">
         <seg>\subsection{P2P Network} %——2.2 \cite{article4}\cite{article5}\cite{article6}\cite{article7}</seg>
       </tuv>
-      <tuv lang="RU" changeid="vopl" changedate="20190319T085213Z" creationid="vopl" creationdate="20190319T085213Z">
+      <tuv lang="RU" changeid="vopl" changedate="20190326T081430Z" creationid="vopl" creationdate="20190326T081430Z">
         <seg>\subsection{Одноранговая сеть (P2P Network)} %——2.2 \cite{article4}\cite{article5}\cite{article6}\cite{article7}</seg>
       </tuv>
     </tu>
@@ -2788,10 +2755,10 @@
       <prop type="prev">\noindent</prop>
       <prop type="next">\vspace{-1.5em}</prop>
       <tuv lang="EN-US">
-        <seg>•\quad Media streaming on demand\cite{article4}</seg>
+        <seg>•\quad Media streaming on demand \cite{article4}</seg>
       </tuv>
-      <tuv lang="RU" changeid="vopl" changedate="20190319T094024Z" creationid="vopl" creationdate="20190319T094024Z">
-        <seg>•\quad Потоковое вещание по заказу (Media streaming on demand)\cite{article4}</seg>
+      <tuv lang="RU" changeid="vopl" changedate="20190326T081612Z" creationid="vopl" creationdate="20190326T081612Z">
+        <seg>•\quad Потоковое вещание по заказу (Media streaming on demand) \cite{article4}</seg>
       </tuv>
     </tu>
     <tu>
